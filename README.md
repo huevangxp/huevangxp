@@ -44,19 +44,18 @@ I am an experienced software developer with a front-end and back-end development
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white&style=for-the-badge)
 ![NoSQL](https://img.shields.io/badge/NoSQL-3C873A?logo=mongodb&logoColor=white&style=for-the-badge)
 
-## Previous Projects
-- [**Laos IT Capital**]: The company landing website.
-- **AGRICULTURAL PROMOTION BANK**: Developer
-
 ## Working Experiences
 ### 2021 - 2022
 - **LaiLaoLab ICT Solution**: Front End Developer AND Back End Developer
-
+  
+### 2022 - 2023
+- **Laos IT Capital**: Front End Developer Developer
+  
 ### 2023 - Now
 - **Freelance Developer AND Working Bank**
 
 ---
-## Contect Me
+## Contact Me
 
 - Email: huevang933@gmail.com
 - WhatsApp: +856 2078849378
