@@ -9,7 +9,7 @@ I am an experienced software developer with a front-end and back-end development
 ## Portfilio
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
 
-**Resume**
+## Resume
 [![Resume](https://img.shields.io/badge/Resume-Link-green?logo=adobeacrobatreader&style=for-the-badge)](https://your-resume-url)
 
 ## Programming Skills
