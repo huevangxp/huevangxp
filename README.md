@@ -58,6 +58,6 @@ I am an experienced software developer with a front-end and back-end development
 ---
 ## Contect Me
 
-- ![Email: huevang933@gmail.com](huevang933@gmail.com)
-- ![Whatapps: +856 2078849378](+8562078849378)
-- ![Fackbook: Hue Vang](https://www.facebook.com/hue.vang.2920)
+- Email: huevang933@gmail.com
+- WhatsApp: +856 2078849378
+- Facebook: [Hue Vang](https://www.facebook.com/hue.vang.2920)
