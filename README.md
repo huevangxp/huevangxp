@@ -6,7 +6,7 @@
 ## About Me
 I am an experienced software developer with a front-end and back-end development background. Over 2 years, I have made significant contributions to a wide range of projects across software development firms and government sectors. My expertise includes crafting responsive user interfaces and designing scalable frontend and backend architectures. I am passionate about staying abreast of emerging technologies and eager to drive innovation in every project I undertake.
 
-**Portfilio**
+## Portfilio
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
 
 **Resume**
@@ -14,7 +14,7 @@ I am an experienced software developer with a front-end and back-end development
 
 ## Programming Skills
 
-**Frontend:**
+## Frontend:
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt.js&logoColor=white&style=for-the-badge)
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=white&style=for-the-badge)
@@ -23,7 +23,7 @@ I am an experienced software developer with a front-end and back-end development
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge)
 
-**Backend:**
+## Backend:
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white&style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=for-the-badge)
