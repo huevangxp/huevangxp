@@ -3,7 +3,7 @@
 - [![Facebook](https://img.shields.io/badge/Facebook-Follow-blue)](https://www.facebook.com/hue.vang.2920) 
 - [![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/huevangxp)
 
-🚀 I am an experienced software developer with a front-end and back-end development background. Over 3 years, I have made significant contributions to a wide range of projects across software development firms and government sectors. My expertise includes crafting responsive user interfaces and designing scalable frontend and backend architectures. I am passionate about staying abreast of emerging technologies and eager to drive innovation in every project I undertake.🚀
+🚀 I have worked as a front-end and back-end software developer for many years. I have contributed significantly to a variety of initiatives over the past three years in both the government and software development companies. Creating scalable front-end and back-end architectures as well as responsive user interfaces are among my areas of expertise. I have a strong desire to stay up to date with new developments in technology and want to bring creativity to every project I work on.💀
 
 ## Portfilio 😄
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
