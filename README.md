@@ -1,4 +1,4 @@
-# Huevang XIONGPOR 👋 
+# Huevang XIONGPOR 👋 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
 - [![Facebook](https://img.shields.io/badge/Facebook-Follow-blue)](https://www.facebook.com/hue.vang.2920) 
 - [![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/huevangxp)
