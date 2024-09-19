@@ -22,7 +22,7 @@
 <table>
   <tr>
     <th><img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=transparent&title_color=00FF00" alt="Kenan's GitHub stats"></th>
-    <th><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=algolia&hide_border=true&title_color=00FF00" style="color: #00FF00;"></th>
+    <th><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=transparent&hide_border=true&title_color=00FF00" style="color: #00FF00;"></th>
   </tr>
 </table>
   <br>
