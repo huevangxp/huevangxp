@@ -25,6 +25,4 @@
     <th><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=transparent&hide_border=true&title_color=00FF00" alt="Profile Details"></th>
   </tr>
 </table>
-  <br>
-  <img src="https://github-profile-trophy.vercel.app/?username=huevangxp&no-frame=true&no-bg=true&margin-w=15&theme=algolia&&title_color=00FF00" alt="GitHub Profile Trophy">
-<br/>
+  
