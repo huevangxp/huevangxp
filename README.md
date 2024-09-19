@@ -1,7 +1,9 @@
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&width=900&color=006AFF&height=70&duration=4000&lines=Hi+There!;+I'm+huevangxp+Hacen;I+am+a+full-stack+developer;God+willing+,+soon" />
 </h1>
- 
+<div align="center">
+   <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=417E87&line=1E90FF&point=417E87&area_color=none&title_color=417E87&area=true" alt="GitHub Activity Graph" />
+<br>
 <div align="center">
 <table>
   <tr>
@@ -25,6 +27,5 @@
 </table>
   <br>
   <img src="https://github-profile-trophy.vercel.app/?username=huevangxp&no-frame=true&no-bg=true&margin-w=15&theme=algolia&color=000" alt="GitHub Profile Trophy">
-<br/>
 <br/>
  
