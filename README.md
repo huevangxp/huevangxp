@@ -29,15 +29,4 @@
   <img src="https://github-profile-trophy.vercel.app/?username=huevangxp&no-frame=true&no-bg=true&margin-w=15&theme=algolia&color=000" alt="GitHub Profile Trophy">
 <br/>
 <br/>
-<div align="center"> 
-  <a href="mailto:huevangxp@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://huevangxp.com" target="_blank">
-     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank"/> 
-  </a>
-   <a href="https://www.facebook.com/huevangxp.Hacen?mibextid=ZbWKwL" target="_blank">
-  <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/>
-</a>
-
-</div>
+ 
