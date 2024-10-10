@@ -11,7 +11,7 @@
   </span>
 </div>
 
-## Portfilio 😄 (●ˇ∀ˇ●
+## Portfilio 😄 (●ˇ∀ˇ
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
 
 ## Resume 💬
