@@ -11,7 +11,7 @@
   </span>
 </div>
 
-## Portfilio 😄 
+## Portfilio 😄 ddd
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
 
 ## Resume 💬
@@ -19,7 +19,7 @@
 
 ## Programming Skills 🛠
 
-## Frontend:
+## Frontend: 
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt.js&logoColor=white&style=for-the-badge)
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=white&style=for-the-badge)
