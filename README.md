@@ -1,4 +1,4 @@
-<h1 align="center"> 
+ <h1 align="center"> 
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&width=900&color=00FF00&height=70&duration=4000&lines=Hi+Everyone;+I'm+huevangxp+XIOGNPOR;I+am+a+full-stack+developer;Nice+to+meet+you;" />
 </h1> 
 <div align="center">
@@ -11,7 +11,7 @@
   </span>
 </div>
  
-## Portfilio 😄 
+## Portfilio 😄 f
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
 
 ## Resume 💬
