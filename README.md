@@ -3,7 +3,7 @@
 </h1> 
 <div align="center">
    <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=00FF00&line=00FF00&point=417E87&area_color=00FF00&title_color=00FF00&area=true" alt="GitHub Activity Graph" />
-<br> (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+<br> (ﾉ◕ヮ◕)ﾉ*:･ﾟ
     </div>  
     <div align="center">
   <span style="font-family: Arial, sans-serif;">
