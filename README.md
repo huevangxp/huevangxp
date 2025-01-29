@@ -4,7 +4,7 @@
 <div align="center">
    <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=00FF00&line=00FF00&point=417E87&area_color=00FF00&title_color=00FF00&area=true" alt="GitHub Activity Graph" />
 <br>
-    </div>  (ﾉ◕ヮ◕)
+    </div>  (ﾉ◕ヮ◕
     <div align="center">
   <span style="font-family: Arial, sans-serif;">
     🚀 I have worked as a front-end and back-end software developer for many years. I have contributed significantly to various initiatives over the past three years in both the government and software development companies. Creating scalable front-end and back-end architectures and responsive user interfaces are among my areas of expertise. I strongly desire to stay up to date with new developments in technology and bring creativity to every project I work on. 
