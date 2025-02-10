@@ -10,7 +10,7 @@
     🚀 I have worked as a front-end and back-end software developer for many years. I have contributed significantly to various initiatives over the past three years in both the government and software development companies. Creating scalable front-end and back-end architectures and responsive user interfaces are among my areas of expertise. I strongly desire to stay up to date with new developments in technology and bring creativity to every project I work on. 
   </span>
 </div>
- f
+ 
 ## Portfilio 😄
 [![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
 
