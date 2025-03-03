@@ -77,7 +77,7 @@
 - **LaiLaoLab ICT Solution**: Front End Developer AND Back End Developer
   
 ### 2022 - 2023
-- **Laos IT Capital**: Front End Developer Developer
+- **Laos IT Capital**: Front End Developer
   
 ### 2023 - Now
 - **Freelance Developer AND Working Bank**
