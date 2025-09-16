@@ -5,6 +5,7 @@
    <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=008080&line=008080&point=417E87&area_color=008080&title_color=008080&area=true" alt="GitHub Activity Graph" />
 <br>
     </div> 
+    ## 👤 About Me
     <div  > 
   <span style="font-family: Arial, sans-serif;">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I’m a passionate full-stack developer with years of experience in both front-end and back-end roles. I’ve contributed to various projects for government and software companies, specializing in scalable architectures and responsive user interfaces. I’m dedicated to staying current with technology trends and bringing creativity to every project.
