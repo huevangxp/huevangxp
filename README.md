@@ -42,7 +42,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights&title_color=008080" alt="Top Languages">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights" alt="Top Languages">
     </td>
 <td>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
