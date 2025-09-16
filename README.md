@@ -20,12 +20,13 @@
 ## Resume 💬
 [![Resume](https://img.shields.io/badge/Resume-Link-green?logo=adobeacrobatreader&style=for-the-badge)](https://your-resume-url)
 
-## Programming Skills 🛠
 
-## Frontend: 
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt.js&logoColor=white&style=for-the-badge)
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+## 🛠️ Programming Skills
+
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge)
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt.js&logoColor=black&style=for-the-badge)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black&style=for-the-badge)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white&style=for-the-badge)
 ![Vuetify](https://img.shields.io/badge/Vuetify-1867C0?logo=vuetify&logoColor=white&style=for-the-badge)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
