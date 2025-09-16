@@ -143,6 +143,20 @@
   </a>
 </div>
 
+## 📫 Connect with Me
+
+- **Portfolio:** [huevang-blog.netlify.app](https://huevang-blog.netlify.app)
+- **Email:** your-email@example.com
+- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-profile)
+- **Resume:** [View Resume](https://your-resume-url)
+
+---
+
+<p align="center">
+  <b>Thank you for visiting my profile!</b> <br>
+  <i>Let's build something amazing together!</i>
+</p>
+
 
 
   
