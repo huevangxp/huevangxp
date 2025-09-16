@@ -9,6 +9,9 @@
   <span style="font-family: Arial, sans-serif;">
     Welcome to my GitHub profile! I'm passionate about technology, coding, and building impactful projects. Here you'll find a showcase of my latest work, favorite repositories, and contributions to the open-source community.
   </span>
+  <span style="font-family: Arial, sans-serif;">
+    I have worked as a front-end and back-end software developer for many years. I have contributed significantly to various initiatives over the past three years in both the government and software development companies. Creating scalable front-end and back-end architectures and responsive user interfaces are among my areas of expertise. I strongly desire to stay up to date with new developments in technology and bring creativity to every project I work on. 
+  </span>
 </div>
 
 ## Portfilio 😄 
