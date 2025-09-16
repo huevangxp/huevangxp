@@ -142,14 +142,7 @@
     <img src="https://streak-stats.demolab.com/?user=huevangxp" alt="GitHub Streak"/>
   </a>
 </div>
-
-## 📫 Connect with Me
-
-- **Portfolio:** [huevang-blog.netlify.app](https://huevang-blog.netlify.app)
-- **Email:** your-email@example.com
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-profile)
-- **Resume:** [View Resume](https://your-resume-url)
-
+ 
 ---
 
 <p align="center">
