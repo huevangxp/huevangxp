@@ -58,7 +58,7 @@
 
 <table>
   <tr>
-    <th><img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights&title_color=008080" alt="GitHub Stats"></th>
+    <th><img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights" alt="GitHub Stats"></th>
     <th><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080" alt="Profile Details"></th>
   </tr>
 </table>
