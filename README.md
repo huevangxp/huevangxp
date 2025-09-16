@@ -44,12 +44,13 @@
     <td>
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=transparent&title_color=008080" alt="Top Languages">
     </td>
-<!--     <td>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=transparent&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
-    </td> -->
-    <td>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=transparent&hide_border=true&title_color=008080" alt="Most Commit Language">
-    </td>
+<td>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=transparent&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
+</td>
+<td>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=transparent&hide_border=true&title_color=008080&text_color=008080" alt="Most Commit Language">
+</td>
+
   </tr>
 </table>
 </div>
