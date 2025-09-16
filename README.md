@@ -131,17 +131,6 @@
 - **2021–2022:** Front-End & Back-End Developer at LaiLaoLab ICT Solution
 - **2022–2023:** Front-End Developer at Laos IT Capital
 - **2023–Present:** Freelance Developer & Working in Banking Sector
-
----
-
-## 🔥 Streak Status
-
- 
-<div align="center">
-   <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com/?user=huevangxp" alt="GitHub Streak"/>
-  </a>
-</div>
  
 ---
 
