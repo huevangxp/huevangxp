@@ -43,9 +43,6 @@
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white&style=for-the-badge)
 ![NoSQL](https://img.shields.io/badge/NoSQL-3C873A?logo=mongodb&logoColor=white&style=for-the-badge)
 
-## Education 👯‍♀️
-- **2019-2023:** Bachelor of Website Development at National University of Laos
-
 ## Skills 🛠
 ### Programming Languages
 ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge)
@@ -139,12 +136,7 @@
 
 ## 🔥 Streak Status
 
-<div align="center">
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com/?user=huevangxp" alt="GitHub Streak"/>
-  </a>
-</div>
-## STREAK STATUS
+ 
 <div align="center">
    <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com/?user=huevangxp" alt="GitHub Streak"/>
