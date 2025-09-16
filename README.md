@@ -77,10 +77,6 @@
 </table>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=huevangxp&color=0891B2&style=for-the-badge&label=PROFILE+VIEWS"/>
-</p>
-
-<p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake animation" width="100%"/>
 </p>
 
