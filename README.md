@@ -124,7 +124,6 @@
 
 - **2019–2023**: Bachelor of Website Development, National University of Laos
 
----
 
 ## 👩‍💻 Work Experience
 
@@ -132,7 +131,6 @@
 - **2022–2023:** Front-End Developer at Laos IT Capital
 - **2023–Present:** Freelance Developer & Working in Banking Sector
  
----
 
 <p align="center">
   <b>Thank you for visiting my profile!</b> <br>
