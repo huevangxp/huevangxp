@@ -5,20 +5,12 @@
    <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=00FF00&line=00FF00&point=417E87&area_color=00FF00&title_color=00FF00&area=true" alt="GitHub Activity Graph" />
 <br>
     </div> 
-    <div  > 
+    <div align="center" > 
   <span style="font-family: Arial, sans-serif;">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to my GitHub profile! I'm passionate about technology, coding, and building impactful projects. Here you'll find a showcase of my latest work, favorite repositories, and contributions to the open-source community.
-  </span> <br/>
-  <span style="font-family: Arial, sans-serif;">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have worked as a front-end and back-end software developer for many years. I have contributed significantly to various initiatives over the past three years in both the government and software development companies. Creating scalable front-end and back-end architectures and responsive user interfaces are among my areas of expertise. I strongly desire to stay up to date with new developments in technology and bring creativity to every project I work on. 
-  </span>
+   I’m a passionate full-stack developer with years of experience in both front-end and back-end roles. I’ve contributed to various projects for government and software companies, specializing in scalable architectures and responsive user interfaces. I’m dedicated to staying current with technology trends and bringing creativity to every project.
+  </span>  
+  
 </div>
-
-## Portfilio 😄 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Link-blue?logo=webcomponents&style=for-the-badge)](https://huevang-blog.netlify.app)
-
-## Resume 💬
-[![Resume](https://img.shields.io/badge/Resume-Link-green?logo=adobeacrobatreader&style=for-the-badge)](https://your-resume-url)
 
 
 ## 🛠️ Programming Skills
