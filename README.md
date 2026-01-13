@@ -53,29 +53,32 @@
  
 
 <div align="center">
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights" alt="Top Languages">
-    </td>
-<td>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
-</td>
-<td>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Most Commit Language">
-</td>
-
-  </tr>
-</table>
+ <table>
+    <tr>
+      <td align="center">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights" alt="Top Languages">
+      </td>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
+      </td>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Most Commit Language">
+      </td>
+    </tr>
+  </table>
 </div>
 
-
-<table>
-  <tr>
-    <th><img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights" alt="GitHub Stats"></th>
-    <th><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080" alt="Profile Details"></th>
-  </tr>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights" alt="GitHub Stats">
+      </td>
+      <td align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080" alt="Profile Details">
+      </td>
+    </tr>
+  </table>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake animation" width="100%"/>
