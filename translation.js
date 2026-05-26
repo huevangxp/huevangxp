@@ -28,6 +28,7 @@ const translations = {
     skillsCategoryFrontend: "Frontend",
     skillsCategoryBackend: "Backend",
     skillsCategoryLanguages: "Languages",
+    skillsCategoryTools: "Tools",
 
     experienceTitle: "Work Experience",
     expPresent: "Present",
@@ -96,6 +97,7 @@ const translations = {
     skillsCategoryFrontend: "ສ່ວນໜ້າ (Frontend)",
     skillsCategoryBackend: "ສ່ວນຫຼັງ (Backend)",
     skillsCategoryLanguages: "ພາສາຂຽນໂປຣແກຣມ",
+    skillsCategoryTools: "ເຄື່ອງມື (Tools)",
 
     experienceTitle: "ປະສົບການເຮັດວຽກ",
     expPresent: "ປັດຈຸບັນ",
