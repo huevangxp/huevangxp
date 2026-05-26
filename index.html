@@ -1,447 +1,750 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>huevangxp | Modern Portfolio</title>
-  <meta name="description" content="Portfolio of huevangxp - Full-Stack Developer with expertise in building premium web applications. Based in Vientiane, Laos.">
-  
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>huevangxp Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of huevangxp - Full-Stack Developer with expertise in building premium web applications. Based in Vientiane, Laos."
+    />
 
-  <!-- Interactive Particles Canvas Background -->
-  <canvas id="bg-canvas"></canvas>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="nav-container">
-      <a href="#home" class="logo">
-        <i class="fas fa-terminal"></i>
-        <span>huevangxp</span>
-      </a>
-      
-      <nav class="nav-menu" id="nav-menu">
-        <a href="#home" class="nav-link active" data-translate="navHome">Home</a>
-        <a href="#about" class="nav-link" data-translate="navAbout">About</a>
-        <a href="#skills" class="nav-link" data-translate="navSkills">Skills</a>
-        <a href="#experience" class="nav-link" data-translate="navExperience">Experience</a>
-        <a href="#education" class="nav-link" data-translate="navEducation">Education</a>
-        <a href="#contact" class="nav-link" data-translate="navContact">Contact</a>
-      </nav>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Interactive Particles Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
 
-      <div class="nav-actions">
-        <!-- Theme Toggle Button -->
-        <button id="theme-toggle" class="ctrl-btn" title="Toggle Light/Dark Theme">
-          <i class="fas fa-sun"></i>
-        </button>
-        <!-- Language Toggle Button -->
-        <button id="lang-toggle" class="ctrl-btn lang-btn" title="Switch Language">
-          LA
-        </button>
-        <!-- Mobile Menu Toggle Hamburger -->
-        <div id="mobile-toggle" class="mobile-menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content reveal active">
-      <span class="hero-greet" data-translate="heroGreeting">Hi Everyone, I'm</span>
-      <h1 class="hero-name">huevangxp XIOGNPOR</h1>
-      
-      <!-- Rotating Typed Titles -->
-      <div class="typing-container">
-        <span class="typing-static">I am a </span>
-        <span class="typing-dynamic" id="typing-text">Full-Stack Developer</span>
-        <span class="typing-cursor"></span>
-      </div>
-      
-      <p class="hero-desc" data-translate="heroSubtitle">Nice to meet you! Let's build something amazing together!</p>
-      
-      <div class="hero-ctas">
-        <a href="#about" class="btn btn-primary">
-          <span data-translate="heroCtaExplore">Explore Portfolio</span>
-          <i class="fas fa-arrow-right"></i>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <i class="fas fa-terminal"></i>
+          <span>huevangxp</span>
         </a>
-        <a href="#contact" class="btn btn-secondary">
-          <span data-translate="heroCtaContact">Get In Touch</span>
-          <i class="fas fa-paper-plane"></i>
-        </a>
-      </div>
-    </div>
-    
-    <div class="hero-visual reveal active">
-      <div class="visual-box">
-        <div class="avatar-backdrop"></div>
-        <div class="avatar-border">
-          <div class="avatar-inner">
-            <i class="fas fa-code"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="reveal">
-    <div class="section-header">
-      <h2 class="section-title" data-translate="aboutTitle">About Me</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-card glass-card">
-        <p data-translate="aboutText">I’m a passionate full-stack developer with years of experience in both front-end and back-end roles. I’ve contributed to various projects for government and software companies, specializing in scalable architectures and responsive user interfaces. I’m dedicated to staying current with technology trends and bringing creativity to every project.</p>
-      </div>
-      <div class="about-highlights">
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div>
-            <h3 class="highlight-title" data-translate="aboutNuol">Bachelor of Website Development</h3>
-            <p class="highlight-desc">National University of Laos (2019-2023)</p>
-          </div>
-        </div>
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div>
-            <h3 class="highlight-title" data-translate="aboutLocation">Based in Vientiane, Laos</h3>
-            <p class="highlight-desc">Available for remote & hybrid opportunities</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active" data-translate="navHome"
+            >Home</a
+          >
+          <a href="#about" class="nav-link" data-translate="navAbout">About</a>
+          <a href="#skills" class="nav-link" data-translate="navSkills"
+            >Skills</a
+          >
+          <a href="#experience" class="nav-link" data-translate="navExperience"
+            >Experience</a
+          >
+          <a href="#education" class="nav-link" data-translate="navEducation"
+            >Education</a
+          >
+          <a href="#contact" class="nav-link" data-translate="navContact"
+            >Contact</a
+          >
+        </nav>
 
-  <!-- Skills Section -->
-  <section id="skills" class="reveal">
-    <div class="section-header">
-      <h2 class="section-title" data-translate="skillsTitle">Programming Skills</h2>
-      <p class="section-subtitle" data-translate="skillsSubtitle">Technologies and frameworks I use to build premium, modern web and mobile applications.</p>
-    </div>
-    
-    <!-- Skills Categories Filter Tab -->
-    <div class="skills-tabs">
-      <button class="tab-btn active" data-filter="all">All Tech</button>
-      <button class="tab-btn" data-filter="frontend" data-translate="skillsCategoryFrontend">Frontend</button>
-      <button class="tab-btn" data-filter="backend" data-translate="skillsCategoryBackend">Backend</button>
-      <button class="tab-btn" data-filter="languages" data-translate="skillsCategoryLanguages">Languages</button>
-      <button class="tab-btn" data-filter="tools" data-translate="skillsCategoryTools">Tools</button>
-    </div>
-    
-    <div class="skills-grid">
-      <!-- Frontend -->
-      <div class="skill-card glass-card" data-category="frontend" data-skill="react">
-        <i class="fab fa-react skill-icon"></i>
-        <span class="skill-name">React / Native</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="vue">
-        <i class="fab fa-vuejs skill-icon"></i>
-        <span class="skill-name">Vue.js</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="nuxt">
-        <i class="fab fa-vuejs skill-icon"></i>
-        <span class="skill-name">Nuxt.js</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="flutter">
-        <i class="fas fa-mobile-alt skill-icon"></i>
-        <span class="skill-name">Flutter</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="android">
-        <i class="fab fa-android skill-icon"></i>
-        <span class="skill-name">Android Studio</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="swift">
-        <i class="fab fa-swift skill-icon"></i>
-        <span class="skill-name">Swift (iOS)</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="tailwind">
-        <i class="fab fa-css3-alt skill-icon"></i>
-        <span class="skill-name">TailwindCSS</span>
-      </div>
-      <div class="skill-card glass-card" data-category="frontend" data-skill="bootstrap">
-        <i class="fab fa-bootstrap skill-icon"></i>
-        <span class="skill-name">Bootstrap</span>
-      </div>
-      
-      <!-- Backend -->
-      <div class="skill-card glass-card" data-category="backend" data-skill="node">
-        <i class="fab fa-node-js skill-icon"></i>
-        <span class="skill-name">Node.js</span>
-      </div>
-      <div class="skill-card glass-card" data-category="backend" data-skill="nest">
-        <i class="fas fa-cubes skill-icon"></i>
-        <span class="skill-name">Nest.js</span>
-      </div>
-      <div class="skill-card glass-card" data-category="backend" data-skill="express">
-        <i class="fas fa-server skill-icon"></i>
-        <span class="skill-name">Express.js</span>
-      </div>
-      <div class="skill-card glass-card" data-category="backend" data-skill="php">
-        <i class="fab fa-php skill-icon"></i>
-        <span class="skill-name">PHP</span>
-      </div>
-      <div class="skill-card glass-card" data-category="backend" data-skill="sequelize">
-        <i class="fas fa-database skill-icon"></i>
-        <span class="skill-name">Sequelize</span>
-      </div>
-      <div class="skill-card glass-card" data-category="backend" data-skill="typeorm">
-        <i class="fas fa-server skill-icon"></i>
-        <span class="skill-name">TypeORM</span>
-      </div>
-      <div class="skill-card glass-card" data-category="backend" data-skill="prisma">
-        <i class="fas fa-network-wired skill-icon"></i>
-        <span class="skill-name">Prisma</span>
-      </div>
-      
-      <!-- Languages -->
-      <div class="skill-card glass-card" data-category="languages" data-skill="js">
-        <i class="fab fa-js-square skill-icon"></i>
-        <span class="skill-name">JavaScript</span>
-      </div>
-      <div class="skill-card glass-card" data-category="languages" data-skill="ts">
-        <i class="fas fa-code-branch skill-icon"></i>
-        <span class="skill-name">TypeScript</span>
-      </div>
-      <div class="skill-card glass-card" data-category="languages" data-skill="python">
-        <i class="fab fa-python skill-icon"></i>
-        <span class="skill-name">Python</span>
-      </div>
-      <div class="skill-card glass-card" data-category="languages" data-skill="dart">
-        <i class="fas fa-terminal skill-icon"></i>
-        <span class="skill-name">Dart</span>
-      </div>
-      <div class="skill-card glass-card" data-category="languages" data-skill="swift">
-        <i class="fab fa-swift skill-icon"></i>
-        <span class="skill-name">Swift</span>
-      </div>
-      <div class="skill-card glass-card" data-category="languages" data-skill="sql">
-        <i class="fas fa-database skill-icon"></i>
-        <span class="skill-name">SQL</span>
-      </div>
-      <div class="skill-card glass-card" data-category="languages" data-skill="nosql">
-        <i class="fas fa-leaf skill-icon"></i>
-        <span class="skill-name">NoSQL</span>
-      </div>
-
-      <!-- Tools -->
-      <div class="skill-card glass-card" data-category="tools" data-skill="figma">
-        <i class="fab fa-figma skill-icon"></i>
-        <span class="skill-name">Figma</span>
-      </div>
-      <div class="skill-card glass-card" data-category="tools" data-skill="git">
-        <i class="fab fa-git-alt skill-icon"></i>
-        <span class="skill-name">Git</span>
-      </div>
-      <div class="skill-card glass-card" data-category="tools" data-skill="github">
-        <i class="fab fa-github skill-icon"></i>
-        <span class="skill-name">GitHub</span>
-      </div>
-      <div class="skill-card glass-card" data-category="tools" data-skill="gitlab">
-        <i class="fab fa-gitlab skill-icon"></i>
-        <span class="skill-name">GitLab</span>
-      </div>
-      <div class="skill-card glass-card" data-category="tools" data-skill="ai">
-        <i class="fas fa-brain skill-icon"></i>
-        <span class="skill-name">AI Tools</span>
-      </div>
-      <div class="skill-card glass-card" data-category="tools" data-skill="videocoding">
-        <i class="fas fa-video skill-icon"></i>
-        <span class="skill-name">Video Coding</span>
-      </div>
-      <div class="skill-card glass-card" data-category="tools" data-skill="fullstack">
-        <i class="fas fa-layer-group skill-icon"></i>
-        <span class="skill-name">Full Stack</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Experience Section -->
-  <section id="experience" class="reveal">
-    <div class="section-header">
-      <h2 class="section-title" data-translate="experienceTitle">Work Experience</h2>
-    </div>
-    
-    <div class="timeline">
-      <!-- Experience Item 1 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card glass-card">
-          <div class="timeline-date" data-translate="expTimeFreelance">2023 – Present</div>
-          <h3 class="timeline-title" data-translate="expRoleFreelance">Freelance Developer & Banking Sector</h3>
-          <div class="timeline-company"><i class="fas fa-building"></i> Banking & Finance Sector</div>
-          <p class="timeline-desc" data-translate="expDescFreelance">Designing and developing robust solutions, supporting internal bank infrastructures, and handling diverse client requirements.</p>
-        </div>
-      </div>
-      
-      <!-- Experience Item 2 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card glass-card">
-          <div class="timeline-date" data-translate="expTimeLaosIt">2022 – 2023</div>
-          <h3 class="timeline-title" data-translate="expRoleLaosIt">Front-End Developer</h3>
-          <div class="timeline-company"><i class="fas fa-building"></i> Laos IT Capital</div>
-          <p class="timeline-desc" data-translate="expDescLaosIt">Built modular front-end components, collaborated with UI/UX designers, and optimized application speed and responsiveness.</p>
-        </div>
-      </div>
-      
-      <!-- Experience Item 3 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card glass-card">
-          <div class="timeline-date" data-translate="expTimeLaiLaoLab">2021 – 2022</div>
-          <h3 class="timeline-title" data-translate="expRoleLaiLaoLab">Front-End & Back-End Developer</h3>
-          <div class="timeline-company"><i class="fas fa-building"></i> LaiLaoLab ICT Solution</div>
-          <p class="timeline-desc" data-translate="expDescLaiLaoLab">Developed end-to-end web apps, created RESTful APIs, and maintained databases for governmental and enterprise clients.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="reveal">
-    <div class="section-header">
-      <h2 class="section-title" data-translate="educationTitle">Education</h2>
-    </div>
-    
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card glass-card">
-          <div class="timeline-date" data-translate="eduTime">2019 – 2023</div>
-          <h3 class="timeline-title" data-translate="eduDegree">Bachelor of Website Development</h3>
-          <div class="timeline-company"><i class="fas fa-university"></i> National University of Laos</div>
-          <p class="timeline-desc" data-translate="eduDesc">Completed academic training focused on web architectures, database management, software engineering principles, and design aesthetics.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GitHub Activity Graphs Section -->
-  <section id="github" class="reveal">
-    <div class="section-header">
-      <h2 class="section-title" data-translate="githubTitle">GitHub Contributions & Stats</h2>
-      <p class="section-subtitle" data-translate="githubSubtitle">My active contribution patterns and coding indicators directly from GitHub.</p>
-    </div>
-    
-    <div class="github-grid">
-      <!-- Activity Graph -->
-      <div class="github-chart glass-card">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=008080&line=008080&point=417E87&area_color=008080&title_color=008080&area=true" alt="GitHub Activity Graph" />
-      </div>
-      
-      <!-- Languages Rows -->
-      <div class="github-cards-row">
-        <div class="github-card-wrapper glass-card">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights" alt="Top Languages">
-        </div>
-        <div class="github-card-wrapper glass-card">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
-        </div>
-        <div class="github-card-wrapper glass-card">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Most Commit Language">
-        </div>
-      </div>
-      
-      <!-- Stats Rows -->
-      <div class="github-cards-row">
-        <div class="github-card-wrapper glass-card">
-          <img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights" alt="GitHub Stats">
-        </div>
-        <div class="github-card-wrapper glass-card">
-          <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080" alt="Profile Details">
-        </div>
-      </div>
-
-      <!-- Contribution Snake Game -->
-      <div class="github-chart glass-card">
-        <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake animation" style="width:100%" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="reveal">
-    <div class="section-header">
-      <h2 class="section-title" data-translate="contactTitle">Get In Touch</h2>
-      <p class="section-subtitle" data-translate="contactSubtitle">Have a project in mind, want to collaborate, or just say hello? Drop a message below!</p>
-    </div>
-    
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="contact-method glass-card">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div>
-            <div class="contact-lbl">Email</div>
-            <a href="mailto:huevang.xio@gmail.com" class="contact-val">huevang.xio@gmail.com</a>
-          </div>
-        </div>
-        
-        <div class="contact-method glass-card">
-          <div class="contact-icon">
-            <i class="fab fa-github"></i>
-          </div>
-          <div>
-            <div class="contact-lbl">GitHub</div>
-            <a href="https://github.com/huevangxp" target="_blank" class="contact-val">github.com/huevangxp</a>
-          </div>
-        </div>
-        
-        <div class="contact-method glass-card">
-          <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div>
-            <div class="contact-lbl">Location</div>
-            <span class="contact-val" data-translate="aboutLocation">Based in Vientiane, Laos</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Contact Form -->
-      <div class="contact-form-card glass-card">
-        <form id="contact-form">
-          <div class="form-group">
-            <label class="form-label" for="form-name" data-translate="formName">Your Name</label>
-            <input type="text" id="form-name" class="form-input" required data-translate-placeholder="formName">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="form-email" data-translate="formEmail">Your Email Address</label>
-            <input type="email" id="form-email" class="form-input" required data-translate-placeholder="formEmail">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="form-message" data-translate="formMessage">Your Message</label>
-            <textarea id="form-message" class="form-input" required data-translate-placeholder="formMessage"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <span data-translate="formSubmit">Send Message</span>
-            <i class="fas fa-paper-plane"></i>
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button
+            id="theme-toggle"
+            class="ctrl-btn"
+            title="Toggle Light/Dark Theme"
+          >
+            <i class="fas fa-sun"></i>
           </button>
-          
-          <div id="form-feedback" class="form-feedback"></div>
-        </form>
+          <!-- Language Toggle Button -->
+          <button
+            id="lang-toggle"
+            class="ctrl-btn lang-btn"
+            title="Switch Language"
+          >
+            LA
+          </button>
+          <!-- Mobile Menu Toggle Hamburger -->
+          <div id="mobile-toggle" class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer -->
-  <footer>
-    <p data-translate="footerText">Designed & Built with ❤️ by huevangxp. All rights reserved.</p>
-  </footer>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal active">
+        <span class="hero-greet" data-translate="heroGreeting"
+          >Hi Everyone, I'm</span
+        >
+        <h1 class="hero-name">huevangxp XIOGNPOR</h1>
 
-  <!-- Scripts -->
-  <script src="translation.js"></script>
-  <script src="script.js"></script>
-</body>
+        <!-- Rotating Typed Titles -->
+        <div class="typing-container">
+          <span class="typing-static">I am a </span>
+          <span class="typing-dynamic" id="typing-text"
+            >Full-Stack Developer</span
+          >
+          <span class="typing-cursor"></span>
+        </div>
+
+        <p class="hero-desc" data-translate="heroSubtitle">
+          Nice to meet you! Let's build something amazing together!
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#about" class="btn btn-primary">
+            <span data-translate="heroCtaExplore">Explore Portfolio</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span data-translate="heroCtaContact">Get In Touch</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal active">
+        <div class="visual-box">
+          <div class="avatar-backdrop"></div>
+          <div class="avatar-border">
+            <div class="avatar-inner">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="aboutTitle">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <p data-translate="aboutText">
+            I’m a passionate full-stack developer with years of experience in
+            both front-end and back-end roles. I’ve contributed to various
+            projects for government and software companies, specializing in
+            scalable architectures and responsive user interfaces. I’m dedicated
+            to staying current with technology trends and bringing creativity to
+            every project.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <h3 class="highlight-title" data-translate="aboutNuol">
+                Bachelor of Website Development
+              </h3>
+              <p class="highlight-desc">
+                National University of Laos (2019-2023)
+              </p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h3 class="highlight-title" data-translate="aboutLocation">
+                Based in Vientiane, Laos
+              </h3>
+              <p class="highlight-desc">
+                Available for remote & hybrid opportunities
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="skillsTitle">
+          Programming Skills
+        </h2>
+        <p class="section-subtitle" data-translate="skillsSubtitle">
+          Technologies and frameworks I use to build premium, modern web and
+          mobile applications.
+        </p>
+      </div>
+
+      <!-- Skills Categories Filter Tab -->
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-filter="all">All Tech</button>
+        <button
+          class="tab-btn"
+          data-filter="frontend"
+          data-translate="skillsCategoryFrontend"
+        >
+          Frontend
+        </button>
+        <button
+          class="tab-btn"
+          data-filter="backend"
+          data-translate="skillsCategoryBackend"
+        >
+          Backend
+        </button>
+        <button
+          class="tab-btn"
+          data-filter="languages"
+          data-translate="skillsCategoryLanguages"
+        >
+          Languages
+        </button>
+        <button
+          class="tab-btn"
+          data-filter="tools"
+          data-translate="skillsCategoryTools"
+        >
+          Tools
+        </button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="react"
+        >
+          <i class="fab fa-react skill-icon"></i>
+          <span class="skill-name">React / Native</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="vue"
+        >
+          <i class="fab fa-vuejs skill-icon"></i>
+          <span class="skill-name">Vue.js</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="nuxt"
+        >
+          <i class="fab fa-vuejs skill-icon"></i>
+          <span class="skill-name">Nuxt.js</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="flutter"
+        >
+          <i class="fas fa-mobile-alt skill-icon"></i>
+          <span class="skill-name">Flutter</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="android"
+        >
+          <i class="fab fa-android skill-icon"></i>
+          <span class="skill-name">Android Studio</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="swift"
+        >
+          <i class="fab fa-swift skill-icon"></i>
+          <span class="skill-name">Swift (iOS)</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="tailwind"
+        >
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <span class="skill-name">TailwindCSS</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="frontend"
+          data-skill="bootstrap"
+        >
+          <i class="fab fa-bootstrap skill-icon"></i>
+          <span class="skill-name">Bootstrap</span>
+        </div>
+
+        <!-- Backend -->
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="node"
+        >
+          <i class="fab fa-node-js skill-icon"></i>
+          <span class="skill-name">Node.js</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="nest"
+        >
+          <i class="fas fa-cubes skill-icon"></i>
+          <span class="skill-name">Nest.js</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="express"
+        >
+          <i class="fas fa-server skill-icon"></i>
+          <span class="skill-name">Express.js</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="php"
+        >
+          <i class="fab fa-php skill-icon"></i>
+          <span class="skill-name">PHP</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="sequelize"
+        >
+          <i class="fas fa-database skill-icon"></i>
+          <span class="skill-name">Sequelize</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="typeorm"
+        >
+          <i class="fas fa-server skill-icon"></i>
+          <span class="skill-name">TypeORM</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="backend"
+          data-skill="prisma"
+        >
+          <i class="fas fa-network-wired skill-icon"></i>
+          <span class="skill-name">Prisma</span>
+        </div>
+
+        <!-- Languages -->
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="js"
+        >
+          <i class="fab fa-js-square skill-icon"></i>
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="ts"
+        >
+          <i class="fas fa-code-branch skill-icon"></i>
+          <span class="skill-name">TypeScript</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="python"
+        >
+          <i class="fab fa-python skill-icon"></i>
+          <span class="skill-name">Python</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="dart"
+        >
+          <i class="fas fa-terminal skill-icon"></i>
+          <span class="skill-name">Dart</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="swift"
+        >
+          <i class="fab fa-swift skill-icon"></i>
+          <span class="skill-name">Swift</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="sql"
+        >
+          <i class="fas fa-database skill-icon"></i>
+          <span class="skill-name">SQL</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="languages"
+          data-skill="nosql"
+        >
+          <i class="fas fa-leaf skill-icon"></i>
+          <span class="skill-name">NoSQL</span>
+        </div>
+
+        <!-- Tools -->
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="figma"
+        >
+          <i class="fab fa-figma skill-icon"></i>
+          <span class="skill-name">Figma</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="git"
+        >
+          <i class="fab fa-git-alt skill-icon"></i>
+          <span class="skill-name">Git</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="github"
+        >
+          <i class="fab fa-github skill-icon"></i>
+          <span class="skill-name">GitHub</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="gitlab"
+        >
+          <i class="fab fa-gitlab skill-icon"></i>
+          <span class="skill-name">GitLab</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="ai"
+        >
+          <i class="fas fa-brain skill-icon"></i>
+          <span class="skill-name">AI Tools</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="videocoding"
+        >
+          <i class="fas fa-video skill-icon"></i>
+          <span class="skill-name">Video Coding</span>
+        </div>
+        <div
+          class="skill-card glass-card"
+          data-category="tools"
+          data-skill="fullstack"
+        >
+          <i class="fas fa-layer-group skill-icon"></i>
+          <span class="skill-name">Full Stack</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="experienceTitle">
+          Work Experience
+        </h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date" data-translate="expTimeFreelance">
+              2023 – Present
+            </div>
+            <h3 class="timeline-title" data-translate="expRoleFreelance">
+              Freelance Developer & Banking Sector
+            </h3>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> Banking & Finance Sector
+            </div>
+            <p class="timeline-desc" data-translate="expDescFreelance">
+              Designing and developing robust solutions, supporting internal
+              bank infrastructures, and handling diverse client requirements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date" data-translate="expTimeLaosIt">
+              2022 – 2023
+            </div>
+            <h3 class="timeline-title" data-translate="expRoleLaosIt">
+              Front-End Developer
+            </h3>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> Laos IT Capital
+            </div>
+            <p class="timeline-desc" data-translate="expDescLaosIt">
+              Built modular front-end components, collaborated with UI/UX
+              designers, and optimized application speed and responsiveness.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date" data-translate="expTimeLaiLaoLab">
+              2021 – 2022
+            </div>
+            <h3 class="timeline-title" data-translate="expRoleLaiLaoLab">
+              Front-End & Back-End Developer
+            </h3>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> LaiLaoLab ICT Solution
+            </div>
+            <p class="timeline-desc" data-translate="expDescLaiLaoLab">
+              Developed end-to-end web apps, created RESTful APIs, and
+              maintained databases for governmental and enterprise clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="educationTitle">Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date" data-translate="eduTime">
+              2019 – 2023
+            </div>
+            <h3 class="timeline-title" data-translate="eduDegree">
+              Bachelor of Website Development
+            </h3>
+            <div class="timeline-company">
+              <i class="fas fa-university"></i> National University of Laos
+            </div>
+            <p class="timeline-desc" data-translate="eduDesc">
+              Completed academic training focused on web architectures, database
+              management, software engineering principles, and design
+              aesthetics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Activity Graphs Section -->
+    <section id="github" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="githubTitle">
+          GitHub Contributions & Stats
+        </h2>
+        <p class="section-subtitle" data-translate="githubSubtitle">
+          My active contribution patterns and coding indicators directly from
+          GitHub.
+        </p>
+      </div>
+
+      <div class="github-grid">
+        <!-- Activity Graph -->
+        <div class="github-chart glass-card">
+          <img
+            src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=008080&line=008080&point=417E87&area_color=008080&title_color=008080&area=true"
+            alt="GitHub Activity Graph"
+          />
+        </div>
+
+        <!-- Languages Rows -->
+        <div class="github-cards-row">
+          <div class="github-card-wrapper glass-card">
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights"
+              alt="Top Languages"
+            />
+          </div>
+          <div class="github-card-wrapper glass-card">
+            <img
+              src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080"
+              alt="Repos Per Language"
+            />
+          </div>
+          <div class="github-card-wrapper glass-card">
+            <img
+              src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080"
+              alt="Most Commit Language"
+            />
+          </div>
+        </div>
+
+        <!-- Stats Rows -->
+        <div class="github-cards-row">
+          <div class="github-card-wrapper glass-card">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights"
+              alt="GitHub Stats"
+            />
+          </div>
+          <div class="github-card-wrapper glass-card">
+            <img
+              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080"
+              alt="Profile Details"
+            />
+          </div>
+        </div>
+
+        <!-- Contribution Snake Game -->
+        <div class="github-chart glass-card">
+          <img
+            src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg"
+            alt="Snake animation"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="contactTitle">
+          Get In Touch
+        </h2>
+        <p class="section-subtitle" data-translate="contactSubtitle">
+          Have a project in mind, want to collaborate, or just say hello? Drop a
+          message below!
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-method glass-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-lbl">Email</div>
+              <a href="mailto:huevang.xio@gmail.com" class="contact-val"
+                >huevang.xio@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-method glass-card">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <div class="contact-lbl">GitHub</div>
+              <a
+                href="https://github.com/huevangxp"
+                target="_blank"
+                class="contact-val"
+                >github.com/huevangxp</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-method glass-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <div class="contact-lbl">Location</div>
+              <span class="contact-val" data-translate="aboutLocation"
+                >Based in Vientiane, Laos</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label
+                class="form-label"
+                for="form-name"
+                data-translate="formName"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="form-name"
+                class="form-input"
+                required
+                data-translate-placeholder="formName"
+              />
+            </div>
+            <div class="form-group">
+              <label
+                class="form-label"
+                for="form-email"
+                data-translate="formEmail"
+                >Your Email Address</label
+              >
+              <input
+                type="email"
+                id="form-email"
+                class="form-input"
+                required
+                data-translate-placeholder="formEmail"
+              />
+            </div>
+            <div class="form-group">
+              <label
+                class="form-label"
+                for="form-message"
+                data-translate="formMessage"
+                >Your Message</label
+              >
+              <textarea
+                id="form-message"
+                class="form-input"
+                required
+                data-translate-placeholder="formMessage"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span data-translate="formSubmit">Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p data-translate="footerText">
+        Designed & Built with ❤️ by huevangxp. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translation.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
