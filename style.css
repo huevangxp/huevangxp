@@ -556,6 +556,20 @@ section {
 .skill-card[data-skill="python"] .skill-icon { color: #3776ab; }
 .skill-card[data-skill="sql"] .skill-icon { color: #4479a1; }
 .skill-card[data-skill="nosql"] .skill-icon { color: #3c873a; }
+.skill-card[data-skill="vue"] .skill-icon { color: #4fc08d; }
+.skill-card[data-skill="android"] .skill-icon { color: #3ddc84; }
+.skill-card[data-skill="swift"] .skill-icon { color: #f05138; }
+.skill-card[data-skill="sequelize"] .skill-icon { color: #52b0e7; }
+.skill-card[data-skill="typeorm"] .skill-icon { color: #fcad00; }
+.skill-card[data-skill="prisma"] .skill-icon { color: #16a34a; }
+.skill-card[data-skill="dart"] .skill-icon { color: #0175c2; }
+.skill-card[data-skill="figma"] .skill-icon { color: #f24e1e; }
+.skill-card[data-skill="git"] .skill-icon { color: #f05032; }
+.skill-card[data-skill="github"] .skill-icon { color: var(--text-primary); }
+.skill-card[data-skill="gitlab"] .skill-icon { color: #fc6d26; }
+.skill-card[data-skill="ai"] .skill-icon { color: #0078d4; }
+.skill-card[data-skill="videocoding"] .skill-icon { color: #8a2be2; }
+.skill-card[data-skill="fullstack"] .skill-icon { color: #008080; }
 
 /* Timeline Section (Experience & Education) */
 .timeline {
