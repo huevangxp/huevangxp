@@ -156,6 +156,7 @@ function highlightActiveNavLink() {
 // Mobile navigation menu toggle
 mobileMenuToggle.addEventListener('click', () => {
   navMenu.classList.toggle('active');
+  bodyEl.classList.toggle('menu-open', navMenu.classList.contains('active'));
   const icon = mobileMenuToggle.querySelector('i');
   icon.classList.toggle('fa-bars');
   icon.classList.toggle('fa-times');
@@ -165,6 +166,7 @@ mobileMenuToggle.addEventListener('click', () => {
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');
+    bodyEl.classList.remove('menu-open');
     const icon = mobileMenuToggle.querySelector('i');
     icon.classList.add('fa-bars');
     icon.classList.remove('fa-times');
