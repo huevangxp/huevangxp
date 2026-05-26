@@ -1,5 +1,5 @@
 <h1 align="center"> 
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Noto+Sans+Lao&size=35&center=true&width=900&color=008080&height=70&duration=4000&lines=Hi+Everyone;ສະບາຍດີທຸກຄົນ;I'm+huevangxp+XIOGNPOR;ຂ້ອຍແມ່ນ+huevangxp+XIOGNPOR;I+am+a+full-stack+developer;ຂ້ອຍເປັນນັກພັດທະນາ+Full-Stack;Nice+to+meet+you;ຍິນດີທີ່ໄດ້ຮູ້ຈັກ;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&width=900&color=008080&height=70&duration=4000&lines=Hi+Everyone;+I'm+huevangxp+XIOGNPOR;I+am+a+full-stack+developer;Nice+to+meet+you;" />
 </h1> 
 
 <div align="center">
@@ -18,46 +18,30 @@
 
 ---
 
-## 👤 About Me / ກ່ຽວກັບຂ້ອຍ
+## 👤 About Me
 
-<table>
-  <tr>
-    <td><b>English</b></td>
-    <td><b>ລາວ (Lao)</b></td>
-  </tr>
-  <tr>
-    <td valign="top" width="50%">
-      I’m a passionate full-stack developer with years of experience in both front-end and back-end roles. I’ve contributed to various projects for government and software companies, specializing in scalable architectures and responsive user interfaces. I’m dedicated to staying current with technology trends and bringing creativity to every project.
-    </td>
-    <td valign="top" width="50%">
-      ຂ້ອຍເປັນນັກພັດທະນາ Full-Stack ທີ່ມີຄວາມມຸ່ງໝັ້ນ ແລະ ມີປະສົບການຫຼາຍປີທັງໃນດ້ານ Front-End ແລະ Back-End. ຂ້ອຍໄດ້ມີສ່ວນຮ່ວມໃນໂຄງການຕ່າງໆ ສໍາລັບພາກລັດ ແລະ ບໍລິສັດຊອບແວ ໂດຍມີຄວາມຊ່ຽວຊານໃນການອອກແບບສະຖາປັດຕະຍະກໍາທີ່ຮອງຮັບການຂະຫຍາຍຕົວ ແລະ ຫນ້າຕ່າງຜູ້ໃຊ້ທີ່ຕອບສະຫນອງໄດ້ດີ. ຂ້ອຍຕັ້ງໃຈທີ່ຈະຕິດຕາມທ່າອ່ຽງເຕັກໂນໂລຢີໃຫມ່ໆ ແລະ ນຳເອົາຄວາມຄິດສ້າງສັນມາສູ່ທຸກໆໂຄງການ.
-    </td>
-  </tr>
-</table>
+I’m a passionate full-stack developer with years of experience in both front-end and back-end roles. I’ve contributed to various projects for government and software companies, specializing in scalable architectures and responsive user interfaces. I’m dedicated to staying current with technology trends and bringing creativity to every project.
 
 ---
 
-## 🎓 Education / ປະຫວັດການສຶກສາ
+## 🎓 Education
 
-- 🎓 **2019–2023**: Bachelor of Website Development, National University of Laos (ປະລິນຍາຕີ ສາຂາການພັດທະນາເວັບໄຊ, ມະຫາວິທະຍາໄລແຫ່ງຊາດລາວ)
-
----
-
-## 👩‍💻 Work Experience / ປະສົບການເຮັດວຽກ
-
-- 💼 **2023–Present**: Freelance Developer & Working in Banking Sector
-  - *EN*: Designing and developing robust solutions, supporting internal bank infrastructures, and handling diverse client requirements.
-  - *LA*: ອອກແບບ ແລະ ພັດທະນາລະບົບຊອບແວທີ່ແຂງແກ່ນ, ສະໜັບສະໜູນໂຄງລ່າງພື້ນຖານພາຍໃນຂອງທະນາຄານ ແລະ ຈັດການກັບຄວາມຕ້ອງການທີ່ຫຼາກຫຼາຍຂອງລູກຄ້າ.
-- 💼 **2022–2023**: Front-End Developer at Laos IT Capital
-  - *EN*: Built modular front-end components, collaborated with UI/UX designers, and optimized application speed and responsiveness.
-  - *LA*: ສ້າງສ່ວນປະກອບ Front-End ແບບໂມດູນ, ຮ່ວມມືກັບນັກອອກແບບ UI/UX, ແລະ ປັບປຸງຄວາມໄວ ແລະ ຄວາມຕອບສະໜອງຂອງແອັບພລິເຄຊັນ.
-- 💼 **2021–2022**: Front-End & Back-End Developer at LaiLaoLab ICT Solution
-  - *EN*: Developed end-to-end web apps, created RESTful APIs, and maintained databases for governmental and enterprise clients.
-  - *LA*: ພັດທະນາເວັບແອັບພລິເຄຊັນແບບຄົບວົງຈອນ (End-to-End), ສ້າງ RESTful APIs, ແລະ ດູແລຮັກສາຖານຂໍ້ມູນສຳລັບລູກຄ້າພາກລັດ ແລະ ວິສາຫະກິດ.
+- **2019–2023**: Bachelor of Website Development, National University of Laos
 
 ---
 
-## 🛠️ Programming Skills / ທັກສະການຂຽນໂປຣແກຣມ
+## 👩‍💻 Work Experience
+
+- **2023–Present**: Freelance Developer & Working in Banking Sector
+  - Designing and developing robust solutions, supporting internal bank infrastructures, and handling diverse client requirements.
+- **2022–2023**: Front-End Developer at Laos IT Capital
+  - Built modular front-end components, collaborated with UI/UX designers, and optimized application speed and responsiveness.
+- **2021–2022**: Front-End & Back-End Developer at LaiLaoLab ICT Solution
+  - Developed end-to-end web apps, created RESTful APIs, and maintained databases for governmental and enterprise clients.
+
+---
+
+## 🛠️ Programming Skills
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge)
@@ -83,7 +67,7 @@
 
 ---
 
-## 📊 GitHub Statistics / ສະຖິຕິ GitHub
+## 📊 GitHub Statistics
 
 <div align="center">
   <table>
@@ -115,16 +99,16 @@
 
 ---
 
-## 🚀 Running the Web Portfolio Locally / ວິທີການເປີດເວັບໄຊໃນເຄື່ອງ
+## 🚀 Running the Web Portfolio Locally
 
-This repository now contains a premium, interactive, bilingual single-page application. To launch it on your local system:
+This repository contains a premium, interactive, bilingual single-page application. To launch it on your local system:
 
 1. **Directly**: Open the [index.html](index.html) file in any web browser (Chrome, Edge, Firefox, Safari).
-2. **Local Server (Recommended)**: Use a light-weight static file server to run it. If you have VS Code, use the **Live Server** extension, or run:
+2. **Local Server (Recommended)**: Use a lightweight static file server to run it. If you have VS Code, use the **Live Server** extension, or run:
    ```bash
    npx serve .
    ```
-   Or using python:
+   Or using Python:
    ```bash
    python -m http.server 8000
    ```
@@ -132,6 +116,6 @@ This repository now contains a premium, interactive, bilingual single-page appli
 ---
 
 <p align="center">
-  <b>Thank you for visiting my profile! / ຂອບໃຈທີ່ເຂົ້າມາຢ້ຽມຊົມ!</b> <br>
-  <i>Let's build something amazing together! / ມາຮ່ວມກັນສ້າງສິ່ງທີ່ຍອດຢ້ຽມໄປນຳກັນ!</i>
+  <b>Thank you for visiting my profile!</b> <br>
+  <i>Let's build something amazing together!</i>
 </p>
