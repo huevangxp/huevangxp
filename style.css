@@ -1058,9 +1058,9 @@ footer {
 .github-stat-num {
   font-size: 2.2rem;
   font-weight: 800;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent);
+  text-shadow: 0 2px 10px rgba(var(--accent-rgb), 0.15);
+  transition: var(--transition);
 }
 
 .github-stat-label {
