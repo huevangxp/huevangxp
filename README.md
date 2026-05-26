@@ -108,35 +108,11 @@ I’m a passionate full-stack developer with years of experience in both front-e
 
 ---
 
-## 🚀 Running the Web Portfolio Locally
+## 🌐 Live Interactive Portfolio
 
-This repository contains a premium, interactive, bilingual single-page application. To launch it on your local system:
+Experience my modern, bilingual (English & Lao) portfolio website complete with active canvas animations and live GitHub dashboards directly in your browser:
 
-1. **Directly**: Open the [index.html](index.html) file in any web browser (Chrome, Edge, Firefox, Safari).
-2. **Local Server (Recommended)**: Use a lightweight static file server to run it. If you have VS Code, use the **Live Server** extension, or run:
-   ```bash
-   npx serve .
-   ```
-   Or using Python:
-   ```bash
-   python -m http.server 8000
-   ```
-
----
-
-## 🚀 Deploying to GitHub Pages (`github.io`)
-
-Since this portfolio is built with pure static files (HTML, CSS, and JS), you can deploy it for free on GitHub Pages:
-
-1. Push all files to your GitHub repository (using your automated `auto_commit.bat` script).
-2. Go to your repository page on GitHub.
-3. Click on the **Settings** tab at the top.
-4. On the left sidebar, locate the **Code and automation** section and click on **Pages**.
-5. Under **Build and deployment**:
-   - Set **Source** to `Deploy from a branch`.
-   - Set **Branch** to `main` (or `master`) and folder to `/ (root)`.
-   - Click **Save**.
-6. GitHub will automatically deploy your site to `https://<your-username>.github.io/<repository-name>/` within a couple of minutes!
+👉 **[https://huevangxp.github.io/huevangxp/](https://huevangxp.github.io/huevangxp/)**
 
 ---
 
