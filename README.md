@@ -124,6 +124,22 @@ This repository contains a premium, interactive, bilingual single-page applicati
 
 ---
 
+## 🚀 Deploying to GitHub Pages (`github.io`)
+
+Since this portfolio is built with pure static files (HTML, CSS, and JS), you can deploy it for free on GitHub Pages:
+
+1. Push all files to your GitHub repository (using your automated `auto_commit.bat` script).
+2. Go to your repository page on GitHub.
+3. Click on the **Settings** tab at the top.
+4. On the left sidebar, locate the **Code and automation** section and click on **Pages**.
+5. Under **Build and deployment**:
+   - Set **Source** to `Deploy from a branch`.
+   - Set **Branch** to `main` (or `master`) and folder to `/ (root)`.
+   - Click **Save**.
+6. GitHub will automatically deploy your site to `https://<your-username>.github.io/<repository-name>/` within a couple of minutes!
+
+---
+
 <p align="center">
   <b>Thank you for visiting my profile!</b> <br>
   <i>Let's build something amazing together!</i>
