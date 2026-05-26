@@ -489,8 +489,11 @@ function initGitHubDashboard() {
     const el = document.getElementById(id);
     if (!el) return;
     el.classList.remove('skeleton');
+    el.classList.remove('skeleton-text');
+    el.classList.remove('short');
     if (el.parentElement && el.parentElement.classList.contains('skeleton')) {
       el.parentElement.classList.remove('skeleton');
+      el.parentElement.classList.remove('skeleton-text');
     }
   }
 
