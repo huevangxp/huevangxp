@@ -1007,6 +1007,7 @@ footer {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  color: transparent;
 }
 
 .github-profile-info h3 {
@@ -1228,6 +1229,13 @@ footer {
   background-size: 200% 100%;
   animation: skeleton-sweep 1.5s infinite linear;
   border-radius: 4px;
+  color: transparent !important;
+  user-select: none;
+  pointer-events: none;
+}
+
+.skeleton * {
+  opacity: 0 !important;
 }
 
 @keyframes skeleton-sweep {
