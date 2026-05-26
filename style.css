@@ -1232,6 +1232,7 @@ footer {
   color: transparent !important;
   user-select: none;
   pointer-events: none;
+  padding-bottom: 20px;
 }
 
 .skeleton * {
