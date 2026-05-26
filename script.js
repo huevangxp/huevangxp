@@ -412,53 +412,87 @@ function initGitHubDashboard() {
       return res.json();
     })
     .then(data => {
-      // Update info
-      const avatarImg = document.getElementById('github-profile-pic');
-      const profileName = document.getElementById('github-profile-name');
-      const profileBio = document.getElementById('github-profile-bio');
-      const profileCompany = document.getElementById('github-profile-company');
-      const profileLocation = document.getElementById('github-profile-location');
-      const profileUrl = document.getElementById('github-profile-url');
+      try {
+        // Update info
+        const avatarImg = document.getElementById('github-profile-pic');
+        const profileName = document.getElementById('github-profile-name');
+        const profileBio = document.getElementById('github-profile-bio');
+        const profileCompany = document.getElementById('github-profile-company');
+        const profileLocation = document.getElementById('github-profile-location');
+        const profileUrl = document.getElementById('github-profile-url');
 
-      if (avatarImg) avatarImg.src = data.avatar_url;
-      if (profileName) profileName.textContent = data.name || data.login;
-      if (profileBio) profileBio.textContent = data.bio || "Full-Stack Developer | Banking Sector";
-      
-      if (profileCompany) {
-        profileCompany.innerHTML = `<i class="fas fa-building"></i> ${data.company || 'Freelance'}`;
-      }
-      if (profileLocation) {
-        profileLocation.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${data.location || 'Vientiane, Laos'}`;
-      }
-      if (profileUrl) {
-        profileUrl.href = data.html_url;
-      }
+        if (avatarImg && data.avatar_url) avatarImg.src = data.avatar_url;
+        if (profileName) profileName.textContent = data.name || data.login;
+        if (profileBio) profileBio.textContent = data.bio || "Full-Stack Developer | Banking Sector";
+        
+        if (profileCompany) {
+          profileCompany.innerHTML = `<i class="fas fa-building"></i> ${data.company || 'Freelance'}`;
+        }
+        if (profileLocation) {
+          profileLocation.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${data.location || 'Vientiane, Laos'}`;
+        }
+        if (profileUrl) {
+          profileUrl.href = data.html_url;
+        }
 
-      // Animate Stats Counts
-      animateCount('github-repos-count', data.public_repos);
-      animateCount('github-followers-count', data.followers);
-      animateCount('github-following-count', data.following);
-      animateCount('github-gists-count', data.public_gists);
-
-      // Remove skeletons
-      document.querySelectorAll('.github-dashboard .skeleton').forEach(el => el.classList.remove('skeleton'));
+        // Animate Stats Counts
+        animateCount('github-repos-count', data.public_repos || 0);
+        animateCount('github-followers-count', data.followers || 0);
+        animateCount('github-following-count', data.following || 0);
+        animateCount('github-gists-count', data.public_gists || 0);
+      } catch (err) {
+        console.error("Error populating GitHub stats:", err);
+      } finally {
+        // Always remove skeletons for these elements
+        removeSkeleton('github-profile-pic');
+        removeSkeleton('github-profile-name');
+        removeSkeleton('github-profile-bio');
+        removeSkeleton('github-repos-count');
+        removeSkeleton('github-followers-count');
+        removeSkeleton('github-following-count');
+        removeSkeleton('github-gists-count');
+      }
     })
     .catch(err => {
       console.warn("GitHub API error, using static fallback:", err);
-      // Mock stats fallback if rate-limited
-      const avatarImg = document.getElementById('github-profile-pic');
-      if (avatarImg) avatarImg.src = "https://avatars.githubusercontent.com/u/84102927?v=4";
+      try {
+        // Mock stats fallback if rate-limited
+        const avatarImg = document.getElementById('github-profile-pic');
+        if (avatarImg) avatarImg.src = "https://avatars.githubusercontent.com/u/84102927?v=4";
 
-      document.getElementById('github-profile-name').textContent = "huevangxp";
-      document.getElementById('github-profile-bio').textContent = "Full-Stack Developer | Banking Systems Specialist";
-      
-      animateCount('github-repos-count', 45);
-      animateCount('github-followers-count', 12);
-      animateCount('github-following-count', 15);
-      animateCount('github-gists-count', 0);
-      
-      document.querySelectorAll('.github-dashboard .skeleton').forEach(el => el.classList.remove('skeleton'));
+        const profileName = document.getElementById('github-profile-name');
+        if (profileName) profileName.textContent = "huevangxp";
+
+        const profileBio = document.getElementById('github-profile-bio');
+        if (profileBio) profileBio.textContent = "Full-Stack Developer | Banking Systems Specialist";
+        
+        animateCount('github-repos-count', 45);
+        animateCount('github-followers-count', 12);
+        animateCount('github-following-count', 15);
+        animateCount('github-gists-count', 0);
+      } catch (fallbackErr) {
+        console.error("Error setting fallback stats:", fallbackErr);
+      } finally {
+        // Always remove skeletons
+        removeSkeleton('github-profile-pic');
+        removeSkeleton('github-profile-name');
+        removeSkeleton('github-profile-bio');
+        removeSkeleton('github-repos-count');
+        removeSkeleton('github-followers-count');
+        removeSkeleton('github-following-count');
+        removeSkeleton('github-gists-count');
+      }
     });
+
+  // Helper function to remove skeleton class from element and parent wrapper
+  function removeSkeleton(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.classList.remove('skeleton');
+    if (el.parentElement && el.parentElement.classList.contains('skeleton')) {
+      el.parentElement.classList.remove('skeleton');
+    }
+  }
 
   // Fetch Repositories
   fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`)
