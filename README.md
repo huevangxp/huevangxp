@@ -1,5 +1,5 @@
 <h1 align="center"> 
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&width=900&color=008080&height=70&duration=4000&lines=Hi+Everyone;+I'm+huevangxp+XIOGNPOR;I+am+a+full-stack+developer;Nice+to+meet+you;" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Noto+Sans+Lao&size=35&center=true&width=900&color=008080&height=70&duration=4000&lines=Hi+Everyone;ສະບາຍດີທຸກຄົນ;I'm+huevangxp+XIOGNPOR;ຂ້ອຍແມ່ນ+huevangxp+XIOGNPOR;I+am+a+full-stack+developer;ຂ້ອຍເປັນນັກພັດທະນາ+Full-Stack;Nice+to+meet+you;ຍິນດີທີ່ໄດ້ຮູ້ຈັກ;" />
 </h1> 
 
 <div align="center">
