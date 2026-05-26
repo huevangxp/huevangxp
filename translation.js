@@ -51,7 +51,9 @@ const translations = {
     eduDegree: "Bachelor of Website Development",
     eduSchool: "National University of Laos",
     eduTime: "2019 – 2023",
-    eduDesc: "Completed academic training focused on web architectures, database management, software engineering principles, and design a    githubTitle: "GitHub Contributions & Stats",
+    eduDesc: "Completed academic training focused on web architectures, database management, software engineering principles, and design aesthetics.",
+
+    githubTitle: "GitHub Contributions & Stats",
     githubSubtitle: "My active contribution patterns and coding indicators directly from GitHub.",
     githubDashboardTitle: "Live GitHub Dashboard",
     githubReposTitle: "Featured Repositories",
@@ -141,35 +143,7 @@ const translations = {
     githubTabGraph: "ກຣາຟກິດຈະກຳ",
     githubTabLangs: "ພາສາທີ່ໃຊ້ຫຼາຍທີ່ສຸດ",
     githubTabStats: "ສະຫຼຸບສະຖິຕິໂປຣໄຟລ໌",
-    githubTabSnake: "ອະນິເມຊັນປະກອບສ່ວນ",
-
-    contactTitle: "ຕິດຕໍ່ຂ້ອຍ",ຄື່ອງມື (Tools)",
-
-    experienceTitle: "ປະສົບການເຮັດວຽກ",
-    expPresent: "ປັດຈຸບັນ",
-    
-    expRoleFreelance: "ນັກພັດທະນາອິດສະຫຼະ & ເຮັດວຽກໃນຂະແໜງການທະນາຄານ",
-    expTimeFreelance: "2023 – ປັດຈຸບັນ",
-    expDescFreelance: "ອອກແບບ ແລະ ພັດທະນາລະບົບຊອບແວທີ່ແຂງແກ່ນ, ສະໜັບສະໜູນໂຄງລ່າງພື້ນຖານພາຍໃນຂອງທະນາຄານ ແລະ ຈັດການກັບຄວາມຕ້ອງການທີ່ຫຼາກຫຼາຍຂອງລູກຄ້າດ້ວຍເຟຣມເວີກທີ່ທັນສະໄໝ.",
-    
-    expRoleLaosIt: "ນັກພັດທະນາ Front-End",
-    expCompanyLaosIt: "Laos IT Capital",
-    expTimeLaosIt: "2022 – 2023",
-    expDescLaosIt: "ສ້າງສ່ວນປະກອບ Front-End ແບບໂມດູນທີ່ມີປະສິດທິພາບສູງ, ຮ່ວມມືກັບນັກອອກແບບ UI/UX ເພື່ອສ້າງໜ້າຕ່າງທີ່ສວຍງາມ, ແລະ ປັບປຸງຄວາມໄວ ແລະ ຄວາມຕອບສະໜອງຂອງແອັບພລິເຄຊັນ.",
-    
-    expRoleLaiLaoLab: "ນັກພັດທະນາ Front-End & Back-End",
-    expCompanyLaiLaoLab: "LaiLaoLab ICT Solution",
-    expTimeLaiLaoLab: "2021 – 2022",
-    expDescLaiLaoLab: "ພັດທະນາເວັບແອັບພລິເຄຊັນແບບຄົບວົງຈອນ (End-to-End), ສ້າງ RESTful APIs ທີ່ມີຄວາມປອດໄພ, ແລະ ດູແລຮັກສາຖານຂໍ້ມູນສຳລັບລູກຄ້າພາກລັດ ແລະ ວິສາຫະກິດ.",
-
-    educationTitle: "ປະຫວັດການສຶກສາ",
-    eduDegree: "ປະລິນຍາຕີ ສາຂາການພັດທະນາເວັບໄຊ",
-    eduSchool: "ມະຫາວິທະຍາໄລແຫ່ງຊາດລາວ",
-    eduTime: "2019 – 2023",
-    eduDesc: "ສຳເລັດການສຶກສາທີ່ເນັ້ນໃສ່ສະຖາປັດຕະຍະກຳເວັບ, ການຈັດການຖານຂໍ້ມູນ, ຫຼັກການວິສະວະກຳຊອບແວ ແລະ ຄວາມງາມຂອງການອອກແບບ.",
-
-    githubTitle: "ກິດຈະກຳ ແລະ ສະຖິຕິ GitHub",
-    githubSubtitle: "ຮູບແບບການປະກອບສ່ວນ ແລະ ຂໍ້ມູນການຂຽນໂຄດຂອງຂ້ອຍໂດຍກົງຈາກ GitHub.",
+    githubTabSnake: "ອະນિເມຊັນປະກອບສ່ວນ",
 
     contactTitle: "ຕິດຕໍ່ຂ້ອຍ",
     contactSubtitle: "ມີໂຄງການໃນໃຈ, ຢາກຮ່ວມງານກັນ ຫຼື ຢາກທັກທາຍບໍ? ສົ່ງຂໍ້ຄວາມຫາຂ້ອຍທາງລຸ່ມນີ້ໄດ້ເລີຍ!",
