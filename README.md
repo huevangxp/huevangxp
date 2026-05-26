@@ -1,14 +1,6 @@
 <h1 align="center"> 
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&width=900&color=008080&height=70&duration=4000&lines=Hi+Everyone;+I'm+huevangxp+XIOGNPOR;I+am+a+full-stack+developer;Nice+to+meet+you;" />
-</h1> 
-
-<div align="center">
-  <a href="index.html">
-    <img src="https://img.shields.io/badge/Live_Portfolio-Interactive_&_Bilingual-008080?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio Badge" />
-  </a>
-  <img src="https://img.shields.io/badge/Language-English_%26_%E0%BA%A5%E0%BA%B2%E0%BA%A7-008080?style=for-the-badge&logo=translate&logoColor=white" alt="Language Badge" />
-  <img src="https://img.shields.io/badge/Aesthetics-Glassmorphism_%26_Particles-008080?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Aesthetics Badge" />
-</div>
+</h1>
 
 <br>
 
@@ -44,6 +36,7 @@ I’m a passionate full-stack developer with years of experience in both front-e
 ## 🛠️ Programming Skills
 
 ### Frontend
+
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge)
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt.js&logoColor=black&style=for-the-badge)
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black&style=for-the-badge)
@@ -53,12 +46,14 @@ I’m a passionate full-stack developer with years of experience in both front-e
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge)
 
 ### Backend
+
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge)
 ![Nest.js](https://img.shields.io/badge/Nest.js-E0234E?logo=nestjs&logoColor=white&style=for-the-badge)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white&style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=for-the-badge)
 
 ### Languages
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
