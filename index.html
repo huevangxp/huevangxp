@@ -552,77 +552,119 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- GitHub Activity Graphs Section -->
+      <!-- GitHub Activity Graphs Section -->
     <section id="github" class="reveal">
       <div class="section-header">
-        <h2 class="section-title" data-translate="githubTitle">
-          GitHub Contributions & Stats
-        </h2>
-        <p class="section-subtitle" data-translate="githubSubtitle">
-          My active contribution patterns and coding indicators directly from
-          GitHub.
-        </p>
+        <h2 class="section-title" data-translate="githubTitle">GitHub Contributions & Stats</h2>
+        <p class="section-subtitle" data-translate="githubSubtitle">My active contribution patterns and coding indicators directly from GitHub.</p>
       </div>
 
-      <div class="github-grid">
-        <!-- Activity Graph -->
-        <div class="github-chart glass-card">
-          <img
-            src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=008080&line=008080&point=417E87&area_color=008080&title_color=008080&area=true"
-            alt="GitHub Activity Graph"
-          />
-        </div>
-
-        <!-- Languages Rows -->
-        <div class="github-cards-row">
-          <div class="github-card-wrapper glass-card">
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights"
-              alt="Top Languages"
-            />
+      <div class="github-dashboard">
+        <!-- Live Profile Panel -->
+        <div class="github-profile-panel glass-card">
+          <div class="github-profile-avatar skeleton skeleton-circle">
+            <img id="github-profile-pic" src="" alt="GitHub Profile">
           </div>
-          <div class="github-card-wrapper glass-card">
-            <img
-              src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080"
-              alt="Repos Per Language"
-            />
-          </div>
-          <div class="github-card-wrapper glass-card">
-            <img
-              src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080"
-              alt="Most Commit Language"
-            />
+          <div class="github-profile-info">
+            <h3 id="github-profile-name" class="skeleton skeleton-text short">Loading...</h3>
+            <p id="github-profile-bio" class="skeleton skeleton-text">Retrieving details...</p>
+            <div class="github-profile-meta">
+              <span id="github-profile-company"><i class="fas fa-building"></i> Company</span>
+              <span id="github-profile-location"><i class="fas fa-map-marker-alt"></i> Location</span>
+              <a id="github-profile-url" href="#" target="_blank"><i class="fab fa-github"></i> View Profile</a>
+            </div>
           </div>
         </div>
 
-        <!-- Stats Rows -->
-        <div class="github-cards-row">
-          <div class="github-card-wrapper glass-card">
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights"
-              alt="GitHub Stats"
-            />
+        <!-- Stats Grid counters -->
+        <div class="github-stats-grid">
+          <div class="github-stat-card glass-card">
+            <div id="github-repos-count" class="github-stat-num skeleton skeleton-text">0</div>
+            <span class="github-stat-label" data-translate="githubStatsRepos">Public Repos</span>
           </div>
-          <div class="github-card-wrapper glass-card">
-            <img
-              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080"
-              alt="Profile Details"
-            />
+          <div class="github-stat-card glass-card">
+            <div id="github-followers-count" class="github-stat-num skeleton skeleton-text">0</div>
+            <span class="github-stat-label" data-translate="githubStatsFollowers">Followers</span>
+          </div>
+          <div class="github-stat-card glass-card">
+            <div id="github-following-count" class="github-stat-num skeleton skeleton-text">0</div>
+            <span class="github-stat-label" data-translate="githubStatsFollowing">Following</span>
+          </div>
+          <div class="github-stat-card glass-card">
+            <div id="github-gists-count" class="github-stat-num skeleton skeleton-text">0</div>
+            <span class="github-stat-label" data-translate="githubStatsGists">Gists</span>
           </div>
         </div>
 
-        <!-- Contribution Snake Game -->
-        <div class="github-chart glass-card">
-          <img
-            src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg"
-            alt="Snake animation"
-            style="width: 100%"
-          />
+        <!-- Featured Repos Grid -->
+        <div>
+          <h3 class="github-repos-header" data-translate="githubReposTitle">Featured Repositories</h3>
+          <div class="repos-grid" id="github-repos-list">
+            <!-- Skeletons loading state -->
+            <div class="repo-card glass-card skeleton skeleton-card-bg">
+              <div class="skeleton skeleton-text short"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="repo-card glass-card skeleton skeleton-card-bg">
+              <div class="skeleton skeleton-text short"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+            <div class="repo-card glass-card skeleton skeleton-card-bg">
+              <div class="skeleton skeleton-text short"></div>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Charts Tabbed Dashboard -->
+        <div class="github-charts-panel">
+          <div class="github-charts-tabs">
+            <button class="github-chart-tab-btn active" data-tab="github-tab-graph" data-translate="githubTabGraph">Activity Graph</button>
+            <button class="github-chart-tab-btn" data-tab="github-tab-langs" data-translate="githubTabLangs">Languages Donut</button>
+            <button class="github-chart-tab-btn" data-tab="github-tab-stats" data-translate="githubTabStats">Profile Summary</button>
+            <button class="github-chart-tab-btn" data-tab="github-tab-snake" data-translate="githubTabSnake">Contribution Snake</button>
+          </div>
+
+          <div class="github-tab-contents">
+            <!-- Graph Content -->
+            <div id="github-tab-graph" class="github-tab-content glass-card github-chart">
+              <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=008080&line=008080&point=417E87&area_color=008080&title_color=008080&area=true" alt="GitHub Activity Graph" />
+            </div>
+
+            <!-- Languages Content -->
+            <div id="github-tab-langs" class="github-tab-content hidden github-cards-row">
+              <div class="github-card-wrapper glass-card">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights" alt="Top Languages">
+              </div>
+              <div class="github-card-wrapper glass-card">
+                <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
+              </div>
+              <div class="github-card-wrapper glass-card">
+                <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Most Commit Language">
+              </div>
+            </div>
+
+            <!-- Stats Content -->
+            <div id="github-tab-stats" class="github-tab-content hidden github-cards-row">
+              <div class="github-card-wrapper glass-card">
+                <img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights" alt="GitHub Stats">
+              </div>
+              <div class="github-card-wrapper glass-card">
+                <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080" alt="Profile Details">
+              </div>
+            </div>
+
+            <!-- Snake Content -->
+            <div id="github-tab-snake" class="github-tab-content hidden glass-card github-chart">
+              <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake animation" style="width:100%" />
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section>    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="reveal">
