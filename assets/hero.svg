@@ -21,13 +21,13 @@
   </defs>
 
   <g clip-path="url(#round)">
-    <rect width="1000" height="320" fill="url(#bg)"/>
-    <rect width="1000" height="320" fill="url(#grid)"/>
+    <rect width="1000" height="320" fill="#ffffff"/>
+    <rect width="1000" height="320" fill="#ffffff"/>
 
     <!-- drifting light orbs -->
-    <circle r="190" fill="url(#o1)"><animate attributeName="cx" values="150;380;150" dur="14s" repeatCount="indefinite"/><animate attributeName="cy" values="80;220;80" dur="14s" repeatCount="indefinite"/></circle>
-    <circle r="210" fill="url(#o2)"><animate attributeName="cx" values="620;420;620" dur="17s" repeatCount="indefinite"/><animate attributeName="cy" values="260;60;260" dur="17s" repeatCount="indefinite"/></circle>
-    <circle r="170" fill="url(#o3)"><animate attributeName="cx" values="880;700;880" dur="12s" repeatCount="indefinite"/><animate attributeName="cy" values="120;260;120" dur="12s" repeatCount="indefinite"/></circle>
+    <circle r="190" fill="#ffffff"><animate attributeName="cx" values="150;380;150" dur="14s" repeatCount="indefinite"/><animate attributeName="cy" values="80;220;80" dur="14s" repeatCount="indefinite"/></circle>
+    <circle r="210" fill="#ffffff"><animate attributeName="cx" values="620;420;620" dur="17s" repeatCount="indefinite"/><animate attributeName="cy" values="260;60;260" dur="17s" repeatCount="indefinite"/></circle>
+    <circle r="170" fill="#ffffff"><animate attributeName="cx" values="880;700;880" dur="12s" repeatCount="indefinite"/><animate attributeName="cy" values="120;260;120" dur="12s" repeatCount="indefinite"/></circle>
 
     <!-- floating code symbols -->
     <text x="90" y="60" fill="#22d3ee" font-family="'Courier New',Menlo,Consolas,monospace" font-size="22" opacity=".0">&lt;/&gt;
@@ -99,7 +99,7 @@
 
     <!-- NAME -->
     <g filter="url(#glow)">
-      <text x="500" y="140" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="1" fill="url(#nameG)">SengKueVang BLONGMAI
+      <text x="500" y="140" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="1" fill="#ffffff">SengKueVang BLONGMAI
         <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
       </text>
     </g>

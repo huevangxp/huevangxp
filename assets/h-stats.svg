@@ -18,7 +18,7 @@
   <rect x="676.0" y="30" width="12" height="12" rx="2" fill="#f472b6" transform="rotate(45 682.0 36)"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></rect>
   <text x="500" y="22" text-anchor="middle" font-family="'Courier New',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12" letter-spacing="6" fill="#64748b">// 04</text>
   <g filter="url(#gl)">
-    <text x="500" y="56" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="32" font-weight="800" letter-spacing="5" fill="url(#g)">GITHUB STATS
+    <text x="500" y="56" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="32" font-weight="800" letter-spacing="5" fill="#ffffff">GITHUB STATS
       <animate attributeName="opacity" from="0" to="1" dur=".9s" fill="freeze"/>
     </text>
   </g>
