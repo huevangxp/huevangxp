@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 72" width="520" height="72" role="img" aria-label="EXPERIENCE & CAREER • ປະສົບການ">
+  <defs>
+    <linearGradient id="grad_0" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <filter id="glow_0">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="10" y="6" width="500" height="60" rx="14" fill="#060c12" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.45"/>
+  <rect x="14" y="10" width="492" height="52" rx="10" fill="#081018"/>
+  <circle cx="36" cy="36" r="6" fill="#ffd700"/>
+  <circle cx="36" cy="36" r="10" fill="none" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="260" y="44" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Noto Sans Lao',sans-serif" font-size="22" font-weight="900" letter-spacing="2.5" fill="url(#grad_0)" filter="url(#glow_0)">
+    EXPERIENCE & CAREER • ປະສົບການ
+  </text>
+  <circle cx="484" cy="36" r="6" fill="#2dd4bf"/>
+  <circle cx="484" cy="36" r="10" fill="none" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.5"/>
+</svg>
