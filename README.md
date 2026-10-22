@@ -89,79 +89,8 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <p align="center">
-  <img src="./assets/huevang-skills-header-bar.svg" width="100%" alt="Technical Arsenal &amp; Enterprise Stack"/>
+  <img src="./assets/huevang-skills-table.svg" width="100%" alt="Technical Arsenal &amp; Enterprise Production Stack"/>
 </p>
-
-<table align="center" width="100%">
-  <thead>
-    <tr>
-      <th width="26%" align="left"><b>🌐 DOMAIN &amp; TIER</b></th>
-      <th width="74%" align="left"><b>⚡ ACTIVE PRODUCTION ARSENAL &amp; TOOLING</b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="left" valign="middle">
-        <b>🎨 Frontend &amp; Mobile</b><br/>
-        <sub><code>16 Technologies</code></sub>
-      </td>
-      <td align="left" valign="middle">
-        <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,nuxt,react,nextjs,flutter,android,swift,tailwind,vuetify,bootstrap&amp;theme=dark" alt="Frontend &amp; Mobile Stack"/>
-        </a>
-        <br/>
-        <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React Native"/>&nbsp;
-        <img src="https://img.shields.io/badge/HTML5_Canvas_API-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white" alt="HTML5 Canvas API"/>
-      </td>
-    </tr>
-    <tr>
-      <td align="left" valign="middle">
-        <b>⚙️ Backend &amp; APIs</b><br/>
-        <sub><code>11 Technologies</code></sub>
-      </td>
-      <td align="left" valign="middle">
-        <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,java,php,laravel,django&amp;theme=dark" alt="Backend &amp; Frameworks"/>
-        </a>
-        <br/>
-        <img src="https://img.shields.io/badge/Jython-JVM_Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=FFD43B" alt="Jython"/>&nbsp;
-        <img src="https://img.shields.io/badge/Bruno-API_Testing-F1B82D?style=flat-square&amp;logoColor=060c13&amp;labelColor=1e293b" alt="Bruno API Client"/>&nbsp;
-        <img src="https://img.shields.io/badge/REST_&amp;_Microservices-0d9488?style=flat-square&amp;logoColor=white" alt="REST &amp; Microservices"/>
-      </td>
-    </tr>
-    <tr>
-      <td align="left" valign="middle">
-        <b>🗄️ Database &amp; Data</b><br/>
-        <sub><code>8 Technologies</code></sub>
-      </td>
-      <td align="left" valign="middle">
-        <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=postgres,mysql,mariadb,mongodb,firebase,redis&amp;theme=dark" alt="Databases &amp; Storage"/>
-        </a>
-        <br/>
-        <img src="https://img.shields.io/badge/Data_Analytics-0284c7?style=flat-square&amp;logo=googleanalytics&amp;logoColor=white" alt="Data Analytics"/>&nbsp;
-        <img src="https://img.shields.io/badge/Web_Research_&amp;_OSINT-2dd4bf?style=flat-square&amp;logoColor=060c13&amp;labelColor=0f172a" alt="Web Research &amp; OSINT"/>
-      </td>
-    </tr>
-    <tr>
-      <td align="left" valign="middle">
-        <b>🛠️ DevOps, Cloud &amp; AI</b><br/>
-        <sub><code>15 Technologies</code></sub>
-      </td>
-      <td align="left" valign="middle">
-        <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=docker,ubuntu,git,github,gitlab,vscode,postman,figma,windows&amp;theme=dark" alt="DevOps, Cloud &amp; Tools"/>
-        </a>
-        <br/>
-        <img src="https://img.shields.io/badge/Antigravity-Google_AGY_AI-2dd4bf?style=flat-square&amp;logo=google&amp;logoColor=ffd700&amp;labelColor=060c13" alt="Antigravity AI"/>&nbsp;
-        <img src="https://img.shields.io/badge/AI_Systems-LLMs_&amp;_Agents-ffd700?style=flat-square&amp;logo=openai&amp;logoColor=060c13&amp;labelColor=0d9488" alt="AI Systems"/>&nbsp;
-        <img src="https://img.shields.io/badge/Ubuntu_VPS-Enterprise-E95420?style=flat-square&amp;logo=ubuntu&amp;logoColor=white" alt="Ubuntu VPS"/>&nbsp;
-        <img src="https://img.shields.io/badge/Windows_Server_2021-Datacenter-0078D6?style=flat-square&amp;logo=windows&amp;logoColor=white" alt="Windows Server 2021"/>&nbsp;
-        <img src="https://img.shields.io/badge/Hosting_Manager-cPanel_&amp;_Cloud-2563eb?style=flat-square&amp;logoColor=white" alt="Hosting Manager"/>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 <!-- ═══════════════════════════ GITHUB METRICS & ACTIVITY ═══════════════════════════ -->
 <p align="center">
