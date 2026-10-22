@@ -1,31 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 72" width="520" height="72" role="img" aria-label="ABOUT HUEVANG • ກ່ຽວກັບຂ້ອຍ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 68" width="540" height="68" role="img" aria-label="ABOUT HUEVANG • ກ່ຽວກັບຂ້ອຍ">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@700;800;900&amp;family=Outfit:wght@800;900&amp;display=swap');
-      .head-text {
-        font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Outfit', 'Leelawadee UI', sans-serif;
-        font-size: 21px;
-        font-weight: 900;
-        letter-spacing: 2px;
-      }
+      .h-main { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; font-size: 17.5px; font-weight: 800; letter-spacing: 2px; }
+      .h-lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; font-size: 16.5px; font-weight: 700; }
     </style>
-    <linearGradient id="grad_0" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="hdrBorder_h-a" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
       <stop offset="100%" stop-color="#2dd4bf"/>
     </linearGradient>
-    <filter id="glow_0">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
-  <rect x="10" y="6" width="500" height="60" rx="14" fill="#060c12" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.45"/>
-  <rect x="14" y="10" width="492" height="52" rx="10" fill="#081018"/>
-  <circle cx="36" cy="36" r="6" fill="#ffd700"/>
-  <circle cx="36" cy="36" r="10" fill="none" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
-  <text x="260" y="44" text-anchor="middle" fill="url(#grad_0)" filter="url(#glow_0)" class="head-text">
-    ABOUT HUEVANG • ກ່ຽວກັບຂ້ອຍ
+
+  <!-- Sleek Dark Container -->
+  <rect x="6" y="6" width="528" height="56" rx="28" fill="#050a0f" stroke="url(#hdrBorder_h-a)" stroke-width="1.4" stroke-opacity="0.55"/>
+  <rect x="10" y="10" width="520" height="48" rx="24" fill="#08141d"/>
+
+  <!-- Left Accent Dot -->
+  <circle cx="34" cy="34" r="5" fill="#ffd700"/>
+  <circle cx="34" cy="34" r="9" fill="none" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
+
+  <!-- Pure Solid High-Contrast Typography (NO GRADIENTS, NO BLUR) -->
+  <text x="270" y="40" text-anchor="middle">
+    <tspan fill="#ffffff" class="h-main">ABOUT HUEVANG</tspan>
+    <tspan fill="#ffd700" class="h-main"> • </tspan>
+    <tspan fill="#2dd4bf" class="h-lao">ກ່ຽວກັບຂ້ອຍ</tspan>
   </text>
-  <circle cx="484" cy="36" r="6" fill="#2dd4bf"/>
-  <circle cx="484" cy="36" r="10" fill="none" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Right Accent Dot -->
+  <circle cx="506" cy="34" r="5" fill="#2dd4bf"/>
+  <circle cx="506" cy="34" r="9" fill="none" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.45"/>
 </svg>
