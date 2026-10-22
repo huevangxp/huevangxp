@@ -59,7 +59,7 @@
       <!-- Center Developer Node -->
       <circle r="44" fill="#060c12" stroke="url(#cardBorder)" stroke-width="2.5"/>
       <text x="0" y="-6" text-anchor="middle" fill="#ffd700" class="head" font-size="13" font-weight="900" letter-spacing="1">HUEVANG</text>
-      <text x="0" y="14" text-anchor="middle" fill="#2dd4bf" class="head" font-size="11.5" font-weight="800">26 y/o</text>
+      <text x="0" y="14" text-anchor="middle" fill="#00f0ff" class="head" font-size="11.5" font-weight="800">26 y/o</text>
 
       <!-- Orbit Ring 1 (Speed: 20s) -->
       <g>
@@ -76,7 +76,7 @@
         <g transform="translate(-42.5, 73.6)">
           <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
             <rect x="-40" y="-12" width="80" height="24" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
-            <circle cx="-27" cy="0" r="3.5" fill="#2dd4bf"/>
+            <circle cx="-27" cy="0" r="3.5" fill="#00f0ff"/>
             <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Node.js</text>
           </g>
         </g>
@@ -84,7 +84,7 @@
         <g transform="translate(-42.5, -73.6)">
           <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
             <rect x="-35" y="-12" width="70" height="24" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
-            <circle cx="-22" cy="0" r="3.5" fill="#2dd4bf"/>
+            <circle cx="-22" cy="0" r="3.5" fill="#00f0ff"/>
             <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Vue 3</text>
           </g>
         </g>
@@ -97,7 +97,7 @@
         <g transform="translate(145, 0)">
           <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
             <rect x="-34" y="-12" width="68" height="24" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
-            <circle cx="-21" cy="0" r="3.5" fill="#2dd4bf"/>
+            <circle cx="-21" cy="0" r="3.5" fill="#00f0ff"/>
             <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">React</text>
           </g>
         </g>
@@ -113,7 +113,7 @@
         <g transform="translate(-145, 0)">
           <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
             <rect x="-36" y="-12" width="72" height="24" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
-            <circle cx="-23" cy="0" r="3.5" fill="#2dd4bf"/>
+            <circle cx="-23" cy="0" r="3.5" fill="#00f0ff"/>
             <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Flutter</text>
           </g>
         </g>
@@ -134,7 +134,7 @@
         <g transform="translate(202, 0)">
           <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="38s" repeatCount="indefinite"/>
             <rect x="-50" y="-12" width="100" height="24" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
-            <circle cx="-35" cy="0" r="3.5" fill="#2dd4bf"/>
+            <circle cx="-35" cy="0" r="3.5" fill="#00f0ff"/>
             <text x="8" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">PostgreSQL</text>
           </g>
         </g>
@@ -150,7 +150,7 @@
         <g transform="translate(-101, -175)">
           <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="38s" repeatCount="indefinite"/>
             <rect x="-38" y="-12" width="76" height="24" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
-            <circle cx="-25" cy="0" r="3.5" fill="#2dd4bf"/>
+            <circle cx="-25" cy="0" r="3.5" fill="#00f0ff"/>
             <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Docker</text>
           </g>
         </g>
@@ -158,7 +158,7 @@
     </g>
 
     <!-- Bottom Orbit Caption -->
-    <text x="235" y="512" text-anchor="middle" fill="#2dd4bf" class="head" font-size="12" font-weight="700" letter-spacing="2">
+    <text x="235" y="512" text-anchor="middle" fill="#00f0ff" class="head" font-size="12" font-weight="700" letter-spacing="2">
       ⚡ FULL-STACK ECOSYSTEM • CORE ARCHITECTURE
     </text>
 
@@ -173,6 +173,12 @@
       <rect width="495" height="38" fill="#0b1620"/>
       <line x1="0" y1="38" x2="495" y2="38" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
 
+            <!-- Animated Cyber Scanner Line in Code Editor -->
+      <line x1="0" y1="36" x2="495" y2="36" stroke="#00ff66" stroke-width="1.2" stroke-opacity="0.3">
+        <animate attributeName="y1" values="36;485;36" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="36;485;36" dur="6s" repeatCount="indefinite"/>
+      </line>
+
       <!-- Window Control Dots -->
       <circle cx="20" cy="19" r="5.5" fill="#ff5f56"/>
       <circle cx="38" cy="19" r="5.5" fill="#ffbd2e"/>
@@ -185,7 +191,7 @@
 
       <!-- Profile Header Inside Window -->
       <g transform="translate(20, 60)">
-        <text x="0" y="0" fill="#2dd4bf" class="head" font-size="18" font-weight="900" letter-spacing="1">
+        <text x="0" y="0" fill="#00f0ff" class="head" font-size="18" font-weight="900" letter-spacing="1">
           <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#ffd700">XIONGPOR</tspan>
         </text>
         <rect x="236" y="-14" width="82" height="20" fill="#0f2420" stroke="#22c55e" stroke-width="1"/>
@@ -213,40 +219,40 @@
       <!-- Syntax-Highlighted Code Block with explicit Y line positions (Solid colors) -->
       <g transform="translate(20, 188)" class="code">
         <!-- Line 1 -->
-        <text x="0" y="0"><tspan fill="#f472b6" font-weight="700">const</tspan> <tspan fill="#2dd4bf">huevang</tspan> = {</text>
+        <text x="0" y="0"><tspan fill="#f472b6" font-weight="700">const</tspan> <tspan fill="#00f0ff">huevang</tspan> = {</text>
 
         <!-- Line 2 -->
-        <text x="14" y="20"><tspan fill="#ffd700">name</tspan>: <tspan fill="#86efac">"Huevang XIONGPOR"</tspan>,</text>
+        <text x="14" y="20"><tspan fill="#ffd700">name</tspan>: <tspan fill="#00ff66">"Huevang XIONGPOR"</tspan>,</text>
 
         <!-- Line 3 -->
         <text x="14" y="40"><tspan fill="#ffd700">age</tspan>: <tspan fill="#f59e0b">26</tspan>,</text>
 
         <!-- Line 4 -->
-        <text x="14" y="60"><tspan fill="#ffd700">phone</tspan>: <tspan fill="#86efac">"020 78849378"</tspan>,</text>
+        <text x="14" y="60"><tspan fill="#ffd700">phone</tspan>: <tspan fill="#00ff66">"020 78849378"</tspan>,</text>
 
         <!-- Line 5 -->
-        <text x="14" y="80"><tspan fill="#ffd700">email</tspan>: <tspan fill="#86efac">"huevang933@gmail.com"</tspan>,</text>
+        <text x="14" y="80"><tspan fill="#ffd700">email</tspan>: <tspan fill="#00ff66">"huevang933@gmail.com"</tspan>,</text>
 
         <!-- Line 6 -->
-        <text x="14" y="100"><tspan fill="#ffd700">location</tspan>: <tspan fill="#86efac">"Vientiane, Laos 🇱🇦"</tspan>,</text>
+        <text x="14" y="100"><tspan fill="#ffd700">location</tspan>: <tspan fill="#00ff66">"Vientiane, Laos 🇱🇦"</tspan>,</text>
 
         <!-- Line 7 -->
-        <text x="14" y="120"><tspan fill="#ffd700">roles</tspan>: [<tspan fill="#86efac">"Full-Stack Dev"</tspan>, <tspan fill="#86efac">"Banking Specialist"</tspan>],</text>
+        <text x="14" y="120"><tspan fill="#ffd700">roles</tspan>: [<tspan fill="#00ff66">"Full-Stack Dev"</tspan>, <tspan fill="#00ff66">"Banking Specialist"</tspan>],</text>
 
         <!-- Line 8 -->
         <text x="14" y="140"><tspan fill="#ffd700">stack</tspan>: {</text>
 
         <!-- Line 9 -->
-        <text x="28" y="160"><tspan fill="#38bdf8">front</tspan>: [<tspan fill="#86efac">"Vue 3"</tspan>, <tspan fill="#86efac">"Nuxt"</tspan>, <tspan fill="#86efac">"React"</tspan>, <tspan fill="#86efac">"Tailwind"</tspan>],</text>
+        <text x="28" y="160"><tspan fill="#38bdf8">front</tspan>: [<tspan fill="#00ff66">"Vue 3"</tspan>, <tspan fill="#00ff66">"Nuxt"</tspan>, <tspan fill="#00ff66">"React"</tspan>, <tspan fill="#00ff66">"Tailwind"</tspan>],</text>
 
         <!-- Line 10 -->
-        <text x="28" y="180"><tspan fill="#38bdf8">back</tspan>: [<tspan fill="#86efac">"Node.js"</tspan>, <tspan fill="#86efac">"Nest.js"</tspan>, <tspan fill="#86efac">"Python"</tspan>, <tspan fill="#86efac">"Laravel"</tspan>],</text>
+        <text x="28" y="180"><tspan fill="#38bdf8">back</tspan>: [<tspan fill="#00ff66">"Node.js"</tspan>, <tspan fill="#00ff66">"Nest.js"</tspan>, <tspan fill="#00ff66">"Python"</tspan>, <tspan fill="#00ff66">"Laravel"</tspan>],</text>
 
         <!-- Line 11 -->
-        <text x="28" y="200"><tspan fill="#38bdf8">mobile</tspan>: [<tspan fill="#86efac">"Flutter"</tspan>, <tspan fill="#86efac">"Dart"</tspan>],</text>
+        <text x="28" y="200"><tspan fill="#38bdf8">mobile</tspan>: [<tspan fill="#00ff66">"Flutter"</tspan>, <tspan fill="#00ff66">"Dart"</tspan>],</text>
 
         <!-- Line 12 -->
-        <text x="28" y="220"><tspan fill="#38bdf8">database</tspan>: [<tspan fill="#86efac">"PostgreSQL"</tspan>, <tspan fill="#86efac">"MySQL"</tspan>, <tspan fill="#86efac">"MongoDB"</tspan>]</text>
+        <text x="28" y="220"><tspan fill="#38bdf8">database</tspan>: [<tspan fill="#00ff66">"PostgreSQL"</tspan>, <tspan fill="#00ff66">"MySQL"</tspan>, <tspan fill="#00ff66">"MongoDB"</tspan>]</text>
 
         <!-- Line 13 -->
         <text x="14" y="240">},</text>
