@@ -1,35 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" aria-label="Huevang XIONGPOR - Full-Stack Developer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" aria-label="Huevang XIONGPOR - Full-Stack Developer &amp; Banking Architect">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@500;600;700&amp;display=swap');
       .font-main { font-family: 'Outfit', 'Segoe UI', Helvetica, Arial, sans-serif; }
       .font-code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
     </style>
 
     <linearGradient id="heroDarkBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#04080c"/>
-      <stop offset="50%" stop-color="#08141d"/>
-      <stop offset="100%" stop-color="#020406"/>
+      <stop offset="0%" stop-color="#020408"/>
+      <stop offset="50%" stop-color="#050d17"/>
+      <stop offset="100%" stop-color="#010305"/>
     </linearGradient>
 
     <linearGradient id="heroBorderGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+
+    <!-- 3D Grid Perspective Gradient -->
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#00f0ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.35"/>
     </linearGradient>
 
     <radialGradient id="tealAmbient">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.35"/>
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="goldAmbient">
-      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
     </radialGradient>
 
     <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.06"/>
-      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.14"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f0ff" stroke-width="0.7" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#00ff66" fill-opacity="0.15"/>
     </pattern>
 
     <clipPath id="heroCardClip">
@@ -38,90 +46,122 @@
   </defs>
 
   <g clip-path="url(#heroCardClip)">
-    <!-- Deep Obsidian Backdrop -->
+    <!-- Base Obsidian Backdrop -->
     <rect width="1000" height="360" fill="url(#heroDarkBg)"/>
     <rect width="1000" height="360" fill="url(#techGrid)"/>
 
     <!-- Subtle Ambient Backdrop Glows -->
-    <circle cx="200" cy="120" r="240" fill="url(#tealAmbient)"/>
-    <circle cx="800" cy="220" r="220" fill="url(#goldAmbient)"/>
+    <circle cx="200" cy="120" r="260" fill="url(#tealAmbient)"/>
+    <circle cx="800" cy="220" r="240" fill="url(#goldAmbient)"/>
 
-    <!-- Top English Greeting Banner (No rounded corners) -->
-    <g transform="translate(500, 48)">
-      <rect x="-240" y="-16" width="480" height="32" fill="#08141e" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.5"/>
-      <circle cx="-214" cy="0" r="4.5" fill="#2dd4bf">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    <!-- ════════════════════ 3D ISOMETRIC CYBER FLOOR ════════════════════ -->
+    <g opacity="0.75">
+      <!-- Converging Perspective Lines -->
+      <line x1="500" y1="180" x2="-200" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="50" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="220" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="380" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="500" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="620" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="780" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="950" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+      <line x1="500" y1="180" x2="1200" y2="360" stroke="url(#gridFade)" stroke-width="1.2"/>
+
+      <!-- Horizontal Depth Transverse Lines -->
+      <line x1="420" y1="210" x2="580" y2="210" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.12"/>
+      <line x1="360" y1="235" x2="640" y2="235" stroke="#00f0ff" stroke-width="0.9" stroke-opacity="0.18"/>
+      <line x1="280" y1="265" x2="720" y2="265" stroke="#00f0ff" stroke-width="1.0" stroke-opacity="0.25"/>
+      <line x1="180" y1="300" x2="820" y2="300" stroke="#00f0ff" stroke-width="1.1" stroke-opacity="0.32"/>
+      <line x1="50" y1="340" x2="950" y2="340" stroke="#00f0ff" stroke-width="1.3" stroke-opacity="0.42"/>
+    </g>
+
+    <!-- ════════════════════ ANIMATED CYBER SCANNER BEAM ════════════════════ -->
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#00f0ff" stroke-width="1.4" stroke-opacity="0.35">
+      <animate attributeName="y1" values="10;350;10" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="10;350;10" dur="6s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Top Hacker Tag Bar -->
+    <g transform="translate(500, 44)">
+      <rect x="-260" y="-16" width="520" height="32" fill="#040c14" stroke="#00ff66" stroke-width="1.2" stroke-opacity="0.6"/>
+      <circle cx="-234" cy="0" r="4.5" fill="#00ff66">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <text x="12" y="5" text-anchor="middle" fill="#ffffff" class="font-main" font-size="12" font-weight="700" letter-spacing="1">
-        WELCOME! 👋 FULL-STACK DEVELOPER &amp; BANKING ARCHITECT
+      <text x="12" y="5" text-anchor="middle" fill="#00ff66" class="font-code" font-size="11.5" font-weight="700" letter-spacing="1">
+        [SYS_ONLINE] ⚡ FULL-STACK DEVELOPER &amp; BANKING ARCHITECT // 0x2026
       </text>
     </g>
 
-    <!-- Main Name Title — Pure Solid Crisp Typography -->
-    <text x="500" y="142" text-anchor="middle" class="font-main" font-size="52" font-weight="900" letter-spacing="3">
+    <!-- Main Title — Pure Solid High-Contrast Hacker Typography -->
+    <text x="500" y="136" text-anchor="middle" class="font-main" font-size="52" font-weight="900" letter-spacing="3">
       <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#ffd700">XIONGPOR</tspan>
     </text>
 
-    <!-- Animated Cycling Role Headings — Crisp Solid Colors in English -->
-    <text x="500" y="200" text-anchor="middle" fill="#ffffff" class="font-code" font-size="21" font-weight="600" letter-spacing="1.5" opacity="0">
-      &lt; Full-Stack Developer &amp; Enterprise Solutions /&gt;
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.00;0.05;0.28;0.33;1.00" dur="10s" repeatCount="indefinite"/>
+    <!-- Animated Cycling Role Headings with Hacker Color Palette -->
+    <!-- Role 1: Full-Stack Developer -->
+    <text x="500" y="186" text-anchor="middle" fill="#00f0ff" class="font-code" font-size="20" font-weight="700" letter-spacing="1.5" opacity="0">
+      &gt; Full_Stack_Developer &amp; Enterprise_Solutions();
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.00;0.05;0.28;0.33;1.00" dur="9s" repeatCount="indefinite"/>
     </text>
 
-    <text x="500" y="200" text-anchor="middle" fill="#ffd700" class="font-code" font-size="21" font-weight="600" letter-spacing="1.5" opacity="0">
-      &lt; Banking Systems &amp; Core Fintech Specialist /&gt;
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00;0.33;0.38;0.61;0.66;1.00" dur="10s" repeatCount="indefinite"/>
+    <!-- Role 2: Core Banking Specialist -->
+    <text x="500" y="186" text-anchor="middle" fill="#ffd700" class="font-code" font-size="20" font-weight="700" letter-spacing="1.5" opacity="0">
+      &gt; Core_Banking_Systems &amp; Fintech_Architect();
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00;0.33;0.38;0.61;0.66;1.00" dur="9s" repeatCount="indefinite"/>
     </text>
 
-    <text x="500" y="200" text-anchor="middle" fill="#2dd4bf" class="font-code" font-size="20" font-weight="700" letter-spacing="1" opacity="0">
-      &lt; Web, Mobile &amp; Microservices Architect /&gt;
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0.00;0.66;0.71;0.95;1.00" dur="10s" repeatCount="indefinite"/>
+    <!-- Role 3: Microservices & AI Architect -->
+    <text x="500" y="186" text-anchor="middle" fill="#00ff66" class="font-code" font-size="20" font-weight="700" letter-spacing="1.5" opacity="0">
+      &gt; Microservices_Architecture &amp; AI_Agent_Pipelines();
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0.00;0.66;0.71;0.95;1.00" dur="9s" repeatCount="indefinite"/>
     </text>
 
-    <!-- Subtitle in English — Solid Slate Muted -->
-    <text x="500" y="238" text-anchor="middle" fill="#94a3b8" class="font-main" font-size="14" letter-spacing="0.5">
-      Architecting robust, secure &amp; high-performance software systems • Vientiane, Laos 🇱🇦
+    <!-- Subtitle in English — Clean Muted Solid -->
+    <text x="500" y="222" text-anchor="middle" fill="#94a3b8" class="font-code" font-size="13" letter-spacing="0.5">
+      Architecting high-concurrency financial modules, payment gateways &amp; secure portals
     </text>
 
-    <!-- Clean Gold Divider Line -->
-    <line x1="200" y1="262" x2="800" y2="262" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.35"/>
+    <!-- Animated Marching Cyber Circuit Line -->
+    <line x1="180" y1="246" x2="820" y2="246" stroke="#00f0ff" stroke-width="1.4" stroke-dasharray="10 6">
+      <animate attributeName="stroke-dashoffset" values="0;32" dur="2s" repeatCount="indefinite"/>
+    </line>
 
-    <!-- Bottom Metadata Badge Strip — Crisp Solid Badges (No rounded corners) -->
-    <g transform="translate(500, 302)">
-      <!-- Location Badge -->
-      <g transform="translate(-320, 0)">
-        <rect x="-85" y="-16" width="170" height="32" fill="#081017" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.5"/>
-        <text x="0" y="5" text-anchor="middle" fill="#ffffff" class="font-main" font-size="12" font-weight="600">
-          📍 Vientiane, Laos 🇱🇦
+    <!-- 4 Sharp Hacker Telemetry Badges (x: -330, -110, 110, 330) -->
+    <g transform="translate(500, 290)">
+      <!-- Location -->
+      <g transform="translate(-330, 0)">
+        <rect x="-90" y="-16" width="180" height="32" fill="#040b12" stroke="#00f0ff" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" fill="#ffffff" class="font-code" font-size="11" font-weight="700">
+          [LOC] Vientiane, Laos 🇱🇦
         </text>
       </g>
 
-      <!-- Age Badge -->
-      <g transform="translate(-120, 0)">
-        <rect x="-65" y="-16" width="130" height="32" fill="#081017" stroke="#ffd700" stroke-width="1" stroke-opacity="0.6"/>
-        <text x="0" y="5" text-anchor="middle" fill="#ffd700" class="font-main" font-size="12" font-weight="700">
-          🎂 Age: 26 Years
+      <!-- Age -->
+      <g transform="translate(-110, 0)">
+        <rect x="-65" y="-16" width="130" height="32" fill="#040b12" stroke="#ffd700" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" fill="#ffd700" class="font-code" font-size="11" font-weight="700">
+          [AGE] 26 Years
         </text>
       </g>
 
-      <!-- Phone Badge -->
-      <g transform="translate(90, 0)">
-        <rect x="-95" y="-16" width="190" height="32" fill="#081017" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.5"/>
-        <text x="0" y="5" text-anchor="middle" fill="#ffffff" class="font-code" font-size="12" font-weight="600">
-          📞 020 78849378
+      <!-- Phone -->
+      <g transform="translate(110, 0)">
+        <rect x="-85" y="-16" width="170" height="32" fill="#040b12" stroke="#00ff66" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" fill="#00ff66" class="font-code" font-size="11.5" font-weight="700">
+          [TEL] 020 78849378
         </text>
       </g>
 
-      <!-- Email Badge -->
-      <g transform="translate(315, 0)">
-        <rect x="-105" y="-16" width="210" height="32" fill="#081017" stroke="#ffd700" stroke-width="1" stroke-opacity="0.6"/>
-        <text x="0" y="5" text-anchor="middle" fill="#ffd700" class="font-code" font-size="11.5" font-weight="600">
-          ✉️ huevang933@gmail.com
+      <!-- Email -->
+      <g transform="translate(330, 0)">
+        <rect x="-95" y="-16" width="190" height="32" fill="#040b12" stroke="#00f0ff" stroke-width="1.2"/>
+        <text x="0" y="5" text-anchor="middle" fill="#ffffff" class="font-code" font-size="10.5" font-weight="700">
+          [EMAIL] huevang933@gmail
         </text>
       </g>
     </g>
 
     <!-- Outer Luxury Border (Sharp 90-degree corners) -->
-    <rect x="1" y="1" width="998" height="358" fill="none" stroke="url(#heroBorderGrad)" stroke-width="1.8" stroke-opacity="0.5"/>
+    <rect x="1" y="1" width="998" height="358" fill="none" stroke="url(#heroBorderGrad)" stroke-width="1.8" stroke-opacity="0.6"/>
   </g>
 </svg>
