@@ -6,37 +6,36 @@
       .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
       .mono { font-family: 'Share Tech Mono', 'Fira Code', monospace; }
       @keyframes laserMove {
-        0% { y1: 42; y2: 42; opacity: 0.15; }
+        0% { y1: 42; y2: 42; opacity: 0.2; }
         50% { opacity: 0.9; }
-        100% { y1: 393; y2: 393; opacity: 0.15; }
+        100% { y1: 393; y2: 393; opacity: 0.2; }
       }
       .laser-scanner {
         animation: laserMove 6.5s linear infinite;
       }
     </style>
 
-    <!-- Deep Obsidian Canvas Gradient -->
     <linearGradient id="metricsBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020408"/>
-      <stop offset="50%" stop-color="#050d17"/>
+      <stop offset="50%" stop-color="#040e14"/>
       <stop offset="100%" stop-color="#010305"/>
     </linearGradient>
 
-    <!-- Unified 3-Color Header Gradient (Cyan -> Green -> Gold) -->
-    <linearGradient id="triColorGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00f0ff"/>
-      <stop offset="50%" stop-color="#00ff66"/>
-      <stop offset="100%" stop-color="#ffd700"/>
+    <!-- Unified Gradient: Dark Teal -> Gold -> Luminous Teal -->
+    <linearGradient id="metricsBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
     </linearGradient>
 
     <linearGradient id="gridFadeMetrics" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.16"/>
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.18"/>
     </linearGradient>
 
     <pattern id="metricsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f0ff" stroke-width="0.7" stroke-opacity="0.05"/>
-      <circle cx="0" cy="0" r="1.2" fill="#00ff66" fill-opacity="0.12"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0d9488" stroke-width="0.7" stroke-opacity="0.12"/>
+      <circle cx="0" cy="0" r="1.2" fill="#2dd4bf" fill-opacity="0.25"/>
     </pattern>
 
     <clipPath id="metricsClip">
@@ -49,7 +48,7 @@
     <rect width="1000" height="395" fill="url(#metricsBg)"/>
     <rect width="1000" height="395" fill="url(#metricsGrid)"/>
 
-    <!-- 3D Depth Perspective Floor Lines (Color 1: Cyber Cyan #00f0ff) -->
+    <!-- 3D Depth Perspective Floor Lines (Teal) -->
     <g opacity="0.6">
       <line x1="500" y1="130" x2="-80" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
       <line x1="500" y1="130" x2="180" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
@@ -59,202 +58,199 @@
       <line x1="500" y1="130" x2="1080" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
     </g>
 
-    <!-- Animated Cyber Laser Scanner Line (Color 1: Cyber Cyan #00f0ff) -->
-    <line x1="0" y1="42" x2="1000" y2="42" stroke="#00f0ff" stroke-width="1.4" stroke-opacity="0.6" class="laser-scanner"/>
+    <!-- Animated Cyber Laser Scanner Line (Luminous Teal) -->
+    <line x1="0" y1="42" x2="1000" y2="42" stroke="#2dd4bf" stroke-width="1.5" stroke-opacity="0.6" class="laser-scanner"/>
 
     <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
-    <rect width="1000" height="42" fill="#050c18"/>
-    <line x1="0" y1="42" x2="1000" y2="42" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3"/>
-    <rect width="1000" height="2" fill="url(#triColorGrad)"/>
+    <rect width="1000" height="42" fill="#040e14"/>
+    <line x1="0" y1="42" x2="1000" y2="42" stroke="#0d9488" stroke-width="1" stroke-opacity="0.4"/>
+    <rect width="1000" height="2" fill="url(#metricsBorder)"/>
 
-    <!-- Sharp 90-degree Hacker Window Buttons (Strictly Color 1, 2, 3) -->
+    <!-- Sharp 90-degree Hacker Window Buttons (Teal, Gold, White) -->
     <g transform="translate(18, 14)">
-      <!-- Button 1: Cyan -->
-      <rect x="0" y="0" width="14" height="14" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff" stroke-width="1.2"/>
-      <line x1="3" y1="10" x2="11" y2="10" stroke="#00f0ff" stroke-width="1.4"/>
+      <rect x="0" y="0" width="14" height="14" fill="#0d9488" fill-opacity="0.25" stroke="#2dd4bf" stroke-width="1.2"/>
+      <line x1="3" y1="10" x2="11" y2="10" stroke="#2dd4bf" stroke-width="1.4"/>
 
-      <!-- Button 2: Green -->
-      <rect x="22" y="0" width="14" height="14" fill="#00ff66" fill-opacity="0.15" stroke="#00ff66" stroke-width="1.2"/>
-      <rect x="25" y="3" width="8" height="8" fill="none" stroke="#00ff66" stroke-width="1.2"/>
+      <rect x="22" y="0" width="14" height="14" fill="#ffd700" fill-opacity="0.2" stroke="#ffd700" stroke-width="1.2"/>
+      <rect x="25" y="3" width="8" height="8" fill="none" stroke="#ffd700" stroke-width="1.2"/>
 
-      <!-- Button 3: Gold -->
-      <rect x="44" y="0" width="14" height="14" fill="#ffd700" fill-opacity="0.15" stroke="#ffd700" stroke-width="1.2"/>
-      <line x1="47" y1="4" x2="55" y2="10" stroke="#ffd700" stroke-width="1.2"/>
-      <line x1="55" y1="4" x2="47" y2="10" stroke="#ffd700" stroke-width="1.2"/>
+      <rect x="44" y="0" width="14" height="14" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1.2"/>
+      <line x1="47" y1="4" x2="55" y2="10" stroke="#ffffff" stroke-width="1.2"/>
+      <line x1="55" y1="4" x2="47" y2="10" stroke="#ffffff" stroke-width="1.2"/>
     </g>
 
-    <!-- Title Bar Label (Color 1: Cyber Cyan) -->
-    <text x="500" y="27" text-anchor="middle" fill="#00f0ff" class="mono" font-size="12" font-weight="700" letter-spacing="1.5">
+    <!-- Title Bar Label (Teal) -->
+    <text x="500" y="27" text-anchor="middle" fill="#2dd4bf" class="mono" font-size="12" font-weight="700" letter-spacing="1.5">
       GITHUB_TELEMETRY://HUEVANGXP • [30,278 CONTRIBUTIONS IN LAST YEAR // 170+ REPOSITORIES]
     </text>
 
-    <!-- Right Live Status Indicator (Color 2: Matrix Green) -->
-    <g transform="translate(840, 13)">
-      <rect x="0" y="0" width="142" height="18" fill="#00ff66" fill-opacity="0.12" stroke="#00ff66" stroke-width="1"/>
-      <circle cx="10" cy="9" r="3" fill="#00ff66">
+    <!-- Right Live Status Indicator (Gold) -->
+    <g transform="translate(835, 13)">
+      <rect x="0" y="0" width="147" height="18" fill="#ffd700" fill-opacity="0.12" stroke="#ffd700" stroke-width="1"/>
+      <circle cx="10" cy="9" r="3" fill="#ffd700">
         <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
       </circle>
-      <text x="20" y="13" fill="#00ff66" class="code" font-size="9.5" font-weight="700" letter-spacing="0.5">
+      <text x="20" y="13" fill="#ffd700" class="code" font-size="9.5" font-weight="700" letter-spacing="0.5">
         30,278 NODES LIVE
       </text>
     </g>
 
-    <!-- ════════════════════ 4 KEY METRIC TILES (STRICT 3 COLORS) ════════════════════ -->
-    <!-- Tile 1: Total Verified Contributions (Color 2: Matrix Green #00ff66) -->
+    <!-- ════════════════════ 4 KEY METRIC TILES ════════════════════ -->
+    <!-- Tile 1: Total Verified Contributions (Gold) -->
     <g transform="translate(18, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#00ff66" stroke-width="1.2" stroke-opacity="0.6"/>
-      <rect x="12" y="10" width="150" height="20" fill="#071e11" stroke="#00ff66" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#00ff66" class="code" font-size="10" font-weight="700">● 0xCONTRIBUTIONS</text>
-      <text x="14" y="60" fill="#00ff66" class="head" font-size="28" font-weight="900" letter-spacing="0.5">30 278</text>
+      <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.6"/>
+      <rect x="12" y="10" width="150" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● 0xCONTRIBUTIONS</text>
+      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">30 278</text>
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">In The Last Year Output</text>
     </g>
 
-    <!-- Tile 2: Total Repositories (Color 3: Electric Gold #ffd700) -->
+    <!-- Tile 2: Total Repositories (Teal) -->
     <g transform="translate(262, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
-      <rect x="12" y="10" width="140" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#00ff66" class="code" font-size="10" font-weight="700">● 0xREPOSITORIES</text>
-      <text x="14" y="60" fill="#00ff66" class="head" font-size="28" font-weight="900" letter-spacing="0.5">170+</text>
+      <rect width="232" height="88" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.6"/>
+      <rect x="12" y="10" width="140" height="20" fill="#06191b" stroke="#2dd4bf" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#2dd4bf" class="code" font-size="10" font-weight="700">● 0xREPOSITORIES</text>
+      <text x="14" y="60" fill="#2dd4bf" class="head" font-size="28" font-weight="900" letter-spacing="0.5">170+</text>
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Public &amp; Enterprise Repos</text>
     </g>
 
-    <!-- Tile 3: Tenure / Experience (Color 1: Cyber Cyan #00f0ff) -->
+    <!-- Tile 3: Tenure / Experience (White) -->
     <g transform="translate(506, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.5"/>
-      <rect x="12" y="10" width="135" height="20" fill="#071a1c" stroke="#00f0ff" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#00f0ff" class="code" font-size="10" font-weight="700">● 0xACTIVE_TENURE</text>
+      <rect width="232" height="88" fill="#040a10" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.5"/>
+      <rect x="12" y="10" width="135" height="20" fill="#06191b" stroke="#0d9488" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#2dd4bf" class="code" font-size="10" font-weight="700">● 0xACTIVE_TENURE</text>
       <text x="14" y="60" fill="#ffffff" class="head" font-size="28" font-weight="900" letter-spacing="0.5">5+ Years</text>
-      <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Member Since Dec 12, 2019</text>
+      <text x="14" y="76" fill="#ffffff" fill-opacity="0.75" class="code" font-size="10.5">Member Since Dec 12, 2019</text>
     </g>
 
-    <!-- Tile 4: Official Badges (Color 2: Matrix Green #00ff66) -->
+    <!-- Tile 4: Official Badges (Gold) -->
     <g transform="translate(750, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#00ff66" stroke-width="1.2" stroke-opacity="0.5"/>
-      <rect x="12" y="10" width="155" height="20" fill="#071e11" stroke="#00ff66" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#00ff66" class="code" font-size="10" font-weight="700">● 0xOFFICIAL_BADGES</text>
-      <text x="14" y="60" fill="#00ff66" class="head" font-size="28" font-weight="900" letter-spacing="0.5">3 Badges</text>
+      <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.6"/>
+      <rect x="12" y="10" width="155" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● 0xOFFICIAL_BADGES</text>
+      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">3 Badges</text>
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Pull Shark • YOLO • Quickdraw</text>
     </g>
 
-    <!-- ════════════════════ LOWER SECTION: 2 PANELS (STRICT 3 COLORS) ════════════════════ -->
-    <!-- Left Panel: Language Breakdown (Only reusing #00f0ff, #00ff66, #ffd700) -->
+    <!-- ════════════════════ LOWER SECTION: 2 PANELS ════════════════════ -->
+    <!-- Left Panel: Language Breakdown (Teal-Dark & Gold) -->
     <g transform="translate(18, 154)">
-      <rect width="476" height="224" fill="#040a10" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.35"/>
+      <rect width="476" height="224" fill="#040a10" stroke="#0d9488" stroke-width="1" stroke-opacity="0.45"/>
       
       <!-- Panel Header -->
-      <rect x="0" y="0" width="476" height="32" fill="#06121e"/>
-      <line x1="0" y1="32" x2="476" y2="32" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.25"/>
-      <text x="16" y="21" fill="#00f0ff" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
+      <rect x="0" y="0" width="476" height="32" fill="#041217"/>
+      <line x1="0" y1="32" x2="476" y2="32" stroke="#0d9488" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="16" y="21" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
         [SYS] RUNTIME DISTRIBUTION (30,278 CONTRIBUTION SAMPLE)
       </text>
 
-      <!-- Multi-Segment Distribution Bar (Reusing strictly Cyan, Green, Gold) -->
+      <!-- Multi-Segment Distribution Bar -->
       <g transform="translate(16, 44)">
-        <rect width="444" height="12" fill="#0b1723"/>
+        <rect width="444" height="12" fill="#07151a"/>
         <!-- JavaScript: Gold -->
         <rect x="0" width="186" height="12" fill="#ffd700"/>
-        <!-- Batchfile: Green -->
-        <rect x="187" width="115" height="12" fill="#00ff66"/>
-        <!-- Vue: Cyan -->
-        <rect x="303" width="71" height="12" fill="#00f0ff"/>
+        <!-- Batchfile: Teal -->
+        <rect x="187" width="115" height="12" fill="#2dd4bf"/>
+        <!-- Vue: Dark Teal -->
+        <rect x="303" width="71" height="12" fill="#0d9488"/>
         <!-- HTML: Gold -->
         <rect x="375" width="44" height="12" fill="#ffd700"/>
-        <!-- Python: Green -->
-        <rect x="420" width="24" height="12" fill="#00ff66"/>
+        <!-- Python: Teal -->
+        <rect x="420" width="24" height="12" fill="#2dd4bf"/>
       </g>
 
       <!-- Language Item 1: JavaScript (Gold) -->
       <g transform="translate(16, 70)">
         <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">JavaScript</text>
-        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">42%</text>
-        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Frontend reactive logic, Node runtimes &amp; client components</text>
+        <text x="444" y="11" text-anchor="end" fill="#ffd700" class="code" font-size="11.5" font-weight="700">42%</text>
+        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Frontend reactive logic, Node runtimes &amp; client components</text>
       </g>
 
-      <!-- Language Item 2: Batchfile (Green) -->
+      <!-- Language Item 2: Batchfile (Teal) -->
       <g transform="translate(16, 104)">
-        <rect x="0" y="2" width="10" height="10" fill="#00ff66"/>
+        <rect x="0" y="2" width="10" height="10" fill="#2dd4bf"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Batchfile Automation</text>
-        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">26%</text>
-        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Windows Server orchestration, background triggers &amp; CI tasks</text>
+        <text x="444" y="11" text-anchor="end" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700">26%</text>
+        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Windows Server orchestration, background triggers &amp; CI tasks</text>
       </g>
 
-      <!-- Language Item 3: Vue (Cyan) -->
+      <!-- Language Item 3: Vue (Dark Teal) -->
       <g transform="translate(16, 138)">
-        <rect x="0" y="2" width="10" height="10" fill="#00f0ff"/>
+        <rect x="0" y="2" width="10" height="10" fill="#0d9488"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Vue.js &amp; Nuxt Ecosystem</text>
-        <text x="444" y="11" text-anchor="end" fill="#00f0ff" class="code" font-size="11.5" font-weight="700">16%</text>
-        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Banking dashboards, interactive portals &amp; SSR applications</text>
+        <text x="444" y="11" text-anchor="end" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700">16%</text>
+        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Banking dashboards, interactive portals &amp; SSR applications</text>
       </g>
 
-      <!-- Language Item 4: HTML & Python (Gold & Green) -->
+      <!-- Language Item 4: HTML & Python (Gold & Teal) -->
       <g transform="translate(16, 172)">
         <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">HTML5 (10%) &amp; Python (6%)</text>
-        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">16%</text>
-        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Canvas APIs, semantic web structures &amp; Python microservices</text>
+        <text x="444" y="11" text-anchor="end" fill="#ffd700" class="code" font-size="11.5" font-weight="700">16%</text>
+        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Canvas APIs, semantic web structures &amp; Python microservices</text>
       </g>
     </g>
 
-    <!-- Right Panel: Engineering Velocity & Pillars (Reusing Cyan, Green, Gold) -->
+    <!-- Right Panel: Engineering Velocity & Pillars (Gold & Teal) -->
     <g transform="translate(506, 154)">
-      <rect width="476" height="224" fill="#040a10" stroke="#00ff66" stroke-width="1" stroke-opacity="0.35"/>
+      <rect width="476" height="224" fill="#040a10" stroke="#ffd700" stroke-width="1" stroke-opacity="0.45"/>
       
       <!-- Panel Header -->
-      <rect x="0" y="0" width="476" height="32" fill="#06121e"/>
-      <line x1="0" y1="32" x2="476" y2="32" stroke="#00ff66" stroke-width="1" stroke-opacity="0.25"/>
-      <text x="16" y="21" fill="#00ff66" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
+      <rect x="0" y="0" width="476" height="32" fill="#151206"/>
+      <line x1="0" y1="32" x2="476" y2="32" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="16" y="21" fill="#ffd700" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
         [OPS] ENGINEERING CADENCE &amp; CONTRIBUTION RADAR
       </text>
 
-      <!-- Pillar 1: High Commit Velocity (Green) -->
+      <!-- Pillar 1: High Commit Velocity (Gold) -->
       <g transform="translate(16, 44)">
-        <rect x="0" y="2" width="8" height="8" fill="#00ff66"/>
+        <rect x="0" y="2" width="8" height="8" fill="#ffd700"/>
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
           Massive Velocity (30,278 Contributions in Last Year)
         </text>
-        <text x="16" y="26" fill="#ffffff" class="head" font-size="11">
+        <text x="16" y="26" fill="#ffffff" fill-opacity="0.85" class="head" font-size="11">
           High-frequency engineering across daily production branches, banking pipelines,
         </text>
-        <text x="16" y="41" fill="#00ff66" class="code" font-size="11">
+        <text x="16" y="41" fill="#ffd700" class="code" font-size="11">
           and robust automated deployment systems.
         </text>
       </g>
 
-      <!-- Pillar 2: Scalable Portals & Open Source (Gold) -->
+      <!-- Pillar 2: Scalable Portals & Open Source (Teal) -->
       <g transform="translate(16, 102)">
-        <rect x="0" y="2" width="8" height="8" fill="#ffd700"/>
+        <rect x="0" y="2" width="8" height="8" fill="#2dd4bf"/>
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
           170+ Multi-Repo Scalability &amp; Architecture
         </text>
-        <text x="16" y="26" fill="#ffffff" class="head" font-size="11">
+        <text x="16" y="26" fill="#ffffff" fill-opacity="0.85" class="head" font-size="11">
           Architectural lead across 170+ repositories with automated workflows,
         </text>
-        <text x="16" y="41" fill="#00ff66" class="code" font-size="11">
+        <text x="16" y="41" fill="#2dd4bf" class="code" font-size="11">
           dockerized runtime environments, and microservice APIs.
         </text>
       </g>
 
-      <!-- Pillar 3: Recognized GitHub Honors (Cyan) -->
+      <!-- Pillar 3: Recognized GitHub Honors (Teal & White) -->
       <g transform="translate(16, 160)">
-        <rect x="0" y="2" width="8" height="8" fill="#00f0ff"/>
+        <rect x="0" y="2" width="8" height="8" fill="#0d9488"/>
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
           Official Badges: Pull Shark • Quickdraw • YOLO
         </text>
-        <text x="16" y="26" fill="#ffffff" class="head" font-size="11">
+        <text x="16" y="26" fill="#ffffff" fill-opacity="0.85" class="head" font-size="11">
           Recognized for rapid PR merging &amp; continuous delivery.
         </text>
-        <text x="16" y="41" fill="#00f0ff" class="code" font-size="11">
+        <text x="16" y="41" fill="#2dd4bf" class="code" font-size="11">
           🌱 "Code, learn, and grow every day."
         </text>
       </g>
     </g>
 
-    <!-- Outer Sharp 90-degree Border (Cyber Cyan + Matrix Green Brackets) -->
-    <rect x="0.5" y="0.5" width="999" height="394" fill="none" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3"/>
-    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#00ff66" stroke-width="2.5"/>
-    <path d="M 984 0 L 1000 0 L 1000 16" fill="none" stroke="#00ff66" stroke-width="2.5"/>
-    <path d="M 0 378 L 0 394 L 16 394" fill="none" stroke="#00ff66" stroke-width="2.5"/>
-    <path d="M 984 394 L 1000 394 L 1000 378" fill="none" stroke="#00ff66" stroke-width="2.5"/>
+    <!-- Outer Sharp 90-degree Border (Dark Teal with Gold Brackets) -->
+    <rect x="0.5" y="0.5" width="999" height="394" fill="none" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.5"/>
+    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#ffd700" stroke-width="2.5"/>
+    <path d="M 984 0 L 1000 0 L 1000 16" fill="none" stroke="#ffd700" stroke-width="2.5"/>
+    <path d="M 0 378 L 0 394 L 16 394" fill="none" stroke="#ffd700" stroke-width="2.5"/>
+    <path d="M 984 394 L 1000 394 L 1000 378" fill="none" stroke="#ffd700" stroke-width="2.5"/>
   </g>
 </svg>
