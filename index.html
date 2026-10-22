@@ -1,791 +1,1355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>huevangxp Portfolio</title>
+    <title>SengKueVang BLONGMAI (huevangxp) | Full-Stack Developer & UI/UX Designer</title>
     <meta
       name="description"
-      content="Portfolio of huevangxp - Full-Stack Developer with expertise in building premium web applications. Based in Vientiane, Laos."
+      content="Modern portfolio of SengKueVang BLONGMAI (huevangxp) - Full-Stack Developer, UI/UX Designer & Banking Systems Specialist from Vientiane, Laos."
+    />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+    <!-- Google Fonts: Outfit (modern sans), Fira Code (monospaced code), Noto Sans Lao (Lao typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Noto+Sans+Lao:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
     />
 
-    <!-- FontAwesome Icons -->
+    <!-- FontAwesome 6 Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Stylesheet -->
+    <!-- Custom Modern Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Interactive Particles Canvas Background -->
+    <!-- Background Particles & Dynamic Glow Orbs -->
     <canvas id="bg-canvas"></canvas>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
 
-    <!-- Navigation Bar -->
-    <header>
+    <!-- Sticky Modern Glass Navigation Bar -->
+    <header id="main-header">
       <div class="nav-container">
-        <a href="#home" class="logo">
-          <i class="fas fa-terminal"></i>
-          <span>huevangxp</span>
+        <a href="#home" class="logo" id="brand-logo">
+          <div class="logo-icon-box">
+            <i class="fas fa-terminal"></i>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-main">huevangxp</span>
+            <span class="logo-sub">BLONGMAI</span>
+          </div>
         </a>
 
+        <!-- Desktop Navigation Links -->
         <nav class="nav-menu" id="nav-menu">
-          <a href="#home" class="nav-link active" data-translate="navHome"
-            >Home</a
-          >
+          <a href="#home" class="nav-link active" data-translate="navHome">Home</a>
           <a href="#about" class="nav-link" data-translate="navAbout">About</a>
-          <a href="#skills" class="nav-link" data-translate="navSkills"
-            >Skills</a
-          >
-          <a href="#experience" class="nav-link" data-translate="navExperience"
-            >Experience</a
-          >
-          <a href="#education" class="nav-link" data-translate="navEducation"
-            >Education</a
-          >
-          <a href="#contact" class="nav-link" data-translate="navContact"
-            >Contact</a
-          >
+          <a href="#terminal" class="nav-link" data-translate="navTerminal">Terminal</a>
+          <a href="#skills" class="nav-link" data-translate="navSkills">Skills</a>
+          <a href="#experience" class="nav-link" data-translate="navExperience">Experience</a>
+          <a href="#projects" class="nav-link" data-translate="navProjects">Projects</a>
+          <a href="#github" class="nav-link" data-translate="navGithub">GitHub Stats</a>
+          <a href="#contact" class="nav-link" data-translate="navContact">Contact</a>
         </nav>
 
+        <!-- Navbar Action Buttons -->
         <div class="nav-actions">
-          <!-- Theme Toggle Button -->
+          <!-- Audio click sound toggle -->
+          <button
+            id="sound-toggle"
+            class="ctrl-btn"
+            title="Toggle Sound Effects"
+            aria-label="Toggle Sound Effects"
+          >
+            <i class="fas fa-volume-up"></i>
+          </button>
+
+          <!-- Theme Toggle (Dark / Light) -->
           <button
             id="theme-toggle"
             class="ctrl-btn"
-            title="Toggle Light/Dark Theme"
+            title="Toggle Dark / Light Mode"
+            aria-label="Toggle Dark / Light Mode"
           >
             <i class="fas fa-sun"></i>
           </button>
-          <!-- Language Toggle Button -->
+
+          <!-- Bilingual Toggle Button (EN / LA) -->
           <button
             id="lang-toggle"
-            class="ctrl-btn lang-btn"
-            title="Switch Language"
+            class="ctrl-btn lang-pill"
+            title="Switch Language / ປ່ຽນພາສາ"
+            aria-label="Switch Language"
           >
-            LA
+            <span class="lang-flag">🇱🇦</span>
+            <span class="lang-text">LA</span>
           </button>
-          <!-- Mobile Menu Toggle Hamburger -->
-          <div id="mobile-toggle" class="mobile-menu-toggle">
-            <i class="fas fa-bars"></i>
-          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button
+            id="mobile-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle Navigation Menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-content reveal active">
-        <span class="hero-greet" data-translate="heroGreeting"
-          >Hi Everyone, I'm</span
-        >
-        <h1 class="hero-name">huevangxp XIOGNPOR</h1>
+    <main>
+      <!-- ═══════════════════════════ HERO SECTION ═══════════════════════════ -->
+      <section id="home" class="hero-section">
+        <div class="hero-grid">
+          <!-- Left Column: Intro Content -->
+          <div class="hero-content reveal active">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span data-translate="badgeOpen">Open to Collaboration</span>
+              <span class="badge-divider">•</span>
+              <span class="badge-tag">Full-Stack & Banking</span>
+            </div>
 
-        <!-- Rotating Typed Titles -->
-        <div class="typing-container">
-          <span class="typing-static">I am a </span>
-          <span class="typing-dynamic" id="typing-text"
-            >Full-Stack Developer</span
-          >
-          <span class="typing-cursor"></span>
-        </div>
+            <div class="hero-greeting-line">
+              <span class="hero-greet" data-translate="heroGreeting">Sabaidee! 🙏 Welcome to my profile, I'm</span>
+            </div>
 
-        <p class="hero-desc" data-translate="heroSubtitle">
-          Nice to meet you! Let's build something amazing together!
-        </p>
+            <h1 class="hero-title">
+              <span class="gradient-name" data-translate="heroName">SengKueVang BLONGMAI</span>
+              <span class="hero-handle">(huevangxp)</span>
+            </h1>
 
-        <div class="hero-ctas">
-          <a href="#about" class="btn btn-primary">
-            <span data-translate="heroCtaExplore">Explore Portfolio</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="#contact" class="btn btn-secondary">
-            <span data-translate="heroCtaContact">Get In Touch</span>
-            <i class="fas fa-paper-plane"></i>
-          </a>
-        </div>
-      </div>
+            <!-- Animated Typing Terminal Headline -->
+            <div class="typing-box">
+              <span class="typing-prompt">&gt;</span>
+              <span class="typing-label">I build </span>
+              <span class="typing-text" id="typing-text">Full-Stack Web Applications</span>
+              <span class="typing-cursor"></span>
+            </div>
 
-      <div class="hero-visual reveal active">
-        <div class="visual-box">
-          <div class="avatar-backdrop"></div>
-          <div class="avatar-border">
-            <div class="avatar-inner">
-              <i class="fas fa-code"></i>
+            <p class="hero-desc" data-translate="heroSubtitle">
+              Full-Stack Developer & UI/UX Designer based in Vientiane, Laos. Building elegant, scalable web applications and enterprise banking solutions.
+            </p>
+
+            <!-- Quick Status Chips -->
+            <div class="hero-chips">
+              <div class="chip">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-translate="badgeLocation">Vientiane, Laos 🇱🇦</span>
+              </div>
+              <div class="chip">
+                <i class="fas fa-layer-group"></i>
+                <span data-translate="badgeRole">Banking Systems & Full-Stack</span>
+              </div>
+              <div class="chip">
+                <i class="fab fa-github"></i>
+                <span data-translate="badgeRepos">170+ Public Repos</span>
+              </div>
+            </div>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span data-translate="heroCtaExplore">Explore Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#terminal" class="btn btn-secondary">
+                <i class="fas fa-terminal"></i>
+                <span data-translate="heroCtaTerminal">Launch CLI Terminal</span>
+              </a>
+              <a href="#contact" class="btn btn-glass">
+                <i class="fas fa-paper-plane"></i>
+                <span data-translate="heroCtaContact">Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="hero-socials">
+              <a href="https://github.com/huevangxp" target="_blank" rel="noopener" class="social-icon" title="GitHub: @huevangxp">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://github.com/Sengkue" target="_blank" rel="noopener" class="social-icon" title="GitHub: @Sengkue">
+                <i class="fas fa-code-branch"></i>
+              </a>
+              <a href="https://linkedin.com/in/Sengkuevang" target="_blank" rel="noopener" class="social-icon" title="LinkedIn: Sengkue Vang">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com/Sengkuevang" target="_blank" rel="noopener" class="social-icon" title="Twitter: @Sengkuevang">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.youtube.com/c/UCY4vNqCmk52RR4txKCDn2yA" target="_blank" rel="noopener" class="social-icon" title="YouTube Channel">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="mailto:skvgithub@gmail.com" class="social-icon" title="Email Direct">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Animated Hero Vector Banner -->
+          <div class="hero-visual reveal active">
+            <div class="hero-svg-frame glass-panel">
+              <img
+                src="./assets/hero.svg"
+                alt="SengKueVang BLONGMAI — Full-Stack Developer Banner"
+                class="hero-svg-img"
+              />
+              <div class="hero-frame-glow"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="reveal">
-      <div class="section-header">
-        <h2 class="section-title" data-translate="aboutTitle">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card glass-card">
-          <p data-translate="aboutText">
-            I’m a passionate full-stack developer with years of experience in
-            both front-end and back-end roles. I’ve contributed to various
-            projects for government and software companies, specializing in
-            scalable architectures and responsive user interfaces. I’m dedicated
-            to staying current with technology trends and bringing creativity to
-            every project.
+      <!-- ═══════════════════════════ ABOUT SECTION ═══════════════════════════ -->
+      <section id="about" class="section reveal">
+        <div class="section-title-wrap">
+          <img src="./assets/h-about.svg" alt="About Me Header" class="section-banner-svg" />
+          <h2 class="section-title sr-only" data-translate="aboutSectionTitle">About Me</h2>
+          <p class="section-subtitle" data-translate="aboutSectionSubtitle">
+            Crafting digital experiences with precision, modern design, and robust code.
           </p>
         </div>
-        <div class="about-highlights">
-          <div class="highlight-item">
-            <div class="highlight-icon">
-              <i class="fas fa-graduation-cap"></i>
+
+        <div class="about-grid">
+          <!-- Left: Rotating Orbit Vector Graphic -->
+          <div class="about-orbit-col glass-card">
+            <div class="orbit-container">
+              <img src="./assets/orbit.svg" alt="Technologies orbiting around developer" class="orbit-svg" />
             </div>
-            <div>
-              <h3 class="highlight-title" data-translate="aboutNuol">
-                Bachelor of Website Development
-              </h3>
-              <p class="highlight-desc">
-                National University of Laos (2019-2023)
+            <div class="orbit-caption">
+              <span class="dot-online"></span>
+              <span>Full-Stack Ecosystem • Core Engineering Orbit</span>
+            </div>
+          </div>
+
+          <!-- Right: Bio Description & Interactive Object Card -->
+          <div class="about-info-col">
+            <div class="glass-card about-card">
+              <p class="about-paragraph" data-translate="aboutText1">
+                I'm a passionate full-stack developer and designer from Vientiane, Laos 🇱🇦. I specialize in building performant web applications, cross-platform mobile apps, and mission-critical banking architectures.
               </p>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <h3 class="highlight-title" data-translate="aboutLocation">
-                Based in Vientiane, Laos
-              </h3>
-              <p class="highlight-desc">
-                Available for remote & hybrid opportunities
+              <p class="about-paragraph" data-translate="aboutText2">
+                With over 4+ years of hands-on software development experience across governmental organizations, IT consultancies, and the banking sector, I bridge the gap between aesthetic user interfaces and rock-solid backend infrastructure.
               </p>
+              <blockquote class="about-quote" data-translate="aboutLaoQuote">
+                🇱🇦 ຂ້ອຍເປັນນັກພັດທະນາເວັບ ແລະ ລະບົບຊອບແວ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ. ຍິນດີຮ່ວມມື ແລະ ສ້າງສັນຜົນງານຮ່ວມກັບທຸກຄົນ!
+              </blockquote>
+            </div>
+
+            <!-- Code Object Viewer with Copy Button -->
+            <div class="code-card glass-card">
+              <div class="code-header">
+                <div class="window-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="code-filename">developer.js</span>
+                <button id="copy-code-btn" class="code-copy-btn" title="Copy code snippet">
+                  <i class="far fa-copy"></i>
+                  <span data-translate="aboutCopyCode">Copy Code</span>
+                </button>
+              </div>
+              <pre class="code-body"><code id="dev-code-block"><span class="token-keyword">const</span> <span class="token-variable">dev</span> = {
+  <span class="token-prop">name</span>: <span class="token-string">"SengKueVang BLONGMAI (Hue Vang)"</span>,
+  <span class="token-prop">handle</span>: <span class="token-string">"huevangxp"</span>,
+  <span class="token-prop">location</span>: <span class="token-string">"Vientiane, Laos 🇱🇦"</span>,
+  <span class="token-prop">roles</span>: [<span class="token-string">"Full-Stack Developer"</span>, <span class="token-string">"UI/UX Designer"</span>, <span class="token-string">"Banking Systems"</span>],
+  <span class="token-prop">backend</span>: [<span class="token-string">"Node.js"</span>, <span class="token-string">"Python"</span>, <span class="token-string">"Nest.js"</span>, <span class="token-string">"PHP"</span>, <span class="token-string">"Laravel"</span>],
+  <span class="token-prop">frontend</span>: [<span class="token-string">"Vue"</span>, <span class="token-string">"Nuxt.js"</span>, <span class="token-string">"React"</span>, <span class="token-string">"Flutter"</span>, <span class="token-string">"TailwindCSS"</span>],
+  <span class="token-prop">database</span>: [<span class="token-string">"PostgreSQL"</span>, <span class="token-string">"MySQL"</span>, <span class="token-string">"MongoDB"</span>, <span class="token-string">"Firebase"</span>],
+  <span class="token-prop">funFact</span>: <span class="token-string">"I like to imagine I'm Spiderman 🕷️"</span>,
+  <span class="token-prop">motto</span>: <span class="token-string">"Keep it simple, make it beautiful."</span>,
+  <span class="token-prop">hireable</span>: <span class="token-boolean">true</span>
+};</code></pre>
+            </div>
+
+            <!-- Key Highlights Grid -->
+            <div class="about-highlights-grid">
+              <div class="highlight-box glass-card">
+                <div class="highlight-icon-wrap">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <h4 class="highlight-heading" data-translate="aboutNuol">Bachelor of Website Development</h4>
+                  <p class="highlight-sub" data-translate="aboutNuolDesc">National University of Laos (2019 – 2023)</p>
+                </div>
+              </div>
+
+              <div class="highlight-box glass-card">
+                <div class="highlight-icon-wrap">
+                  <i class="fas fa-landmark"></i>
+                </div>
+                <div>
+                  <h4 class="highlight-heading" data-translate="aboutBanking">Banking & Financial Solutions</h4>
+                  <p class="highlight-sub" data-translate="aboutBankingDesc">Freelance & Core Enterprise Systems (2023 – Present)</p>
+                </div>
+              </div>
+
+              <div class="highlight-box glass-card">
+                <div class="highlight-icon-wrap">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="highlight-heading" data-translate="aboutLocation">Based in Vientiane, Laos</h4>
+                  <p class="highlight-sub" data-translate="aboutLocationDesc">Available for remote, hybrid & on-site collaborations</p>
+                </div>
+              </div>
+
+              <div class="highlight-box glass-card">
+                <div class="highlight-icon-wrap">
+                  <i class="fas fa-spider"></i>
+                </div>
+                <div>
+                  <h4 class="highlight-heading" data-translate="aboutMotto">Core Motto</h4>
+                  <p class="highlight-sub" data-translate="aboutMottoDesc">Keep it simple, make it beautiful.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="reveal">
-      <div class="section-header">
-        <h2 class="section-title" data-translate="skillsTitle">
-          Programming Skills
-        </h2>
-        <p class="section-subtitle" data-translate="skillsSubtitle">
-          Technologies and frameworks I use to build premium, modern web and
-          mobile applications.
-        </p>
-      </div>
-
-      <!-- Skills Categories Filter Tab -->
-      <div class="skills-tabs">
-        <button class="tab-btn active" data-filter="all">All Tech</button>
-        <button
-          class="tab-btn"
-          data-filter="frontend"
-          data-translate="skillsCategoryFrontend"
-        >
-          Frontend
-        </button>
-        <button
-          class="tab-btn"
-          data-filter="backend"
-          data-translate="skillsCategoryBackend"
-        >
-          Backend
-        </button>
-        <button
-          class="tab-btn"
-          data-filter="languages"
-          data-translate="skillsCategoryLanguages"
-        >
-          Languages
-        </button>
-        <button
-          class="tab-btn"
-          data-filter="tools"
-          data-translate="skillsCategoryTools"
-        >
-          Tools
-        </button>
-      </div>
-
-      <div class="skills-grid">
-        <!-- Frontend -->
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="react"
-        >
-          <i class="fab fa-react skill-icon"></i>
-          <span class="skill-name">React / Native</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="vue"
-        >
-          <i class="fab fa-vuejs skill-icon"></i>
-          <span class="skill-name">Vue.js</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="nuxt"
-        >
-          <i class="fab fa-vuejs skill-icon"></i>
-          <span class="skill-name">Nuxt.js</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="flutter"
-        >
-          <i class="fas fa-mobile-alt skill-icon"></i>
-          <span class="skill-name">Flutter</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="android"
-        >
-          <i class="fab fa-android skill-icon"></i>
-          <span class="skill-name">Android Studio</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="swift"
-        >
-          <i class="fab fa-swift skill-icon"></i>
-          <span class="skill-name">Swift (iOS)</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="tailwind"
-        >
-          <i class="fab fa-css3-alt skill-icon"></i>
-          <span class="skill-name">TailwindCSS</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="frontend"
-          data-skill="bootstrap"
-        >
-          <i class="fab fa-bootstrap skill-icon"></i>
-          <span class="skill-name">Bootstrap</span>
+      <!-- ═══════════════════════════ INTERACTIVE TERMINAL SECTION ═══════════════════════════ -->
+      <section id="terminal" class="section reveal">
+        <div class="section-title-wrap">
+          <h2 class="section-heading-text" data-translate="terminalTitle">Interactive Terminal</h2>
+          <p class="section-subtitle" data-translate="terminalSubtitle">
+            Experience my profile through a Unix-style interactive command-line interface.
+          </p>
         </div>
 
-        <!-- Backend -->
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="node"
-        >
-          <i class="fab fa-node-js skill-icon"></i>
-          <span class="skill-name">Node.js</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="nest"
-        >
-          <i class="fas fa-cubes skill-icon"></i>
-          <span class="skill-name">Nest.js</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="express"
-        >
-          <i class="fas fa-server skill-icon"></i>
-          <span class="skill-name">Express.js</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="php"
-        >
-          <i class="fab fa-php skill-icon"></i>
-          <span class="skill-name">PHP</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="sequelize"
-        >
-          <i class="fas fa-database skill-icon"></i>
-          <span class="skill-name">Sequelize</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="typeorm"
-        >
-          <i class="fas fa-server skill-icon"></i>
-          <span class="skill-name">TypeORM</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="backend"
-          data-skill="prisma"
-        >
-          <i class="fas fa-network-wired skill-icon"></i>
-          <span class="skill-name">Prisma</span>
-        </div>
-
-        <!-- Languages -->
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="js"
-        >
-          <i class="fab fa-js-square skill-icon"></i>
-          <span class="skill-name">JavaScript</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="ts"
-        >
-          <i class="fas fa-code-branch skill-icon"></i>
-          <span class="skill-name">TypeScript</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="python"
-        >
-          <i class="fab fa-python skill-icon"></i>
-          <span class="skill-name">Python</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="dart"
-        >
-          <i class="fas fa-terminal skill-icon"></i>
-          <span class="skill-name">Dart</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="swift"
-        >
-          <i class="fab fa-swift skill-icon"></i>
-          <span class="skill-name">Swift</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="sql"
-        >
-          <i class="fas fa-database skill-icon"></i>
-          <span class="skill-name">SQL</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="languages"
-          data-skill="nosql"
-        >
-          <i class="fas fa-leaf skill-icon"></i>
-          <span class="skill-name">NoSQL</span>
-        </div>
-
-        <!-- Tools -->
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="figma"
-        >
-          <i class="fab fa-figma skill-icon"></i>
-          <span class="skill-name">Figma</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="git"
-        >
-          <i class="fab fa-git-alt skill-icon"></i>
-          <span class="skill-name">Git</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="github"
-        >
-          <i class="fab fa-github skill-icon"></i>
-          <span class="skill-name">GitHub</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="gitlab"
-        >
-          <i class="fab fa-gitlab skill-icon"></i>
-          <span class="skill-name">GitLab</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="ai"
-        >
-          <i class="fas fa-brain skill-icon"></i>
-          <span class="skill-name">AI Tools</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="videocoding"
-        >
-          <i class="fas fa-video skill-icon"></i>
-          <span class="skill-name">Video Coding</span>
-        </div>
-        <div
-          class="skill-card glass-card"
-          data-category="tools"
-          data-skill="fullstack"
-        >
-          <i class="fas fa-layer-group skill-icon"></i>
-          <span class="skill-name">Full Stack</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="experience" class="reveal">
-      <div class="section-header">
-        <h2 class="section-title" data-translate="experienceTitle">
-          Work Experience
-        </h2>
-      </div>
-
-      <div class="timeline">
-        <!-- Experience Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-date" data-translate="expTimeFreelance">
-              2023 – Present
+        <div class="terminal-wrapper glass-panel">
+          <!-- Terminal Title Bar -->
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="t-btn t-close"></span>
+              <span class="t-btn t-min"></span>
+              <span class="t-btn t-max"></span>
             </div>
-            <h3 class="timeline-title" data-translate="expRoleFreelance">
-              Freelance Developer & Banking Sector
-            </h3>
-            <div class="timeline-company">
-              <i class="fas fa-building"></i> Banking & Finance Sector
+            <div class="terminal-title">
+              <i class="fas fa-terminal"></i>
+              <span data-translate="terminalWindowHeader">seng@vientiane: ~ - zsh</span>
             </div>
-            <p class="timeline-desc" data-translate="expDescFreelance">
-              Designing and developing robust solutions, supporting internal
-              bank infrastructures, and handling diverse client requirements.
+            <div class="terminal-bar-actions">
+              <button id="terminal-demo-btn" class="t-action-btn" title="Run animated demo">
+                <i class="fas fa-play"></i> <span data-translate="terminalAutoPlay">Auto-Play Demo</span>
+              </button>
+              <button id="terminal-clear-btn" class="t-action-btn" title="Clear console">
+                <i class="fas fa-trash-alt"></i> <span data-translate="terminalClear">Clear</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Command Clickable Pills -->
+          <div class="terminal-shortcuts">
+            <span class="shortcut-tip" data-translate="terminalHelpTip">Type 'help' or click any quick command below:</span>
+            <div class="shortcut-pills">
+              <button class="cmd-pill" data-cmd="whoami">$ whoami</button>
+              <button class="cmd-pill" data-cmd="cat location.txt">$ cat location.txt</button>
+              <button class="cmd-pill" data-cmd="ls ~/skills">$ ls ~/skills</button>
+              <button class="cmd-pill" data-cmd="git status">$ git status</button>
+              <button class="cmd-pill" data-cmd="echo $MOTTO">$ echo $MOTTO</button>
+              <button class="cmd-pill" data-cmd="projects">$ projects</button>
+              <button class="cmd-pill" data-cmd="exp">$ exp</button>
+              <button class="cmd-pill" data-cmd="spiderman">$ spiderman</button>
+              <button class="cmd-pill" data-cmd="help">$ help</button>
+            </div>
+          </div>
+
+          <!-- Terminal Output Body -->
+          <div class="terminal-body" id="terminal-output" tabindex="0">
+            <!-- Dynamic command entries injected by script.js -->
+          </div>
+
+          <!-- Terminal Input Prompt -->
+          <div class="terminal-input-row">
+            <span class="t-prompt-user">seng@vientiane</span>
+            <span class="t-prompt-sep">:</span>
+            <span class="t-prompt-path">~</span>
+            <span class="t-prompt-symbol">$</span>
+            <input
+              type="text"
+              id="terminal-input"
+              class="terminal-input"
+              placeholder="type a command (e.g. whoami, skills, projects, help)..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ SKILLS SECTION ═══════════════════════════ -->
+      <section id="skills" class="section reveal">
+        <div class="section-title-wrap">
+          <img src="./assets/h-stack.svg" alt="Tech Stack Header" class="section-banner-svg" />
+          <h2 class="section-title sr-only" data-translate="skillsTitle">Tech Stack & Skills</h2>
+          <p class="section-subtitle" data-translate="skillsSubtitle">
+            A curated orbit of modern programming languages, frameworks, and tools I use every day.
+          </p>
+        </div>
+
+        <!-- Infinite Running Marquee -->
+        <div class="marquee-wrapper glass-card">
+          <div class="marquee-track">
+            <img src="./assets/stack-marquee.svg" alt="Technologies stack marquee animation" class="marquee-svg" />
+            <img src="./assets/stack-marquee.svg" alt="Technologies stack marquee animation loop" class="marquee-svg" />
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-tabs">
+          <button class="filter-btn active" data-filter="all" data-translate="skillsTabAll">All Technologies</button>
+          <button class="filter-btn" data-filter="frontend" data-translate="skillsTabFrontend">Frontend & Mobile</button>
+          <button class="filter-btn" data-filter="backend" data-translate="skillsTabBackend">Backend & APIs</button>
+          <button class="filter-btn" data-filter="database" data-translate="skillsTabDatabase">Database & Cloud</button>
+          <button class="filter-btn" data-filter="tools" data-translate="skillsTabTools">Design & DevOps</button>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Frontend & Mobile -->
+          <div class="skill-item glass-card" data-cat="frontend">
+            <div class="skill-icon-wrap" style="--skill-color: #42b883;">
+              <i class="fab fa-vuejs"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Vue.js / Nuxt 3</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">SSR, Composition API, Pinia, Nitro</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="frontend">
+            <div class="skill-icon-wrap" style="--skill-color: #61dafb;">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">React / Next.js</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">Hooks, App Router, Context, Redux</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="frontend">
+            <div class="skill-icon-wrap" style="--skill-color: #02569b;">
+              <i class="fas fa-mobile-screen"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Flutter & Dart</span>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Cross-Platform iOS & Android apps</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="frontend">
+            <div class="skill-icon-wrap" style="--skill-color: #38bdf8;">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">TailwindCSS</span>
+                <span class="skill-badge">Mastery</span>
+              </div>
+              <p class="skill-desc">Responsive layouts & custom animations</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="frontend">
+            <div class="skill-icon-wrap" style="--skill-color: #f7df1e;">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">JavaScript & TS</span>
+                <span class="skill-badge">Mastery</span>
+              </div>
+              <p class="skill-desc">ESNext, TypeScript, Static typing</p>
+            </div>
+          </div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-item glass-card" data-cat="backend">
+            <div class="skill-icon-wrap" style="--skill-color: #339933;">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Node.js & Express</span>
+                <span class="skill-badge">Mastery</span>
+              </div>
+              <p class="skill-desc">RESTful APIs, Microservices, Auth</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="backend">
+            <div class="skill-icon-wrap" style="--skill-color: #e0234e;">
+              <i class="fas fa-cube"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Nest.js</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">Enterprise modular TypeScript backend</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="backend">
+            <div class="skill-icon-wrap" style="--skill-color: #3776ab;">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Python</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">FastAPI, Automation, Scripting, AI</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="backend">
+            <div class="skill-icon-wrap" style="--skill-color: #ff2d20;">
+              <i class="fab fa-laravel"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">PHP & Laravel</span>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Eloquent ORM, Blade, Secure APIs</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="backend">
+            <div class="skill-icon-wrap" style="--skill-color: #00d2d3;">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Banking Protocols</span>
+                <span class="skill-badge">Specialist</span>
+              </div>
+              <p class="skill-desc">Payment gateways, secure endpoints</p>
+            </div>
+          </div>
+
+          <!-- Database & Cloud -->
+          <div class="skill-item glass-card" data-cat="database">
+            <div class="skill-icon-wrap" style="--skill-color: #336791;">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">PostgreSQL & MySQL</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">Relational modeling, indexing, joins</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="database">
+            <div class="skill-icon-wrap" style="--skill-color: #47a248;">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">MongoDB & NoSQL</span>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Document stores, aggregation pipelines</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="database">
+            <div class="skill-icon-wrap" style="--skill-color: #ffca28;">
+              <i class="fas fa-fire"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Firebase & Cloud</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">Firestore, Auth, Cloud Storage, Hosting</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="database">
+            <div class="skill-icon-wrap" style="--skill-color: #2b7489;">
+              <i class="fas fa-code-commit"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Prisma & TypeORM</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">Type-safe migrations & query builders</p>
+            </div>
+          </div>
+
+          <!-- Design & DevOps Tools -->
+          <div class="skill-item glass-card" data-cat="tools">
+            <div class="skill-icon-wrap" style="--skill-color: #f24e1e;">
+              <i class="fab fa-figma"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Figma UI / UX</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <p class="skill-desc">Wireframing, prototypes, design systems</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="tools">
+            <div class="skill-icon-wrap" style="--skill-color: #f05032;">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Git & GitHub</span>
+                <span class="skill-badge">Mastery</span>
+              </div>
+              <p class="skill-desc">CI/CD workflows, Actions, branching</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="tools">
+            <div class="skill-icon-wrap" style="--skill-color: #2496ed;">
+              <i class="fab fa-docker"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Docker & DevOps</span>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Containerization, deployment, environments</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass-card" data-cat="tools">
+            <div class="skill-icon-wrap" style="--skill-color: #31a8ff;">
+              <i class="fas fa-photo-film"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <span class="skill-title">Creative Suite</span>
+                <span class="skill-badge">Proficient</span>
+              </div>
+              <p class="skill-desc">Photoshop, Premiere Pro, vector styling</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ EXPERIENCE & EDUCATION SECTION ═══════════════════════════ -->
+      <section id="experience" class="section reveal">
+        <div class="section-title-wrap">
+          <img src="./assets/h-experience.svg" alt="Work Experience Header" class="section-banner-svg" />
+          <h2 class="section-title sr-only" data-translate="experienceTitle">Work & Education Timeline</h2>
+          <p class="section-subtitle" data-translate="experienceSubtitle">
+            My professional journey from academic graduation to banking infrastructure and freelance engineering.
+          </p>
+        </div>
+
+        <!-- Animated Timeline Banner -->
+        <div class="timeline-banner-box glass-card">
+          <img src="./assets/timeline.svg" alt="Animated Experience Timeline" class="timeline-svg" />
+        </div>
+
+        <!-- Interactive Vertical Experience Cards -->
+        <div class="modern-timeline">
+          <!-- Timeline Card 1 -->
+          <div class="tl-entry">
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-number">01</div>
+            </div>
+            <div class="tl-content glass-card">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-date-chip" data-translate="expTimeFreelance">2023 – Present</span>
+                  <h3 class="tl-title" data-translate="expRoleFreelance">Freelance Developer & Banking Sector</h3>
+                  <div class="tl-company">
+                    <i class="fas fa-landmark"></i>
+                    <span data-translate="expCompanyFreelance">Financial & Enterprise Sector</span>
+                  </div>
+                </div>
+                <div class="tl-tag-badge">Current Role</div>
+              </div>
+              <p class="tl-body" data-translate="expDescFreelance">
+                Engineering secure financial web services, payment integrations, internal administrative dashboards, and handling diverse client requirements with Vue, Node.js, and Python.
+              </p>
+              <div class="tl-tech-pills">
+                <span>Node.js</span>
+                <span>Vue 3</span>
+                <span>Python</span>
+                <span>PostgreSQL</span>
+                <span>Payment Gateways</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Card 2 -->
+          <div class="tl-entry">
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-number">02</div>
+            </div>
+            <div class="tl-content glass-card">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-date-chip" data-translate="expTimeLaosIt">2022 – 2023</span>
+                  <h3 class="tl-title" data-translate="expRoleLaosIt">Front-End Developer</h3>
+                  <div class="tl-company">
+                    <i class="fas fa-building"></i>
+                    <span data-translate="expCompanyLaosIt">Laos IT Capital Co., Ltd</span>
+                  </div>
+                </div>
+                <div class="tl-tag-badge">Agency</div>
+              </div>
+              <p class="tl-body" data-translate="expDescLaosIt">
+                Engineered scalable component libraries, partnered with UI/UX designers, optimized application responsiveness, and reduced web load latency by over 40%.
+              </p>
+              <div class="tl-tech-pills">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>TailwindCSS</span>
+                <span>Figma</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Card 3 -->
+          <div class="tl-entry">
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-number">03</div>
+            </div>
+            <div class="tl-content glass-card">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-date-chip" data-translate="expTimeLaiLaoLab">2021 – 2022</span>
+                  <h3 class="tl-title" data-translate="expRoleLaiLaoLab">Full-Stack Developer</h3>
+                  <div class="tl-company">
+                    <i class="fas fa-network-wired"></i>
+                    <span data-translate="expCompanyLaiLaoLab">LaiLaoLab ICT Solution</span>
+                  </div>
+                </div>
+                <div class="tl-tag-badge">Government & Enterprise</div>
+              </div>
+              <p class="tl-body" data-translate="expDescLaiLaoLab">
+                Developed end-to-end web apps, engineered RESTful APIs, and maintained database architectures for governmental departments and enterprise clients.
+              </p>
+              <div class="tl-tech-pills">
+                <span>Node.js</span>
+                <span>PHP / Laravel</span>
+                <span>MySQL</span>
+                <span>Express</span>
+                <span>Vue.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Card 4 (Education) -->
+          <div class="tl-entry">
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-number">04</div>
+            </div>
+            <div class="tl-content glass-card">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-date-chip" data-translate="eduTime">2019 – 2023</span>
+                  <h3 class="tl-title" data-translate="eduDegree">Bachelor of Website Development</h3>
+                  <div class="tl-company">
+                    <i class="fas fa-university"></i>
+                    <span data-translate="eduSchool">National University of Laos (NUOL)</span>
+                  </div>
+                </div>
+                <div class="tl-tag-badge">Higher Education</div>
+              </div>
+              <p class="tl-body" data-translate="eduDesc">
+                Graduated with comprehensive coursework in software architecture, database management systems, UI/UX aesthetics, and web security protocols.
+              </p>
+              <div class="tl-tech-pills">
+                <span>Software Engineering</span>
+                <span>Web Architectures</span>
+                <span>Database Administration</span>
+                <span>Security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ FEATURED PROJECTS SECTION ═══════════════════════════ -->
+      <section id="projects" class="section reveal">
+        <div class="section-title-wrap">
+          <img src="./assets/h-projects.svg" alt="Featured Projects Header" class="section-banner-svg" />
+          <h2 class="section-title sr-only" data-translate="projectsTitle">Featured Projects</h2>
+          <p class="section-subtitle" data-translate="projectsSubtitle">
+            Selected real-world applications, open-source repositories, and digital platforms.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="projects-filter-tabs">
+          <button class="filter-btn active" data-filter="all" data-translate="projectsTabAll">All Projects</button>
+          <button class="filter-btn" data-filter="web" data-translate="projectsTabWeb">Web Applications</button>
+          <button class="filter-btn" data-filter="mobile" data-translate="projectsTabMobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="backend" data-translate="projectsTabBackend">Backend & AI</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: MeUIPay -->
+          <div class="project-card glass-card" data-cat="web">
+            <div class="project-card-header">
+              <div class="project-category-tag">Fintech & Banking</div>
+              <div class="project-card-links">
+                <a href="https://github.com/huevangxp/MeUIPay" target="_blank" rel="noopener" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-icon-art" style="--accent-hue: #22d3ee;">
+                <i class="fas fa-credit-card"></i>
+              </div>
+            </div>
+            <h3 class="project-title">MeUIPay</h3>
+            <p class="project-desc" data-translate="projMeUIPayDesc">
+              Modern banking & payment UI interface supporting seamless transaction processing, wallet management, and multi-channel settlements.
             </p>
+            <div class="project-tech-tags">
+              <span>Vue.js</span>
+              <span>TypeScript</span>
+              <span>TailwindCSS</span>
+              <span>Fintech API</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/huevangxp/MeUIPay" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fab fa-github"></i> <span data-translate="projectSourceCode">Source Code</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Experience Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-date" data-translate="expTimeLaosIt">
-              2022 – 2023
+          <!-- Project 2: booking-apartment -->
+          <div class="project-card glass-card" data-cat="web">
+            <div class="project-card-header">
+              <div class="project-category-tag">Real Estate & Portal</div>
+              <div class="project-card-links">
+                <a href="https://github.com/huevangxp/booking-apartment" target="_blank" rel="noopener" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
-            <h3 class="timeline-title" data-translate="expRoleLaosIt">
-              Front-End Developer
-            </h3>
-            <div class="timeline-company">
-              <i class="fas fa-building"></i> Laos IT Capital
+            <div class="project-visual">
+              <div class="project-icon-art" style="--accent-hue: #818cf8;">
+                <i class="fas fa-building"></i>
+              </div>
             </div>
-            <p class="timeline-desc" data-translate="expDescLaosIt">
-              Built modular front-end components, collaborated with UI/UX
-              designers, and optimized application speed and responsiveness.
+            <h3 class="project-title">booking-apartment</h3>
+            <p class="project-desc" data-translate="projBookingDesc">
+              Full-featured apartment and property reservation portal with real-time room availability, interactive maps, and automated booking receipts.
             </p>
+            <div class="project-tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/huevangxp/booking-apartment" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fab fa-github"></i> <span data-translate="projectSourceCode">Source Code</span>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Experience Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-date" data-translate="expTimeLaiLaoLab">
-              2021 – 2022
+          <!-- Project 3: ai_server -->
+          <div class="project-card glass-card" data-cat="backend">
+            <div class="project-card-header">
+              <div class="project-category-tag">AI & Automation</div>
+              <div class="project-card-links">
+                <a href="https://github.com/huevangxp/ai_server" target="_blank" rel="noopener" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
-            <h3 class="timeline-title" data-translate="expRoleLaiLaoLab">
-              Front-End & Back-End Developer
-            </h3>
-            <div class="timeline-company">
-              <i class="fas fa-building"></i> LaiLaoLab ICT Solution
+            <div class="project-visual">
+              <div class="project-icon-art" style="--accent-hue: #f472b6;">
+                <i class="fas fa-robot"></i>
+              </div>
             </div>
-            <p class="timeline-desc" data-translate="expDescLaiLaoLab">
-              Developed end-to-end web apps, created RESTful APIs, and
-              maintained databases for governmental and enterprise clients.
+            <h3 class="project-title">ai_server</h3>
+            <p class="project-desc" data-translate="projAiServerDesc">
+              High-throughput asynchronous AI server and automation engine delivering intelligent scripting, document parsing, and inference APIs.
             </p>
+            <div class="project-tech-tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>AI Integration</span>
+              <span>AsyncIO</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/huevangxp/ai_server" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fab fa-github"></i> <span data-translate="projectSourceCode">Source Code</span>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="reveal">
-      <div class="section-header">
-        <h2 class="section-title" data-translate="educationTitle">Education</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-card">
-            <div class="timeline-date" data-translate="eduTime">
-              2019 – 2023
+          <!-- Project 4: FoodDeleveryApp-2CW1 -->
+          <div class="project-card glass-card" data-cat="mobile">
+            <div class="project-card-header">
+              <div class="project-category-tag">Mobile Application</div>
+              <div class="project-card-links">
+                <a href="https://github.com/Sengkue/FoodDeleveryApp-2CW1" target="_blank" rel="noopener" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
-            <h3 class="timeline-title" data-translate="eduDegree">
-              Bachelor of Website Development
-            </h3>
-            <div class="timeline-company">
-              <i class="fas fa-university"></i> National University of Laos
+            <div class="project-visual">
+              <div class="project-icon-art" style="--accent-hue: #eab308;">
+                <i class="fas fa-utensils"></i>
+              </div>
             </div>
-            <p class="timeline-desc" data-translate="eduDesc">
-              Completed academic training focused on web architectures, database
-              management, software engineering principles, and design
-              aesthetics.
+            <h3 class="project-title">FoodDeleveryApp</h3>
+            <p class="project-desc" data-translate="projFoodDeliveryDesc">
+              Cross-platform mobile food ordering & dispatch application with live cart tracking, interactive menus, and restaurant catalogs.
             </p>
-          </div>
-        </div>
-      </div>
-      <!-- GitHub Activity Graphs Section -->
-    <section id="github" class="reveal">
-      <div class="section-header">
-        <h2 class="section-title" data-translate="githubTitle">GitHub Contributions & Stats</h2>
-        <p class="section-subtitle" data-translate="githubSubtitle">My active contribution patterns and coding indicators directly from GitHub.</p>
-      </div>
-
-      <div class="github-dashboard">
-        <!-- Live Profile Panel -->
-        <div class="github-profile-panel glass-card">
-          <div class="github-profile-avatar skeleton skeleton-circle">
-            <img id="github-profile-pic" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="GitHub Profile">
-          </div>
-          <div class="github-profile-info">
-            <h3 id="github-profile-name" class="skeleton skeleton-text short" style="margin-bottom: 30px;">Loading...</h3>
-            <p id="github-profile-bio" class="skeleton skeleton-text">Retrieving details...</p>
-            <div class="github-profile-meta">
-              <span id="github-profile-company"><i class="fas fa-building"></i> Company</span>
-              <span id="github-profile-location"><i class="fas fa-map-marker-alt"></i> Location</span>
-              <a id="github-profile-url" href="#" target="_blank"><i class="fab fa-github"></i> View Profile</a>
+            <div class="project-tech-tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Firebase</span>
+              <span>State Management</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Sengkue/FoodDeleveryApp-2CW1" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fab fa-github"></i> <span data-translate="projectSourceCode">Source Code</span>
+              </a>
             </div>
           </div>
-        </div>
 
-        <!-- Stats Grid counters -->
-        <div class="github-stats-grid">
-          <div class="github-stat-card glass-card">
-            <div id="github-repos-count" class="github-stat-num skeleton skeleton-text">0</div>
-            <span class="github-stat-label" data-translate="githubStatsRepos">Public Repos</span>
-          </div>
-          <div class="github-stat-card glass-card">
-            <div id="github-followers-count" class="github-stat-num skeleton skeleton-text">0</div>
-            <span class="github-stat-label" data-translate="githubStatsFollowers">Followers</span>
-          </div>
-          <div class="github-stat-card glass-card">
-            <div id="github-following-count" class="github-stat-num skeleton skeleton-text">0</div>
-            <span class="github-stat-label" data-translate="githubStatsFollowing">Following</span>
-          </div>
-          <div class="github-stat-card glass-card">
-            <div id="github-gists-count" class="github-stat-num skeleton skeleton-text">0</div>
-            <span class="github-stat-label" data-translate="githubStatsGists">Gists</span>
-          </div>
-        </div>
-
-        <!-- Featured Repos Grid -->
-        <div>
-          <h3 class="github-repos-header" data-translate="githubReposTitle">Featured Repositories</h3>
-          <div class="repos-grid" id="github-repos-list">
-            <!-- Skeletons loading state -->
-            <div class="repo-card glass-card skeleton skeleton-card-bg">
-              <div class="skeleton skeleton-text short"></div>
-              <div class="skeleton skeleton-text"></div>
-              <div class="skeleton skeleton-text"></div>
-            </div>
-            <div class="repo-card glass-card skeleton skeleton-card-bg">
-              <div class="skeleton skeleton-text short"></div>
-              <div class="skeleton skeleton-text"></div>
-              <div class="skeleton skeleton-text"></div>
-            </div>
-            <div class="repo-card glass-card skeleton skeleton-card-bg">
-              <div class="skeleton skeleton-text short"></div>
-              <div class="skeleton skeleton-text"></div>
-              <div class="skeleton skeleton-text"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Visual Charts Tabbed Dashboard -->
-        <div class="github-charts-panel">
-          <div class="github-charts-tabs">
-            <button class="github-chart-tab-btn active" data-tab="github-tab-graph" data-translate="githubTabGraph">Activity Graph</button>
-            <button class="github-chart-tab-btn" data-tab="github-tab-langs" data-translate="githubTabLangs">Languages Donut</button>
-            <button class="github-chart-tab-btn" data-tab="github-tab-stats" data-translate="githubTabStats">Profile Summary</button>
-            <button class="github-chart-tab-btn" data-tab="github-tab-snake" data-translate="githubTabSnake">Contribution Snake</button>
-          </div>
-
-          <div class="github-tab-contents">
-            <!-- Graph Content -->
-            <div id="github-tab-graph" class="github-tab-content glass-card github-chart">
-              <img src="https://github-readme-activity-graph.vercel.app/graph?username=huevangxp&custom_title=huevangxp's%20GitHub%20Activity%20Graph&hide_border=true&border_radius=15&bg_color=none&color=008080&line=008080&point=417E87&area_color=008080&title_color=008080&area=true" alt="GitHub Activity Graph" />
-            </div>
-
-            <!-- Languages Content -->
-            <div id="github-tab-langs" class="github-tab-content hidden github-cards-row">
-              <div class="github-card-wrapper glass-card">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&hide=html,css&hide_border=true&hide_progress=false&layout=donut&langs_count=6&theme=city_lights" alt="Top Languages">
-              </div>
-              <div class="github-card-wrapper glass-card">
-                <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&hide=html,css&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Repos Per Language">
-              </div>
-              <div class="github-card-wrapper glass-card">
-                <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080&text_color=008080" alt="Most Commit Language">
+          <!-- Project 5: ibook_nuxt -->
+          <div class="project-card glass-card" data-cat="web">
+            <div class="project-card-header">
+              <div class="project-category-tag">E-Commerce & Library</div>
+              <div class="project-card-links">
+                <a href="https://github.com/Sengkue/ibook_nuxt" target="_blank" rel="noopener" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
               </div>
             </div>
-
-            <!-- Stats Content -->
-            <div id="github-tab-stats" class="github-tab-content hidden github-cards-row">
-              <div class="github-card-wrapper glass-card">
-                <img src="https://github-readme-stats.vercel.app/api?username=huevangxp&hide_border=true&border_radius=15&show_icons=true&theme=city_lights" alt="GitHub Stats">
-              </div>
-              <div class="github-card-wrapper glass-card">
-                <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights&hide_border=true&title_color=008080" alt="Profile Details">
+            <div class="project-visual">
+              <div class="project-icon-art" style="--accent-hue: #10b981;">
+                <i class="fas fa-book-open"></i>
               </div>
             </div>
+            <h3 class="project-title">ibook_nuxt</h3>
+            <p class="project-desc" data-translate="projIbookDesc">
+              Nuxt.js powered digital library & online bookstore with rapid server-side rendering, categorized catalogs, and smooth reader previews.
+            </p>
+            <div class="project-tech-tags">
+              <span>Nuxt.js</span>
+              <span>Vue 3</span>
+              <span>Pinia</span>
+              <span>TailwindCSS</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Sengkue/ibook_nuxt" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fab fa-github"></i> <span data-translate="projectSourceCode">Source Code</span>
+              </a>
+            </div>
+          </div>
 
-            <!-- Snake Content -->
-            <div id="github-tab-snake" class="github-tab-content hidden glass-card github-chart">
-              <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Snake animation" style="width:100%" />
+          <!-- Project 6: node_crub_for_Flutter -->
+          <div class="project-card glass-card" data-cat="mobile">
+            <div class="project-card-header">
+              <div class="project-category-tag">Full-Stack Mobile Architecture</div>
+              <div class="project-card-links">
+                <a href="https://github.com/Sengkue/node_crub_for_Flutter" target="_blank" rel="noopener" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-icon-art" style="--accent-hue: #6366f1;">
+                <i class="fas fa-arrows-split-up-and-left"></i>
+              </div>
+            </div>
+            <h3 class="project-title">Node CRUD Flutter</h3>
+            <p class="project-desc" data-translate="projFlutterCrudDesc">
+              Complete full-stack architecture demonstrating RESTful backend operations in Node.js connected with reactive Flutter mobile widgets.
+            </p>
+            <div class="project-tech-tags">
+              <span>Node.js</span>
+              <span>Flutter</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Sengkue/node_crub_for_Flutter" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fab fa-github"></i> <span data-translate="projectSourceCode">Source Code</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="reveal">
-      <div class="section-header">
-        <h2 class="section-title" data-translate="contactTitle">
-          Get In Touch
-        </h2>
-        <p class="section-subtitle" data-translate="contactSubtitle">
-          Have a project in mind, want to collaborate, or just say hello? Drop a
-          message below!
-        </p>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-method glass-card">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <div class="contact-lbl">Email</div>
-              <a href="mailto:huevang.xio@gmail.com" class="contact-val"
-                >huevang.xio@gmail.com</a
-              >
-            </div>
-          </div>
-
-          <div class="contact-method glass-card">
-            <div class="contact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <div>
-              <div class="contact-lbl">GitHub</div>
-              <a
-                href="https://github.com/huevangxp"
-                target="_blank"
-                class="contact-val"
-                >github.com/huevangxp</a
-              >
-            </div>
-          </div>
-
-          <div class="contact-method glass-card">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <div class="contact-lbl">Location</div>
-              <span class="contact-val" data-translate="aboutLocation"
-                >Based in Vientiane, Laos</span
-              >
-            </div>
-          </div>
+      <!-- ═══════════════════════════ GITHUB STATS & CONTRIBUTIONS ═══════════════════════════ -->
+      <section id="github" class="section reveal">
+        <div class="section-title-wrap">
+          <img src="./assets/h-stats.svg" alt="GitHub Stats Header" class="section-banner-svg" />
+          <h2 class="section-title sr-only" data-translate="githubTitle">GitHub Contributions & Activity</h2>
+          <p class="section-subtitle" data-translate="githubSubtitle">
+            Live contribution stats, activity metrics, 3D skyline, and repository data directly from GitHub.
+          </p>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form-card glass-card">
-          <form id="contact-form">
-            <div class="form-group">
-              <label
-                class="form-label"
-                for="form-name"
-                data-translate="formName"
-                >Your Name</label
-              >
-              <input
-                type="text"
-                id="form-name"
-                class="form-input"
-                required
-                data-translate-placeholder="formName"
+        <div class="github-dashboard">
+          <!-- Live User Profile Card -->
+          <div class="github-profile-card glass-panel">
+            <div class="gh-avatar-wrap">
+              <img
+                id="gh-avatar"
+                src="https://avatars.githubusercontent.com/u/58817289?v=4"
+                alt="huevangxp GitHub Avatar"
+                class="gh-avatar"
+              />
+              <span class="gh-status-badge"><i class="fas fa-check"></i></span>
+            </div>
+            <div class="gh-user-details">
+              <div class="gh-name-row">
+                <h3 id="gh-name" class="gh-name">Hue Vang (SengKueVang)</h3>
+                <span class="gh-login-pill">@huevangxp</span>
+              </div>
+              <p id="gh-bio" class="gh-bio">🌱 "Code, learn, and grow every day."</p>
+              <div class="gh-meta-tags">
+                <span><i class="fas fa-map-marker-alt"></i> Vientiane, Laos</span>
+                <span><i class="fas fa-briefcase"></i> Freelance & Banking</span>
+                <a href="https://github.com/huevangxp" target="_blank" rel="noopener" class="gh-link">
+                  <i class="fab fa-github"></i> <span data-translate="githubViewOnGithub">View GitHub Profile</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Live Stat Counters -->
+            <div class="gh-stats-counter-strip">
+              <div class="counter-box">
+                <span class="counter-num" id="gh-repos-num">170+</span>
+                <span class="counter-label" data-translate="githubPublicRepos">Public Repos</span>
+              </div>
+              <div class="counter-box">
+                <span class="counter-num" id="gh-followers-num">23</span>
+                <span class="counter-label" data-translate="githubFollowers">Followers</span>
+              </div>
+              <div class="counter-box">
+                <span class="counter-num" id="gh-following-num">13</span>
+                <span class="counter-label" data-translate="githubFollowing">Following</span>
+              </div>
+              <div class="counter-box">
+                <span class="counter-num">100%</span>
+                <span class="counter-label">Active</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tokyo Night Visual Stats Grid -->
+          <div class="github-cards-grid">
+            <div class="stat-img-card glass-card">
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=huevangxp&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"
+                alt="GitHub stats for huevangxp"
+                class="stat-vector-img"
+                loading="lazy"
               />
             </div>
-            <div class="form-group">
-              <label
-                class="form-label"
-                for="form-email"
-                data-translate="formEmail"
-                >Your Email Address</label
-              >
-              <input
-                type="email"
-                id="form-email"
-                class="form-input"
-                required
-                data-translate-placeholder="formEmail"
+            <div class="stat-img-card glass-card">
+              <img
+                src="https://github-readme-streak-stats.herokuapp.com/?user=huevangxp&theme=tokyonight&hide_border=true"
+                alt="GitHub streak stats for huevangxp"
+                class="stat-vector-img"
+                loading="lazy"
               />
             </div>
-            <div class="form-group">
-              <label
-                class="form-label"
-                for="form-message"
-                data-translate="formMessage"
-                >Your Message</label
-              >
-              <textarea
-                id="form-message"
-                class="form-input"
-                required
-                data-translate-placeholder="formMessage"
-              ></textarea>
+            <div class="stat-img-card glass-card">
+              <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&langs_count=8&layout=compact&theme=tokyonight&hide_border=true&count_private=true"
+                alt="Top languages for huevangxp"
+                class="stat-vector-img"
+                loading="lazy"
+              />
             </div>
-            <button type="submit" class="btn btn-primary">
-              <span data-translate="formSubmit">Send Message</span>
-              <i class="fas fa-paper-plane"></i>
-            </button>
+            <div class="stat-img-card glass-card">
+              <img
+                src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&theme=tokyonight"
+                alt="Repos per language for huevangxp"
+                class="stat-vector-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
 
-            <div id="form-feedback" class="form-feedback"></div>
-          </form>
+          <!-- 3D Contribution Skyline Switcher Panel -->
+          <div class="skyline-panel glass-panel">
+            <div class="skyline-header">
+              <div class="skyline-title-group">
+                <i class="fas fa-city skyline-icon"></i>
+                <h3 class="skyline-title" data-translate="githubSkylineTitle">3D Contribution Skyline</h3>
+              </div>
+
+              <!-- Switcher Tabs -->
+              <div class="skyline-tabs">
+                <button class="skyline-tab-btn active" data-src="./profile-3d-contrib/profile-night-rainbow.svg" data-translate="githubSkylineRainbow">
+                  Night Rainbow
+                </button>
+                <button class="skyline-tab-btn" data-src="./profile-3d-contrib/profile-gitblock.svg" data-translate="githubSkylineGitblock">
+                  Git Block
+                </button>
+                <button class="skyline-tab-btn" data-src="./profile-3d-contrib/profile-night-view.svg" data-translate="githubSkylineNight">
+                  Night View
+                </button>
+                <button class="skyline-tab-btn" data-src="./profile-3d-contrib/profile-green-animate.svg" data-translate="githubSkylineGreen">
+                  Green Animate
+                </button>
+              </div>
+            </div>
+
+            <div class="skyline-display-wrap">
+              <img
+                id="skyline-img"
+                src="./profile-3d-contrib/profile-night-rainbow.svg"
+                alt="3D contribution graph skyline"
+                class="skyline-img"
+              />
+            </div>
+          </div>
+
+          <!-- Snake Contribution Animation Section -->
+          <div class="snake-panel glass-panel">
+            <div class="snake-header">
+              <div class="snake-title-group">
+                <i class="fas fa-gamepad snake-icon"></i>
+                <h3 class="snake-title" data-translate="githubSnakeTitle">Contribution Snake Game</h3>
+              </div>
+              <span class="snake-badge">Interactive Grid Simulation</span>
+            </div>
+            <div class="snake-display-wrap">
+              <img
+                src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg"
+                alt="GitHub contribution snake animation"
+                class="snake-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ CONTACT SECTION ═══════════════════════════ -->
+      <section id="contact" class="section reveal">
+        <!-- CTA Glowing Banner (Matches cta.svg aesthetic) -->
+        <div class="cta-banner-wrapper">
+          <a href="mailto:skvgithub@gmail.com" class="cta-banner-link" title="Let's build something together">
+            <img src="./assets/cta.svg" alt="Let's build something together banner" class="cta-svg" />
+          </a>
+        </div>
+
+        <div class="section-title-wrap">
+          <img src="./assets/h-connect.svg" alt="Let's Connect Header" class="section-banner-svg" />
+          <h2 class="section-title sr-only" data-translate="contactTitle">Let's Build Something Together</h2>
+          <p class="section-subtitle" data-translate="contactSubtitle">
+            Have an exciting project, freelance opportunity, or just want to discuss tech? I'd love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Left: Contact Details & Methods -->
+          <div class="contact-methods-col">
+            <div class="contact-method-card glass-card">
+              <div class="cm-icon-box" style="--c-accent: #ea4335;">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="cm-info">
+                <span class="cm-label" data-translate="contactEmailLabel">Email Address</span>
+                <a href="mailto:skvgithub@gmail.com" class="cm-value">skvgithub@gmail.com</a>
+                <a href="mailto:huevang.xio@gmail.com" class="cm-subvalue">huevang.xio@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method-card glass-card">
+              <div class="cm-icon-box" style="--c-accent: #0891b2;">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="cm-info">
+                <span class="cm-label" data-translate="contactLocationLabel">Primary Location</span>
+                <span class="cm-value">Vientiane Capital, Laos 🇱🇦</span>
+                <span class="cm-subvalue">UTC+07:00 • Remote & Worldwide Friendly</span>
+              </div>
+            </div>
+
+            <div class="contact-method-card glass-card">
+              <div class="cm-icon-box" style="--c-accent: #6366f1;">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="cm-info">
+                <span class="cm-label" data-translate="contactSocialLabel">Connect Online</span>
+                <div class="contact-social-icons">
+                  <a href="https://github.com/huevangxp" target="_blank" rel="noopener" class="c-social" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/Sengkuevang" target="_blank" rel="noopener" class="c-social" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://twitter.com/Sengkuevang" target="_blank" rel="noopener" class="c-social" title="Twitter Profile">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.youtube.com/c/UCY4vNqCmk52RR4txKCDn2yA" target="_blank" rel="noopener" class="c-social" title="YouTube Channel">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dev Quote Box -->
+            <div class="dev-quote-box glass-card">
+              <img
+                src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"
+                alt="Random developer quote"
+                class="quote-svg"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-col glass-card">
+            <form id="contact-form" class="modern-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">
+                    <i class="fas fa-user"></i> <span data-translate="formName">Your Full Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="form-name"
+                    class="form-control"
+                    required
+                    placeholder="e.g. John Doe"
+                    data-translate-placeholder="formName"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">
+                    <i class="fas fa-at"></i> <span data-translate="formEmail">Your Email Address</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="form-email"
+                    class="form-control"
+                    required
+                    placeholder="e.g. name@company.com"
+                    data-translate-placeholder="formEmail"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">
+                  <i class="fas fa-tag"></i> <span data-translate="formSubject">Subject / Project Type</span>
+                </label>
+                <input
+                  type="text"
+                  id="form-subject"
+                  class="form-control"
+                  required
+                  placeholder="e.g. Full-Stack Web App Development / Banking Integration"
+                  data-translate-placeholder="formSubject"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">
+                  <i class="fas fa-comment-dots"></i> <span data-translate="formMessage">Tell me about your project or message...</span>
+                </label>
+                <textarea
+                  id="form-message"
+                  class="form-control form-textarea"
+                  rows="5"
+                  required
+                  placeholder="Share details regarding goals, timelines, or questions..."
+                  data-translate-placeholder="formMessage"
+                ></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block">
+                <span data-translate="formSubmit">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div id="form-toast" class="form-toast"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="main-footer">
+      <!-- Animated Night City Skyline with Swinging Spider -->
+      <div class="footer-city-container">
+        <img
+          src="./assets/footer-city.svg"
+          alt="Night city skyline with swinging Spider-Man"
+          class="footer-city-svg"
+        />
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-motto-wrap">
+          <h3 class="footer-motto" data-translate="footerMotto">✨ "Keep it simple, make it beautiful." ✨</h3>
+          <p class="footer-spider-quote" data-translate="footerSpider">With great code comes great responsibility 🕷️</p>
+        </div>
+
+        <div class="footer-bottom-row">
+          <p class="copyright-text" data-translate="footerCopyright">
+            Designed & Built with ❤️ by SengKueVang BLONGMAI (huevangxp). All rights reserved.
+          </p>
+
+          <div class="footer-social-links">
+            <a href="https://github.com/huevangxp" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Sengkue" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>
+            <a href="https://linkedin.com/in/Sengkuevang" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/Sengkuevang" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/c/UCY4vNqCmk52RR4txKCDn2yA" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p data-translate="footerText">
-        Designed & Built with ❤️ by huevangxp. All rights reserved.
-      </p>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Floating Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts: Translation Dictionary & Main Interactions Logic -->
     <script src="translation.js"></script>
     <script src="script.js"></script>
   </body>
