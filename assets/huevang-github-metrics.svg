@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" width="1000" height="390" role="img" aria-label="GitHub Metrics and Engineering Activity">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;display=swap');
+      .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
+      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+    </style>
+
+    <linearGradient id="metricsBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04080d"/>
+      <stop offset="50%" stop-color="#08141e"/>
+      <stop offset="100%" stop-color="#020508"/>
+    </linearGradient>
+
+    <linearGradient id="metricsBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+
+    <pattern id="metricsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
+    </pattern>
+
+    <clipPath id="metricsClip">
+      <rect width="1000" height="390"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#metricsClip)">
+    <!-- Base Canvas Background -->
+    <rect width="1000" height="390" fill="url(#metricsBg)"/>
+    <rect width="1000" height="390" fill="url(#metricsGrid)"/>
+
+    <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
+    <rect width="1000" height="40" fill="#07121b"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
+
+    <!-- Window Dots -->
+    <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="62" cy="20" r="5.5" fill="#27c93f"/>
+
+    <!-- Title Bar Label -->
+    <text x="500" y="25" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="2">
+      ⚡ GITHUB METRICS &amp; ENGINEERING ACTIVITY • VERIFIED STATS
+    </text>
+
+    <!-- Right Live Status Indicator -->
+    <circle cx="855" cy="20" r="3.5" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="866" y="24" fill="#22c55e" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+      ACTIVE CONTRIBUTOR
+    </text>
+
+    <!-- ════════════════════ 4 KEY METRIC TILES ════════════════════ -->
+    <!-- Tile 1: Total Lifetime Commits -->
+    <g transform="translate(18, 52)">
+      <rect width="232" height="88" fill="#060c13" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="115" height="20" fill="#0c1e1c" stroke="#2dd4bf" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#2dd4bf" class="code" font-size="10" font-weight="700">● COMMITS</text>
+      <text x="14" y="60" fill="#ffffff" class="head" font-size="28" font-weight="900" letter-spacing="0.5">7,089+</text>
+      <text x="14" y="76" fill="#94a3b8" class="head" font-size="11" font-weight="600">Lifetime Verified Contributions</text>
+    </g>
+
+    <!-- Tile 2: Total Repositories -->
+    <g transform="translate(262, 52)">
+      <rect width="232" height="88" fill="#060c13" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="135" height="20" fill="#181708" stroke="#ffd700" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● REPOSITORIES</text>
+      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">170+</text>
+      <text x="14" y="76" fill="#94a3b8" class="head" font-size="11" font-weight="600">Public &amp; Enterprise Codebases</text>
+    </g>
+
+    <!-- Tile 3: Tenure / Experience -->
+    <g transform="translate(506, 52)">
+      <rect width="232" height="88" fill="#060c13" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="135" height="20" fill="#071b26" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#38bdf8" class="code" font-size="10" font-weight="700">● ACTIVE TENURE</text>
+      <text x="14" y="60" fill="#ffffff" class="head" font-size="28" font-weight="900" letter-spacing="0.5">5+ Years</text>
+      <text x="14" y="76" fill="#94a3b8" class="head" font-size="11" font-weight="600">Active Member Since Dec 2019</text>
+    </g>
+
+    <!-- Tile 4: Recognized Achievements -->
+    <g transform="translate(750, 52)">
+      <rect width="232" height="88" fill="#060c13" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="145" height="20" fill="#071e11" stroke="#22c55e" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#22c55e" class="code" font-size="10" font-weight="700">● ACHIEVEMENTS</text>
+      <text x="14" y="60" fill="#22c55e" class="head" font-size="28" font-weight="900" letter-spacing="0.5">3 Badges</text>
+      <text x="14" y="76" fill="#94a3b8" class="head" font-size="11" font-weight="600">Quickdraw • YOLO • Pull Shark</text>
+    </g>
+
+    <!-- ════════════════════ LOWER SECTION: 2 PANELS ════════════════════ -->
+    <!-- Left Panel: Language Breakdown -->
+    <g transform="translate(18, 152)">
+      <rect width="476" height="220" fill="#060c13" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+      
+      <!-- Panel Header -->
+      <rect x="0" y="0" width="476" height="32" fill="#08141e"/>
+      <line x1="0" y1="32" x2="476" y2="32" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.2"/>
+      <text x="16" y="21" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
+        🌐 CORE LANGUAGE &amp; RUNTIME COMPOSITION
+      </text>
+
+      <!-- Multi-Segment Distribution Bar -->
+      <g transform="translate(16, 46)">
+        <rect width="444" height="12" fill="#0b1723"/>
+        <rect x="0" width="186" height="12" fill="#ffd700"/>
+        <rect x="187" width="124" height="12" fill="#2dd4bf"/>
+        <rect x="312" width="75" height="12" fill="#38bdf8"/>
+        <rect x="388" width="56" height="12" fill="#a855f7"/>
+      </g>
+
+      <!-- Language Item 1: TypeScript / JavaScript -->
+      <g transform="translate(16, 74)">
+        <rect x="0" y="3" width="10" height="10" fill="#ffd700"/>
+        <text x="18" y="12" fill="#ffffff" class="head" font-size="12.5" font-weight="700">TypeScript / JavaScript</text>
+        <text x="444" y="12" text-anchor="end" fill="#ffd700" class="code" font-size="12" font-weight="700">42%</text>
+        <text x="18" y="27" fill="#64748b" class="head" font-size="11">Frontend core, Vue components &amp; Node runtimes</text>
+      </g>
+
+      <!-- Language Item 2: Vue & Nuxt Ecosystem -->
+      <g transform="translate(16, 108)">
+        <rect x="0" y="3" width="10" height="10" fill="#2dd4bf"/>
+        <text x="18" y="12" fill="#ffffff" class="head" font-size="12.5" font-weight="700">Vue.js &amp; Nuxt.js Frameworks</text>
+        <text x="444" y="12" text-anchor="end" fill="#2dd4bf" class="code" font-size="12" font-weight="700">28%</text>
+        <text x="18" y="27" fill="#64748b" class="head" font-size="11">Production single-page portals &amp; SSR dashboards</text>
+      </g>
+
+      <!-- Language Item 3: Python & Core Backend -->
+      <g transform="translate(16, 142)">
+        <rect x="0" y="3" width="10" height="10" fill="#38bdf8"/>
+        <text x="18" y="12" fill="#ffffff" class="head" font-size="12.5" font-weight="700">Python / Jython &amp; AI Systems</text>
+        <text x="444" y="12" text-anchor="end" fill="#38bdf8" class="code" font-size="12" font-weight="700">18%</text>
+        <text x="18" y="27" fill="#64748b" class="head" font-size="11">Data analytics, agents, microservices &amp; server scripts</text>
+      </g>
+
+      <!-- Language Item 4: PHP, Java, Shell & Others -->
+      <g transform="translate(16, 176)">
+        <rect x="0" y="3" width="10" height="10" fill="#a855f7"/>
+        <text x="18" y="12" fill="#ffffff" class="head" font-size="12.5" font-weight="700">PHP, Java, Shell &amp; Infrastructure</text>
+        <text x="444" y="12" text-anchor="end" fill="#a855f7" class="code" font-size="12" font-weight="700">12%</text>
+        <text x="18" y="27" fill="#64748b" class="head" font-size="11">Enterprise backend legacy modules &amp; CI/CD scripts</text>
+      </g>
+    </g>
+
+    <!-- Right Panel: Engineering Velocity & Pillars -->
+    <g transform="translate(506, 152)">
+      <rect width="476" height="220" fill="#060c13" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+      
+      <!-- Panel Header -->
+      <rect x="0" y="0" width="476" height="32" fill="#08141e"/>
+      <line x1="0" y1="32" x2="476" y2="32" stroke="#ffd700" stroke-width="1" stroke-opacity="0.2"/>
+      <text x="16" y="21" fill="#ffd700" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
+        ⚡ ENGINEERING CADENCE &amp; CONTRIBUTION PILLARS
+      </text>
+
+      <!-- Pillar 1: High-Concurrency Banking -->
+      <g transform="translate(16, 46)">
+        <circle cx="6" cy="7" r="3" fill="#2dd4bf"/>
+        <text x="18" y="11" fill="#ffffff" class="head" font-size="13" font-weight="800">
+          Core Financial &amp; High-Availability Architecture
+        </text>
+        <text x="18" y="27" fill="#cbd5e1" class="head" font-size="11.5">
+          Engineered transaction settlement pipelines, secure banking internal portals,
+        </text>
+        <text x="18" y="42" fill="#cbd5e1" class="head" font-size="11.5">
+          and resilient payment gateways handling heavy transactional volumes.
+        </text>
+      </g>
+
+      <!-- Pillar 2: Scalable Portals & Open Source -->
+      <g transform="translate(16, 102)">
+        <circle cx="6" cy="7" r="3" fill="#ffd700"/>
+        <text x="18" y="11" fill="#ffffff" class="head" font-size="13" font-weight="800">
+          Continuous Delivery &amp; Multi-Repo Scalability
+        </text>
+        <text x="18" y="27" fill="#cbd5e1" class="head" font-size="11.5">
+          Maintainer of 170+ repositories with automated GitHub Actions CI/CD,
+        </text>
+        <text x="18" y="42" fill="#cbd5e1" class="head" font-size="11.5">
+          dockerized server deployments, and container orchestration pipelines.
+        </text>
+      </g>
+
+      <!-- Pillar 3: Recognized GitHub Honors -->
+      <g transform="translate(16, 158)">
+        <circle cx="6" cy="7" r="3" fill="#22c55e"/>
+        <text x="18" y="11" fill="#ffffff" class="head" font-size="13" font-weight="800">
+          Officially Recognized GitHub Achievements
+        </text>
+        <text x="18" y="27" fill="#cbd5e1" class="head" font-size="11.5">
+          Earned Quickdraw (rapid incident triage), YOLO (swift deployment),
+        </text>
+        <text x="18" y="42" fill="#cbd5e1" class="head" font-size="11.5">
+          and Pull Shark (consistent open PR code review &amp; merging).
+        </text>
+      </g>
+    </g>
+
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
+    <rect x="1" y="1" width="998" height="388" fill="none" stroke="url(#metricsBorder)" stroke-width="1.8" stroke-opacity="0.55"/>
+  </g>
+</svg>
