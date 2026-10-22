@@ -43,55 +43,9 @@
   <img src="./assets/huevang-console.svg" width="860" alt="Interactive Developer Terminal Console"/>
 </p>
 
-<table align="center" width="100%">
-<tr>
-<td width="48%" valign="middle" align="center">
-  <img src="./assets/huevang-orbit.svg" width="100%" alt="Huevang XIONGPOR Technology Orbit"/>
-</td>
-<td width="52%" valign="top">
-
-### 👤 Profile Summary
-
-- **Full Name**: **Huevang XIONGPOR**
-- **Age**: **26 Years Old**
-- **Base**: **Vientiane Capital, Laos 🇱🇦**
-- **Phone**: **020 78849378** *(+856 20 78849378)*
-- **Email**: **[huevang933@gmail.com](mailto:huevang933@gmail.com)**
-- **GitHub**: **[@huevangxp](https://github.com/huevangxp)** *(170+ Repositories)*
-
-I am a dedicated **Full-Stack Developer & Software Architect** with specialized focus on **banking solutions, enterprise web applications, and high-throughput APIs**. I build systems that merge bulletproof backend stability with elegant, modern user interfaces.
-
-<blockquote style="font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif;">
-🇱🇦 ຂ້ອຍແມ່ນ <b>Huevang XIONGPOR</b> (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ. ຍິນດີໃຫ້ຄຳປຶກສາ ແລະ ຮ່ວມພັດທະນາໂຄງການລະດັບວິສາຫະກິດ!
-</blockquote>
-
-```js
-const huevang = {
-  name: "Huevang XIONGPOR",
-  age: 26,
-  location: "Vientiane, Laos 🇱🇦",
-  phone: "020 78849378",
-  email: "huevang933@gmail.com",
-  roles: [
-    "Full-Stack Developer",
-    "Banking Systems Specialist",
-    "API & Microservices Architect"
-  ],
-  education: "Bachelor of Website Development (NUOL)",
-  coreStack: {
-    frontend: ["Vue 3", "Nuxt.js", "React", "TailwindCSS"],
-    backend: ["Node.js", "Nest.js", "Python", "PHP / Laravel"],
-    mobile: ["Flutter", "Dart"],
-    database: ["PostgreSQL", "MySQL", "MongoDB", "Firebase"]
-  },
-  motto: "Excellence through clean architecture & continuous precision.",
-  status: "Open to enterprise contracts, banking solutions & freelance"
-};
-```
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="./assets/huevang-about-card.svg" width="100%" alt="Huevang XIONGPOR Profile & Architecture Card"/>
+</p>
 
 <!-- ═══════════════════════════ EXPERIENCE & CAREER ═══════════════════════════ -->
 <p align="center">
