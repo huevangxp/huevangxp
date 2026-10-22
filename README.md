@@ -98,17 +98,7 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=huevangxp&show_icons=true&bg_color=060c12&title_color=ffd700&icon_color=2dd4bf&text_color=ffffff&border_color=2dd4bf&hide_border=false&count_private=true&include_all_commits=true&rank_icon=github" width="49%" alt="Huevang XIONGPOR GitHub Stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=huevangxp&background=060c12&border=2dd4bf&stroke=2dd4bf&ring=ffd700&fire=ffd700&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffd700&sideLabels=2dd4bf&dates=94a3b8" width="49%" alt="Huevang XIONGPOR Streak Stats"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huevangxp&langs_count=8&layout=compact&bg_color=060c12&title_color=ffd700&text_color=ffffff&border_color=2dd4bf&hide_border=false&count_private=true" width="49%" alt="Top Languages"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=huevangxp&theme=city_lights" width="49%" alt="Repos Per Language"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huevangxp&theme=city_lights" width="100%" alt="Profile Details"/>
+  <img src="./assets/huevang-github-metrics.svg" width="100%" alt="Huevang XIONGPOR GitHub Metrics &amp; Engineering Activity"/>
 </p>
 
 <p align="center">
@@ -116,9 +106,9 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <p align="center">
-  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="90" alt="Achievement: Quickdraw"/></a>&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="90" alt="Achievement: YOLO"/></a>&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="90" alt="Achievement: Pull Shark"/></a>
+  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="85" alt="Achievement: Quickdraw"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="85" alt="Achievement: YOLO"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="85" alt="Achievement: Pull Shark"/></a>
 </p>
 
 <!-- ═══════════════════════════ FEATURED PROJECTS ═══════════════════════════ -->
