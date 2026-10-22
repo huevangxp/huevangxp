@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480" role="img" aria-label="Technical Arsenal and Enterprise Competencies">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;display=swap');
+      .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
+      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+    </style>
+
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04080d"/>
+      <stop offset="50%" stop-color="#08141e"/>
+      <stop offset="100%" stop-color="#020508"/>
+    </linearGradient>
+
+    <linearGradient id="matrixBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+
+    <pattern id="matrixGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
+    </pattern>
+
+    <clipPath id="matrixClip">
+      <rect width="1000" height="480"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#matrixClip)">
+    <!-- Base Canvas -->
+    <rect width="1000" height="480" fill="url(#cardBg)"/>
+    <rect width="1000" height="480" fill="url(#matrixGrid)"/>
+
+    <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
+    <rect width="1000" height="40" fill="#07121b"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
+
+    <!-- Window Dots -->
+    <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="62" cy="20" r="5.5" fill="#27c93f"/>
+
+    <!-- Title Bar Label -->
+    <text x="500" y="25" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="2">
+      ⚡ TECHNICAL ARSENAL &amp; ENTERPRISE COMPETENCIES
+    </text>
+
+    <!-- Right Badge -->
+    <circle cx="855" cy="20" r="3.5" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="866" y="24" fill="#22c55e" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+      50+ VERIFIED SKILLS
+    </text>
+
+    <!-- ════════════════════ TIER 1: FRONTEND & MOBILE ════════════════════ -->
+    <g transform="translate(14, 50)">
+      <rect width="972" height="98" fill="#060c13" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Category Badge Box (Width: 195) -->
+      <rect x="10" y="10" width="185" height="78" fill="#0a1924" stroke="#2dd4bf" stroke-width="1.2"/>
+      <text x="102" y="38" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="900" letter-spacing="0.5">
+        🎨 Frontend &amp; Mobile
+      </text>
+      <text x="102" y="58" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">
+        WEB &amp; CROSS-PLATFORM
+      </text>
+      <text x="102" y="74" text-anchor="middle" fill="#ffd700" class="head" font-size="10.5" font-weight="700">
+        15 Technologies
+      </text>
+    </g>
+<rect x="225" y="66" width="70" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="235" cy="79" r="3" fill="#2dd4bf"/>
+<text x="270" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Vue 3</text>
+<rect x="303" y="66" width="74" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="313" cy="79" r="3" fill="#ffd700"/>
+<text x="350" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Nuxt 3</text>
+<rect x="385" y="66" width="68" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="395" cy="79" r="3" fill="#2dd4bf"/>
+<text x="429" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">React</text>
+<rect x="461" y="66" width="78" height="26" fill="#060d15" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="471" cy="79" r="3" fill="#ffffff"/>
+<text x="510" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Next.js</text>
+<rect x="547" y="66" width="112" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="557" cy="79" r="3" fill="#38bdf8"/>
+<text x="613" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">React Native</text>
+<rect x="667" y="66" width="76" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="677" cy="79" r="3" fill="#2dd4bf"/>
+<text x="715" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Flutter</text>
+<rect x="751" y="66" width="80" height="26" fill="#060d15" stroke="#22c55e" stroke-width="1.2"/>
+<circle cx="761" cy="79" r="3" fill="#22c55e"/>
+<text x="801" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Android</text>
+<rect x="839" y="66" width="68" height="26" fill="#060d15" stroke="#f97316" stroke-width="1.2"/>
+<circle cx="849" cy="79" r="3" fill="#f97316"/>
+<text x="883" y="83" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Swift</text>
+<rect x="225" y="98" width="102" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="235" cy="111" r="3" fill="#38bdf8"/>
+<text x="286" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">TypeScript</text>
+<rect x="335" y="98" width="106" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="345" cy="111" r="3" fill="#2dd4bf"/>
+<text x="398" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">TailwindCSS</text>
+<rect x="449" y="98" width="80" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="459" cy="111" r="3" fill="#38bdf8"/>
+<text x="499" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Vuetify</text>
+<rect x="537" y="98" width="94" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="547" cy="111" r="3" fill="#ffd700"/>
+<text x="594" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Canvas API</text>
+<rect x="639" y="98" width="98" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="649" cy="111" r="3" fill="#ffd700"/>
+<text x="698" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">JavaScript</text>
+<rect x="745" y="98" width="104" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="755" cy="111" r="3" fill="#2dd4bf"/>
+<text x="807" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">HTML5 / CSS3</text>
+<rect x="857" y="98" width="88" height="26" fill="#060d15" stroke="#a855f7" stroke-width="1.2"/>
+<circle cx="867" cy="111" r="3" fill="#a855f7"/>
+<text x="911" y="115" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Bootstrap</text>
+
+
+    <!-- ════════════════════ TIER 2: BACKEND & FRAMEWORKS ════════════════════ -->
+    <g transform="translate(14, 160)">
+      <rect width="972" height="98" fill="#060c13" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Category Badge Box -->
+      <rect x="10" y="10" width="185" height="78" fill="#18150a" stroke="#ffd700" stroke-width="1.2"/>
+      <text x="102" y="38" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="900" letter-spacing="0.5">
+        ⚙️ Backend &amp; APIs
+      </text>
+      <text x="102" y="58" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">
+        CORE ARCHITECTURE
+      </text>
+      <text x="102" y="74" text-anchor="middle" fill="#2dd4bf" class="head" font-size="10.5" font-weight="700">
+        13 Technologies
+      </text>
+    </g>
+<rect x="225" y="176" width="80" height="26" fill="#060d15" stroke="#22c55e" stroke-width="1.2"/>
+<circle cx="235" cy="189" r="3" fill="#22c55e"/>
+<text x="275" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Node.js</text>
+<rect x="313" y="176" width="78" height="26" fill="#060d15" stroke="#f43f5e" stroke-width="1.2"/>
+<circle cx="323" cy="189" r="3" fill="#f43f5e"/>
+<text x="362" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Nest.js</text>
+<rect x="399" y="176" width="76" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="409" cy="189" r="3" fill="#ffd700"/>
+<text x="447" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Python</text>
+<rect x="483" y="176" width="74" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="493" cy="189" r="3" fill="#ffd700"/>
+<text x="530" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Jython</text>
+<rect x="565" y="176" width="66" height="26" fill="#060d15" stroke="#f97316" stroke-width="1.2"/>
+<circle cx="575" cy="189" r="3" fill="#f97316"/>
+<text x="608" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Java</text>
+<rect x="639" y="176" width="62" height="26" fill="#060d15" stroke="#818cf8" stroke-width="1.2"/>
+<circle cx="649" cy="189" r="3" fill="#818cf8"/>
+<text x="680" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">PHP</text>
+<rect x="709" y="176" width="80" height="26" fill="#060d15" stroke="#f43f5e" stroke-width="1.2"/>
+<circle cx="719" cy="189" r="3" fill="#f43f5e"/>
+<text x="759" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Laravel</text>
+<rect x="797" y="176" width="76" height="26" fill="#060d15" stroke="#22c55e" stroke-width="1.2"/>
+<circle cx="807" cy="189" r="3" fill="#22c55e"/>
+<text x="845" y="193" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Django</text>
+<rect x="225" y="208" width="96" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="235" cy="221" r="3" fill="#2dd4bf"/>
+<text x="283" y="225" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Express.js</text>
+<rect x="329" y="208" width="136" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="339" cy="221" r="3" fill="#ffd700"/>
+<text x="407" y="225" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Bruno API Client</text>
+<rect x="473" y="208" width="110" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="483" cy="221" r="3" fill="#2dd4bf"/>
+<text x="538" y="225" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">RESTful APIs</text>
+<rect x="591" y="208" width="188" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="601" cy="221" r="3" fill="#ffd700"/>
+<text x="695" y="225" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Microservices Architecture</text>
+<rect x="787" y="208" width="146" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="797" cy="221" r="3" fill="#2dd4bf"/>
+<text x="870" y="225" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Banking Protocols</text>
+
+
+    <!-- ════════════════════ TIER 3: DATABASE & ANALYTICS ════════════════════ -->
+    <g transform="translate(14, 270)">
+      <rect width="972" height="98" fill="#060c13" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Category Badge Box -->
+      <rect x="10" y="10" width="185" height="78" fill="#0a1924" stroke="#2dd4bf" stroke-width="1.2"/>
+      <text x="102" y="38" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="900" letter-spacing="0.5">
+        🗄️ Database &amp; Data
+      </text>
+      <text x="102" y="58" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">
+        ANALYTICS &amp; STORAGE
+      </text>
+      <text x="102" y="74" text-anchor="middle" fill="#ffd700" class="head" font-size="10.5" font-weight="700">
+        10 Technologies
+      </text>
+    </g>
+<rect x="225" y="286" width="104" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="235" cy="299" r="3" fill="#2dd4bf"/>
+<text x="287" y="303" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">PostgreSQL</text>
+<rect x="337" y="286" width="74" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="347" cy="299" r="3" fill="#38bdf8"/>
+<text x="384" y="303" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">MySQL</text>
+<rect x="419" y="286" width="84" height="26" fill="#060d15" stroke="#f59e0b" stroke-width="1.2"/>
+<circle cx="429" cy="299" r="3" fill="#f59e0b"/>
+<text x="471" y="303" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">MariaDB</text>
+<rect x="511" y="286" width="88" height="26" fill="#060d15" stroke="#22c55e" stroke-width="1.2"/>
+<circle cx="521" cy="299" r="3" fill="#22c55e"/>
+<text x="565" y="303" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">MongoDB</text>
+<rect x="607" y="286" width="104" height="26" fill="#060d15" stroke="#f43f5e" stroke-width="1.2"/>
+<circle cx="617" cy="299" r="3" fill="#f43f5e"/>
+<text x="669" y="303" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Redis Cache</text>
+<rect x="719" y="286" width="86" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="729" cy="299" r="3" fill="#ffd700"/>
+<text x="772" y="303" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Firebase</text>
+<rect x="225" y="318" width="124" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="235" cy="331" r="3" fill="#2dd4bf"/>
+<text x="297" y="335" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Data Analytics</text>
+<rect x="357" y="318" width="172" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="367" cy="331" r="3" fill="#ffd700"/>
+<text x="453" y="335" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Web Research & OSINT</text>
+<rect x="537" y="318" width="174" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="547" cy="331" r="3" fill="#2dd4bf"/>
+<text x="634" y="335" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Database Optimization</text>
+<rect x="719" y="318" width="188" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="729" cy="331" r="3" fill="#38bdf8"/>
+<text x="823" y="335" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Relational Schema Design</text>
+
+
+    <!-- ════════════════════ TIER 4: AI & CLOUD INFRASTRUCTURE ════════════════════ -->
+    <g transform="translate(14, 380)">
+      <rect width="972" height="88" fill="#060c13" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Category Badge Box -->
+      <rect x="10" y="8" width="185" height="72" fill="#18150a" stroke="#ffd700" stroke-width="1.2"/>
+      <text x="102" y="32" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="900" letter-spacing="0.5">
+        🤖 AI, Cloud &amp; DevOps
+      </text>
+      <text x="102" y="50" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">
+        SYSTEMS &amp; AGENTS
+      </text>
+      <text x="102" y="66" text-anchor="middle" fill="#22c55e" class="head" font-size="10.5" font-weight="700">
+        11 Technologies
+      </text>
+    </g>
+<rect x="225" y="396" width="142" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="235" cy="409" r="3" fill="#ffd700"/>
+<text x="306" y="413" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Antigravity (AGY)</text>
+<rect x="375" y="396" width="180" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="385" cy="409" r="3" fill="#2dd4bf"/>
+<text x="475" y="413" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Artificial Intelligence (AI)</text>
+<rect x="563" y="396" width="78" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="573" cy="409" r="3" fill="#38bdf8"/>
+<text x="612" y="413" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Docker</text>
+<rect x="649" y="396" width="104" height="26" fill="#060d15" stroke="#f97316" stroke-width="1.2"/>
+<circle cx="659" cy="409" r="3" fill="#f97316"/>
+<text x="711" y="413" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Ubuntu VPS</text>
+<rect x="761" y="396" width="166" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="771" cy="409" r="3" fill="#38bdf8"/>
+<text x="854" y="413" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Windows Server 2021</text>
+<rect x="225" y="428" width="136" height="26" fill="#060d15" stroke="#ffd700" stroke-width="1.2"/>
+<circle cx="235" cy="441" r="3" fill="#ffd700"/>
+<text x="303" y="445" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Hosting Manager</text>
+<rect x="369" y="428" width="104" height="26" fill="#060d15" stroke="#2dd4bf" stroke-width="1.2"/>
+<circle cx="379" cy="441" r="3" fill="#2dd4bf"/>
+<text x="431" y="445" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Git / GitHub</text>
+<rect x="481" y="428" width="114" height="26" fill="#060d15" stroke="#f97316" stroke-width="1.2"/>
+<circle cx="491" cy="441" r="3" fill="#f97316"/>
+<text x="548" y="445" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">GitLab CI/CD</text>
+<rect x="603" y="428" width="104" height="26" fill="#060d15" stroke="#38bdf8" stroke-width="1.2"/>
+<circle cx="613" cy="441" r="3" fill="#38bdf8"/>
+<text x="665" y="445" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">VS Code Pro</text>
+<rect x="715" y="428" width="86" height="26" fill="#060d15" stroke="#f97316" stroke-width="1.2"/>
+<circle cx="725" cy="441" r="3" fill="#f97316"/>
+<text x="768" y="445" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Postman</text>
+<rect x="809" y="428" width="106" height="26" fill="#060d15" stroke="#a855f7" stroke-width="1.2"/>
+<circle cx="819" cy="441" r="3" fill="#a855f7"/>
+<text x="872" y="445" text-anchor="middle" fill="#ffffff" font-family="'Fira Code', Menlo, Consolas, monospace" font-size="11" font-weight="700">Figma UI/UX</text>
+
+
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
+    <rect x="1" y="1" width="998" height="478" fill="none" stroke="url(#matrixBorder)" stroke-width="1.8" stroke-opacity="0.55"/>
+  </g>
+</svg>
