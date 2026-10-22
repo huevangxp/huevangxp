@@ -3,26 +3,33 @@
   <img src="./assets/huevang-hero.svg" width="100%" alt="Huevang XIONGPOR — Full-Stack Developer & Banking Systems Specialist"/>
 </p>
 
+<!-- Typing Headline -->
 <p align="center">
   <a href="https://github.com/huevangxp">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=21&duration=3200&pause=900&color=2DD4BF&center=true&vCenter=true&width=820&height=50&lines=%E0%BA%AA%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%8D%E0%BA%94%E0%BA%B5+%F0%9F%91%8B+Sabaidee!+I'm+Huevang+XIONGPOR;%F0%9F%8E%82+Age%3A+26+Years+Old+%E2%80%A2+Vientiane%2C+Laos+%F0%9F%87%B1%F0%9F%87%A6;%F0%9F%92%BB+Full-Stack+Developer+%26+Banking+Systems+Specialist;%F0%9F%93%9E+Tel%3A+020+78849378+%E2%80%A2+huevang933%40gmail.com;%E2%9C%A8+Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Fintech" alt="Huevang XIONGPOR Typing Animation"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=21&duration=3200&pause=900&color=2DD4BF&center=true&vCenter=true&width=820&height=50&lines=Sabaidee!+%F0%9F%91%8B+Welcome%2C+I'm+Huevang+XIONGPOR;%F0%9F%8E%82+Age%3A+26+Years+Old+%E2%80%A2+Vientiane%2C+Laos+%F0%9F%87%B1%F0%9F%87%A6;%F0%9F%92%BB+Full-Stack+Developer+%26+Banking+Systems+Specialist;%F0%9F%93%9E+Tel%3A+020+78849378+%E2%80%A2+huevang933%40gmail.com;%E2%9C%A8+Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Fintech" alt="Huevang XIONGPOR Typing Animation"/>
   </a>
 </p>
 
-<!-- ═══════════════════════════ METADATA STATUS CHIPS ═══════════════════════════ -->
+<!-- ═══════════════════════════ UNIFIED MODERN STATUS BADGES (VECTOR SVG) ═══════════════════════════ -->
 <p align="center">
-  <img src="https://img.shields.io/badge/📍_Vientiane-Laos_🇱🇦-0d9488?style=for-the-badge&labelColor=060c12" alt="Location: Vientiane, Laos"/>
-  <img src="https://img.shields.io/badge/🎂_Age-26_Years-d97706?style=for-the-badge&labelColor=060c12" alt="Age: 26 Years"/>
-  <img src="https://img.shields.io/badge/📞_Tel-020_78849378-0d9488?style=for-the-badge&labelColor=060c12" alt="Phone: 020 78849378"/>
-  <img src="https://img.shields.io/badge/✉️_Email-huevang933@gmail.com-b45309?style=for-the-badge&labelColor=060c12" alt="Email: huevang933@gmail.com"/>
-  <img src="https://komarev.com/ghpvc/?username=huevangxp&color=2dd4bf&style=for-the-badge&label=PROFILE+VIEWS&labelColor=060c12" alt="Profile Views"/>
-  <img src="https://img.shields.io/badge/Open_to-Enterprise_%26_Freelance-22c55e?style=for-the-badge&labelColor=060c12" alt="Open to Collaboration"/>
+  <img src="./assets/huevang-badges.svg" width="980" alt="Vientiane Laos • Age 26 • Tel 020 78849378 • huevang933@gmail.com • Core Banking • Available to Hire"/>
+</p>
+
+<!-- Quick Action Direct Contact Chips -->
+<p align="center">
+  <a href="mailto:huevang933@gmail.com"><img src="https://img.shields.io/badge/✉️_Email-huevang933%40gmail.com-0d9488?style=flat-square" alt="Email Huevang"/></a>
+  &nbsp;
+  <a href="tel:+8562078849378"><img src="https://img.shields.io/badge/📞_Call-020_78849378-d97706?style=flat-square" alt="Phone Huevang"/></a>
+  &nbsp;
+  <a href="https://github.com/huevangxp"><img src="https://img.shields.io/badge/GitHub-huevangxp-060c12?style=flat-square&logo=github&logoColor=2dd4bf" alt="GitHub Profile"/></a>
+  &nbsp;
+  <a href="https://github.com/huevangxp?tab=repositories"><img src="https://img.shields.io/badge/Repos-170%2B_Public-22c55e?style=flat-square" alt="Repositories"/></a>
 </p>
 
 <!-- ═══════════════════════════ CALL TO ACTION ═══════════════════════════ -->
 <p align="center">
   <a href="mailto:huevang933@gmail.com">
-    <img src="./assets/huevang-cta.svg" width="580" alt="Let's build something exceptional — 020 78849378 • huevang933@gmail.com"/>
+    <img src="./assets/huevang-cta.svg" width="620" alt="Let's build something exceptional — 020 78849378 • huevang933@gmail.com"/>
   </a>
 </p>
 
@@ -31,7 +38,7 @@
   <img src="./assets/h-about-teal.svg" width="100%" alt="About Huevang XIONGPOR"/>
 </p>
 
-<!-- Animated Terminal Interface -->
+<!-- Animated Terminal Interface with Lao Language Font -->
 <p align="center">
   <img src="./assets/huevang-console.svg" width="860" alt="Interactive Developer Terminal Console"/>
 </p>
@@ -50,11 +57,13 @@
 - **Base**: **Vientiane Capital, Laos 🇱🇦**
 - **Phone**: **020 78849378** *(+856 20 78849378)*
 - **Email**: **[huevang933@gmail.com](mailto:huevang933@gmail.com)**
-- **GitHub**: **[@huevangxp](https://github.com/huevangxp)** *(170+ Public Repositories)*
+- **GitHub**: **[@huevangxp](https://github.com/huevangxp)** *(170+ Repositories)*
 
 I am a dedicated **Full-Stack Developer & Software Architect** with specialized focus on **banking solutions, enterprise web applications, and high-throughput APIs**. I build systems that merge bulletproof backend stability with elegant, modern user interfaces.
 
-> 🇱🇦 ຂ້ອຍແມ່ນ **Huevang XIONGPOR** (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ. ຍິນດີໃຫ້ຄຳປຶກສາ ແລະ ຮ່ວມພັດທະນາໂຄງການລະດັບວິສາຫະກິດ!
+<blockquote style="font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif;">
+🇱🇦 ຂ້ອຍແມ່ນ <b>Huevang XIONGPOR</b> (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ. ຍິນດີໃຫ້ຄຳປຶກສາ ແລະ ຮ່ວມພັດທະນາໂຄງການລະດັບວິສາຫະກິດ!
+</blockquote>
 
 ```js
 const huevang = {
@@ -199,7 +208,7 @@ const huevang = {
 </p>
 
 <div align="center">
-  <table align="center">
+  <table align="center" style="font-family: 'Noto Sans Lao', 'Segoe UI', sans-serif;">
     <tr>
       <td align="center"><b>📞 Telephone / WhatsApp</b></td>
       <td><code>+856 20 78849378</code> (020 78849378)</td>
@@ -210,7 +219,7 @@ const huevang = {
     </tr>
     <tr>
       <td align="center"><b>📍 Location</b></td>
-      <td>Vientiane Capital, Laos 🇱🇦 (UTC+07:00)</td>
+      <td>Vientiane Capital, Laos 🇱🇦 (ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ)</td>
     </tr>
     <tr>
       <td align="center"><b>💻 GitHub Profile</b></td>
@@ -236,5 +245,5 @@ const huevang = {
 
 <!-- ═══════════════════════════ FOOTER SKYLINE ═══════════════════════════ -->
 <p align="center">
-  <img src="./assets/huevang-footer.svg" width="100%" alt="Night city skyline with Huevang XIONGPOR signature"/>
+  <img src="./assets/huevang-footer.svg" width="100%" alt="Night city skyline with Huevang XIONGPOR signature in Noto Sans Lao"/>
 </p>
