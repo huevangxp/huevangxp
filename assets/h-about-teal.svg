@@ -1,50 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 60" width="1000" height="60" role="img" aria-label="ABOUT ME • PROFILE SUMMARY">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 70" width="1000" height="70" role="img" aria-label="⚡ ABOUT ARCHITECT • HUEVANG XIONGPOR">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&amp;family=Fira+Code:wght@700&amp;display=swap');
-      .h-main { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; font-size: 15.5px; font-weight: 800; letter-spacing: 2px; }
+      .h-title { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; font-size: 15.5px; font-weight: 900; letter-spacing: 2px; }
+      .h-tag { font-family: 'Fira Code', Menlo, Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
     </style>
-    <linearGradient id="hdrBorder_h-a" x1="0" y1="0" x2="1" y2="0">
+
+    <linearGradient id="hdrBg_h-about-teal.svg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020408"/>
+      <stop offset="50%" stop-color="#06121d"/>
+      <stop offset="100%" stop-color="#010305"/>
+    </linearGradient>
+
+    <linearGradient id="hdrBorder_h-about-teal.svg" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
       <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
+
+    <pattern id="hdrGrid_h-about-teal.svg" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#0d9488" stroke-width="0.6" stroke-opacity="0.08"/>
+      <circle cx="0" cy="0" r="1" fill="#ffd700" fill-opacity="0.15"/>
+    </pattern>
+
+    <clipPath id="hdrClip_h-about-teal.svg">
+      <rect width="1000" height="70"/>
+    </clipPath>
   </defs>
 
-  <!-- Left Cyber Track Line with Marching Circuit Animation -->
-  <line x1="10" y1="30" x2="240" y2="30" stroke="#0d9488" stroke-width="1.4" stroke-opacity="0.45" stroke-dasharray="8 6">
-    <animate attributeName="stroke-dashoffset" values="0;28" dur="1.8s" repeatCount="indefinite"/>
-  </line>
-  <rect x="0" y="26" width="8" height="8" fill="#0d9488"/>
+  <g clip-path="url(#hdrClip_h-about-teal.svg)">
+    <!-- Base Canvas Background -->
+    <rect width="1000" height="70" fill="url(#hdrBg_h-about-teal.svg)"/>
+    <rect width="1000" height="70" fill="url(#hdrGrid_h-about-teal.svg)"/>
 
-  <!-- Centered Sharp Banner (x: 250 to 750, w: 500) -->
-  <rect x="250" y="6" width="500" height="48" fill="#03070c" stroke="url(#hdrBorder_h-a)" stroke-width="1.6" stroke-opacity="0.6"/>
-  <rect x="254" y="10" width="492" height="40" fill="#06121d"/>
+    <!-- Animated Cyber Circuit Track Line -->
+    <line x1="0" y1="68" x2="1000" y2="68" stroke="#0d9488" stroke-width="1.4" stroke-opacity="0.4" stroke-dasharray="10 6">
+      <animate attributeName="stroke-dashoffset" values="0;32" dur="2s" repeatCount="indefinite"/>
+    </line>
 
-  <!-- Left Accent Pulse Dot -->
-  <circle cx="276" cy="30" r="4.5" fill="#ffd700"/>
-  <circle cx="276" cy="30" r="8" fill="none" stroke="#ffd700" stroke-width="1">
-    <animate attributeName="r" values="4.5;10;4.5" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
-  </circle>
+    <!-- Animated Cyber Laser Scanner -->
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.35">
+      <animate attributeName="y1" values="2;68;2" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="2;68;2" dur="4s" repeatCount="indefinite"/>
+    </line>
 
-  <!-- Pure Solid High-Contrast Typography in English -->
-  <text x="500" y="35" text-anchor="middle">
-    <tspan fill="#ffffff" class="h-main">ABOUT ME</tspan>
-    <tspan fill="#2dd4bf" class="h-main"> • </tspan>
-    <tspan fill="#2dd4bf" class="h-main">PROFILE SUMMARY</tspan>
-  </text>
+    <!-- ════════════ LEFT: TERMINAL DOTS & TAG ════════════ -->
+    <g transform="translate(18, 35)">
+      <!-- macOS Window Control Dots (Featured Project Signature) -->
+      <circle cx="8" cy="0" r="5.5" fill="#ff5f56"/>
+      <circle cx="26" cy="0" r="5.5" fill="#ffbd2e"/>
+      <circle cx="44" cy="0" r="5.5" fill="#2dd4bf"/>
 
-  <!-- Right Accent Pulse Dot -->
-  <circle cx="724" cy="30" r="4.5" fill="#2dd4bf"/>
-  <circle cx="724" cy="30" r="8" fill="none" stroke="#2dd4bf" stroke-width="1">
-    <animate attributeName="r" values="4.5;10;4.5" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
-  </circle>
+      <!-- Category Mini Badge -->
+      <rect x="62" y="-12" width="138" height="24" fill="#071a1c" stroke="#ffd700" stroke-width="0.9"/>
+      <circle cx="74" cy="0" r="3" fill="#ffd700"/>
+      <text x="136" y="4" text-anchor="middle" fill="#ffd700" class="h-tag">[SYS_ABOUT]</text>
+    </g>
 
-  <!-- Right Cyber Track Line with Marching Circuit Animation -->
-  <line x1="760" y1="30" x2="990" y2="30" stroke="#ffd700" stroke-width="1.4" stroke-opacity="0.45" stroke-dasharray="8 6">
-    <animate attributeName="stroke-dashoffset" values="0;-28" dur="1.8s" repeatCount="indefinite"/>
-  </line>
-  <rect x="992" y="26" width="8" height="8" fill="#ffd700"/>
+    <!-- ════════════ CENTER: PURE HIGH-CONTRAST TYPOGRAPHY ════════════ -->
+    <text x="500" y="42" text-anchor="middle">
+      <tspan fill="#ffffff" class="h-title">⚡ ABOUT ARCHITECT</tspan>
+      <tspan fill="#ffd700" class="h-title"> • </tspan>
+      <tspan fill="#2dd4bf" class="h-title">HUEVANG XIONGPOR</tspan>
+    </text>
+
+    <!-- ════════════ RIGHT: LIVE STATUS BADGE ════════════ -->
+    <g transform="translate(805, 35)">
+      <rect x="0" y="-13" width="175" height="26" fill="#181506" stroke="#2dd4bf" stroke-width="1.2"/>
+      <circle cx="16" cy="0" r="4" fill="#2dd4bf">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="16" cy="0" r="8" fill="none" stroke="#2dd4bf" stroke-width="1">
+        <animate attributeName="r" values="4;10;4" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="96" y="4.5" text-anchor="middle" fill="#2dd4bf" class="h-tag">● FULL_STACK_LEAD</text>
+    </g>
+
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
+    <rect x="1" y="1" width="998" height="68" fill="none" stroke="url(#hdrBorder_h-about-teal.svg)" stroke-width="1.8" stroke-opacity="0.65"/>
+  </g>
 </svg>
