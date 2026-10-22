@@ -131,6 +131,13 @@ Motto: "Excellence through clean architecture & continuous precision."
   <img src="./assets/huevang-contact-card.svg" width="100%" alt="Direct Communications &amp; Professional Engagement"/>
 </p>
 
+<p align="center">
+  <a href="tel:+8562078849378"><img src="https://img.shields.io/badge/%5BCALL%5D-020_78849378-0d9488?style=flat-square&amp;labelColor=020408" alt="Call Huevang"/></a>&nbsp;&nbsp;
+  <a href="mailto:huevang933@gmail.com"><img src="https://img.shields.io/badge/%5BMAIL%5D-huevang933%40gmail.com-ffd700?style=flat-square&amp;labelColor=020408&amp;color=ffd700" alt="Email Huevang"/></a>&nbsp;&nbsp;
+  <a href="https://wa.me/8562078849378"><img src="https://img.shields.io/badge/%5BCHAT%5D-WhatsApp_Direct-0d9488?style=flat-square&amp;logo=whatsapp&amp;logoColor=2dd4bf&amp;labelColor=020408" alt="WhatsApp Huevang"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp"><img src="https://img.shields.io/badge/%5BPORTFOLIO%5D-github.com%2Fhuevangxp-ffd700?style=flat-square&amp;logo=github&amp;logoColor=ffd700&amp;labelColor=020408" alt="GitHub Huevang"/></a>
+</p>
+
 <!-- Contribution Snake -->
 <p align="center">
   <picture>
