@@ -6,13 +6,13 @@
 <!-- Typing Headline -->
 <p align="center">
   <a href="https://github.com/huevangxp">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=21&duration=3200&pause=900&color=2DD4BF&center=true&vCenter=true&width=820&height=50&lines=Hello!+%F0%9F%91%8B+Welcome%2C+I'm+Huevang+XIONGPOR;%F0%9F%8E%82+Age%3A+26+Years+Old+%E2%80%A2+Vientiane%2C+Laos+%F0%9F%87%B1%F0%9F%87%A6;%F0%9F%92%BB+Full-Stack+Developer+%26+Banking+Systems+Specialist;%F0%9F%93%9E+Tel%3A+020+78849378+%E2%80%A2+huevang933%40gmail.com;%E2%9C%A8+Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Fintech" alt="Huevang XIONGPOR Typing Animation"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=21&duration=3200&pause=900&color=2DD4BF&center=true&vCenter=true&width=1000&height=48&lines=Hello!+%F0%9F%91%8B+Welcome%2C+I'm+Huevang+XIONGPOR;%F0%9F%8E%82+Age%3A+26+Years+Old+%E2%80%A2+Vientiane%2C+Laos+%F0%9F%87%B1%F0%9F%87%A6;%F0%9F%92%BB+Full-Stack+Developer+%26+Banking+Systems+Specialist;%F0%9F%93%9E+Tel%3A+020+78849378+%E2%80%A2+huevang933%40gmail.com;%E2%9C%A8+Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Fintech" alt="Huevang XIONGPOR Typing Animation"/>
   </a>
 </p>
 
 <!-- ═══════════════════════════ UNIFIED MODERN STATUS BADGES (VECTOR SVG) ═══════════════════════════ -->
 <p align="center">
-  <img src="./assets/huevang-badges.svg" width="980" alt="Vientiane Laos • Age 26 • Tel 020 78849378 • huevang933@gmail.com • Core Banking • Available to Hire"/>
+  <img src="./assets/huevang-badges.svg" width="100%" alt="Vientiane Laos • Age 26 • Tel 020 78849378 • huevang933@gmail.com • Core Banking • Available to Hire"/>
 </p>
 
 <!-- Quick Action Direct Contact Chips -->
@@ -29,7 +29,7 @@
 <!-- ═══════════════════════════ CALL TO ACTION ═══════════════════════════ -->
 <p align="center">
   <a href="mailto:huevang933@gmail.com">
-    <img src="./assets/huevang-cta.svg" width="620" alt="Let's build something exceptional — 020 78849378 • huevang933@gmail.com"/>
+    <img src="./assets/huevang-cta.svg" width="100%" alt="Let's build something exceptional — 020 78849378 • huevang933@gmail.com"/>
   </a>
 </p>
 
@@ -40,7 +40,7 @@
 
 <!-- Animated Terminal Interface with Lao Language Font -->
 <p align="center">
-  <img src="./assets/huevang-console.svg" width="860" alt="Interactive Developer Terminal Console"/>
+  <img src="./assets/huevang-console.svg" width="100%" alt="Interactive Developer Terminal Console"/>
 </p>
 
 <!-- 
