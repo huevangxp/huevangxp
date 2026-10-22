@@ -102,7 +102,7 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Skyline Graph"/>
+  <img src="./assets/huevang-3d-contributions.svg" width="100%" alt="Huevang XIONGPOR 3D Contribution Skyline, Radar &amp; Runtime Composition"/>
 </p>
 
 
