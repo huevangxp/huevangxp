@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 70" width="1000" height="70" role="img" aria-label="⚡ GITHUB METRICS • 30,278 CONTRIBUTIONS & VELOCITY">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 70" width="1000" height="70" role="img" aria-label="⚡ GITHUB METRICS • 30,278 CONTRIBUTIONS &amp; VELOCITY">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&amp;family=Fira+Code:wght@700&amp;display=swap');
@@ -6,32 +6,32 @@
       .h-tag { font-family: 'Fira Code', Menlo, Consolas, monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
     </style>
 
-    <linearGradient id="hdrBg_h-stats-teal.svg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrBg_h_stats_teal_svg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020408"/>
       <stop offset="50%" stop-color="#06121d"/>
       <stop offset="100%" stop-color="#010305"/>
     </linearGradient>
 
-    <linearGradient id="hdrBorder_h-stats-teal.svg" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="hdrBorder_h_stats_teal_svg" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
       <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
 
-    <pattern id="hdrGrid_h-stats-teal.svg" width="24" height="24" patternUnits="userSpaceOnUse">
+    <pattern id="hdrGrid_h_stats_teal_svg" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#0d9488" stroke-width="0.6" stroke-opacity="0.08"/>
       <circle cx="0" cy="0" r="1" fill="#ffd700" fill-opacity="0.15"/>
     </pattern>
 
-    <clipPath id="hdrClip_h-stats-teal.svg">
+    <clipPath id="hdrClip_h_stats_teal_svg">
       <rect width="1000" height="70"/>
     </clipPath>
   </defs>
 
-  <g clip-path="url(#hdrClip_h-stats-teal.svg)">
+  <g clip-path="url(#hdrClip_h_stats_teal_svg)">
     <!-- Base Canvas Background -->
-    <rect width="1000" height="70" fill="url(#hdrBg_h-stats-teal.svg)"/>
-    <rect width="1000" height="70" fill="url(#hdrGrid_h-stats-teal.svg)"/>
+    <rect width="1000" height="70" fill="url(#hdrBg_h_stats_teal_svg)"/>
+    <rect width="1000" height="70" fill="url(#hdrGrid_h_stats_teal_svg)"/>
 
     <!-- Animated Cyber Circuit Track Line -->
     <line x1="0" y1="68" x2="1000" y2="68" stroke="#0d9488" stroke-width="1.4" stroke-opacity="0.4" stroke-dasharray="10 6">
@@ -61,7 +61,7 @@
     <text x="500" y="42" text-anchor="middle">
       <tspan fill="#ffffff" class="h-title">⚡ GITHUB METRICS</tspan>
       <tspan fill="#ffd700" class="h-title"> • </tspan>
-      <tspan fill="#2dd4bf" class="h-title">30,278 CONTRIBUTIONS & VELOCITY</tspan>
+      <tspan fill="#2dd4bf" class="h-title">30,278 CONTRIBUTIONS &amp; VELOCITY</tspan>
     </text>
 
     <!-- ════════════ RIGHT: LIVE STATUS BADGE ════════════ -->
@@ -78,6 +78,6 @@
     </g>
 
     <!-- Outer Luxury Border (Sharp 90-degree corners) -->
-    <rect x="1" y="1" width="998" height="68" fill="none" stroke="url(#hdrBorder_h-stats-teal.svg)" stroke-width="1.8" stroke-opacity="0.65"/>
+    <rect x="1" y="1" width="998" height="68" fill="none" stroke="url(#hdrBorder_h_stats_teal_svg)" stroke-width="1.8" stroke-opacity="0.65"/>
   </g>
 </svg>
