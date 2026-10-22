@@ -113,8 +113,8 @@
     <g transform="translate(262, 54)">
       <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
       <rect x="12" y="10" width="140" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● 0xREPOSITORIES</text>
-      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">170+</text>
+      <text x="22" y="24" fill="#00ff66" class="code" font-size="10" font-weight="700">● 0xREPOSITORIES</text>
+      <text x="14" y="60" fill="#00ff66" class="head" font-size="28" font-weight="900" letter-spacing="0.5">170+</text>
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Public &amp; Enterprise Repos</text>
     </g>
 
@@ -124,7 +124,7 @@
       <rect x="12" y="10" width="135" height="20" fill="#071a1c" stroke="#00f0ff" stroke-width="0.8"/>
       <text x="22" y="24" fill="#00f0ff" class="code" font-size="10" font-weight="700">● 0xACTIVE_TENURE</text>
       <text x="14" y="60" fill="#ffffff" class="head" font-size="28" font-weight="900" letter-spacing="0.5">5+ Years</text>
-      <text x="14" y="76" fill="#94a3b8" class="code" font-size="10.5">Member Since Dec 12, 2019</text>
+      <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Member Since Dec 12, 2019</text>
     </g>
 
     <!-- Tile 4: Official Badges (Color 2: Matrix Green #00ff66) -->
@@ -167,8 +167,8 @@
       <g transform="translate(16, 70)">
         <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">JavaScript</text>
-        <text x="444" y="11" text-anchor="end" fill="#ffd700" class="code" font-size="11.5" font-weight="700">42%</text>
-        <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Frontend reactive logic, Node runtimes &amp; client components</text>
+        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">42%</text>
+        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Frontend reactive logic, Node runtimes &amp; client components</text>
       </g>
 
       <!-- Language Item 2: Batchfile (Green) -->
@@ -176,7 +176,7 @@
         <rect x="0" y="2" width="10" height="10" fill="#00ff66"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Batchfile Automation</text>
         <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">26%</text>
-        <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Windows Server orchestration, background triggers &amp; CI tasks</text>
+        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Windows Server orchestration, background triggers &amp; CI tasks</text>
       </g>
 
       <!-- Language Item 3: Vue (Cyan) -->
@@ -184,7 +184,7 @@
         <rect x="0" y="2" width="10" height="10" fill="#00f0ff"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Vue.js &amp; Nuxt Ecosystem</text>
         <text x="444" y="11" text-anchor="end" fill="#00f0ff" class="code" font-size="11.5" font-weight="700">16%</text>
-        <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Banking dashboards, interactive portals &amp; SSR applications</text>
+        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Banking dashboards, interactive portals &amp; SSR applications</text>
       </g>
 
       <!-- Language Item 4: HTML & Python (Gold & Green) -->
@@ -192,7 +192,7 @@
         <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">HTML5 (10%) &amp; Python (6%)</text>
         <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">16%</text>
-        <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Canvas APIs, semantic web structures &amp; Python microservices</text>
+        <text x="18" y="25" fill="#ffffff" class="head" font-size="10.5">Canvas APIs, semantic web structures &amp; Python microservices</text>
       </g>
     </g>
 
@@ -213,7 +213,7 @@
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
           Massive Velocity (30,278 Contributions in Last Year)
         </text>
-        <text x="16" y="26" fill="#cbd5e1" class="head" font-size="11">
+        <text x="16" y="26" fill="#ffffff" class="head" font-size="11">
           High-frequency engineering across daily production branches, banking pipelines,
         </text>
         <text x="16" y="41" fill="#00ff66" class="code" font-size="11">
@@ -227,10 +227,10 @@
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
           170+ Multi-Repo Scalability &amp; Architecture
         </text>
-        <text x="16" y="26" fill="#cbd5e1" class="head" font-size="11">
+        <text x="16" y="26" fill="#ffffff" class="head" font-size="11">
           Architectural lead across 170+ repositories with automated workflows,
         </text>
-        <text x="16" y="41" fill="#ffd700" class="code" font-size="11">
+        <text x="16" y="41" fill="#00ff66" class="code" font-size="11">
           dockerized runtime environments, and microservice APIs.
         </text>
       </g>
@@ -241,7 +241,7 @@
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
           Official Badges: Pull Shark • Quickdraw • YOLO
         </text>
-        <text x="16" y="26" fill="#cbd5e1" class="head" font-size="11">
+        <text x="16" y="26" fill="#ffffff" class="head" font-size="11">
           Recognized for rapid PR merging &amp; continuous delivery.
         </text>
         <text x="16" y="41" fill="#00f0ff" class="code" font-size="11">

@@ -31,7 +31,7 @@
   <!-- Pure Solid High-Contrast Typography in English -->
   <text x="500" y="35" text-anchor="middle">
     <tspan fill="#ffffff" class="h-main">TECHNICAL ARSENAL</tspan>
-    <tspan fill="#ffd700" class="h-main"> • </tspan>
+    <tspan fill="#00ff66" class="h-main"> • </tspan>
     <tspan fill="#00f0ff" class="h-main">CORE SKILLS & STACK</tspan>
   </text>
 

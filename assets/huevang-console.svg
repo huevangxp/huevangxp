@@ -140,7 +140,7 @@
     </g>
     <g style="animation: g3 16.5s linear infinite;">
       <text x="32" y="154" class="m">
-        <tspan fill="#00f0ff">[TEL]:</tspan> <tspan fill="#ffffff">020 78849378</tspan>  <tspan fill="#64748b">|</tspan>  <tspan fill="#00f0ff">[MAIL]:</tspan> <tspan fill="#00ff66">huevang933@gmail.com</tspan>  <tspan fill="#64748b">|</tspan>  <tspan fill="#00f0ff">[LOC]:</tspan> <tspan fill="#ffffff">Vientiane Capital, Laos 🇱🇦</tspan>
+        <tspan fill="#00f0ff">[TEL]:</tspan> <tspan fill="#ffffff">020 78849378</tspan>  <tspan fill="#ffffff">|</tspan>  <tspan fill="#00f0ff">[MAIL]:</tspan> <tspan fill="#00ff66">huevang933@gmail.com</tspan>  <tspan fill="#ffffff">|</tspan>  <tspan fill="#00f0ff">[LOC]:</tspan> <tspan fill="#ffffff">Vientiane Capital, Laos 🇱🇦</tspan>
       </text>
     </g>
 
@@ -153,7 +153,7 @@
       <rect x="290" y="166" width="210" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c4 16.5s linear infinite;"/>
     </g>
     <g style="animation: g5 16.5s linear infinite;">
-      <text x="32" y="208" class="m" fill="#ffd700">Bachelor of Website Development — National University of Laos (NUOL • 2019–2023)</text>
+      <text x="32" y="208" class="m" fill="#00ff66">Bachelor of Website Development — National University of Laos (NUOL • 2019–2023)</text>
     </g>
 
     <!-- Command 4: ls ~/skills -->
@@ -166,7 +166,7 @@
     </g>
     <g style="animation: g7 16.5s linear infinite;">
       <text x="32" y="262" class="m">
-        <tspan fill="#00ff66">Vue3</tspan>  <tspan fill="#ffffff">Nuxt.js</tspan>  <tspan fill="#00f0ff">React Native</tspan>  <tspan fill="#ffd700">Node.js</tspan>  <tspan fill="#00ff66">Python</tspan>  <tspan fill="#ffffff">NestJS</tspan>  <tspan fill="#00f0ff">PHP/Laravel</tspan>  <tspan fill="#ffd700">PostgreSQL</tspan>  <tspan fill="#00ff66">Docker</tspan>  <tspan fill="#ffffff">Antigravity AI</tspan>
+        <tspan fill="#00ff66">Vue3</tspan>  <tspan fill="#ffffff">Nuxt.js</tspan>  <tspan fill="#00f0ff">React Native</tspan>  <tspan fill="#00ff66">Node.js</tspan>  <tspan fill="#00ff66">Python</tspan>  <tspan fill="#ffffff">NestJS</tspan>  <tspan fill="#00f0ff">PHP/Laravel</tspan>  <tspan fill="#00ff66">PostgreSQL</tspan>  <tspan fill="#00ff66">Docker</tspan>  <tspan fill="#ffffff">Antigravity AI</tspan>
       </text>
     </g>
 
@@ -193,7 +193,7 @@
       <rect x="290" y="328" width="190" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c10 16.5s linear infinite;"/>
     </g>
     <g style="animation: g11 16.5s linear infinite;">
-      <text x="32" y="370" class="m" fill="#ffd700" font-weight="600">"Excellence through clean architecture, continuous innovation &amp; uncompromising precision." ✨</text>
+      <text x="32" y="370" class="m" fill="#00ff66" font-weight="600">"Excellence through clean architecture, continuous innovation &amp; uncompromising precision." ✨</text>
     </g>
 
     <!-- Active Blinking Prompt Line -->

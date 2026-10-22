@@ -89,7 +89,7 @@
 
       <!-- Title & Subtitle -->
       <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">💳 MeUIPay</text>
-      <text x="14" y="78" fill="#ffd700" class="head" font-size="12" font-weight="600">Digital Banking &amp; High-Speed Payment Interface</text>
+      <text x="14" y="78" fill="#00ff66" class="head" font-size="12" font-weight="600">Digital Banking &amp; High-Speed Payment Interface</text>
 
       <!-- Stack Badges -->
       <g transform="translate(14, 90)">
@@ -110,7 +110,7 @@
       </g>
 
       <!-- Description -->
-      <text x="14" y="134" fill="#cbd5e1" class="head" font-size="11.5">
+      <text x="14" y="134" fill="#ffffff" class="head" font-size="11.5">
         Secure multi-currency payment gateway and core settlement dashboard
       </text>
       <text x="14" y="152" fill="#00ff66" class="code" font-size="11.5">
@@ -124,8 +124,8 @@
       <!-- Top Tag & Status -->
       <rect x="14" y="12" width="160" height="22" fill="#181506" stroke="#ffd700" stroke-width="0.9"/>
       <circle cx="24" cy="23" r="3" fill="#ffd700"/>
-      <text x="92" y="27" text-anchor="middle" fill="#ffd700" class="code" font-size="10" font-weight="700">[PORTAL_ECOSYSTEM]</text>
-      <text x="460" y="27" text-anchor="end" fill="#ffd700" class="code" font-size="10.5" font-weight="700">● STABLE</text>
+      <text x="92" y="27" text-anchor="middle" fill="#00ff66" class="code" font-size="10" font-weight="700">[PORTAL_ECOSYSTEM]</text>
+      <text x="460" y="27" text-anchor="end" fill="#00ff66" class="code" font-size="10.5" font-weight="700">● STABLE</text>
 
       <!-- Title & Subtitle -->
       <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">🏢 booking-apartment</text>
@@ -150,10 +150,10 @@
       </g>
 
       <!-- Description -->
-      <text x="14" y="134" fill="#cbd5e1" class="head" font-size="11.5">
+      <text x="14" y="134" fill="#ffffff" class="head" font-size="11.5">
         End-to-end apartment booking engine with dynamic room availability,
       </text>
-      <text x="14" y="152" fill="#ffd700" class="code" font-size="11.5">
+      <text x="14" y="152" fill="#00ff66" class="code" font-size="11.5">
         lease management, tenant scheduling, and automated billing generation.
       </text>
     </g>
@@ -169,7 +169,7 @@
 
       <!-- Title & Subtitle -->
       <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">🤖 ai_server</text>
-      <text x="14" y="78" fill="#ffd700" class="head" font-size="12" font-weight="600">Model Inference &amp; Autonomous Agent Backend</text>
+      <text x="14" y="78" fill="#00ff66" class="head" font-size="12" font-weight="600">Model Inference &amp; Autonomous Agent Backend</text>
 
       <!-- Stack Badges -->
       <g transform="translate(14, 90)">
@@ -190,7 +190,7 @@
       </g>
 
       <!-- Description -->
-      <text x="14" y="134" fill="#cbd5e1" class="head" font-size="11.5">
+      <text x="14" y="134" fill="#ffffff" class="head" font-size="11.5">
         Scalable microservice server powering large language model inferences,
       </text>
       <text x="14" y="152" fill="#00ff66" class="code" font-size="11.5">
@@ -204,7 +204,7 @@
       <!-- Top Tag & Status -->
       <rect x="14" y="12" width="160" height="22" fill="#181506" stroke="#ffd700" stroke-width="0.9"/>
       <circle cx="24" cy="23" r="3" fill="#ffd700"/>
-      <text x="92" y="27" text-anchor="middle" fill="#ffd700" class="code" font-size="10" font-weight="700">[ENTERPRISE_ADMIN]</text>
+      <text x="92" y="27" text-anchor="middle" fill="#00ff66" class="code" font-size="10" font-weight="700">[ENTERPRISE_ADMIN]</text>
       <text x="460" y="27" text-anchor="end" fill="#00ff66" class="code" font-size="10.5" font-weight="700">● RBAC_SYS</text>
 
       <!-- Title & Subtitle -->
@@ -230,10 +230,10 @@
       </g>
 
       <!-- Description -->
-      <text x="14" y="134" fill="#cbd5e1" class="head" font-size="11.5">
+      <text x="14" y="134" fill="#ffffff" class="head" font-size="11.5">
         Mission-critical administrative management portal with granular role permissions,
       </text>
-      <text x="14" y="152" fill="#ffd700" class="code" font-size="11.5">
+      <text x="14" y="152" fill="#00ff66" class="code" font-size="11.5">
         real-time telemetry charts, immutable audit logging, and user controls.
       </text>
     </g>

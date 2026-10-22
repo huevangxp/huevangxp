@@ -18,7 +18,7 @@
     <!-- 2. Age Badge -->
     <g transform="translate(172, 0)">
       <rect width="130" height="34" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.7"/>
-      <text x="65" y="21.5" text-anchor="middle" fill="#ffd700" class="b-mono">🎂 Age: 26 Yrs</text>
+      <text x="65" y="21.5" text-anchor="middle" fill="#00ff66" class="b-mono">🎂 Age: 26 Yrs</text>
     </g>
 
     <!-- 3. Phone Badge -->
@@ -30,7 +30,7 @@
     <!-- 4. Email Badge -->
     <g transform="translate(486, 0)">
       <rect width="220" height="34" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.7"/>
-      <text x="110" y="21" text-anchor="middle" fill="#ffd700" class="b-mono">✉️ huevang933@gmail</text>
+      <text x="110" y="21" text-anchor="middle" fill="#00ff66" class="b-mono">✉️ huevang933@gmail</text>
     </g>
 
     <!-- 5. Banking & Enterprise -->

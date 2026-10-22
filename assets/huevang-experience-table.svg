@@ -78,9 +78,9 @@
 
     <!-- ════════════════════ TABLE HEADERS ════════════════════ -->
     <rect x="15" y="48" width="970" height="36" fill="#06121e" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.25"/>
-    <text x="32" y="71" fill="#ffd700" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[TIMELINE]</text>
-    <text x="200" y="71" fill="#ffd700" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[ORGANIZATION &amp; ROLE]</text>
-    <text x="530" y="71" fill="#ffd700" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[KEY CONTRIBUTIONS &amp; SCOPE]</text>
+    <text x="32" y="71" fill="#00ff66" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[TIMELINE]</text>
+    <text x="200" y="71" fill="#00ff66" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[ORGANIZATION &amp; ROLE]</text>
+    <text x="530" y="71" fill="#00ff66" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[KEY CONTRIBUTIONS &amp; SCOPE]</text>
 
     <!-- ════════════════════ ROW 1: Freelance & Banking (2023 - Present) ════════════════════ -->
     <g transform="translate(15, 92)">
@@ -92,10 +92,10 @@
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">Freelance &amp; Core Banking Sector</text>
-      <text x="195" y="54" fill="#ffd700" class="head" font-size="12" font-weight="600">Financial Systems &amp; Enterprise Architecture</text>
+      <text x="195" y="54" fill="#00ff66" class="head" font-size="12" font-weight="600">Financial Systems &amp; Enterprise Architecture</text>
 
       <!-- Scope -->
-      <text x="515" y="32" fill="#cbd5e1" class="head" font-size="12.5">
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Architecting secure payment gateways, core banking internal dashboards,
       </text>
       <text x="515" y="52" fill="#00ff66" class="code" font-size="12" font-weight="600">
@@ -109,17 +109,17 @@
       <!-- Timeline Badge -->
       <rect x="15" y="25" width="145" height="26" fill="#181506" stroke="#ffd700" stroke-width="1.2"/>
       <circle cx="28" cy="38" r="3" fill="#ffd700"/>
-      <text x="88" y="42" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">2022 – 2023</text>
+      <text x="88" y="42" text-anchor="middle" fill="#00ff66" class="code" font-size="11" font-weight="700">2022 – 2023</text>
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">Laos IT Capital Co., Ltd</text>
       <text x="195" y="54" fill="#00f0ff" class="head" font-size="12" font-weight="600">Front-End Developer &amp; UI Specialist</text>
 
       <!-- Scope -->
-      <text x="515" y="32" fill="#cbd5e1" class="head" font-size="12.5">
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Constructed modular frontend components, collaborated with UI/UX designers,
       </text>
-      <text x="515" y="52" fill="#ffd700" class="code" font-size="12" font-weight="600">
+      <text x="515" y="52" fill="#00ff66" class="code" font-size="12" font-weight="600">
         streamlined application bundle sizes, and enhanced load responsiveness.
       </text>
     </g>
@@ -134,10 +134,10 @@
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">LaiLaoLab ICT Solution</text>
-      <text x="195" y="54" fill="#38bdf8" class="head" font-size="12" font-weight="600">Full-Stack Developer</text>
+      <text x="195" y="54" fill="#00f0ff" class="head" font-size="12" font-weight="600">Full-Stack Developer</text>
 
       <!-- Scope -->
-      <text x="515" y="32" fill="#cbd5e1" class="head" font-size="12.5">
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Engineered end-to-end web applications and robust database architectures
       </text>
       <text x="515" y="52" fill="#00f0ff" class="code" font-size="12" font-weight="600">
@@ -151,14 +151,14 @@
       <!-- Timeline Badge -->
       <rect x="15" y="25" width="145" height="26" fill="#181506" stroke="#ffd700" stroke-width="1.2"/>
       <circle cx="28" cy="38" r="3" fill="#ffd700"/>
-      <text x="88" y="42" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">2019 – 2023</text>
+      <text x="88" y="42" text-anchor="middle" fill="#00ff66" class="code" font-size="11" font-weight="700">2019 – 2023</text>
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">National University of Laos (NUOL)</text>
       <text x="195" y="54" fill="#00ff66" class="head" font-size="12" font-weight="600">Bachelor of Website Development</text>
 
       <!-- Scope -->
-      <text x="515" y="32" fill="#cbd5e1" class="head" font-size="12.5">
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Comprehensive degree training covering software engineering, relational database
       </text>
       <text x="515" y="52" fill="#00ff66" class="code" font-size="12" font-weight="600">

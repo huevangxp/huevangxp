@@ -58,7 +58,7 @@
 
       <!-- Center Developer Node -->
       <circle r="44" fill="#060c12" stroke="url(#cardBorder)" stroke-width="2.5"/>
-      <text x="0" y="-6" text-anchor="middle" fill="#ffd700" class="head" font-size="13" font-weight="900" letter-spacing="1">HUEVANG</text>
+      <text x="0" y="-6" text-anchor="middle" fill="#00ff66" class="head" font-size="13" font-weight="900" letter-spacing="1">HUEVANG</text>
       <text x="0" y="14" text-anchor="middle" fill="#00f0ff" class="head" font-size="11.5" font-weight="800">26 y/o</text>
 
       <!-- Orbit Ring 1 (Speed: 20s) -->
@@ -185,25 +185,25 @@
       <circle cx="56" cy="19" r="5.5" fill="#27c93f"/>
 
       <!-- Window Title -->
-      <text x="248" y="24" text-anchor="middle" fill="#ffd700" class="code" font-size="12" font-weight="700">
+      <text x="248" y="24" text-anchor="middle" fill="#00ff66" class="code" font-size="12" font-weight="700">
         huevang_profile.js
       </text>
 
       <!-- Profile Header Inside Window -->
       <g transform="translate(20, 60)">
         <text x="0" y="0" fill="#00f0ff" class="head" font-size="18" font-weight="900" letter-spacing="1">
-          <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#ffd700">XIONGPOR</tspan>
+          <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#00ff66">XIONGPOR</tspan>
         </text>
         <rect x="236" y="-14" width="82" height="20" fill="#0f2420" stroke="#22c55e" stroke-width="1"/>
-        <text x="277" y="0" text-anchor="middle" fill="#22c55e" class="head" font-size="11" font-weight="800">
+        <text x="277" y="0" text-anchor="middle" fill="#00ff66" class="head" font-size="11" font-weight="800">
           AGE: 26 YO
         </text>
 
         <!-- Quick Contacts Bar Inside Window -->
-        <text x="0" y="22" fill="#ffd700" class="code" font-size="12" font-weight="600">
+        <text x="0" y="22" fill="#00ff66" class="code" font-size="12" font-weight="600">
           📞 020 78849378  •  ✉️ huevang933@gmail.com
         </text>
-        <text x="0" y="42" fill="#94a3b8" class="head" font-size="12">
+        <text x="0" y="42" fill="#ffffff" class="head" font-size="12">
           📍 Vientiane Capital, Laos 🇱🇦 • NUOL Graduate
         </text>
       </g>
@@ -219,46 +219,46 @@
       <!-- Syntax-Highlighted Code Block with explicit Y line positions (Solid colors) -->
       <g transform="translate(20, 188)" class="code">
         <!-- Line 1 -->
-        <text x="0" y="0"><tspan fill="#f472b6" font-weight="700">const</tspan> <tspan fill="#00f0ff">huevang</tspan> = {</text>
+        <text x="0" y="0"><tspan fill="#00f0ff" font-weight="700">const</tspan> <tspan fill="#00f0ff">huevang</tspan> = {</text>
 
         <!-- Line 2 -->
-        <text x="14" y="20"><tspan fill="#ffd700">name</tspan>: <tspan fill="#00ff66">"Huevang XIONGPOR"</tspan>,</text>
+        <text x="14" y="20"><tspan fill="#00ff66">name</tspan>: <tspan fill="#00ff66">"Huevang XIONGPOR"</tspan>,</text>
 
         <!-- Line 3 -->
-        <text x="14" y="40"><tspan fill="#ffd700">age</tspan>: <tspan fill="#f59e0b">26</tspan>,</text>
+        <text x="14" y="40"><tspan fill="#00ff66">age</tspan>: <tspan fill="#00ff66">26</tspan>,</text>
 
         <!-- Line 4 -->
-        <text x="14" y="60"><tspan fill="#ffd700">phone</tspan>: <tspan fill="#00ff66">"020 78849378"</tspan>,</text>
+        <text x="14" y="60"><tspan fill="#00ff66">phone</tspan>: <tspan fill="#00ff66">"020 78849378"</tspan>,</text>
 
         <!-- Line 5 -->
-        <text x="14" y="80"><tspan fill="#ffd700">email</tspan>: <tspan fill="#00ff66">"huevang933@gmail.com"</tspan>,</text>
+        <text x="14" y="80"><tspan fill="#00ff66">email</tspan>: <tspan fill="#00ff66">"huevang933@gmail.com"</tspan>,</text>
 
         <!-- Line 6 -->
-        <text x="14" y="100"><tspan fill="#ffd700">location</tspan>: <tspan fill="#00ff66">"Vientiane, Laos 🇱🇦"</tspan>,</text>
+        <text x="14" y="100"><tspan fill="#00ff66">location</tspan>: <tspan fill="#00ff66">"Vientiane, Laos 🇱🇦"</tspan>,</text>
 
         <!-- Line 7 -->
-        <text x="14" y="120"><tspan fill="#ffd700">roles</tspan>: [<tspan fill="#00ff66">"Full-Stack Dev"</tspan>, <tspan fill="#00ff66">"Banking Specialist"</tspan>],</text>
+        <text x="14" y="120"><tspan fill="#00ff66">roles</tspan>: [<tspan fill="#00ff66">"Full-Stack Dev"</tspan>, <tspan fill="#00ff66">"Banking Specialist"</tspan>],</text>
 
         <!-- Line 8 -->
-        <text x="14" y="140"><tspan fill="#ffd700">stack</tspan>: {</text>
+        <text x="14" y="140"><tspan fill="#00ff66">stack</tspan>: {</text>
 
         <!-- Line 9 -->
-        <text x="28" y="160"><tspan fill="#38bdf8">front</tspan>: [<tspan fill="#00ff66">"Vue 3"</tspan>, <tspan fill="#00ff66">"Nuxt"</tspan>, <tspan fill="#00ff66">"React"</tspan>, <tspan fill="#00ff66">"Tailwind"</tspan>],</text>
+        <text x="28" y="160"><tspan fill="#00f0ff">front</tspan>: [<tspan fill="#00ff66">"Vue 3"</tspan>, <tspan fill="#00ff66">"Nuxt"</tspan>, <tspan fill="#00ff66">"React"</tspan>, <tspan fill="#00ff66">"Tailwind"</tspan>],</text>
 
         <!-- Line 10 -->
-        <text x="28" y="180"><tspan fill="#38bdf8">back</tspan>: [<tspan fill="#00ff66">"Node.js"</tspan>, <tspan fill="#00ff66">"Nest.js"</tspan>, <tspan fill="#00ff66">"Python"</tspan>, <tspan fill="#00ff66">"Laravel"</tspan>],</text>
+        <text x="28" y="180"><tspan fill="#00f0ff">back</tspan>: [<tspan fill="#00ff66">"Node.js"</tspan>, <tspan fill="#00ff66">"Nest.js"</tspan>, <tspan fill="#00ff66">"Python"</tspan>, <tspan fill="#00ff66">"Laravel"</tspan>],</text>
 
         <!-- Line 11 -->
-        <text x="28" y="200"><tspan fill="#38bdf8">mobile</tspan>: [<tspan fill="#00ff66">"Flutter"</tspan>, <tspan fill="#00ff66">"Dart"</tspan>],</text>
+        <text x="28" y="200"><tspan fill="#00f0ff">mobile</tspan>: [<tspan fill="#00ff66">"Flutter"</tspan>, <tspan fill="#00ff66">"Dart"</tspan>],</text>
 
         <!-- Line 12 -->
-        <text x="28" y="220"><tspan fill="#38bdf8">database</tspan>: [<tspan fill="#00ff66">"PostgreSQL"</tspan>, <tspan fill="#00ff66">"MySQL"</tspan>, <tspan fill="#00ff66">"MongoDB"</tspan>]</text>
+        <text x="28" y="220"><tspan fill="#00f0ff">database</tspan>: [<tspan fill="#00ff66">"PostgreSQL"</tspan>, <tspan fill="#00ff66">"MySQL"</tspan>, <tspan fill="#00ff66">"MongoDB"</tspan>]</text>
 
         <!-- Line 13 -->
         <text x="14" y="240">},</text>
 
         <!-- Line 14 -->
-        <text x="14" y="260"><tspan fill="#ffd700">motto</tspan>: <tspan fill="#ffd700">"Clean architecture &amp; continuous precision."</tspan></text>
+        <text x="14" y="260"><tspan fill="#00ff66">motto</tspan>: <tspan fill="#00ff66">"Clean architecture &amp; continuous precision."</tspan></text>
 
         <!-- Line 15 -->
         <text x="0" y="280">};</text>

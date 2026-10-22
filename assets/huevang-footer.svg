@@ -50,12 +50,12 @@
 
   <!-- Center Signboard -->
   <text x="500" y="80" text-anchor="middle" class="foot-title" font-size="28" font-weight="900" letter-spacing="3">
-    <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#ffd700">XIONGPOR</tspan>
+    <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#00ff66">XIONGPOR</tspan>
   </text>
   <text x="500" y="114" text-anchor="middle" class="foot-code" font-size="14" font-weight="700" fill="#00ff66" letter-spacing="1">
     [SYS_TERMINATED // 200_OK] • THANK YOU FOR VISITING • EXECUTION COMPLETE
   </text>
-  <text x="500" y="142" text-anchor="middle" class="foot-code" font-size="12.5" fill="#94a3b8" letter-spacing="1">
+  <text x="500" y="142" text-anchor="middle" class="foot-code" font-size="12.5" fill="#ffffff" letter-spacing="1">
     Age: 26 • Phone: 020 78849378 • Email: huevang933@gmail.com • Vientiane, Laos 🇱🇦
   </text>
 

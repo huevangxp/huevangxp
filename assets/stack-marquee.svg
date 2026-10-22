@@ -36,7 +36,7 @@
       <g transform="translate(112, 0)">
         <rect width="105" height="36" fill="#05101a" stroke="#00dc82" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#00dc82"/>
-        <text x="56" y="23" text-anchor="middle" fill="#00dc82" class="chip-text">Nuxt.js</text>
+        <text x="56" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Nuxt.js</text>
       </g>
       <!-- React Native -->
       <g transform="translate(229, 0)">
@@ -48,19 +48,19 @@
       <g transform="translate(376, 0)">
         <rect width="105" height="36" fill="#05101a" stroke="#5fa04e" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#5fa04e"/>
-        <text x="56" y="23" text-anchor="middle" fill="#5fa04e" class="chip-text">Node.js</text>
+        <text x="56" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Node.js</text>
       </g>
       <!-- Python -->
       <g transform="translate(493, 0)">
         <rect width="100" height="36" fill="#05101a" stroke="#ffd700" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#ffd700"/>
-        <text x="54" y="23" text-anchor="middle" fill="#ffd700" class="chip-text">Python</text>
+        <text x="54" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Python</text>
       </g>
       <!-- NestJS -->
       <g transform="translate(605, 0)">
         <rect width="100" height="36" fill="#05101a" stroke="#e0234e" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#e0234e"/>
-        <text x="54" y="23" text-anchor="middle" fill="#e0234e" class="chip-text">NestJS</text>
+        <text x="54" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">NestJS</text>
       </g>
       <!-- Antigravity AI -->
       <g transform="translate(717, 0)">
@@ -72,7 +72,7 @@
       <g transform="translate(874, 0)">
         <rect width="125" height="36" fill="#05101a" stroke="#336791" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#336791"/>
-        <text x="66" y="23" text-anchor="middle" fill="#7ba3d0" class="chip-text">PostgreSQL</text>
+        <text x="66" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">PostgreSQL</text>
       </g>
       <!-- Docker -->
       <g transform="translate(1011, 0)">
@@ -84,7 +84,7 @@
       <g transform="translate(1118, 0)">
         <rect width="110" height="36" fill="#05101a" stroke="#c07156" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#c07156"/>
-        <text x="59" y="23" text-anchor="middle" fill="#e89880" class="chip-text">MariaDB</text>
+        <text x="59" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">MariaDB</text>
       </g>
     </g>
 
@@ -98,7 +98,7 @@
       <g transform="translate(112, 0)">
         <rect width="105" height="36" fill="#05101a" stroke="#00dc82" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#00dc82"/>
-        <text x="56" y="23" text-anchor="middle" fill="#00dc82" class="chip-text">Nuxt.js</text>
+        <text x="56" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Nuxt.js</text>
       </g>
       <g transform="translate(229, 0)">
         <rect width="135" height="36" fill="#05101a" stroke="#00f0ff" stroke-width="1.2"/>
@@ -108,17 +108,17 @@
       <g transform="translate(376, 0)">
         <rect width="105" height="36" fill="#05101a" stroke="#5fa04e" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#5fa04e"/>
-        <text x="56" y="23" text-anchor="middle" fill="#5fa04e" class="chip-text">Node.js</text>
+        <text x="56" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Node.js</text>
       </g>
       <g transform="translate(493, 0)">
         <rect width="100" height="36" fill="#05101a" stroke="#ffd700" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#ffd700"/>
-        <text x="54" y="23" text-anchor="middle" fill="#ffd700" class="chip-text">Python</text>
+        <text x="54" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Python</text>
       </g>
       <g transform="translate(605, 0)">
         <rect width="100" height="36" fill="#05101a" stroke="#e0234e" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#e0234e"/>
-        <text x="54" y="23" text-anchor="middle" fill="#e0234e" class="chip-text">NestJS</text>
+        <text x="54" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">NestJS</text>
       </g>
       <g transform="translate(717, 0)">
         <rect width="145" height="36" fill="#05101a" stroke="#00ff66" stroke-width="1.2"/>
@@ -128,7 +128,7 @@
       <g transform="translate(874, 0)">
         <rect width="125" height="36" fill="#05101a" stroke="#336791" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#336791"/>
-        <text x="66" y="23" text-anchor="middle" fill="#7ba3d0" class="chip-text">PostgreSQL</text>
+        <text x="66" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">PostgreSQL</text>
       </g>
       <g transform="translate(1011, 0)">
         <rect width="95" height="36" fill="#05101a" stroke="#00f0ff" stroke-width="1.2"/>
@@ -138,7 +138,7 @@
       <g transform="translate(1118, 0)">
         <rect width="110" height="36" fill="#05101a" stroke="#c07156" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#c07156"/>
-        <text x="59" y="23" text-anchor="middle" fill="#e89880" class="chip-text">MariaDB</text>
+        <text x="59" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">MariaDB</text>
       </g>
     </g>
   </g>
@@ -150,31 +150,31 @@
       <g transform="translate(0, 0)">
         <rect width="120" height="36" fill="#05101a" stroke="#e95420" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#e95420"/>
-        <text x="64" y="23" text-anchor="middle" fill="#ff7f50" class="chip-text">Ubuntu VPS</text>
+        <text x="64" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Ubuntu VPS</text>
       </g>
       <!-- Bruno API Client -->
       <g transform="translate(132, 0)">
         <rect width="145" height="36" fill="#05101a" stroke="#ffd700" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#ffd700"/>
-        <text x="76" y="23" text-anchor="middle" fill="#ffd700" class="chip-text">Bruno API</text>
+        <text x="76" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Bruno API</text>
       </g>
       <!-- TailwindCSS -->
       <g transform="translate(289, 0)">
         <rect width="130" height="36" fill="#05101a" stroke="#06b6d4" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#06b6d4"/>
-        <text x="69" y="23" text-anchor="middle" fill="#06b6d4" class="chip-text">TailwindCSS</text>
+        <text x="69" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">TailwindCSS</text>
       </g>
       <!-- Java & Jython -->
       <g transform="translate(431, 0)">
         <rect width="135" height="36" fill="#05101a" stroke="#5382a1" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#5382a1"/>
-        <text x="71" y="23" text-anchor="middle" fill="#88b5d5" class="chip-text">Java/Jython</text>
+        <text x="71" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Java/Jython</text>
       </g>
       <!-- Canvas API -->
       <g transform="translate(578, 0)">
         <rect width="115" height="36" fill="#05101a" stroke="#e34f26" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#e34f26"/>
-        <text x="61" y="23" text-anchor="middle" fill="#ff6e4a" class="chip-text">HTML Canvas</text>
+        <text x="61" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">HTML Canvas</text>
       </g>
       <!-- Data Analytics -->
       <g transform="translate(705, 0)">
@@ -186,13 +186,13 @@
       <g transform="translate(857, 0)">
         <rect width="145" height="36" fill="#05101a" stroke="#0078d7" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#0078d7"/>
-        <text x="76" y="23" text-anchor="middle" fill="#50b0ff" class="chip-text">Windows Server</text>
+        <text x="76" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Windows Server</text>
       </g>
       <!-- Vuetify -->
       <g transform="translate(1014, 0)">
         <rect width="105" height="36" fill="#05101a" stroke="#1867c0" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#1867c0"/>
-        <text x="56" y="23" text-anchor="middle" fill="#64b5f6" class="chip-text">Vuetify</text>
+        <text x="56" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Vuetify</text>
       </g>
       <!-- Next.js -->
       <g transform="translate(1131, 0)">
@@ -207,27 +207,27 @@
       <g transform="translate(0, 0)">
         <rect width="120" height="36" fill="#05101a" stroke="#e95420" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#e95420"/>
-        <text x="64" y="23" text-anchor="middle" fill="#ff7f50" class="chip-text">Ubuntu VPS</text>
+        <text x="64" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Ubuntu VPS</text>
       </g>
       <g transform="translate(132, 0)">
         <rect width="145" height="36" fill="#05101a" stroke="#ffd700" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#ffd700"/>
-        <text x="76" y="23" text-anchor="middle" fill="#ffd700" class="chip-text">Bruno API</text>
+        <text x="76" y="23" text-anchor="middle" fill="#00ff66" class="chip-text">Bruno API</text>
       </g>
       <g transform="translate(289, 0)">
         <rect width="130" height="36" fill="#05101a" stroke="#06b6d4" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#06b6d4"/>
-        <text x="69" y="23" text-anchor="middle" fill="#06b6d4" class="chip-text">TailwindCSS</text>
+        <text x="69" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">TailwindCSS</text>
       </g>
       <g transform="translate(431, 0)">
         <rect width="135" height="36" fill="#05101a" stroke="#5382a1" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#5382a1"/>
-        <text x="71" y="23" text-anchor="middle" fill="#88b5d5" class="chip-text">Java/Jython</text>
+        <text x="71" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Java/Jython</text>
       </g>
       <g transform="translate(578, 0)">
         <rect width="115" height="36" fill="#05101a" stroke="#e34f26" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#e34f26"/>
-        <text x="61" y="23" text-anchor="middle" fill="#ff6e4a" class="chip-text">HTML Canvas</text>
+        <text x="61" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">HTML Canvas</text>
       </g>
       <g transform="translate(705, 0)">
         <rect width="140" height="36" fill="#05101a" stroke="#00ff66" stroke-width="1.2"/>
@@ -237,12 +237,12 @@
       <g transform="translate(857, 0)">
         <rect width="145" height="36" fill="#05101a" stroke="#0078d7" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#0078d7"/>
-        <text x="76" y="23" text-anchor="middle" fill="#50b0ff" class="chip-text">Windows Server</text>
+        <text x="76" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Windows Server</text>
       </g>
       <g transform="translate(1014, 0)">
         <rect width="105" height="36" fill="#05101a" stroke="#1867c0" stroke-width="1.2"/>
         <rect x="0" y="0" width="4" height="36" fill="#1867c0"/>
-        <text x="56" y="23" text-anchor="middle" fill="#64b5f6" class="chip-text">Vuetify</text>
+        <text x="56" y="23" text-anchor="middle" fill="#00f0ff" class="chip-text">Vuetify</text>
       </g>
       <g transform="translate(1131, 0)">
         <rect width="97" height="36" fill="#05101a" stroke="#ffffff" stroke-width="1.2"/>
