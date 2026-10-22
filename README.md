@@ -19,7 +19,7 @@
 <p align="center">
   <a href="mailto:huevang933@gmail.com"><img src="https://img.shields.io/badge/%5BMAIL%5D-huevang933%40gmail.com-00ff66?style=flat-square&amp;labelColor=020408" alt="Email Huevang"/></a>
   &nbsp;
-  <a href="tel:+8562078849378"><img src="https://img.shields.io/badge/%5BCALL%5D-020_78849378-ffd700?style=flat-square&amp;labelColor=020408" alt="Phone Huevang"/></a>
+  <a href="tel:+8562078849378"><img src="https://img.shields.io/badge/%5BCALL%5D-020_78849378-00f0ff?style=flat-square&amp;labelColor=020408" alt="Phone Huevang"/></a>
   &nbsp;
   <a href="https://github.com/huevangxp"><img src="https://img.shields.io/badge/GITHUB-huevangxp-00f0ff?style=flat-square&amp;logo=github&amp;logoColor=00f0ff&amp;labelColor=020408" alt="GitHub Profile"/></a>
   &nbsp;
