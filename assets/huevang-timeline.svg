@@ -5,9 +5,9 @@
     </style>
     <linearGradient id="tlGrad" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="950" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
-      <stop offset="35%" stop-color="#00f0ff"/>
+      <stop offset="35%" stop-color="#0d9488"/>
       <stop offset="70%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
     </linearGradient>
   </defs>
 
@@ -27,18 +27,18 @@
 
   <!-- Milestone 1: NUOL -->
   <g transform="translate(120, 0)">
-    <circle cx="0" cy="70" r="14" fill="#040b12" stroke="#00f0ff" stroke-width="2.5"/>
-    <circle cx="0" cy="70" r="5" fill="#00f0ff"/>
-    <circle cx="0" cy="70" r="14" fill="none" stroke="#00f0ff" stroke-width="1">
+    <circle cx="0" cy="70" r="14" fill="#040b12" stroke="#0d9488" stroke-width="2.5"/>
+    <circle cx="0" cy="70" r="5" fill="#0d9488"/>
+    <circle cx="0" cy="70" r="14" fill="none" stroke="#0d9488" stroke-width="1">
       <animate attributeName="r" values="14;22;14" dur="2.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" repeatCount="indefinite"/>
     </circle>
-    <path d="M0 84 V115" stroke="#00f0ff" stroke-width="2" stroke-dasharray="3 3"/>
-    <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.6"/>
-    <text x="-90" y="140" fill="#00ff66" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[01] 2019 – 2023</text>
+    <path d="M0 84 V115" stroke="#0d9488" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.6"/>
+    <text x="-90" y="140" fill="#2dd4bf" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[01] 2019 – 2023</text>
     <text x="-90" y="162" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="14" font-weight="800">NUOL Bachelor</text>
     <text x="-90" y="182" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="12">National Univ. of Laos</text>
-    <text x="-90" y="198" fill="#00f0ff" font-family="'Outfit',sans-serif" font-size="11">Website Development</text>
+    <text x="-90" y="198" fill="#2dd4bf" font-family="'Outfit',sans-serif" font-size="11">Website Development</text>
   </g>
 
   <!-- Milestone 2: LaiLaoLab ICT -->
@@ -51,41 +51,41 @@
     </circle>
     <path d="M0 84 V115" stroke="#ffd700" stroke-width="2" stroke-dasharray="3 3"/>
     <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.6"/>
-    <text x="-90" y="140" fill="#00ff66" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[02] 2021 – 2022</text>
+    <text x="-90" y="140" fill="#2dd4bf" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[02] 2021 – 2022</text>
     <text x="-90" y="162" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="14" font-weight="800">LaiLaoLab ICT</text>
     <text x="-90" y="182" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="12">Full-Stack Developer</text>
-    <text x="-90" y="198" fill="#00ff66" font-family="'Outfit',sans-serif" font-size="11">Govt &amp; Enterprise Apps</text>
+    <text x="-90" y="198" fill="#2dd4bf" font-family="'Outfit',sans-serif" font-size="11">Govt &amp; Enterprise Apps</text>
   </g>
 
   <!-- Milestone 3: Laos IT Capital -->
   <g transform="translate(630, 0)">
-    <circle cx="0" cy="70" r="14" fill="#040b12" stroke="#00f0ff" stroke-width="2.5"/>
-    <circle cx="0" cy="70" r="5" fill="#00f0ff"/>
-    <circle cx="0" cy="70" r="14" fill="none" stroke="#00f0ff" stroke-width="1">
+    <circle cx="0" cy="70" r="14" fill="#040b12" stroke="#0d9488" stroke-width="2.5"/>
+    <circle cx="0" cy="70" r="5" fill="#0d9488"/>
+    <circle cx="0" cy="70" r="14" fill="none" stroke="#0d9488" stroke-width="1">
       <animate attributeName="r" values="14;22;14" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.8;0;0.8" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
     </circle>
-    <path d="M0 84 V115" stroke="#00f0ff" stroke-width="2" stroke-dasharray="3 3"/>
-    <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.6"/>
-    <text x="-90" y="140" fill="#00ff66" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[03] 2022 – 2023</text>
+    <path d="M0 84 V115" stroke="#0d9488" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.6"/>
+    <text x="-90" y="140" fill="#2dd4bf" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[03] 2022 – 2023</text>
     <text x="-90" y="162" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="14" font-weight="800">Laos IT Capital</text>
     <text x="-90" y="182" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="12">Front-End Developer</text>
-    <text x="-90" y="198" fill="#00f0ff" font-family="'Outfit',sans-serif" font-size="11">Modular UI &amp; Optimization</text>
+    <text x="-90" y="198" fill="#2dd4bf" font-family="'Outfit',sans-serif" font-size="11">Modular UI &amp; Optimization</text>
   </g>
 
   <!-- Milestone 4: Freelance & Banking Sector -->
   <g transform="translate(880, 0)">
-    <circle cx="0" cy="70" r="16" fill="#040b12" stroke="#00ff66" stroke-width="3"/>
-    <circle cx="0" cy="70" r="6" fill="#00ff66"/>
-    <circle cx="0" cy="70" r="16" fill="none" stroke="#00ff66" stroke-width="1">
+    <circle cx="0" cy="70" r="16" fill="#040b12" stroke="#2dd4bf" stroke-width="3"/>
+    <circle cx="0" cy="70" r="6" fill="#2dd4bf"/>
+    <circle cx="0" cy="70" r="16" fill="none" stroke="#2dd4bf" stroke-width="1">
       <animate attributeName="r" values="16;26;16" dur="2s" begin="1.8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0;1" dur="2s" begin="1.8s" repeatCount="indefinite"/>
     </circle>
-    <path d="M0 86 V115" stroke="#00ff66" stroke-width="2" stroke-dasharray="3 3"/>
-    <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#00ff66" stroke-width="1.6"/>
-    <text x="-90" y="140" fill="#00ff66" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[04] 2023 – PRESENT</text>
+    <path d="M0 86 V115" stroke="#2dd4bf" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-105" y="115" width="210" height="96" fill="#040a10" stroke="#2dd4bf" stroke-width="1.6"/>
+    <text x="-90" y="140" fill="#2dd4bf" font-family="'Fira Code',monospace" font-size="11.5" font-weight="700">[04] 2023 – PRESENT</text>
     <text x="-90" y="162" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="14" font-weight="800">Core Banking Sector</text>
     <text x="-90" y="182" fill="#ffffff" font-family="'Outfit',sans-serif" font-size="12">Full-Stack Architect</text>
-    <text x="-90" y="198" fill="#00ff66" font-family="'Outfit',sans-serif" font-size="11">Payment APIs &amp; Security</text>
+    <text x="-90" y="198" fill="#2dd4bf" font-family="'Outfit',sans-serif" font-size="11">Payment APIs &amp; Security</text>
   </g>
 </svg>

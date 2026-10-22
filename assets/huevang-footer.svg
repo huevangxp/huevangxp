@@ -13,7 +13,7 @@
     <linearGradient id="footLineGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
   </defs>
 
@@ -23,16 +23,16 @@
   <circle cx="120" cy="30" r="1.5" fill="#ffd700">
     <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="280" cy="50" r="1.5" fill="#00f0ff">
+  <circle cx="280" cy="50" r="1.5" fill="#0d9488">
     <animate attributeName="opacity" values="0.8;0.1;0.8" dur="3s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="450" cy="25" r="1.8" fill="#00ff66">
+  <circle cx="450" cy="25" r="1.8" fill="#2dd4bf">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
   </circle>
   <circle cx="680" cy="40" r="1.5" fill="#ffd700">
     <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="850" cy="20" r="1.5" fill="#00f0ff">
+  <circle cx="850" cy="20" r="1.5" fill="#0d9488">
     <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.2s" repeatCount="indefinite"/>
   </circle>
 
@@ -42,17 +42,17 @@
 
   <!-- Glowing Cyber City Windows -->
   <rect x="130" y="120" width="4" height="4" fill="#ffd700" opacity="0.8"/>
-  <rect x="140" y="120" width="4" height="4" fill="#00f0ff" opacity="0.7"/>
-  <rect x="330" y="115" width="4" height="4" fill="#00ff66" opacity="0.85"/>
+  <rect x="140" y="120" width="4" height="4" fill="#0d9488" opacity="0.7"/>
+  <rect x="330" y="115" width="4" height="4" fill="#2dd4bf" opacity="0.85"/>
   <rect x="340" y="130" width="4" height="4" fill="#ffffff" opacity="0.6"/>
   <rect x="750" y="110" width="4" height="4" fill="#ffd700" opacity="0.8"/>
-  <rect x="760" y="125" width="4" height="4" fill="#00f0ff" opacity="0.75"/>
+  <rect x="760" y="125" width="4" height="4" fill="#0d9488" opacity="0.75"/>
 
   <!-- Center Signboard -->
   <text x="500" y="80" text-anchor="middle" class="foot-title" font-size="28" font-weight="900" letter-spacing="3">
-    <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#00ff66">XIONGPOR</tspan>
+    <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#2dd4bf">XIONGPOR</tspan>
   </text>
-  <text x="500" y="114" text-anchor="middle" class="foot-code" font-size="14" font-weight="700" fill="#00ff66" letter-spacing="1">
+  <text x="500" y="114" text-anchor="middle" class="foot-code" font-size="14" font-weight="700" fill="#2dd4bf" letter-spacing="1">
     [SYS_TERMINATED // 200_OK] • THANK YOU FOR VISITING • EXECUTION COMPLETE
   </text>
   <text x="500" y="142" text-anchor="middle" class="foot-code" font-size="12.5" fill="#ffffff" letter-spacing="1">

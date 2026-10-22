@@ -15,17 +15,17 @@
     <linearGradient id="tableBorder" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
 
     <linearGradient id="gridFadeExp" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.25"/>
     </linearGradient>
 
     <pattern id="tableGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f0ff" stroke-width="0.7" stroke-opacity="0.05"/>
-      <circle cx="0" cy="0" r="1.2" fill="#00ff66" fill-opacity="0.12"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0d9488" stroke-width="0.7" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#2dd4bf" fill-opacity="0.12"/>
     </pattern>
 
     <clipPath id="tableClip">
@@ -49,19 +49,19 @@
     </g>
 
     <!-- Animated Cyber Laser Scanner Line -->
-    <line x1="0" y1="0" x2="1000" y2="0" stroke="#00f0ff" stroke-width="1.3" stroke-opacity="0.35">
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#0d9488" stroke-width="1.3" stroke-opacity="0.35">
       <animate attributeName="y1" values="40;425;40" dur="7s" repeatCount="indefinite"/>
       <animate attributeName="y2" values="40;425;40" dur="7s" repeatCount="indefinite"/>
     </line>
 
     <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
     <rect width="1000" height="40" fill="#060e18"/>
-    <line x1="0" y1="40" x2="1000" y2="40" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#0d9488" stroke-width="1" stroke-opacity="0.3"/>
 
     <!-- Window Dots -->
     <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
     <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
-    <circle cx="62" cy="20" r="5.5" fill="#00ff66"/>
+    <circle cx="62" cy="20" r="5.5" fill="#2dd4bf"/>
 
     <!-- Title Bar Label -->
     <text x="500" y="25" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="2">
@@ -69,36 +69,36 @@
     </text>
 
     <!-- Right Live Status Indicator (Matrix Green Pulse) -->
-    <circle cx="848" cy="20" r="4" fill="#00ff66">
+    <circle cx="848" cy="20" r="4" fill="#2dd4bf">
       <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="860" y="24" fill="#00ff66" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+    <text x="860" y="24" fill="#2dd4bf" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
       VERIFIED_CAREER_LOG
     </text>
 
     <!-- ════════════════════ TABLE HEADERS ════════════════════ -->
-    <rect x="15" y="48" width="970" height="36" fill="#06121e" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.25"/>
-    <text x="32" y="71" fill="#00ff66" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[TIMELINE]</text>
-    <text x="200" y="71" fill="#00ff66" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[ORGANIZATION &amp; ROLE]</text>
-    <text x="530" y="71" fill="#00ff66" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[KEY CONTRIBUTIONS &amp; SCOPE]</text>
+    <rect x="15" y="48" width="970" height="36" fill="#06121e" stroke="#0d9488" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="32" y="71" fill="#2dd4bf" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[TIMELINE]</text>
+    <text x="200" y="71" fill="#2dd4bf" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[ORGANIZATION &amp; ROLE]</text>
+    <text x="530" y="71" fill="#2dd4bf" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[KEY CONTRIBUTIONS &amp; SCOPE]</text>
 
     <!-- ════════════════════ ROW 1: Freelance & Banking (2023 - Present) ════════════════════ -->
     <g transform="translate(15, 92)">
-      <rect width="970" height="76" fill="#040a10" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.35"/>
+      <rect width="970" height="76" fill="#040a10" stroke="#0d9488" stroke-width="1" stroke-opacity="0.35"/>
       <!-- Timeline Badge -->
-      <rect x="15" y="25" width="145" height="26" fill="#071a1c" stroke="#00f0ff" stroke-width="1.2"/>
-      <circle cx="28" cy="38" r="3" fill="#00ff66"/>
-      <text x="88" y="42" text-anchor="middle" fill="#00f0ff" class="code" font-size="11" font-weight="700">2023 – PRESENT</text>
+      <rect x="15" y="25" width="145" height="26" fill="#071a1c" stroke="#0d9488" stroke-width="1.2"/>
+      <circle cx="28" cy="38" r="3" fill="#2dd4bf"/>
+      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">2023 – PRESENT</text>
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">Freelance &amp; Core Banking Sector</text>
-      <text x="195" y="54" fill="#00ff66" class="head" font-size="12" font-weight="600">Financial Systems &amp; Enterprise Architecture</text>
+      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Financial Systems &amp; Enterprise Architecture</text>
 
       <!-- Scope -->
       <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Architecting secure payment gateways, core banking internal dashboards,
       </text>
-      <text x="515" y="52" fill="#00ff66" class="code" font-size="12" font-weight="600">
+      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
         transaction settlement modules, and scalable RESTful microservices.
       </text>
     </g>
@@ -109,38 +109,38 @@
       <!-- Timeline Badge -->
       <rect x="15" y="25" width="145" height="26" fill="#181506" stroke="#ffd700" stroke-width="1.2"/>
       <circle cx="28" cy="38" r="3" fill="#ffd700"/>
-      <text x="88" y="42" text-anchor="middle" fill="#00ff66" class="code" font-size="11" font-weight="700">2022 – 2023</text>
+      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">2022 – 2023</text>
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">Laos IT Capital Co., Ltd</text>
-      <text x="195" y="54" fill="#00f0ff" class="head" font-size="12" font-weight="600">Front-End Developer &amp; UI Specialist</text>
+      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Front-End Developer &amp; UI Specialist</text>
 
       <!-- Scope -->
       <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Constructed modular frontend components, collaborated with UI/UX designers,
       </text>
-      <text x="515" y="52" fill="#00ff66" class="code" font-size="12" font-weight="600">
+      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
         streamlined application bundle sizes, and enhanced load responsiveness.
       </text>
     </g>
 
     <!-- ════════════════════ ROW 3: LaiLaoLab ICT (2021 - 2022) ════════════════════ -->
     <g transform="translate(15, 256)">
-      <rect width="970" height="76" fill="#040a10" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.35"/>
+      <rect width="970" height="76" fill="#040a10" stroke="#0d9488" stroke-width="1" stroke-opacity="0.35"/>
       <!-- Timeline Badge -->
-      <rect x="15" y="25" width="145" height="26" fill="#071a1c" stroke="#00f0ff" stroke-width="1.2"/>
-      <circle cx="28" cy="38" r="3" fill="#00ff66"/>
-      <text x="88" y="42" text-anchor="middle" fill="#00f0ff" class="code" font-size="11" font-weight="700">2021 – 2022</text>
+      <rect x="15" y="25" width="145" height="26" fill="#071a1c" stroke="#0d9488" stroke-width="1.2"/>
+      <circle cx="28" cy="38" r="3" fill="#2dd4bf"/>
+      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">2021 – 2022</text>
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">LaiLaoLab ICT Solution</text>
-      <text x="195" y="54" fill="#00f0ff" class="head" font-size="12" font-weight="600">Full-Stack Developer</text>
+      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Full-Stack Developer</text>
 
       <!-- Scope -->
       <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Engineered end-to-end web applications and robust database architectures
       </text>
-      <text x="515" y="52" fill="#00f0ff" class="code" font-size="12" font-weight="600">
+      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
         for governmental departments and enterprise corporate portals.
       </text>
     </g>
@@ -151,17 +151,17 @@
       <!-- Timeline Badge -->
       <rect x="15" y="25" width="145" height="26" fill="#181506" stroke="#ffd700" stroke-width="1.2"/>
       <circle cx="28" cy="38" r="3" fill="#ffd700"/>
-      <text x="88" y="42" text-anchor="middle" fill="#00ff66" class="code" font-size="11" font-weight="700">2019 – 2023</text>
+      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">2019 – 2023</text>
 
       <!-- Role & Organization -->
       <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">National University of Laos (NUOL)</text>
-      <text x="195" y="54" fill="#00ff66" class="head" font-size="12" font-weight="600">Bachelor of Website Development</text>
+      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Bachelor of Website Development</text>
 
       <!-- Scope -->
       <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5">
         Comprehensive degree training covering software engineering, relational database
       </text>
-      <text x="515" y="52" fill="#00ff66" class="code" font-size="12" font-weight="600">
+      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
         design, network architecture, and modern web application security.
       </text>
     </g>

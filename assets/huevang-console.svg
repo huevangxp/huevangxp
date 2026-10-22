@@ -37,16 +37,16 @@
       <rect width="1000" height="420"/>
     </clipPath>
     <linearGradient id="headerGradHacker" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00f0ff"/>
-      <stop offset="50%" stop-color="#00ff66"/>
-      <stop offset="100%" stop-color="#00f0ff"/>
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
     <linearGradient id="scannerGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#00ff66" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#2dd4bf" stop-opacity="0.8"/>
       <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="80%" stop-color="#00f0ff" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00ff66" stop-opacity="0"/>
+      <stop offset="80%" stop-color="#0d9488" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="depthFade" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#000000" stop-opacity="0.9"/>
@@ -61,19 +61,19 @@
 
     <!-- 3D Cyberspace Perspective Depth Grid in Background -->
     <g opacity="0.16">
-      <line x1="500" y1="40" x2="0" y2="420" stroke="#00f0ff" stroke-width="1"/>
-      <line x1="500" y1="40" x2="150" y2="420" stroke="#00f0ff" stroke-width="1"/>
-      <line x1="500" y1="40" x2="320" y2="420" stroke="#00f0ff" stroke-width="1"/>
-      <line x1="500" y1="40" x2="500" y2="420" stroke="#00ff66" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="500" y1="40" x2="680" y2="420" stroke="#00f0ff" stroke-width="1"/>
-      <line x1="500" y1="40" x2="850" y2="420" stroke="#00f0ff" stroke-width="1"/>
-      <line x1="500" y1="40" x2="1000" y2="420" stroke="#00f0ff" stroke-width="1"/>
+      <line x1="500" y1="40" x2="0" y2="420" stroke="#0d9488" stroke-width="1"/>
+      <line x1="500" y1="40" x2="150" y2="420" stroke="#0d9488" stroke-width="1"/>
+      <line x1="500" y1="40" x2="320" y2="420" stroke="#0d9488" stroke-width="1"/>
+      <line x1="500" y1="40" x2="500" y2="420" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="6 4"/>
+      <line x1="500" y1="40" x2="680" y2="420" stroke="#0d9488" stroke-width="1"/>
+      <line x1="500" y1="40" x2="850" y2="420" stroke="#0d9488" stroke-width="1"/>
+      <line x1="500" y1="40" x2="1000" y2="420" stroke="#0d9488" stroke-width="1"/>
 
       <!-- Transverse 3D grid lines -->
-      <line x1="380" y1="120" x2="620" y2="120" stroke="#00f0ff" stroke-width="0.8"/>
-      <line x1="260" y1="210" x2="740" y2="210" stroke="#00f0ff" stroke-width="0.8"/>
-      <line x1="120" y1="310" x2="880" y2="310" stroke="#00f0ff" stroke-width="0.9"/>
-      <line x1="0" y1="410" x2="1000" y2="410" stroke="#00ff66" stroke-width="1"/>
+      <line x1="380" y1="120" x2="620" y2="120" stroke="#0d9488" stroke-width="0.8"/>
+      <line x1="260" y1="210" x2="740" y2="210" stroke="#0d9488" stroke-width="0.8"/>
+      <line x1="120" y1="310" x2="880" y2="310" stroke="#0d9488" stroke-width="0.9"/>
+      <line x1="0" y1="410" x2="1000" y2="410" stroke="#2dd4bf" stroke-width="1"/>
     </g>
 
     <!-- Depth darkening overlay -->
@@ -82,12 +82,12 @@
     <!-- Active Laser Sweeping Line (ANIMATED) -->
     <g class="laser-scan">
       <line x1="0" y1="0" x2="1000" y2="0" stroke="url(#scannerGrad)" stroke-width="1.8"/>
-      <rect x="0" y="-12" width="1000" height="12" fill="#00ff66" opacity="0.04"/>
+      <rect x="0" y="-12" width="1000" height="12" fill="#2dd4bf" opacity="0.04"/>
     </g>
 
     <!-- Terminal Titlebar / Header -->
     <rect width="1000" height="42" fill="#050c18"/>
-    <line x1="0" y1="42" x2="1000" y2="42" stroke="#00ff66" stroke-width="1" stroke-opacity="0.4"/>
+    <line x1="0" y1="42" x2="1000" y2="42" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
     <rect width="1000" height="2" fill="url(#headerGradHacker)"/>
 
     <!-- Sharp 90-degree Hacker Window Controls -->
@@ -99,30 +99,30 @@
       <rect x="22" y="0" width="14" height="14" fill="#ffd700" fill-opacity="0.2" stroke="#ffd700" stroke-width="1.2"/>
       <rect x="25" y="3" width="8" height="8" fill="none" stroke="#ffd700" stroke-width="1.2"/>
 
-      <rect x="44" y="0" width="14" height="14" fill="#00ff66" fill-opacity="0.2" stroke="#00ff66" stroke-width="1.2"/>
-      <line x1="47" y1="10" x2="55" y2="10" stroke="#00ff66" stroke-width="1.4"/>
+      <rect x="44" y="0" width="14" height="14" fill="#2dd4bf" fill-opacity="0.2" stroke="#2dd4bf" stroke-width="1.2"/>
+      <line x1="47" y1="10" x2="55" y2="10" stroke="#2dd4bf" stroke-width="1.4"/>
     </g>
 
     <!-- Window Title & Security Telemetry -->
-    <text x="500" y="27" text-anchor="middle" fill="#00f0ff" class="header-mono" font-size="12" font-weight="700" letter-spacing="1.5">
+    <text x="500" y="27" text-anchor="middle" fill="#2dd4bf" class="header-mono" font-size="12" font-weight="700" letter-spacing="1.5">
       SYS_CONSOLE://HUEVANG_ROOT • [PORT:443 // TLS_1.3 // ENCRYPTED] • AGE:26 • 020 78849378
     </text>
 
     <!-- Live Terminal Activity Badge -->
     <g transform="translate(900, 13)">
-      <rect x="0" y="0" width="82" height="18" fill="#00ff66" fill-opacity="0.15" stroke="#00ff66" stroke-width="1"/>
-      <circle cx="10" cy="9" r="3" fill="#00ff66">
+      <rect x="0" y="0" width="82" height="18" fill="#2dd4bf" fill-opacity="0.15" stroke="#2dd4bf" stroke-width="1"/>
+      <circle cx="10" cy="9" r="3" fill="#2dd4bf">
         <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
       </circle>
-      <text x="20" y="13" fill="#00ff66" class="header-mono" font-size="9" font-weight="700" letter-spacing="1">LIVE_CLI</text>
+      <text x="20" y="13" fill="#2dd4bf" class="header-mono" font-size="9" font-weight="700" letter-spacing="1">LIVE_CLI</text>
     </g>
 
     <!-- Terminal Lines -->
     <!-- Command 1: whoami -->
     <g style="animation: g0 16.5s linear infinite;">
       <text x="32" y="74" class="m">
-        <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
-        <tspan fill="#00f0ff"> whoami</tspan>
+        <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
+        <tspan fill="#2dd4bf"> whoami</tspan>
       </text>
       <rect x="180" y="58" width="120" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c0 16.5s linear infinite;"/>
     </g>
@@ -133,82 +133,82 @@
     <!-- Command 2: cat contact.info -->
     <g style="animation: g2 16.5s linear infinite;">
       <text x="32" y="128" class="m">
-        <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
-        <tspan fill="#00f0ff"> cat /etc/telemetry/contact.info</tspan>
+        <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
+        <tspan fill="#2dd4bf"> cat /etc/telemetry/contact.info</tspan>
       </text>
       <rect x="330" y="112" width="220" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c2 16.5s linear infinite;"/>
     </g>
     <g style="animation: g3 16.5s linear infinite;">
       <text x="32" y="154" class="m">
-        <tspan fill="#00f0ff">[TEL]:</tspan> <tspan fill="#ffffff">020 78849378</tspan>  <tspan fill="#ffffff">|</tspan>  <tspan fill="#00f0ff">[MAIL]:</tspan> <tspan fill="#00ff66">huevang933@gmail.com</tspan>  <tspan fill="#ffffff">|</tspan>  <tspan fill="#00f0ff">[LOC]:</tspan> <tspan fill="#ffffff">Vientiane Capital, Laos 🇱🇦</tspan>
+        <tspan fill="#2dd4bf">[TEL]:</tspan> <tspan fill="#ffffff">020 78849378</tspan>  <tspan fill="#ffffff">|</tspan>  <tspan fill="#2dd4bf">[MAIL]:</tspan> <tspan fill="#2dd4bf">huevang933@gmail.com</tspan>  <tspan fill="#ffffff">|</tspan>  <tspan fill="#2dd4bf">[LOC]:</tspan> <tspan fill="#ffffff">Vientiane Capital, Laos 🇱🇦</tspan>
       </text>
     </g>
 
     <!-- Command 3: cat education.txt -->
     <g style="animation: g4 16.5s linear infinite;">
       <text x="32" y="182" class="m">
-        <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
-        <tspan fill="#00f0ff"> cat /var/log/education.log</tspan>
+        <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
+        <tspan fill="#2dd4bf"> cat /var/log/education.log</tspan>
       </text>
       <rect x="290" y="166" width="210" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c4 16.5s linear infinite;"/>
     </g>
     <g style="animation: g5 16.5s linear infinite;">
-      <text x="32" y="208" class="m" fill="#00ff66">Bachelor of Website Development — National University of Laos (NUOL • 2019–2023)</text>
+      <text x="32" y="208" class="m" fill="#2dd4bf">Bachelor of Website Development — National University of Laos (NUOL • 2019–2023)</text>
     </g>
 
     <!-- Command 4: ls ~/skills -->
     <g style="animation: g6 16.5s linear infinite;">
       <text x="32" y="236" class="m">
-        <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
-        <tspan fill="#00f0ff"> ls -la /usr/bin/arsenal</tspan>
+        <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
+        <tspan fill="#2dd4bf"> ls -la /usr/bin/arsenal</tspan>
       </text>
       <rect x="270" y="220" width="180" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c6 16.5s linear infinite;"/>
     </g>
     <g style="animation: g7 16.5s linear infinite;">
       <text x="32" y="262" class="m">
-        <tspan fill="#00ff66">Vue3</tspan>  <tspan fill="#ffffff">Nuxt.js</tspan>  <tspan fill="#00f0ff">React Native</tspan>  <tspan fill="#00ff66">Node.js</tspan>  <tspan fill="#00ff66">Python</tspan>  <tspan fill="#ffffff">NestJS</tspan>  <tspan fill="#00f0ff">PHP/Laravel</tspan>  <tspan fill="#00ff66">PostgreSQL</tspan>  <tspan fill="#00ff66">Docker</tspan>  <tspan fill="#ffffff">Antigravity AI</tspan>
+        <tspan fill="#2dd4bf">Vue3</tspan>  <tspan fill="#ffffff">Nuxt.js</tspan>  <tspan fill="#2dd4bf">React Native</tspan>  <tspan fill="#2dd4bf">Node.js</tspan>  <tspan fill="#2dd4bf">Python</tspan>  <tspan fill="#ffffff">NestJS</tspan>  <tspan fill="#2dd4bf">PHP/Laravel</tspan>  <tspan fill="#2dd4bf">PostgreSQL</tspan>  <tspan fill="#2dd4bf">Docker</tspan>  <tspan fill="#ffffff">Antigravity AI</tspan>
       </text>
     </g>
 
     <!-- Command 5: git status -->
     <g style="animation: g8 16.5s linear infinite;">
       <text x="32" y="290" class="m">
-        <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
-        <tspan fill="#00f0ff"> git status --short</tspan>
+        <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
+        <tspan fill="#2dd4bf"> git status --short</tspan>
       </text>
       <rect x="260" y="274" width="160" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c8 16.5s linear infinite;"/>
     </g>
     <g style="animation: g9 16.5s linear infinite;">
       <text x="32" y="316" class="m">
-        <tspan fill="#00ff66">## main...origin/main [ahead 0]</tspan> <tspan fill="#ffffff">• 170+ repositories active • Open for enterprise contracts &amp; fintech engineering</tspan>
+        <tspan fill="#2dd4bf">## main...origin/main [ahead 0]</tspan> <tspan fill="#ffffff">• 170+ repositories active • Open for enterprise contracts &amp; fintech engineering</tspan>
       </text>
     </g>
 
     <!-- Command 6: echo $MOTTO -->
     <g style="animation: g10 16.5s linear infinite;">
       <text x="32" y="344" class="m">
-        <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
-        <tspan fill="#00f0ff"> echo $CORE_PHILOSOPHY</tspan>
+        <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
+        <tspan fill="#2dd4bf"> echo $CORE_PHILOSOPHY</tspan>
       </text>
       <rect x="290" y="328" width="190" height="22" fill="#020408" style="transform-box: fill-box; transform-origin: right center; animation: c10 16.5s linear infinite;"/>
     </g>
     <g style="animation: g11 16.5s linear infinite;">
-      <text x="32" y="370" class="m" fill="#00ff66" font-weight="600">"Excellence through clean architecture, continuous innovation &amp; uncompromising precision." ✨</text>
+      <text x="32" y="370" class="m" fill="#2dd4bf" font-weight="600">"Excellence through clean architecture, continuous innovation &amp; uncompromising precision." ✨</text>
     </g>
 
     <!-- Active Blinking Prompt Line -->
     <text x="32" y="398" class="m">
-      <tspan fill="#00ff66" font-weight="700">root@huevang:~$</tspan>
+      <tspan fill="#2dd4bf" font-weight="700">root@huevang:~$</tspan>
     </text>
-    <rect x="180" y="384" width="10" height="18" fill="#00ff66" style="animation: blink 0.9s steps(1) infinite;"/>
+    <rect x="180" y="384" width="10" height="18" fill="#2dd4bf" style="animation: blink 0.9s steps(1) infinite;"/>
 
     <!-- Sharp 90-Degree Cyber Brackets & Border -->
-    <rect x="0.5" y="0.5" width="999" height="419" fill="none" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="0.5" y="0.5" width="999" height="419" fill="none" stroke="#0d9488" stroke-width="1" stroke-opacity="0.3"/>
     
     <!-- Cyber Corner Accents -->
-    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#00ff66" stroke-width="2.5"/>
-    <path d="M 984 0 L 1000 0 L 1000 16" fill="none" stroke="#00ff66" stroke-width="2.5"/>
-    <path d="M 0 404 L 0 420 L 16 420" fill="none" stroke="#00ff66" stroke-width="2.5"/>
-    <path d="M 984 420 L 1000 420 L 1000 404" fill="none" stroke="#00ff66" stroke-width="2.5"/>
+    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+    <path d="M 984 0 L 1000 0 L 1000 16" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+    <path d="M 0 404 L 0 420 L 16 420" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+    <path d="M 984 420 L 1000 420 L 1000 404" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
   </g>
 </svg>
