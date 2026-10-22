@@ -116,10 +116,10 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <p align="center">
-  <a href="https://github.com/huevangxp/MeUIPay"><img src="https://img.shields.io/badge/Repository-MeUIPay-2dd4bf?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=0c1e1c" alt="MeUIPay Repo"/></a>&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp/booking-apartment"><img src="https://img.shields.io/badge/Repository-booking--apartment-ffd700?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=181708" alt="booking-apartment Repo"/></a>&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp/ai_server"><img src="https://img.shields.io/badge/Repository-ai__server-38bdf8?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=071b26" alt="ai_server Repo"/></a>&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp/admin"><img src="https://img.shields.io/badge/Repository-admin-22c55e?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=071e11" alt="admin Repo"/></a>
+  <a href="https://github.com/huevangxp/MeUIPay"><img src="https://img.shields.io/badge/%5B0x01%5D-MeUIPay-00ff66?style=flat-square&amp;logo=github&amp;logoColor=00ff66&amp;labelColor=020408" alt="MeUIPay Repo"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp/booking-apartment"><img src="https://img.shields.io/badge/%5B0x02%5D-booking--apartment-ffd700?style=flat-square&amp;logo=github&amp;logoColor=ffd700&amp;labelColor=020408" alt="booking-apartment Repo"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp/ai_server"><img src="https://img.shields.io/badge/%5B0x03%5D-ai__server-00f0ff?style=flat-square&amp;logo=github&amp;logoColor=00f0ff&amp;labelColor=020408" alt="ai_server Repo"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp/admin"><img src="https://img.shields.io/badge/%5B0x04%5D-admin-00ff66?style=flat-square&amp;logo=github&amp;logoColor=00ff66&amp;labelColor=020408" alt="admin Repo"/></a>
 </p>
 
 <!-- ═══════════════════════════ CONNECT & CONTACT ═══════════════════════════ -->
