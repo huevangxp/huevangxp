@@ -8,28 +8,40 @@
     <linearGradient id="ctaBorder" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
     </linearGradient>
     <linearGradient id="ctaBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#04080c"/>
-      <stop offset="50%" stop-color="#08141e"/>
-      <stop offset="100%" stop-color="#03060a"/>
+      <stop offset="0%" stop-color="#020408"/>
+      <stop offset="50%" stop-color="#07121c"/>
+      <stop offset="100%" stop-color="#020407"/>
     </linearGradient>
   </defs>
 
   <!-- Sharp 1000px Container -->
   <rect x="1" y="1" width="998" height="86" fill="url(#ctaBg)" stroke="url(#ctaBorder)" stroke-width="1.8" stroke-opacity="0.6"/>
 
-  <!-- Left Accent Tech Bracket -->
-  <path d="M 24 22 L 14 22 L 14 66 L 24 66" fill="none" stroke="#2dd4bf" stroke-width="2"/>
-  <!-- Right Accent Tech Bracket -->
-  <path d="M 976 22 L 986 22 L 986 66 L 976 66" fill="none" stroke="#ffd700" stroke-width="2"/>
+  <!-- Animated Marching Cyber Circuit Line -->
+  <line x1="20" y1="84" x2="980" y2="84" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="8 6">
+    <animate attributeName="stroke-dashoffset" values="0;28" dur="1.8s" repeatCount="indefinite"/>
+  </line>
 
-  <!-- Solid Text Content (NO GRADIENTS) -->
-  <text x="500" y="38" text-anchor="middle" fill="#ffffff" class="cta-title" font-size="21" font-weight="900" letter-spacing="2">
-    LET'S BUILD SOMETHING EXCEPTIONAL TOGETHER →
+  <!-- Left Accent Tech Bracket with Pulsing Dot -->
+  <path d="M 28 20 L 16 20 L 16 68 L 28 68" fill="none" stroke="#00f0ff" stroke-width="2"/>
+  <circle cx="16" cy="44" r="3.5" fill="#00ff66">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Right Accent Tech Bracket with Pulsing Dot -->
+  <path d="M 972 20 L 984 20 L 984 68 L 972 68" fill="none" stroke="#ffd700" stroke-width="2"/>
+  <circle cx="984" cy="44" r="3.5" fill="#ffd700">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Solid Hacker Text Content -->
+  <text x="500" y="38" text-anchor="middle" class="cta-title" font-size="20" font-weight="900" letter-spacing="2">
+    <tspan fill="#ffffff">LET'S BUILD SOMETHING </tspan><tspan fill="#00ff66">EXCEPTIONAL</tspan><tspan fill="#ffd700"> TOGETHER →</tspan>
   </text>
-  <text x="500" y="66" text-anchor="middle" fill="#ffd700" class="cta-sub" font-size="13.5" font-weight="600" letter-spacing="1">
-    📞 020 78849378  •  ✉️ huevang933@gmail.com  •  VIENTIANE, LAOS
+  <text x="500" y="66" text-anchor="middle" fill="#00f0ff" class="cta-sub" font-size="13" font-weight="700" letter-spacing="1">
+    [SYS_DISPATCH] 📞 020 78849378 • ✉️ huevang933@gmail.com • VIENTIANE, LAOS 🇱🇦
   </text>
 </svg>
