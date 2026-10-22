@@ -1,256 +1,267 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 395" width="1000" height="395" role="img" aria-label="Huevang XIONGPOR GitHub Engineering Metrics and Verified Activity">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-label="GitHub Engineering Metrics and Verified Activity">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;family=Share+Tech+Mono&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;display=swap');
       .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
       .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
-      .mono { font-family: 'Share Tech Mono', 'Fira Code', monospace; }
-      @keyframes laserMove {
-        0% { y1: 42; y2: 42; opacity: 0.2; }
-        50% { opacity: 0.9; }
-        100% { y1: 393; y2: 393; opacity: 0.2; }
-      }
-      .laser-scanner {
-        animation: laserMove 6.5s linear infinite;
-      }
+      .metric-card { transition: all 0.25s ease; cursor: pointer; }
+      .metric-card:hover { opacity: 0.92; }
     </style>
 
     <linearGradient id="metricsBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020408"/>
-      <stop offset="50%" stop-color="#040e14"/>
+      <stop offset="50%" stop-color="#050d17"/>
       <stop offset="100%" stop-color="#010305"/>
     </linearGradient>
 
-    <!-- Unified Gradient: Dark Teal -> Gold -> Luminous Teal -->
     <linearGradient id="metricsBorder" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
 
     <linearGradient id="gridFadeMetrics" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0d9488" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.25"/>
     </linearGradient>
 
     <pattern id="metricsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0d9488" stroke-width="0.7" stroke-opacity="0.12"/>
-      <circle cx="0" cy="0" r="1.2" fill="#2dd4bf" fill-opacity="0.25"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0d9488" stroke-width="0.7" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
     </pattern>
 
     <clipPath id="metricsClip">
-      <rect width="1000" height="395"/>
+      <rect width="1000" height="440"/>
     </clipPath>
   </defs>
 
   <g clip-path="url(#metricsClip)">
     <!-- Base Canvas Background -->
-    <rect width="1000" height="395" fill="url(#metricsBg)"/>
-    <rect width="1000" height="395" fill="url(#metricsGrid)"/>
+    <rect width="1000" height="440" fill="url(#metricsBg)"/>
+    <rect width="1000" height="440" fill="url(#metricsGrid)"/>
 
-    <!-- 3D Depth Perspective Floor Lines (Teal) -->
+    <!-- 3D Perspective Lines in Background -->
     <g opacity="0.6">
-      <line x1="500" y1="130" x2="-80" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
-      <line x1="500" y1="130" x2="180" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
-      <line x1="500" y1="130" x2="380" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
-      <line x1="500" y1="130" x2="620" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
-      <line x1="500" y1="130" x2="820" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
-      <line x1="500" y1="130" x2="1080" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="-80" y2="440" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="180" y2="440" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="380" y2="440" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="620" y2="440" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="820" y2="440" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="1080" y2="440" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
     </g>
 
-    <!-- Animated Cyber Laser Scanner Line (Luminous Teal) -->
-    <line x1="0" y1="42" x2="1000" y2="42" stroke="#2dd4bf" stroke-width="1.5" stroke-opacity="0.6" class="laser-scanner"/>
+    <!-- Animated Cyber Laser Scanner Line -->
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#0d9488" stroke-width="1.3" stroke-opacity="0.35">
+      <animate attributeName="y1" values="40;435;40" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="40;435;40" dur="8s" repeatCount="indefinite"/>
+    </line>
 
     <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
-    <rect width="1000" height="42" fill="#040e14"/>
-    <line x1="0" y1="42" x2="1000" y2="42" stroke="#0d9488" stroke-width="1" stroke-opacity="0.4"/>
-    <rect width="1000" height="2" fill="url(#metricsBorder)"/>
+    <rect width="1000" height="40" fill="#060e18"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#0d9488" stroke-width="1" stroke-opacity="0.3"/>
 
-    <!-- Sharp 90-degree Hacker Window Buttons (Teal, Gold, White) -->
-    <g transform="translate(18, 14)">
-      <rect x="0" y="0" width="14" height="14" fill="#0d9488" fill-opacity="0.25" stroke="#2dd4bf" stroke-width="1.2"/>
-      <line x1="3" y1="10" x2="11" y2="10" stroke="#2dd4bf" stroke-width="1.4"/>
+    <!-- Window Dots -->
+    <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="62" cy="20" r="5.5" fill="#2dd4bf"/>
 
-      <rect x="22" y="0" width="14" height="14" fill="#ffd700" fill-opacity="0.2" stroke="#ffd700" stroke-width="1.2"/>
-      <rect x="25" y="3" width="8" height="8" fill="none" stroke="#ffd700" stroke-width="1.2"/>
-
-      <rect x="44" y="0" width="14" height="14" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1.2"/>
-      <line x1="47" y1="4" x2="55" y2="10" stroke="#ffffff" stroke-width="1.2"/>
-      <line x1="55" y1="4" x2="47" y2="10" stroke="#ffffff" stroke-width="1.2"/>
-    </g>
-
-    <!-- Title Bar Label (Teal) -->
-    <text x="500" y="27" text-anchor="middle" fill="#2dd4bf" class="mono" font-size="12" font-weight="700" letter-spacing="1.5">
-      GITHUB_TELEMETRY://HUEVANGXP • [30,278 CONTRIBUTIONS IN LAST YEAR // 170+ REPOSITORIES]
+    <!-- Title Bar Label -->
+    <text x="500" y="25" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="2">
+      ⚡ GITHUB TELEMETRY &amp; LIVE ENGINEERING METRICS
     </text>
 
     <!-- Right Live Status Indicator (Gold) -->
-    <g transform="translate(835, 13)">
-      <rect x="0" y="0" width="147" height="18" fill="#ffd700" fill-opacity="0.12" stroke="#ffd700" stroke-width="1"/>
-      <circle cx="10" cy="9" r="3" fill="#ffd700">
-        <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
-      </circle>
-      <text x="20" y="13" fill="#ffd700" class="code" font-size="9.5" font-weight="700" letter-spacing="0.5">
-        30,278 NODES LIVE
-      </text>
-    </g>
+    <circle cx="828" cy="20" r="4" fill="#ffd700">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="840" y="24" fill="#ffd700" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+      30,278_NODES_LIVE
+    </text>
 
-    <!-- ════════════════════ 4 KEY METRIC TILES ════════════════════ -->
-    <!-- Tile 1: Total Verified Contributions (Gold) -->
-    <g transform="translate(18, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.6"/>
-      <rect x="12" y="10" width="150" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● 0xCONTRIBUTIONS</text>
-      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">30 278</text>
-      <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">In The Last Year Output</text>
-    </g>
-
-    <!-- Tile 2: Total Repositories (Teal) -->
-    <g transform="translate(262, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.6"/>
-      <rect x="12" y="10" width="140" height="20" fill="#06191b" stroke="#2dd4bf" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#2dd4bf" class="code" font-size="10" font-weight="700">● 0xREPOSITORIES</text>
-      <text x="14" y="60" fill="#2dd4bf" class="head" font-size="28" font-weight="900" letter-spacing="0.5">170+</text>
-      <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Public &amp; Enterprise Repos</text>
-    </g>
-
-    <!-- Tile 3: Tenure / Experience (White) -->
-    <g transform="translate(506, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.5"/>
-      <rect x="12" y="10" width="135" height="20" fill="#06191b" stroke="#0d9488" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#2dd4bf" class="code" font-size="10" font-weight="700">● 0xACTIVE_TENURE</text>
-      <text x="14" y="60" fill="#ffffff" class="head" font-size="28" font-weight="900" letter-spacing="0.5">5+ Years</text>
-      <text x="14" y="76" fill="#ffffff" fill-opacity="0.75" class="code" font-size="10.5">Member Since Dec 12, 2019</text>
-    </g>
-
-    <!-- Tile 4: Official Badges (Gold) -->
-    <g transform="translate(750, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.6"/>
-      <rect x="12" y="10" width="155" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● 0xOFFICIAL_BADGES</text>
-      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">3 Badges</text>
-      <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Pull Shark • YOLO • Quickdraw</text>
-    </g>
-
-    <!-- ════════════════════ LOWER SECTION: 2 PANELS ════════════════════ -->
-    <!-- Left Panel: Language Breakdown (Teal-Dark & Gold) -->
-    <g transform="translate(18, 154)">
-      <rect width="476" height="224" fill="#040a10" stroke="#0d9488" stroke-width="1" stroke-opacity="0.45"/>
+    <!-- ════════════════════ CARD 1: ANNUAL CONTRIBUTIONS (30,278) ════════════════════ -->
+    <g transform="translate(18, 52)" class="metric-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
       
-      <!-- Panel Header -->
-      <rect x="0" y="0" width="476" height="32" fill="#041217"/>
-      <line x1="0" y1="32" x2="476" y2="32" stroke="#0d9488" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="16" y="21" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
-        [SYS] RUNTIME DISTRIBUTION (30,278 CONTRIBUTION SAMPLE)
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#181506" stroke="#ffd700" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#ffd700"/>
+      <text x="96" y="27" text-anchor="middle" fill="#ffd700" class="code" font-size="10" font-weight="700">[ANNUAL_VELOCITY]</text>
+      <text x="460" y="27" text-anchor="end" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">● TOP_TIER_OUTPUT</text>
+
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">⚡ 30,278 Verified Contributions</text>
+      <text x="14" y="78" fill="#ffd700" class="head" font-size="12" font-weight="600">Recorded Annual Engineering Output • Rank S+</text>
+
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="102" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="51" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">30,278 Contribs</text>
+
+        <rect x="108" width="94" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="155" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Daily Streak</text>
+
+        <rect x="208" width="76" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="246" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Rank S+</text>
+
+        <rect x="290" width="88" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="334" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">99.8% Uptime</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Continuous daily engineering velocity across core banking branches,
+      </text>
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        financial payment client architectures, and automated CI pipelines.
       </text>
 
-      <!-- Multi-Segment Distribution Bar -->
-      <g transform="translate(16, 44)">
-        <rect width="444" height="12" fill="#07151a"/>
-        <!-- JavaScript: Gold -->
-        <rect x="0" width="186" height="12" fill="#ffd700"/>
-        <!-- Batchfile: Teal -->
-        <rect x="187" width="115" height="12" fill="#2dd4bf"/>
-        <!-- Vue: Dark Teal -->
-        <rect x="303" width="71" height="12" fill="#0d9488"/>
-        <!-- HTML: Gold -->
-        <rect x="375" width="44" height="12" fill="#ffd700"/>
-        <!-- Python: Teal -->
-        <rect x="420" width="24" height="12" fill="#2dd4bf"/>
-      </g>
-
-      <!-- Language Item 1: JavaScript (Gold) -->
-      <g transform="translate(16, 70)">
-        <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
-        <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">JavaScript</text>
-        <text x="444" y="11" text-anchor="end" fill="#ffd700" class="code" font-size="11.5" font-weight="700">42%</text>
-        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Frontend reactive logic, Node runtimes &amp; client components</text>
-      </g>
-
-      <!-- Language Item 2: Batchfile (Teal) -->
-      <g transform="translate(16, 104)">
-        <rect x="0" y="2" width="10" height="10" fill="#2dd4bf"/>
-        <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Batchfile Automation</text>
-        <text x="444" y="11" text-anchor="end" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700">26%</text>
-        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Windows Server orchestration, background triggers &amp; CI tasks</text>
-      </g>
-
-      <!-- Language Item 3: Vue (Dark Teal) -->
-      <g transform="translate(16, 138)">
-        <rect x="0" y="2" width="10" height="10" fill="#0d9488"/>
-        <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Vue.js &amp; Nuxt Ecosystem</text>
-        <text x="444" y="11" text-anchor="end" fill="#2dd4bf" class="code" font-size="11.5" font-weight="700">16%</text>
-        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Banking dashboards, interactive portals &amp; SSR applications</text>
-      </g>
-
-      <!-- Language Item 4: HTML & Python (Gold & Teal) -->
-      <g transform="translate(16, 172)">
-        <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
-        <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">HTML5 (10%) &amp; Python (6%)</text>
-        <text x="444" y="11" text-anchor="end" fill="#ffd700" class="code" font-size="11.5" font-weight="700">16%</text>
-        <text x="18" y="25" fill="#ffffff" fill-opacity="0.75" class="head" font-size="10.5">Canvas APIs, semantic web structures &amp; Python microservices</text>
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">⚡ High Velocity</text>
+        <text x="145" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">🏆 Elite Contributor</text>
+        <text x="320" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">🟢 Active Daily</text>
       </g>
     </g>
 
-    <!-- Right Panel: Engineering Velocity & Pillars (Gold & Teal) -->
-    <g transform="translate(506, 154)">
-      <rect width="476" height="224" fill="#040a10" stroke="#ffd700" stroke-width="1" stroke-opacity="0.45"/>
+    <!-- ════════════════════ CARD 2: REPOSITORIES (170+) ════════════════════ -->
+    <g transform="translate(508, 52)" class="metric-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.45"/>
       
-      <!-- Panel Header -->
-      <rect x="0" y="0" width="476" height="32" fill="#151206"/>
-      <line x1="0" y1="32" x2="476" y2="32" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
-      <text x="16" y="21" fill="#ffd700" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
-        [OPS] ENGINEERING CADENCE &amp; CONTRIBUTION RADAR
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#071a1c" stroke="#0d9488" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#2dd4bf"/>
+      <text x="96" y="27" text-anchor="middle" fill="#2dd4bf" class="code" font-size="10" font-weight="700">[REPO_ARCHITECTURE]</text>
+      <text x="460" y="27" text-anchor="end" fill="#ffd700" class="code" font-size="10.5" font-weight="700">● 170+_ACTIVE</text>
+
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">📁 170+ Public &amp; Core Repositories</text>
+      <text x="14" y="78" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Production Architectures, Payment UI &amp; Microservices</text>
+
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="84" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="42" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">170+ Repos</text>
+
+        <rect x="90" width="88" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="134" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Financial UI</text>
+
+        <rect x="184" width="108" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="238" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">APIs &amp; Backends</text>
+
+        <rect x="298" width="88" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="342" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">DevOps Tools</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Architectural steward across 170+ repositories including MeUIPay,
+      </text>
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        booking-apartment, ai_server, and core financial administration portals.
       </text>
 
-      <!-- Pillar 1: High Commit Velocity (Gold) -->
-      <g transform="translate(16, 44)">
-        <rect x="0" y="2" width="8" height="8" fill="#ffd700"/>
-        <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
-          Massive Velocity (30,278 Contributions in Last Year)
-        </text>
-        <text x="16" y="26" fill="#ffffff" fill-opacity="0.85" class="head" font-size="11">
-          High-frequency engineering across daily production branches, banking pipelines,
-        </text>
-        <text x="16" y="41" fill="#ffd700" class="code" font-size="11">
-          and robust automated deployment systems.
-        </text>
-      </g>
-
-      <!-- Pillar 2: Scalable Portals & Open Source (Teal) -->
-      <g transform="translate(16, 102)">
-        <rect x="0" y="2" width="8" height="8" fill="#2dd4bf"/>
-        <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
-          170+ Multi-Repo Scalability &amp; Architecture
-        </text>
-        <text x="16" y="26" fill="#ffffff" fill-opacity="0.85" class="head" font-size="11">
-          Architectural lead across 170+ repositories with automated workflows,
-        </text>
-        <text x="16" y="41" fill="#2dd4bf" class="code" font-size="11">
-          dockerized runtime environments, and microservice APIs.
-        </text>
-      </g>
-
-      <!-- Pillar 3: Recognized GitHub Honors (Teal & White) -->
-      <g transform="translate(16, 160)">
-        <rect x="0" y="2" width="8" height="8" fill="#0d9488"/>
-        <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
-          Official Badges: Pull Shark • Quickdraw • YOLO
-        </text>
-        <text x="16" y="26" fill="#ffffff" fill-opacity="0.85" class="head" font-size="11">
-          Recognized for rapid PR merging &amp; continuous delivery.
-        </text>
-        <text x="16" y="41" fill="#2dd4bf" class="code" font-size="11">
-          🌱 "Code, learn, and grow every day."
-        </text>
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">⚡ Clean Git Topology</text>
+        <text x="175" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">📦 Modular Design</text>
+        <text x="340" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">🛡️ Verified CI</text>
       </g>
     </g>
 
-    <!-- Outer Sharp 90-degree Border (Dark Teal with Gold Brackets) -->
-    <rect x="0.5" y="0.5" width="999" height="394" fill="none" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.5"/>
-    <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#ffd700" stroke-width="2.5"/>
-    <path d="M 984 0 L 1000 0 L 1000 16" fill="none" stroke="#ffd700" stroke-width="2.5"/>
-    <path d="M 0 378 L 0 394 L 16 394" fill="none" stroke="#ffd700" stroke-width="2.5"/>
-    <path d="M 984 394 L 1000 394 L 1000 378" fill="none" stroke="#ffd700" stroke-width="2.5"/>
+    <!-- ════════════════════ CARD 3: RUNTIME SAMPLING (LANGUAGES) ════════════════════ -->
+    <g transform="translate(18, 244)" class="metric-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.45"/>
+      
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#071a1c" stroke="#0d9488" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#2dd4bf"/>
+      <text x="96" y="27" text-anchor="middle" fill="#2dd4bf" class="code" font-size="10" font-weight="700">[RUNTIME_DISTRIBUTION]</text>
+      <text x="460" y="27" text-anchor="end" fill="#ffd700" class="code" font-size="10.5" font-weight="700">● EMPIRICAL_SAMPLE</text>
+
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">💻 Empirical Language Breakdown</text>
+      <text x="14" y="78" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Production Usage Across 30,278 Contribution Sample</text>
+
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="90" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="45" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">JS: 42%</text>
+
+        <rect x="96" width="94" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="143" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Batch: 26%</text>
+
+        <rect x="196" width="84" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="238" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Vue: 16%</text>
+
+        <rect x="286" width="76" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="324" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">HTML: 10%</text>
+
+        <rect x="368" width="62" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="399" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Py: 6%</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Dominant allocation toward reactive JavaScript &amp; Vue banking UIs,
+      </text>
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        Windows automated orchestration batch scripts, and Python APIs.
+      </text>
+
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">⚡ Client Reactive Core</text>
+        <text x="180" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">🖥️ Windows Automation</text>
+        <text x="360" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">🐍 Python</text>
+      </g>
+    </g>
+
+    <!-- ════════════════════ CARD 4: TENURE & BADGES ════════════════════ -->
+    <g transform="translate(508, 244)" class="metric-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
+      
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#181506" stroke="#ffd700" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#ffd700"/>
+      <text x="96" y="27" text-anchor="middle" fill="#ffd700" class="code" font-size="10" font-weight="700">[TENURE_&amp;_HONORS]</text>
+      <text x="460" y="27" text-anchor="end" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">● MEMBER_SINCE_2019</text>
+
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">🏆 5+ Years Tenure &amp; Official Badges</text>
+      <text x="14" y="78" fill="#ffd700" class="head" font-size="12" font-weight="600">GitHub Member Since Dec 12, 2019 • 3 Official Badges</text>
+
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="84" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="42" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Pull Shark</text>
+
+        <rect x="90" width="56" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="118" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">YOLO</text>
+
+        <rect x="152" width="76" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="190" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Quickdraw</text>
+
+        <rect x="234" width="94" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="281" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">5+ Years Active</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Officially badged for rapid PR merging cadence and deployment delivery.
+      </text>
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        Over 5 continuous years of enterprise software delivery and commit integrity.
+      </text>
+
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">⚡ Rapid PR Merges</text>
+        <text x="175" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">🎖️ 3 Official Badges</text>
+        <text x="350" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">🌍 Global Impact</text>
+      </g>
+    </g>
+
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
+    <rect x="1" y="1" width="998" height="438" fill="none" stroke="url(#metricsBorder)" stroke-width="1.8" stroke-opacity="0.6"/>
   </g>
 </svg>
