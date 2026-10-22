@@ -147,7 +147,10 @@ Motto: "Excellence through clean architecture & continuous precision."
   </picture>
 </p>
 
-<h3 align="center">✨ "Excellence through clean architecture, continuous innovation & precision." ✨</h3>
+<!-- Architectural Philosophy & Motto Banner -->
+<p align="center">
+  <img src="./assets/huevang-motto.svg" width="100%" alt="Excellence through clean architecture, continuous innovation &amp; precision — Huevang XIONGPOR"/>
+</p>
 
 <!-- ═══════════════════════════ FOOTER SKYLINE ═══════════════════════════ -->
 <p align="center">
