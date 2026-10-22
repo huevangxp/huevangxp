@@ -1,40 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 60" width="1000" height="60" role="img" aria-label="TECHNICAL ARSENAL • CORE SKILLS &amp; STACK">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 60" width="1000" height="60" role="img" aria-label="TECHNICAL ARSENAL • CORE SKILLS & STACK">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&amp;family=Fira+Code:wght@700&amp;display=swap');
       .h-main { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; font-size: 15.5px; font-weight: 800; letter-spacing: 2px; }
     </style>
     <linearGradient id="hdrBorder_h-s" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
     </linearGradient>
   </defs>
 
-  <!-- Left Cyber Track Line (x: 20 to 240) -->
-  <line x1="10" y1="30" x2="240" y2="30" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="6 4"/>
-  <rect x="0" y="26" width="8" height="8" fill="#2dd4bf"/>
+  <!-- Left Cyber Track Line with Marching Circuit Animation -->
+  <line x1="10" y1="30" x2="240" y2="30" stroke="#00f0ff" stroke-width="1.4" stroke-opacity="0.45" stroke-dasharray="8 6">
+    <animate attributeName="stroke-dashoffset" values="0;28" dur="1.8s" repeatCount="indefinite"/>
+  </line>
+  <rect x="0" y="26" width="8" height="8" fill="#00f0ff"/>
 
   <!-- Centered Sharp Banner (x: 250 to 750, w: 500) -->
-  <rect x="250" y="6" width="500" height="48" fill="#050a0f" stroke="url(#hdrBorder_h-s)" stroke-width="1.4" stroke-opacity="0.55"/>
-  <rect x="254" y="10" width="492" height="40" fill="#08141d"/>
+  <rect x="250" y="6" width="500" height="48" fill="#03070c" stroke="url(#hdrBorder_h-s)" stroke-width="1.6" stroke-opacity="0.6"/>
+  <rect x="254" y="10" width="492" height="40" fill="#06121d"/>
 
-  <!-- Left Accent Dot -->
+  <!-- Left Accent Pulse Dot -->
   <circle cx="276" cy="30" r="4.5" fill="#ffd700"/>
-  <circle cx="276" cy="30" r="8" fill="none" stroke="#ffd700" stroke-width="1" stroke-opacity="0.45"/>
+  <circle cx="276" cy="30" r="8" fill="none" stroke="#ffd700" stroke-width="1">
+    <animate attributeName="r" values="4.5;10;4.5" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
 
   <!-- Pure Solid High-Contrast Typography in English -->
   <text x="500" y="35" text-anchor="middle">
     <tspan fill="#ffffff" class="h-main">TECHNICAL ARSENAL</tspan>
     <tspan fill="#ffd700" class="h-main"> • </tspan>
-    <tspan fill="#2dd4bf" class="h-main">CORE SKILLS &amp; STACK</tspan>
+    <tspan fill="#00f0ff" class="h-main">CORE SKILLS & STACK</tspan>
   </text>
 
-  <!-- Right Accent Dot -->
-  <circle cx="724" cy="30" r="4.5" fill="#2dd4bf"/>
-  <circle cx="724" cy="30" r="8" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.45"/>
+  <!-- Right Accent Pulse Dot -->
+  <circle cx="724" cy="30" r="4.5" fill="#00ff66"/>
+  <circle cx="724" cy="30" r="8" fill="none" stroke="#00ff66" stroke-width="1">
+    <animate attributeName="r" values="4.5;10;4.5" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Right Cyber Track Line (x: 760 to 990) -->
-  <line x1="760" y1="30" x2="990" y2="30" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="6 4"/>
+  <!-- Right Cyber Track Line with Marching Circuit Animation -->
+  <line x1="760" y1="30" x2="990" y2="30" stroke="#ffd700" stroke-width="1.4" stroke-opacity="0.45" stroke-dasharray="8 6">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="1.8s" repeatCount="indefinite"/>
+  </line>
   <rect x="992" y="26" width="8" height="8" fill="#ffd700"/>
 </svg>
