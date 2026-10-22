@@ -1,57 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" role="img" aria-label="Technical Arsenal and Enterprise Stack">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-label="Technical Arsenal and Enterprise Production Stack">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;display=swap');
       .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
       .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+      .skill-card { transition: all 0.25s ease; cursor: pointer; }
+      .skill-card:hover { opacity: 0.92; }
     </style>
 
-    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="skillBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020408"/>
       <stop offset="50%" stop-color="#050d17"/>
       <stop offset="100%" stop-color="#010305"/>
     </linearGradient>
 
-    <linearGradient id="tableBorder" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="skillBorder" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
       <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
 
     <linearGradient id="gridFadeSkill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.25"/>
     </linearGradient>
 
-    <pattern id="tableGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <pattern id="skillGrid" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0d9488" stroke-width="0.7" stroke-opacity="0.05"/>
       <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
     </pattern>
 
-    <clipPath id="tableClip">
-      <rect width="1000" height="430"/>
+    <clipPath id="skillClip">
+      <rect width="1000" height="440"/>
     </clipPath>
   </defs>
 
-  <g clip-path="url(#tableClip)">
+  <g clip-path="url(#skillClip)">
     <!-- Base Canvas Background -->
-    <rect width="1000" height="430" fill="url(#cardBg)"/>
-    <rect width="1000" height="430" fill="url(#tableGrid)"/>
+    <rect width="1000" height="440" fill="url(#skillBg)"/>
+    <rect width="1000" height="440" fill="url(#skillGrid)"/>
 
     <!-- 3D Perspective Lines in Background -->
-    <g opacity="0.65">
-      <line x1="500" y1="120" x2="-100" y2="430" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
-      <line x1="500" y1="120" x2="150" y2="430" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
-      <line x1="500" y1="120" x2="350" y2="430" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
-      <line x1="500" y1="120" x2="650" y2="430" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
-      <line x1="500" y1="120" x2="850" y2="430" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
-      <line x1="500" y1="120" x2="1100" y2="430" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
+    <g opacity="0.6">
+      <line x1="500" y1="120" x2="-80" y2="440" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="180" y2="440" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="380" y2="440" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="620" y2="440" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="820" y2="440" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
+      <line x1="500" y1="120" x2="1080" y2="440" stroke="url(#gridFadeSkill)" stroke-width="1.1"/>
     </g>
 
     <!-- Animated Cyber Laser Scanner Line -->
-    <line x1="0" y1="0" x2="1000" y2="0" stroke="#2dd4bf" stroke-width="1.3" stroke-opacity="0.35">
-      <animate attributeName="y1" values="40;425;40" dur="7.5s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="40;425;40" dur="7.5s" repeatCount="indefinite"/>
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#0d9488" stroke-width="1.3" stroke-opacity="0.35">
+      <animate attributeName="y1" values="40;435;40" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="40;435;40" dur="8s" repeatCount="indefinite"/>
     </line>
 
     <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
@@ -68,105 +70,219 @@
       ⚡ TECHNICAL ARSENAL &amp; ENTERPRISE PRODUCTION STACK
     </text>
 
-    <!-- Right Live Status Indicator (Matrix Green) -->
-    <circle cx="848" cy="20" r="4" fill="#2dd4bf">
+    <!-- Right Live Status Indicator -->
+    <circle cx="838" cy="20" r="4" fill="#2dd4bf">
       <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="860" y="24" fill="#2dd4bf" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+    <text x="850" y="24" fill="#2dd4bf" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
       50+_VERIFIED_SKILLS
     </text>
 
-    <!-- ════════════════════ TABLE HEADERS ════════════════════ -->
-    <rect x="15" y="48" width="970" height="36" fill="#06121e" stroke="#0d9488" stroke-width="1" stroke-opacity="0.25"/>
-    <text x="32" y="71" fill="#2dd4bf" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[TIER &amp; DOMAIN]</text>
-    <text x="200" y="71" fill="#2dd4bf" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[SPECIALIZATION &amp; SCOPE]</text>
-    <text x="515" y="71" fill="#2dd4bf" class="code" font-size="11.5" font-weight="800" letter-spacing="1.5">[PRODUCTION ARSENAL &amp; ACTIVE TOOLING]</text>
+    <!-- ════════════════════ CARD 1: FRONTEND & MOBILE ════════════════════ -->
+    <g transform="translate(18, 52)" class="skill-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.45"/>
+      
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#071a1c" stroke="#0d9488" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#2dd4bf"/>
+      <text x="96" y="27" text-anchor="middle" fill="#2dd4bf" class="code" font-size="10" font-weight="700">[UI_&amp;_CLIENT_SYSTEMS]</text>
+      <text x="460" y="27" text-anchor="end" fill="#ffd700" class="code" font-size="10.5" font-weight="700">● 16_TECHS_ACTIVE</text>
 
-    <!-- ════════════════════ ROW 1: FRONTEND & MOBILE ════════════════════ -->
-    <g transform="translate(15, 92)">
-      <rect width="970" height="76" fill="#040a10" stroke="#0d9488" stroke-width="1" stroke-opacity="0.35"/>
-      <!-- Badge Box -->
-      <rect x="15" y="25" width="145" height="26" fill="#071a1c" stroke="#0d9488" stroke-width="1.2"/>
-      <circle cx="28" cy="38" r="3" fill="#2dd4bf"/>
-      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">16 TECHS // UI</text>
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">🎨 Frontend &amp; Mobile Ecosystem</text>
+      <text x="14" y="78" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Reactive PWAs, Cross-Platform Mobile &amp; Banking UI</text>
 
-      <!-- Category & Subtitle -->
-      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">🎨 Frontend &amp; Mobile</text>
-      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Web, Mobile &amp; Cross-Platform UI</text>
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="52" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="26" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Vue 3</text>
 
-      <!-- Tools & Stack -->
-      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
-        Vue 3, Nuxt 3, React, Next.js, Flutter, Android, Swift, TypeScript
+        <rect x="58" width="62" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="89" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Nuxt 3</text>
+
+        <rect x="126" width="54" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="153" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">React</text>
+
+        <rect x="186" width="60" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="216" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Flutter</text>
+
+        <rect x="252" width="78" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="291" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">TypeScript</text>
+
+        <rect x="336" width="84" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="378" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">TailwindCSS</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Architecting scalable single-page banking apps, high-throughput financial
       </text>
-      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
-        React Native, HTML5 Canvas API, Vuetify, Tailwind CSS, Bootstrap, JS/HTML5
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        dashboards, and reactive mobile interfaces with state-driven reliability.
       </text>
+
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">⚡ Zero-Lag Virtual DOM</text>
+        <text x="170" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">📱 iOS &amp; Android Native</text>
+        <text x="350" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">🛡️ WCAG AA</text>
+      </g>
     </g>
 
-    <!-- ════════════════════ ROW 2: BACKEND & APIS ════════════════════ -->
-    <g transform="translate(15, 174)">
-      <rect width="970" height="76" fill="#040a10" stroke="#ffd700" stroke-width="1" stroke-opacity="0.35"/>
-      <!-- Badge Box -->
-      <rect x="15" y="25" width="145" height="26" fill="#181506" stroke="#ffd700" stroke-width="1.2"/>
-      <circle cx="28" cy="38" r="3" fill="#ffd700"/>
-      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">11 TECHS // API</text>
+    <!-- ════════════════════ CARD 2: BACKEND & APIS ════════════════════ -->
+    <g transform="translate(508, 52)" class="skill-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
+      
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#181506" stroke="#ffd700" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#ffd700"/>
+      <text x="96" y="27" text-anchor="middle" fill="#ffd700" class="code" font-size="10" font-weight="700">[CORE_BACKEND_APIS]</text>
+      <text x="460" y="27" text-anchor="end" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">● HIGH_CONCURRENCY</text>
 
-      <!-- Category & Subtitle -->
-      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">⚙️ Backend &amp; APIs</text>
-      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">High-Concurrency Core Architecture</text>
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">⚙️ Backend &amp; API Mainframes</text>
+      <text x="14" y="78" fill="#ffd700" class="head" font-size="12" font-weight="600">Financial Microservices, Payment Gateways &amp; REST APIs</text>
 
-      <!-- Tools & Stack -->
-      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
-        Node.js, Express, NestJS, Python, Java, PHP, Laravel, Django
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="64" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="32" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Node.js</text>
+
+        <rect x="70" width="58" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="99" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">NestJS</text>
+
+        <rect x="134" width="58" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="163" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Python</text>
+
+        <rect x="198" width="60" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="228" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">FastAPI</text>
+
+        <rect x="264" width="70" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="299" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Laravel</text>
+
+        <rect x="340" width="78" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="379" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">REST APIs</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Engineering high-throughput transaction middleware, ISO-compliant payment
       </text>
-      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
-        Jython (JVM Python), Bruno API Client, REST &amp; Microservices Architecture
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        integrations, idempotency layers, and secure distributed API gateways.
       </text>
+
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">⚡ 10k+ req/sec Throughput</text>
+        <text x="190" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">🔒 JWT / OAuth2</text>
+        <text x="340" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">⏱️ Latency &lt; 45ms</text>
+      </g>
     </g>
 
-    <!-- ════════════════════ ROW 3: DATABASE & DATA ════════════════════ -->
-    <g transform="translate(15, 256)">
-      <rect width="970" height="76" fill="#040a10" stroke="#0d9488" stroke-width="1" stroke-opacity="0.35"/>
-      <!-- Badge Box -->
-      <rect x="15" y="25" width="145" height="26" fill="#071a1c" stroke="#0d9488" stroke-width="1.2"/>
-      <circle cx="28" cy="38" r="3" fill="#2dd4bf"/>
-      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">8 TECHS // DB</text>
+    <!-- ════════════════════ CARD 3: DATABASE & CACHING ════════════════════ -->
+    <g transform="translate(18, 244)" class="skill-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
+      
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#181506" stroke="#ffd700" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#ffd700"/>
+      <text x="96" y="27" text-anchor="middle" fill="#ffd700" class="code" font-size="10" font-weight="700">[DATA_STORE_ARCHITECTURE]</text>
+      <text x="460" y="27" text-anchor="end" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">● ACID_GUARANTEED</text>
 
-      <!-- Category & Subtitle -->
-      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">🗄️ Database &amp; Data</text>
-      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Relational, NoSQL &amp; Intelligence</text>
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">🗄️ Database &amp; Memory Fabrics</text>
+      <text x="14" y="78" fill="#ffd700" class="head" font-size="12" font-weight="600">Relational Schemas, Document Stores &amp; Caching Tiers</text>
 
-      <!-- Tools & Stack -->
-      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
-        PostgreSQL, MySQL, MariaDB, MongoDB, Firebase, Redis
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="84" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="42" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">PostgreSQL</text>
+
+        <rect x="90" width="56" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="118" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">MySQL</text>
+
+        <rect x="152" width="68" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="186" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">MongoDB</text>
+
+        <rect x="226" width="50" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="251" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Redis</text>
+
+        <rect x="282" width="64" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="314" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Firebase</text>
+
+        <rect x="352" width="78" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
+        <text x="391" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Prisma ORM</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Designing optimized relational financial schemas, strict ACID ledger consistency,
       </text>
-      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
-        Data Analytics, Web Research &amp; OSINT, High-Performance Indexing
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        Redis in-memory session pipelines, and automated zero-downtime replication.
       </text>
+
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">⚡ Query Time &lt; 15ms</text>
+        <text x="165" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">💾 Automated Backups</text>
+        <text x="340" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">🛡️ AES-256 TLS</text>
+      </g>
     </g>
 
-    <!-- ════════════════════ ROW 4: DEVOPS, CLOUD & AI ════════════════════ -->
-    <g transform="translate(15, 338)">
-      <rect width="970" height="76" fill="#040a10" stroke="#ffd700" stroke-width="1" stroke-opacity="0.35"/>
-      <!-- Badge Box -->
-      <rect x="15" y="25" width="145" height="26" fill="#181506" stroke="#ffd700" stroke-width="1.2"/>
-      <circle cx="28" cy="38" r="3" fill="#ffd700"/>
-      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">15 TECHS // OPS</text>
+    <!-- ════════════════════ CARD 4: DEVOPS & AI PIPELINES ════════════════════ -->
+    <g transform="translate(508, 244)" class="skill-card">
+      <rect width="474" height="180" fill="#040a10" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.45"/>
+      
+      <!-- Top Tag & Status -->
+      <rect x="14" y="12" width="168" height="22" fill="#071a1c" stroke="#0d9488" stroke-width="0.9"/>
+      <circle cx="24" cy="23" r="3" fill="#2dd4bf"/>
+      <text x="96" y="27" text-anchor="middle" fill="#2dd4bf" class="code" font-size="10" font-weight="700">[INFRA_&amp;_AI_PIPELINES]</text>
+      <text x="460" y="27" text-anchor="end" fill="#ffd700" class="code" font-size="10.5" font-weight="700">● 99.9%_RELIABILITY</text>
 
-      <!-- Category & Subtitle -->
-      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">🛠️ DevOps, Cloud &amp; AI</text>
-      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Agentic AI, Multi-Cloud &amp; Automation</text>
+      <!-- Title & Subtitle -->
+      <text x="14" y="58" fill="#ffffff" class="head" font-size="18" font-weight="900" letter-spacing="0.5">🚀 DevOps, Cloud &amp; AI Automation</text>
+      <text x="14" y="78" fill="#2dd4bf" class="head" font-size="12" font-weight="600">Container Orchestration, CI/CD &amp; Autonomous Agents</text>
 
-      <!-- Tools & Stack -->
-      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
-        Docker, Ubuntu VPS, Git, GitHub, GitLab, VS Code, Postman, Figma
+      <!-- Stack Badges -->
+      <g transform="translate(14, 90)">
+        <rect width="58" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="29" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Docker</text>
+
+        <rect x="64" width="94" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="111" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Linux / Debian</text>
+
+        <rect x="164" width="50" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="189" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Nginx</text>
+
+        <rect x="220" width="76" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="258" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Git / CI/CD</text>
+
+        <rect x="302" width="74" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="339" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Gemini AI</text>
+
+        <rect x="382" width="80" height="20" fill="#08141d" stroke="#0d9488" stroke-width="0.8"/>
+        <text x="422" y="14" text-anchor="middle" fill="#ffffff" class="code" font-size="10" font-weight="700">Antigravity</text>
+      </g>
+
+      <!-- Description -->
+      <text x="14" y="129" fill="#ffffff" class="head" font-size="11.5">
+        Deploying secure multi-stage Docker containers, automated GitHub Actions
       </text>
-      <text x="515" y="52" fill="#2dd4bf" class="code" font-size="12" font-weight="600">
-        Antigravity (Google AGY AI), AI Systems (LLMs), Windows Server 2021, Hosting Manager
+      <text x="14" y="145" fill="#ffffff" class="head" font-size="11.5">
+        pipelines, Nginx reverse proxy load-balancers, and agentic AI integrations.
       </text>
+
+      <!-- Telemetry Row -->
+      <g transform="translate(14, 166)">
+        <text x="0" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">⚡ 100% Automated CI/CD</text>
+        <text x="190" y="0" fill="#ffd700" class="code" font-size="10.5" font-weight="700">🐳 Multi-Stage Builds</text>
+        <text x="350" y="0" fill="#2dd4bf" class="code" font-size="10.5" font-weight="700">🤖 Autonomous AI</text>
+      </g>
     </g>
 
     <!-- Outer Luxury Border (Sharp 90-degree corners) -->
-    <rect x="1" y="1" width="998" height="428" fill="none" stroke="url(#tableBorder)" stroke-width="1.8" stroke-opacity="0.6"/>
+    <rect x="1" y="1" width="998" height="438" fill="none" stroke="url(#skillBorder)" stroke-width="1.8" stroke-opacity="0.6"/>
   </g>
 </svg>
