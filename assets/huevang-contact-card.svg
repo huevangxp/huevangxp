@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" width="1000" height="290" role="img" aria-label="Direct Communications and Professional Engagement">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;display=swap');
+      .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
+      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+    </style>
+
+    <linearGradient id="contactBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04080d"/>
+      <stop offset="50%" stop-color="#08141e"/>
+      <stop offset="100%" stop-color="#020508"/>
+    </linearGradient>
+
+    <linearGradient id="contactBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+
+    <pattern id="contactGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
+    </pattern>
+
+    <clipPath id="contactClip">
+      <rect width="1000" height="290"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#contactClip)">
+    <!-- Base Canvas Background -->
+    <rect width="1000" height="290" fill="url(#contactBg)"/>
+    <rect width="1000" height="290" fill="url(#contactGrid)"/>
+
+    <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
+    <rect width="1000" height="40" fill="#07121b"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
+
+    <!-- Window Dots -->
+    <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="62" cy="20" r="5.5" fill="#27c93f"/>
+
+    <!-- Title Bar Label -->
+    <text x="500" y="25" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="2">
+      ⚡ DIRECT COMMUNICATIONS &amp; PROFESSIONAL ENGAGEMENT
+    </text>
+
+    <!-- Right Live Status Indicator -->
+    <circle cx="855" cy="20" r="3.5" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="866" y="24" fill="#22c55e" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+      OPEN FOR CONSULTING
+    </text>
+
+    <!-- ════════════════════ 4 CONTACT CHANNELS ════════════════════ -->
+    <!-- Channel 1: Phone / WhatsApp -->
+    <g transform="translate(18, 52)">
+      <rect width="232" height="152" fill="#060c13" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="130" height="20" fill="#0c1e1c" stroke="#2dd4bf" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#2dd4bf" class="code" font-size="10" font-weight="700">● CALL &amp; WHATSAPP</text>
+      
+      <text x="14" y="56" fill="#ffffff" class="head" font-size="15" font-weight="800">📞 Direct Phone</text>
+      <text x="14" y="80" fill="#2dd4bf" class="code" font-size="12.5" font-weight="700">+856 20 78849378</text>
+      <text x="14" y="100" fill="#94a3b8" class="code" font-size="11">020 78849378 (Laos)</text>
+      
+      <line x1="14" y1="116" x2="218" y2="116" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.2"/>
+      <text x="14" y="136" fill="#cbd5e1" class="head" font-size="11" font-weight="600">Fastest direct voice &amp; chat</text>
+    </g>
+
+    <!-- Channel 2: Email Direct -->
+    <g transform="translate(262, 52)">
+      <rect width="232" height="152" fill="#060c13" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="130" height="20" fill="#181708" stroke="#ffd700" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● OFFICIAL INQUIRIES</text>
+      
+      <text x="14" y="56" fill="#ffffff" class="head" font-size="15" font-weight="800">📧 Direct Email</text>
+      <text x="14" y="80" fill="#ffd700" class="code" font-size="12" font-weight="700">huevang933@gmail.com</text>
+      <text x="14" y="100" fill="#94a3b8" class="head" font-size="11">Enterprise Proposals &amp; Hiring</text>
+      
+      <line x1="14" y1="116" x2="218" y2="116" stroke="#ffd700" stroke-width="0.8" stroke-opacity="0.2"/>
+      <text x="14" y="136" fill="#cbd5e1" class="head" font-size="11" font-weight="600">Checked daily • 24h reply</text>
+    </g>
+
+    <!-- Channel 3: Location & Timezone -->
+    <g transform="translate(506, 52)">
+      <rect width="232" height="152" fill="#060c13" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="130" height="20" fill="#071b26" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#38bdf8" class="code" font-size="10" font-weight="700">● TIMEZONE &amp; BASE</text>
+      
+      <text x="14" y="56" fill="#ffffff" class="head" font-size="15" font-weight="800">📍 Primary Location</text>
+      <text x="14" y="80" fill="#ffffff" class="head" font-size="13.5" font-weight="700">Vientiane, Laos 🇱🇦</text>
+      <text x="14" y="100" fill="#38bdf8" class="code" font-size="11.5" font-weight="600">Indochina Time (UTC+07)</text>
+      
+      <line x1="14" y1="116" x2="218" y2="116" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.2"/>
+      <text x="14" y="136" fill="#cbd5e1" class="head" font-size="11" font-weight="600">Global remote collaboration</text>
+    </g>
+
+    <!-- Channel 4: GitHub Profile -->
+    <g transform="translate(750, 52)">
+      <rect width="232" height="152" fill="#060c13" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.45"/>
+      <rect x="12" y="10" width="130" height="20" fill="#071e11" stroke="#22c55e" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#22c55e" class="code" font-size="10" font-weight="700">● CODE ARCHIVES</text>
+      
+      <text x="14" y="56" fill="#ffffff" class="head" font-size="15" font-weight="800">💻 GitHub Platform</text>
+      <text x="14" y="80" fill="#22c55e" class="code" font-size="12" font-weight="700">github.com/huevangxp</text>
+      <text x="14" y="100" fill="#94a3b8" class="head" font-size="11">170+ Repositories &amp; Source</text>
+      
+      <line x1="14" y1="116" x2="218" y2="116" stroke="#22c55e" stroke-width="0.8" stroke-opacity="0.2"/>
+      <text x="14" y="136" fill="#cbd5e1" class="head" font-size="11" font-weight="600">Open source &amp; enterprise repos</text>
+    </g>
+
+    <!-- ════════════════════ BOTTOM BANNER ════════════════════ -->
+    <g transform="translate(18, 216)">
+      <rect width="964" height="60" fill="#08141e" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+      
+      <!-- Left Highlight Dot -->
+      <circle cx="24" cy="30" r="4" fill="#ffd700"/>
+      <text x="38" y="26" fill="#ffffff" class="head" font-size="13" font-weight="800">
+        PROFESSIONAL SCOPE: Core Banking Dashboards • Enterprise Financial Portals • AI Agent Workflows
+      </text>
+      <text x="38" y="46" fill="#2dd4bf" class="code" font-size="11" font-weight="600">
+        Available for enterprise consulting, high-concurrency architecture contracts &amp; technical leadership
+      </text>
+
+      <!-- Right Indicator Badge -->
+      <rect x="804" y="15" width="146" height="30" fill="#181708" stroke="#ffd700" stroke-width="1.2"/>
+      <text x="877" y="34" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">
+        ⚡ READY TO BUILD
+      </text>
+    </g>
+
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
+    <rect x="1" y="1" width="998" height="288" fill="none" stroke="url(#contactBorder)" stroke-width="1.8" stroke-opacity="0.55"/>
+  </g>
+</svg>
