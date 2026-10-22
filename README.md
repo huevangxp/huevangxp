@@ -105,11 +105,6 @@ Motto: "Excellence through clean architecture & continuous precision."
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Skyline Graph"/>
 </p>
 
-<p align="center">
-  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="85" alt="Achievement: Quickdraw"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="85" alt="Achievement: YOLO"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/huevangxp?tab=achievements"><img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="85" alt="Achievement: Pull Shark"/></a>
-</p>
 
 <!-- ═══════════════════════════ FEATURED PROJECTS ═══════════════════════════ -->
 <p align="center">
