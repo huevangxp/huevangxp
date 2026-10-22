@@ -94,7 +94,7 @@ Motto: "Excellence through clean architecture & continuous precision."
 
 <!-- ═══════════════════════════ GITHUB METRICS & ACTIVITY ═══════════════════════════ -->
 <p align="center">
-  <img src="./assets/h-contact-teal.svg" width="100%" alt="GitHub Metrics & Statistics"/>
+  <img src="./assets/h-stats-teal.svg" width="100%" alt="GitHub Metrics & Statistics"/>
 </p>
 
 <p align="center">
