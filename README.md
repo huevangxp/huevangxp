@@ -75,33 +75,9 @@ Motto: "Excellence through clean architecture & continuous precision."
   <img src="./assets/huevang-timeline.svg" width="100%" alt="Career Timeline: NUOL, LaiLaoLab, Laos IT Capital, Banking Sector"/>
 </p>
 
-<table align="center" width="100%">
-<tr>
-  <th align="center" width="22%">Timeline</th>
-  <th align="left" width="38%">Organization & Role</th>
-  <th align="left" width="40%">Key Contributions & Scope</th>
-</tr>
-<tr>
-  <td align="center"><b>2023 – Present</b></td>
-  <td><b>Freelance & Core Banking Sector</b><br><i>Financial & Enterprise Systems</i></td>
-  <td>Architecting secure payment gateways, core banking internal dashboards, transaction settlement modules, and scalable RESTful microservices.</td>
-</tr>
-<tr>
-  <td align="center"><b>2022 – 2023</b></td>
-  <td><b>Laos IT Capital Co., Ltd</b><br><i>Front-End Developer</i></td>
-  <td>Constructed modular frontend components, collaborated with UI/UX designers, streamlined application bundle sizes, and enhanced load responsiveness.</td>
-</tr>
-<tr>
-  <td align="center"><b>2021 – 2022</b></td>
-  <td><b>LaiLaoLab ICT Solution</b><br><i>Full-Stack Developer</i></td>
-  <td>Engineered end-to-end web applications and robust database architectures for governmental departments and enterprise corporate portals.</td>
-</tr>
-<tr>
-  <td align="center"><b>2019 – 2023</b></td>
-  <td><b>National University of Laos (NUOL)</b><br><i>Bachelor of Website Development</i></td>
-  <td>Comprehensive degree training covering software engineering, relational database design, network architecture, and modern web application security.</td>
-</tr>
-</table>
+<p align="center">
+  <img src="./assets/huevang-experience-table.svg" width="100%" alt="Professional Career Track &amp; Contributions"/>
+</p>
 
 <!-- ═══════════════════════════ TECHNICAL ARSENAL ═══════════════════════════ -->
 <p align="center">
