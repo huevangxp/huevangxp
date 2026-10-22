@@ -117,13 +117,14 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <p align="center">
-  <a href="https://github.com/huevangxp/MeUIPay"><img src="https://github-readme-stats.vercel.app/api/pin/?username=huevangxp&repo=MeUIPay&bg_color=060c12&title_color=ffd700&icon_color=2dd4bf&text_color=ffffff&border_color=2dd4bf&hide_border=false" width="49%" alt="MeUIPay"/></a>
-  <a href="https://github.com/huevangxp/booking-apartment"><img src="https://github-readme-stats.vercel.app/api/pin/?username=huevangxp&repo=booking-apartment&bg_color=060c12&title_color=ffd700&icon_color=2dd4bf&text_color=ffffff&border_color=2dd4bf&hide_border=false" width="49%" alt="booking-apartment"/></a>
+  <img src="./assets/huevang-featured-projects.svg" width="100%" alt="Featured Enterprise Deployments &amp; Repositories"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/huevangxp/ai_server"><img src="https://github-readme-stats.vercel.app/api/pin/?username=huevangxp&repo=ai_server&bg_color=060c12&title_color=ffd700&icon_color=2dd4bf&text_color=ffffff&border_color=2dd4bf&hide_border=false" width="49%" alt="ai_server"/></a>
-  <a href="https://github.com/huevangxp/admin"><img src="https://github-readme-stats.vercel.app/api/pin/?username=huevangxp&repo=admin&bg_color=060c12&title_color=ffd700&icon_color=2dd4bf&text_color=ffffff&border_color=2dd4bf&hide_border=false" width="49%" alt="admin"/></a>
+  <a href="https://github.com/huevangxp/MeUIPay"><img src="https://img.shields.io/badge/Repository-MeUIPay-2dd4bf?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=0c1e1c" alt="MeUIPay Repo"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp/booking-apartment"><img src="https://img.shields.io/badge/Repository-booking--apartment-ffd700?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=181708" alt="booking-apartment Repo"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp/ai_server"><img src="https://img.shields.io/badge/Repository-ai__server-38bdf8?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=071b26" alt="ai_server Repo"/></a>&nbsp;&nbsp;
+  <a href="https://github.com/huevangxp/admin"><img src="https://img.shields.io/badge/Repository-admin-22c55e?style=flat-square&amp;logo=github&amp;logoColor=060c13&amp;labelColor=071e11" alt="admin Repo"/></a>
 </p>
 
 <!-- ═══════════════════════════ CONNECT & CONTACT ═══════════════════════════ -->
@@ -131,29 +132,8 @@ Motto: "Excellence through clean architecture & continuous precision."
   <img src="./assets/h-contact-teal.svg" width="100%" alt="Contact Huevang XIONGPOR"/>
 </p>
 
-<div align="center">
-  <table align="center" style="font-family: 'Outfit', 'Segoe UI', sans-serif;">
-    <tr>
-      <td align="center"><b>📞 Telephone / WhatsApp</b></td>
-      <td><code>+856 20 78849378</code> (020 78849378)</td>
-    </tr>
-    <tr>
-      <td align="center"><b>📧 Email Direct</b></td>
-      <td><a href="mailto:huevang933@gmail.com"><code>huevang933@gmail.com</code></a></td>
-    </tr>
-    <tr>
-      <td align="center"><b>📍 Location</b></td>
-      <td>Vientiane Capital, Laos 🇱🇦</td>
-    </tr>
-    <tr>
-      <td align="center"><b>💻 GitHub Profile</b></td>
-      <td><a href="https://github.com/huevangxp"><code>github.com/huevangxp</code></a></td>
-    </tr>
-  </table>
-</div>
-
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Developer Quote"/>
+  <img src="./assets/huevang-contact-card.svg" width="100%" alt="Direct Communications &amp; Professional Engagement"/>
 </p>
 
 <!-- Contribution Snake -->
