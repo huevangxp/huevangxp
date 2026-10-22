@@ -15,13 +15,15 @@
       }
     </style>
 
+    <!-- Deep Obsidian Canvas Gradient -->
     <linearGradient id="metricsBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020408"/>
       <stop offset="50%" stop-color="#050d17"/>
       <stop offset="100%" stop-color="#010305"/>
     </linearGradient>
 
-    <linearGradient id="metricsBorder" x1="0" y1="0" x2="1" y2="0">
+    <!-- Unified 3-Color Header Gradient (Cyan -> Green -> Gold) -->
+    <linearGradient id="triColorGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#00f0ff"/>
       <stop offset="50%" stop-color="#00ff66"/>
       <stop offset="100%" stop-color="#ffd700"/>
@@ -29,7 +31,7 @@
 
     <linearGradient id="gridFadeMetrics" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.16"/>
     </linearGradient>
 
     <pattern id="metricsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
@@ -47,7 +49,7 @@
     <rect width="1000" height="395" fill="url(#metricsBg)"/>
     <rect width="1000" height="395" fill="url(#metricsGrid)"/>
 
-    <!-- 3D Depth Perspective Floor Lines -->
+    <!-- 3D Depth Perspective Floor Lines (Color 1: Cyber Cyan #00f0ff) -->
     <g opacity="0.6">
       <line x1="500" y1="130" x2="-80" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
       <line x1="500" y1="130" x2="180" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
@@ -57,33 +59,36 @@
       <line x1="500" y1="130" x2="1080" y2="395" stroke="url(#gridFadeMetrics)" stroke-width="1.1"/>
     </g>
 
-    <!-- Animated Cyber Laser Scanner Line -->
-    <line x1="0" y1="42" x2="1000" y2="42" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.6" class="laser-scanner"/>
+    <!-- Animated Cyber Laser Scanner Line (Color 1: Cyber Cyan #00f0ff) -->
+    <line x1="0" y1="42" x2="1000" y2="42" stroke="#00f0ff" stroke-width="1.4" stroke-opacity="0.6" class="laser-scanner"/>
 
     <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
     <rect width="1000" height="42" fill="#050c18"/>
     <line x1="0" y1="42" x2="1000" y2="42" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3"/>
-    <rect width="1000" height="2" fill="url(#metricsBorder)"/>
+    <rect width="1000" height="2" fill="url(#triColorGrad)"/>
 
-    <!-- Sharp 90-degree Hacker Window Buttons -->
+    <!-- Sharp 90-degree Hacker Window Buttons (Strictly Color 1, 2, 3) -->
     <g transform="translate(18, 14)">
-      <rect x="0" y="0" width="14" height="14" fill="#ff4d4d" fill-opacity="0.2" stroke="#ff4d4d" stroke-width="1.2"/>
-      <line x1="3" y1="3" x2="11" y2="11" stroke="#ff4d4d" stroke-width="1.2"/>
-      <line x1="11" y1="3" x2="3" y2="11" stroke="#ff4d4d" stroke-width="1.2"/>
+      <!-- Button 1: Cyan -->
+      <rect x="0" y="0" width="14" height="14" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff" stroke-width="1.2"/>
+      <line x1="3" y1="10" x2="11" y2="10" stroke="#00f0ff" stroke-width="1.4"/>
 
-      <rect x="22" y="0" width="14" height="14" fill="#ffd700" fill-opacity="0.2" stroke="#ffd700" stroke-width="1.2"/>
-      <rect x="25" y="3" width="8" height="8" fill="none" stroke="#ffd700" stroke-width="1.2"/>
+      <!-- Button 2: Green -->
+      <rect x="22" y="0" width="14" height="14" fill="#00ff66" fill-opacity="0.15" stroke="#00ff66" stroke-width="1.2"/>
+      <rect x="25" y="3" width="8" height="8" fill="none" stroke="#00ff66" stroke-width="1.2"/>
 
-      <rect x="44" y="0" width="14" height="14" fill="#00ff66" fill-opacity="0.2" stroke="#00ff66" stroke-width="1.2"/>
-      <line x1="47" y1="10" x2="55" y2="10" stroke="#00ff66" stroke-width="1.4"/>
+      <!-- Button 3: Gold -->
+      <rect x="44" y="0" width="14" height="14" fill="#ffd700" fill-opacity="0.15" stroke="#ffd700" stroke-width="1.2"/>
+      <line x1="47" y1="4" x2="55" y2="10" stroke="#ffd700" stroke-width="1.2"/>
+      <line x1="55" y1="4" x2="47" y2="10" stroke="#ffd700" stroke-width="1.2"/>
     </g>
 
-    <!-- Title Bar Label -->
+    <!-- Title Bar Label (Color 1: Cyber Cyan) -->
     <text x="500" y="27" text-anchor="middle" fill="#00f0ff" class="mono" font-size="12" font-weight="700" letter-spacing="1.5">
       GITHUB_TELEMETRY://HUEVANGXP • [30,278 CONTRIBUTIONS IN LAST YEAR // 170+ REPOSITORIES]
     </text>
 
-    <!-- Right Live Status Indicator (Matrix Green) -->
+    <!-- Right Live Status Indicator (Color 2: Matrix Green) -->
     <g transform="translate(840, 13)">
       <rect x="0" y="0" width="142" height="18" fill="#00ff66" fill-opacity="0.12" stroke="#00ff66" stroke-width="1"/>
       <circle cx="10" cy="9" r="3" fill="#00ff66">
@@ -94,8 +99,8 @@
       </text>
     </g>
 
-    <!-- ════════════════════ 4 KEY METRIC TILES ════════════════════ -->
-    <!-- Tile 1: Total Verified Contributions (30,278) -->
+    <!-- ════════════════════ 4 KEY METRIC TILES (STRICT 3 COLORS) ════════════════════ -->
+    <!-- Tile 1: Total Verified Contributions (Color 2: Matrix Green #00ff66) -->
     <g transform="translate(18, 54)">
       <rect width="232" height="88" fill="#040a10" stroke="#00ff66" stroke-width="1.2" stroke-opacity="0.6"/>
       <rect x="12" y="10" width="150" height="20" fill="#071e11" stroke="#00ff66" stroke-width="0.8"/>
@@ -104,7 +109,7 @@
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">In The Last Year Output</text>
     </g>
 
-    <!-- Tile 2: Total Repositories (170+) -->
+    <!-- Tile 2: Total Repositories (Color 3: Electric Gold #ffd700) -->
     <g transform="translate(262, 54)">
       <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
       <rect x="12" y="10" width="140" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
@@ -113,7 +118,7 @@
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Public &amp; Enterprise Repos</text>
     </g>
 
-    <!-- Tile 3: Tenure / Experience (5+ Years) -->
+    <!-- Tile 3: Tenure / Experience (Color 1: Cyber Cyan #00f0ff) -->
     <g transform="translate(506, 54)">
       <rect width="232" height="88" fill="#040a10" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.5"/>
       <rect x="12" y="10" width="135" height="20" fill="#071a1c" stroke="#00f0ff" stroke-width="0.8"/>
@@ -122,17 +127,17 @@
       <text x="14" y="76" fill="#94a3b8" class="code" font-size="10.5">Member Since Dec 12, 2019</text>
     </g>
 
-    <!-- Tile 4: Officially Recognized Achievements -->
+    <!-- Tile 4: Official Badges (Color 2: Matrix Green #00ff66) -->
     <g transform="translate(750, 54)">
-      <rect width="232" height="88" fill="#040a10" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
-      <rect x="12" y="10" width="155" height="20" fill="#181506" stroke="#ffd700" stroke-width="0.8"/>
-      <text x="22" y="24" fill="#ffd700" class="code" font-size="10" font-weight="700">● 0xOFFICIAL_BADGES</text>
-      <text x="14" y="60" fill="#ffd700" class="head" font-size="28" font-weight="900" letter-spacing="0.5">3 Badges</text>
+      <rect width="232" height="88" fill="#040a10" stroke="#00ff66" stroke-width="1.2" stroke-opacity="0.5"/>
+      <rect x="12" y="10" width="155" height="20" fill="#071e11" stroke="#00ff66" stroke-width="0.8"/>
+      <text x="22" y="24" fill="#00ff66" class="code" font-size="10" font-weight="700">● 0xOFFICIAL_BADGES</text>
+      <text x="14" y="60" fill="#00ff66" class="head" font-size="28" font-weight="900" letter-spacing="0.5">3 Badges</text>
       <text x="14" y="76" fill="#ffffff" class="code" font-size="10.5">Pull Shark • YOLO • Quickdraw</text>
     </g>
 
-    <!-- ════════════════════ LOWER SECTION: 2 PANELS ════════════════════ -->
-    <!-- Left Panel: Language Breakdown (Exact Verified Breakdown) -->
+    <!-- ════════════════════ LOWER SECTION: 2 PANELS (STRICT 3 COLORS) ════════════════════ -->
+    <!-- Left Panel: Language Breakdown (Only reusing #00f0ff, #00ff66, #ffd700) -->
     <g transform="translate(18, 154)">
       <rect width="476" height="224" fill="#040a10" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.35"/>
       
@@ -143,17 +148,22 @@
         [SYS] RUNTIME DISTRIBUTION (30,278 CONTRIBUTION SAMPLE)
       </text>
 
-      <!-- Multi-Segment Distribution Bar -->
+      <!-- Multi-Segment Distribution Bar (Reusing strictly Cyan, Green, Gold) -->
       <g transform="translate(16, 44)">
         <rect width="444" height="12" fill="#0b1723"/>
+        <!-- JavaScript: Gold -->
         <rect x="0" width="186" height="12" fill="#ffd700"/>
-        <rect x="187" width="115" height="12" fill="#a3e635"/>
-        <rect x="303" width="71" height="12" fill="#00ff66"/>
-        <rect x="375" width="44" height="12" fill="#ff5555"/>
-        <rect x="420" width="24" height="12" fill="#00f0ff"/>
+        <!-- Batchfile: Green -->
+        <rect x="187" width="115" height="12" fill="#00ff66"/>
+        <!-- Vue: Cyan -->
+        <rect x="303" width="71" height="12" fill="#00f0ff"/>
+        <!-- HTML: Gold -->
+        <rect x="375" width="44" height="12" fill="#ffd700"/>
+        <!-- Python: Green -->
+        <rect x="420" width="24" height="12" fill="#00ff66"/>
       </g>
 
-      <!-- Language Item 1: JavaScript -->
+      <!-- Language Item 1: JavaScript (Gold) -->
       <g transform="translate(16, 70)">
         <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">JavaScript</text>
@@ -161,43 +171,43 @@
         <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Frontend reactive logic, Node runtimes &amp; client components</text>
       </g>
 
-      <!-- Language Item 2: Batchfile -->
+      <!-- Language Item 2: Batchfile (Green) -->
       <g transform="translate(16, 104)">
-        <rect x="0" y="2" width="10" height="10" fill="#a3e635"/>
+        <rect x="0" y="2" width="10" height="10" fill="#00ff66"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Batchfile Automation</text>
-        <text x="444" y="11" text-anchor="end" fill="#a3e635" class="code" font-size="11.5" font-weight="700">26%</text>
+        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">26%</text>
         <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Windows Server orchestration, background triggers &amp; CI tasks</text>
       </g>
 
-      <!-- Language Item 3: Vue -->
+      <!-- Language Item 3: Vue (Cyan) -->
       <g transform="translate(16, 138)">
-        <rect x="0" y="2" width="10" height="10" fill="#00ff66"/>
+        <rect x="0" y="2" width="10" height="10" fill="#00f0ff"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">Vue.js &amp; Nuxt Ecosystem</text>
-        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">16%</text>
+        <text x="444" y="11" text-anchor="end" fill="#00f0ff" class="code" font-size="11.5" font-weight="700">16%</text>
         <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Banking dashboards, interactive portals &amp; SSR applications</text>
       </g>
 
-      <!-- Language Item 4: HTML & Python -->
+      <!-- Language Item 4: HTML & Python (Gold & Green) -->
       <g transform="translate(16, 172)">
-        <rect x="0" y="2" width="10" height="10" fill="#ff5555"/>
+        <rect x="0" y="2" width="10" height="10" fill="#ffd700"/>
         <text x="18" y="11" fill="#ffffff" class="head" font-size="12" font-weight="700">HTML5 (10%) &amp; Python (6%)</text>
-        <text x="444" y="11" text-anchor="end" fill="#00f0ff" class="code" font-size="11.5" font-weight="700">16%</text>
+        <text x="444" y="11" text-anchor="end" fill="#00ff66" class="code" font-size="11.5" font-weight="700">16%</text>
         <text x="18" y="25" fill="#94a3b8" class="head" font-size="10.5">Canvas APIs, semantic web structures &amp; Python microservices</text>
       </g>
     </g>
 
-    <!-- Right Panel: Engineering Velocity & Pillars -->
+    <!-- Right Panel: Engineering Velocity & Pillars (Reusing Cyan, Green, Gold) -->
     <g transform="translate(506, 154)">
-      <rect width="476" height="224" fill="#040a10" stroke="#ffd700" stroke-width="1" stroke-opacity="0.35"/>
+      <rect width="476" height="224" fill="#040a10" stroke="#00ff66" stroke-width="1" stroke-opacity="0.35"/>
       
       <!-- Panel Header -->
       <rect x="0" y="0" width="476" height="32" fill="#06121e"/>
-      <line x1="0" y1="32" x2="476" y2="32" stroke="#ffd700" stroke-width="1" stroke-opacity="0.25"/>
-      <text x="16" y="21" fill="#ffd700" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
+      <line x1="0" y1="32" x2="476" y2="32" stroke="#00ff66" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="16" y="21" fill="#00ff66" class="code" font-size="11.5" font-weight="700" letter-spacing="1">
         [OPS] ENGINEERING CADENCE &amp; CONTRIBUTION RADAR
       </text>
 
-      <!-- Pillar 1: High Commit Velocity -->
+      <!-- Pillar 1: High Commit Velocity (Green) -->
       <g transform="translate(16, 44)">
         <rect x="0" y="2" width="8" height="8" fill="#00ff66"/>
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
@@ -211,7 +221,7 @@
         </text>
       </g>
 
-      <!-- Pillar 2: Scalable Portals & Open Source -->
+      <!-- Pillar 2: Scalable Portals & Open Source (Gold) -->
       <g transform="translate(16, 102)">
         <rect x="0" y="2" width="8" height="8" fill="#ffd700"/>
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
@@ -225,7 +235,7 @@
         </text>
       </g>
 
-      <!-- Pillar 3: Recognized GitHub Honors -->
+      <!-- Pillar 3: Recognized GitHub Honors (Cyan) -->
       <g transform="translate(16, 160)">
         <rect x="0" y="2" width="8" height="8" fill="#00f0ff"/>
         <text x="16" y="10" fill="#ffffff" class="head" font-size="12.5" font-weight="800">
@@ -240,7 +250,7 @@
       </g>
     </g>
 
-    <!-- Outer Sharp 90-degree Border -->
+    <!-- Outer Sharp 90-degree Border (Cyber Cyan + Matrix Green Brackets) -->
     <rect x="0.5" y="0.5" width="999" height="394" fill="none" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3"/>
     <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#00ff66" stroke-width="2.5"/>
     <path d="M 984 0 L 1000 0 L 1000 16" fill="none" stroke="#00ff66" stroke-width="2.5"/>
