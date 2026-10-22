@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" role="img" aria-label="Technical Arsenal and Enterprise Stack">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@600;700&amp;display=swap');
+      .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
+      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+    </style>
+
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04080d"/>
+      <stop offset="50%" stop-color="#08141e"/>
+      <stop offset="100%" stop-color="#020508"/>
+    </linearGradient>
+
+    <linearGradient id="tableBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+
+    <pattern id="tableGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
+    </pattern>
+
+    <clipPath id="tableClip">
+      <rect width="1000" height="430"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#tableClip)">
+    <!-- Base Canvas Background -->
+    <rect width="1000" height="430" fill="url(#cardBg)"/>
+    <rect width="1000" height="430" fill="url(#tableGrid)"/>
+
+    <!-- ════════════════════ TOP TERMINAL BAR ════════════════════ -->
+    <rect width="1000" height="40" fill="#07121b"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
+
+    <!-- Window Dots -->
+    <circle cx="26" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="62" cy="20" r="5.5" fill="#27c93f"/>
+
+    <!-- Title Bar Label -->
+    <text x="500" y="25" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="2">
+      ⚡ TECHNICAL ARSENAL &amp; ENTERPRISE PRODUCTION STACK
+    </text>
+
+    <!-- Right Live Status Indicator -->
+    <circle cx="855" cy="20" r="3.5" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="866" y="24" fill="#22c55e" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+      50+ VERIFIED SKILLS
+    </text>
+
+    <!-- ════════════════════ TABLE HEADERS ════════════════════ -->
+    <rect x="15" y="48" width="970" height="36" fill="#08141e" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="32" y="71" fill="#ffd700" class="head" font-size="11.5" font-weight="800" letter-spacing="1.5">DOMAIN &amp; TIER</text>
+    <text x="200" y="71" fill="#ffd700" class="head" font-size="11.5" font-weight="800" letter-spacing="1.5">CORE SPECIALIZATION &amp; SCOPE</text>
+    <text x="515" y="71" fill="#ffd700" class="head" font-size="11.5" font-weight="800" letter-spacing="1.5">ACTIVE PRODUCTION ARSENAL &amp; TOOLING</text>
+
+    <!-- ════════════════════ ROW 1: FRONTEND & MOBILE ════════════════════ -->
+    <g transform="translate(15, 92)">
+      <rect width="970" height="76" fill="#060c13" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Badge Box -->
+      <rect x="15" y="25" width="145" height="26" fill="#0c1e1c" stroke="#2dd4bf" stroke-width="1.2"/>
+      <circle cx="28" cy="38" r="3" fill="#2dd4bf"/>
+      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">16 TECHNOLOGIES</text>
+
+      <!-- Category & Subtitle -->
+      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">🎨 Frontend &amp; Mobile</text>
+      <text x="195" y="54" fill="#ffd700" class="head" font-size="12" font-weight="600">Web, Mobile &amp; Cross-Platform UI</text>
+
+      <!-- Tools & Stack -->
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
+        Vue 3, Nuxt 3, React, Next.js, Flutter, Android, Swift, TypeScript
+      </text>
+      <text x="515" y="52" fill="#2dd4bf" class="head" font-size="12" font-weight="600">
+        React Native, HTML5 Canvas API, Vuetify, Tailwind CSS, Bootstrap, JS/HTML5
+      </text>
+    </g>
+
+    <!-- ════════════════════ ROW 2: BACKEND & APIS ════════════════════ -->
+    <g transform="translate(15, 174)">
+      <rect width="970" height="76" fill="#060c13" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Badge Box -->
+      <rect x="15" y="25" width="145" height="26" fill="#181708" stroke="#ffd700" stroke-width="1.2"/>
+      <circle cx="28" cy="38" r="3" fill="#ffd700"/>
+      <text x="88" y="42" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">11 TECHNOLOGIES</text>
+
+      <!-- Category & Subtitle -->
+      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">⚙️ Backend &amp; APIs</text>
+      <text x="195" y="54" fill="#2dd4bf" class="head" font-size="12" font-weight="600">High-Concurrency Core Architecture</text>
+
+      <!-- Tools & Stack -->
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
+        Node.js, Express, NestJS, Python, Java, PHP, Laravel, Django
+      </text>
+      <text x="515" y="52" fill="#ffd700" class="head" font-size="12" font-weight="600">
+        Jython (JVM Python), Bruno API Client, REST &amp; Microservices Architecture
+      </text>
+    </g>
+
+    <!-- ════════════════════ ROW 3: DATABASE & DATA ════════════════════ -->
+    <g transform="translate(15, 256)">
+      <rect width="970" height="76" fill="#060c13" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Badge Box -->
+      <rect x="15" y="25" width="145" height="26" fill="#0c1e1c" stroke="#2dd4bf" stroke-width="1.2"/>
+      <circle cx="28" cy="38" r="3" fill="#2dd4bf"/>
+      <text x="88" y="42" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">8 TECHNOLOGIES</text>
+
+      <!-- Category & Subtitle -->
+      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">🗄️ Database &amp; Data</text>
+      <text x="195" y="54" fill="#38bdf8" class="head" font-size="12" font-weight="600">Relational, NoSQL &amp; Intelligence</text>
+
+      <!-- Tools & Stack -->
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
+        PostgreSQL, MySQL, MariaDB, MongoDB, Firebase, Redis
+      </text>
+      <text x="515" y="52" fill="#2dd4bf" class="head" font-size="12" font-weight="600">
+        Data Analytics, Web Research &amp; OSINT, High-Performance Indexing
+      </text>
+    </g>
+
+    <!-- ════════════════════ ROW 4: DEVOPS, CLOUD & AI ════════════════════ -->
+    <g transform="translate(15, 338)">
+      <rect width="970" height="76" fill="#060c13" stroke="#ffd700" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Badge Box -->
+      <rect x="15" y="25" width="145" height="26" fill="#181708" stroke="#ffd700" stroke-width="1.2"/>
+      <circle cx="28" cy="38" r="3" fill="#ffd700"/>
+      <text x="88" y="42" text-anchor="middle" fill="#ffd700" class="code" font-size="11" font-weight="700">15 TECHNOLOGIES</text>
+
+      <!-- Category & Subtitle -->
+      <text x="195" y="32" fill="#ffffff" class="head" font-size="15" font-weight="800">🛠️ DevOps, Cloud &amp; AI</text>
+      <text x="195" y="54" fill="#22c55e" class="head" font-size="12" font-weight="600">Agentic AI, Multi-Cloud &amp; Automation</text>
+
+      <!-- Tools & Stack -->
+      <text x="515" y="32" fill="#ffffff" class="head" font-size="12.5" font-weight="700">
+        Docker, Ubuntu VPS, Git, GitHub, GitLab, VS Code, Postman, Figma
+      </text>
+      <text x="515" y="52" fill="#ffd700" class="head" font-size="12" font-weight="600">
+        Antigravity (Google AGY AI), AI Systems (LLMs), Windows Server 2021, Hosting Manager
+      </text>
+    </g>
+
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
+    <rect x="1" y="1" width="998" height="428" fill="none" stroke="url(#tableBorder)" stroke-width="1.8" stroke-opacity="0.55"/>
+  </g>
+</svg>
