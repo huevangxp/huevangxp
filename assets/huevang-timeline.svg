@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="Huevang XIONGPOR Career Timeline">
+  <defs>
+    <linearGradient id="tlGrad" gradientUnits="userSpaceOnUse" x1="100" y1="0" x2="1100" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="35%" stop-color="#2dd4bf"/>
+      <stop offset="70%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Track Base -->
+  <path d="M120 70 H1080" stroke="#0f202b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 70 H1080" stroke="url(#tlGrad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+
+  <!-- Milestone 1: NUOL -->
+  <g transform="translate(140, 0)">
+    <circle cx="0" cy="70" r="16" fill="#08121a" stroke="#2dd4bf" stroke-width="3"/>
+    <circle cx="0" cy="70" r="6" fill="#2dd4bf"/>
+    <path d="M0 86 V115" stroke="#2dd4bf" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-110" y="115" width="220" height="96" rx="12" fill="#070d14" stroke="#2dd4bf" stroke-width="1.4" stroke-opacity="0.6"/>
+    <text x="-95" y="140" fill="#ffd700" font-family="'Fira Code',monospace" font-size="12" font-weight="700">01 • 2019 – 2023</text>
+    <text x="-95" y="162" fill="#ffffff" font-family="'Segoe UI',sans-serif" font-size="14.5" font-weight="800">NUOL Bachelor</text>
+    <text x="-95" y="182" fill="#94a3b8" font-family="'Segoe UI',sans-serif" font-size="12">National Univ. of Laos</text>
+    <text x="-95" y="198" fill="#2dd4bf" font-family="'Segoe UI',sans-serif" font-size="11">Website Development</text>
+  </g>
+
+  <!-- Milestone 2: LaiLaoLab ICT -->
+  <g transform="translate(440, 0)">
+    <circle cx="0" cy="70" r="16" fill="#08121a" stroke="#ffd700" stroke-width="3"/>
+    <circle cx="0" cy="70" r="6" fill="#ffd700"/>
+    <path d="M0 86 V115" stroke="#ffd700" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-110" y="115" width="220" height="96" rx="12" fill="#070d14" stroke="#ffd700" stroke-width="1.4" stroke-opacity="0.6"/>
+    <text x="-95" y="140" fill="#ffd700" font-family="'Fira Code',monospace" font-size="12" font-weight="700">02 • 2021 – 2022</text>
+    <text x="-95" y="162" fill="#ffffff" font-family="'Segoe UI',sans-serif" font-size="14.5" font-weight="800">LaiLaoLab ICT</text>
+    <text x="-95" y="182" fill="#94a3b8" font-family="'Segoe UI',sans-serif" font-size="12">Full-Stack Developer</text>
+    <text x="-95" y="198" fill="#ffd700" font-family="'Segoe UI',sans-serif" font-size="11">Govt &amp; Enterprise Web Apps</text>
+  </g>
+
+  <!-- Milestone 3: Laos IT Capital -->
+  <g transform="translate(740, 0)">
+    <circle cx="0" cy="70" r="16" fill="#08121a" stroke="#2dd4bf" stroke-width="3"/>
+    <circle cx="0" cy="70" r="6" fill="#2dd4bf"/>
+    <path d="M0 86 V115" stroke="#2dd4bf" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-110" y="115" width="220" height="96" rx="12" fill="#070d14" stroke="#2dd4bf" stroke-width="1.4" stroke-opacity="0.6"/>
+    <text x="-95" y="140" fill="#ffd700" font-family="'Fira Code',monospace" font-size="12" font-weight="700">03 • 2022 – 2023</text>
+    <text x="-95" y="162" fill="#ffffff" font-family="'Segoe UI',sans-serif" font-size="14.5" font-weight="800">Laos IT Capital</text>
+    <text x="-95" y="182" fill="#94a3b8" font-family="'Segoe UI',sans-serif" font-size="12">Front-End Developer</text>
+    <text x="-95" y="198" fill="#2dd4bf" font-family="'Segoe UI',sans-serif" font-size="11">Modular UI &amp; Optimization</text>
+  </g>
+
+  <!-- Milestone 4: Freelance & Banking Sector -->
+  <g transform="translate(1040, 0)">
+    <circle cx="0" cy="70" r="18" fill="#08121a" stroke="#ffd700" stroke-width="3.5"/>
+    <circle cx="0" cy="70" r="7" fill="#ffd700"/>
+    <circle cx="0" cy="70" r="18" fill="none" stroke="#ffd700" stroke-width="1.5">
+      <animate attributeName="r" values="18;32" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0 86 V115" stroke="#ffd700" stroke-width="2" stroke-dasharray="3 3"/>
+    <rect x="-120" y="115" width="235" height="96" rx="12" fill="#070d14" stroke="#ffd700" stroke-width="1.6"/>
+    <text x="-105" y="140" fill="#ffd700" font-family="'Fira Code',monospace" font-size="12" font-weight="700">04 • 2023 – PRESENT</text>
+    <text x="-105" y="162" fill="#ffffff" font-family="'Segoe UI',sans-serif" font-size="14.5" font-weight="800">Banking &amp; Freelance</text>
+    <text x="-105" y="182" fill="#94a3b8" font-family="'Segoe UI',sans-serif" font-size="12">Core Banking Solutions</text>
+    <text x="-105" y="198" fill="#2dd4bf" font-family="'Segoe UI',sans-serif" font-size="11">Fintech &amp; High-Impact APIs</text>
+  </g>
+</svg>
