@@ -6,7 +6,7 @@
 <!-- Typing Headline -->
 <p align="center">
   <a href="https://github.com/huevangxp">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=21&duration=3200&pause=900&color=2DD4BF&center=true&vCenter=true&width=820&height=50&lines=Sabaidee!+%F0%9F%91%8B+Welcome%2C+I'm+Huevang+XIONGPOR;%F0%9F%8E%82+Age%3A+26+Years+Old+%E2%80%A2+Vientiane%2C+Laos+%F0%9F%87%B1%F0%9F%87%A6;%F0%9F%92%BB+Full-Stack+Developer+%26+Banking+Systems+Specialist;%F0%9F%93%9E+Tel%3A+020+78849378+%E2%80%A2+huevang933%40gmail.com;%E2%9C%A8+Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Fintech" alt="Huevang XIONGPOR Typing Animation"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=21&duration=3200&pause=900&color=2DD4BF&center=true&vCenter=true&width=820&height=50&lines=Hello!+%F0%9F%91%8B+Welcome%2C+I'm+Huevang+XIONGPOR;%F0%9F%8E%82+Age%3A+26+Years+Old+%E2%80%A2+Vientiane%2C+Laos+%F0%9F%87%B1%F0%9F%87%A6;%F0%9F%92%BB+Full-Stack+Developer+%26+Banking+Systems+Specialist;%F0%9F%93%9E+Tel%3A+020+78849378+%E2%80%A2+huevang933%40gmail.com;%E2%9C%A8+Clean+Architecture+%E2%80%A2+High+Performance+%E2%80%A2+Fintech" alt="Huevang XIONGPOR Typing Animation"/>
   </a>
 </p>
 
@@ -53,7 +53,7 @@ Email: huevang933@gmail.com
 Location: Vientiane Capital, Laos 🇱🇦
 Alma Mater: National University of Laos (NUOL) — Website Development
 Specializations: Banking Solutions, Enterprise Web Architecture, High-Throughput APIs
-Lao Bio: ຂ້ອຍແມ່ນ Huevang XIONGPOR (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ.
+Bio: Dedicated Full-Stack Developer & Software Architect specializing in core banking solutions and enterprise web applications.
 Architecture Stack:
   - Frontend: Vue 3, Nuxt.js, React, TailwindCSS, Flutter
   - Backend: Node.js, Nest.js, Python, PHP / Laravel
@@ -181,7 +181,7 @@ Motto: "Excellence through clean architecture & continuous precision."
 </p>
 
 <div align="center">
-  <table align="center" style="font-family: 'Noto Sans Lao', 'Segoe UI', sans-serif;">
+  <table align="center" style="font-family: 'Outfit', 'Segoe UI', sans-serif;">
     <tr>
       <td align="center"><b>📞 Telephone / WhatsApp</b></td>
       <td><code>+856 20 78849378</code> (020 78849378)</td>
@@ -192,7 +192,7 @@ Motto: "Excellence through clean architecture & continuous precision."
     </tr>
     <tr>
       <td align="center"><b>📍 Location</b></td>
-      <td>Vientiane Capital, Laos 🇱🇦 (ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ)</td>
+      <td>Vientiane Capital, Laos 🇱🇦</td>
     </tr>
     <tr>
       <td align="center"><b>💻 GitHub Profile</b></td>
@@ -218,5 +218,5 @@ Motto: "Excellence through clean architecture & continuous precision."
 
 <!-- ═══════════════════════════ FOOTER SKYLINE ═══════════════════════════ -->
 <p align="center">
-  <img src="./assets/huevang-footer.svg" width="100%" alt="Night city skyline with Huevang XIONGPOR signature in Noto Sans Lao"/>
+  <img src="./assets/huevang-footer.svg" width="100%" alt="Night city skyline with Huevang XIONGPOR signature"/>
 </p>

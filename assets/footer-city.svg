@@ -24,7 +24,7 @@
     <g filter="url(#gl)">
       <text x="500" y="108" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="38" font-weight="800" letter-spacing="4" fill="#ffffff">THANKS FOR VISITING</text>
     </g>
-    <text x="500" y="140" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="20" fill="#cbd5e1" letter-spacing="2">ຂອບໃຈທີ່ເຂົ້າມາຢ້ຽມຢາມ · see you on GitHub</text>
+    <text x="500" y="140" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="20" fill="#cbd5e1" letter-spacing="2">Thanks for stopping by · See you on GitHub</text>
     <!-- swinging spider -->
     <g transform="translate(180 -4)">
       <g>

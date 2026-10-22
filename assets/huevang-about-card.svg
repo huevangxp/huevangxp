@@ -8,7 +8,7 @@
     Location: Vientiane Capital, Laos
     Education: Bachelor of Website Development, National University of Laos (NUOL)
     Specialization: Banking Solutions, Enterprise Web Architecture, High-Throughput APIs
-    Lao Introduction: ຂ້ອຍແມ່ນ Huevang XIONGPOR (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ.
+    Bio: Dedicated Full-Stack Developer & Software Architect specializing in core banking solutions and enterprise web applications.
     Core Stack: Vue 3, Nuxt.js, React, Node.js, Nest.js, Python, Laravel, Flutter, PostgreSQL, Docker, Banking APIs
   </desc>
 
@@ -291,7 +291,7 @@
     <text id="data-email">huevang933@gmail.com</text>
     <text id="data-location">Vientiane Capital, Laos</text>
     <text id="data-education">National University of Laos (NUOL)</text>
-    <text id="data-lao">ຂ້ອຍແມ່ນ Huevang XIONGPOR (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ.</text>
+    <text id="data-bio">Dedicated Full-Stack Developer &amp; Software Architect specializing in core banking solutions and enterprise web applications.</text>
     <text id="data-roles">Full-Stack Developer, Banking Systems Specialist, API &amp; Microservices Architect</text>
     <text id="data-code">const huevang = { name: "Huevang XIONGPOR", age: 26, phone: "020 78849378", email: "huevang933@gmail.com", location: "Vientiane, Laos", roles: ["Full-Stack Dev", "Banking Specialist"], stack: { front: ["Vue 3", "Nuxt", "React", "Flutter"], back: ["Node.js", "Python", "Nest", "Laravel"], data: ["PostgreSQL", "MySQL", "MongoDB"] }, motto: "Clean architecture &amp; continuous precision." };</text>
   </g>

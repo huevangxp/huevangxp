@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" aria-label="Huevang XIONGPOR - Full-Stack Developer">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700;800;900&amp;family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@500;700&amp;display=swap');
-      .font-lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; }
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@500;700&amp;display=swap');
       .font-main { font-family: 'Outfit', 'Segoe UI', Helvetica, Arial, sans-serif; }
       .font-code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
     </style>
@@ -19,7 +18,6 @@
       <stop offset="100%" stop-color="#2dd4bf"/>
     </linearGradient>
 
-    <!-- Subtle Ambient Radial Lights (Backdrop only, not on text) -->
     <radialGradient id="tealAmbient">
       <stop offset="0%" stop-color="#0d9488" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
@@ -48,23 +46,23 @@
     <circle cx="200" cy="120" r="240" fill="url(#tealAmbient)"/>
     <circle cx="800" cy="220" r="220" fill="url(#goldAmbient)"/>
 
-    <!-- Top Lao & English Greeting Pill -->
+    <!-- Top English Greeting Banner (No rounded corners) -->
     <g transform="translate(500, 48)">
       <rect x="-240" y="-16" width="480" height="32" fill="#08141e" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.5"/>
       <circle cx="-214" cy="0" r="4.5" fill="#2dd4bf">
         <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="12" y="5" text-anchor="middle" fill="#ffffff" class="font-lao" font-size="12.5" font-weight="700" letter-spacing="1">
-        ສະບາຍດີ! 🙏 SABAYDEE • FULL-STACK &amp; BANKING ARCHITECT
+      <text x="12" y="5" text-anchor="middle" fill="#ffffff" class="font-main" font-size="12" font-weight="700" letter-spacing="1">
+        WELCOME! 👋 FULL-STACK DEVELOPER &amp; BANKING ARCHITECT
       </text>
     </g>
 
-    <!-- Main Name Title — Pure Solid Crisp Typography (NO GRADIENTS) -->
+    <!-- Main Name Title — Pure Solid Crisp Typography -->
     <text x="500" y="142" text-anchor="middle" class="font-main" font-size="52" font-weight="900" letter-spacing="3">
       <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#ffd700">XIONGPOR</tspan>
     </text>
 
-    <!-- Animated Cycling Role Headings — Crisp Solid Colors -->
+    <!-- Animated Cycling Role Headings — Crisp Solid Colors in English -->
     <text x="500" y="200" text-anchor="middle" fill="#ffffff" class="font-code" font-size="21" font-weight="600" letter-spacing="1.5" opacity="0">
       &lt; Full-Stack Developer &amp; Enterprise Solutions /&gt;
       <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.00;0.05;0.28;0.33;1.00" dur="10s" repeatCount="indefinite"/>
@@ -75,20 +73,20 @@
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.00;0.33;0.38;0.61;0.66;1.00" dur="10s" repeatCount="indefinite"/>
     </text>
 
-    <text x="500" y="200" text-anchor="middle" fill="#2dd4bf" class="font-lao" font-size="20" font-weight="700" letter-spacing="1" opacity="0">
-      &lt; ນັກພັດທະນາເວັບໄຊ, ແອັບມືຖື ແລະ ລະບົບທະນາຄານ /&gt;
+    <text x="500" y="200" text-anchor="middle" fill="#2dd4bf" class="font-code" font-size="20" font-weight="700" letter-spacing="1" opacity="0">
+      &lt; Web, Mobile &amp; Microservices Architect /&gt;
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0.00;0.66;0.71;0.95;1.00" dur="10s" repeatCount="indefinite"/>
     </text>
 
-    <!-- Subtitle with Lao & English — Solid Slate Muted -->
-    <text x="500" y="238" text-anchor="middle" fill="#94a3b8" class="font-lao" font-size="14" letter-spacing="0.5">
-      ສ້າງສັນລະບົບຊອບແວທີ່ປອດໄພ, ວ່ອງໄວ ແລະ ຕອບໂຈດທຸລະກິດ • Vientiane, Laos 🇱🇦
+    <!-- Subtitle in English — Solid Slate Muted -->
+    <text x="500" y="238" text-anchor="middle" fill="#94a3b8" class="font-main" font-size="14" letter-spacing="0.5">
+      Architecting robust, secure &amp; high-performance software systems • Vientiane, Laos 🇱🇦
     </text>
 
     <!-- Clean Gold Divider Line -->
     <line x1="200" y1="262" x2="800" y2="262" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.35"/>
 
-    <!-- Bottom Metadata Badge Strip — Crisp Solid Badges -->
+    <!-- Bottom Metadata Badge Strip — Crisp Solid Badges (No rounded corners) -->
     <g transform="translate(500, 302)">
       <!-- Location Badge -->
       <g transform="translate(-320, 0)">
@@ -123,7 +121,7 @@
       </g>
     </g>
 
-    <!-- Outer Luxury Border -->
+    <!-- Outer Luxury Border (Sharp 90-degree corners) -->
     <rect x="1" y="1" width="998" height="358" fill="none" stroke="url(#heroBorderGrad)" stroke-width="1.8" stroke-opacity="0.5"/>
   </g>
 </svg>

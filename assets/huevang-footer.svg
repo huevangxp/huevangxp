@@ -2,7 +2,7 @@
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700;800;900&amp;family=Outfit:wght@700;900&amp;family=Fira+Code:wght@600&amp;display=swap');
-      .foot-lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; }
+      .foot-sub { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; }
       .foot-title { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; }
       .foot-code { font-family: 'Fira Code', monospace; }
     </style>
@@ -38,9 +38,7 @@
   <text x="500" y="88" text-anchor="middle" class="foot-title" font-size="30" font-weight="900" letter-spacing="3">
     <tspan fill="#ffffff">HUEVANG</tspan> <tspan fill="#ffd700">XIONGPOR</tspan>
   </text>
-  <text x="500" y="124" text-anchor="middle" class="foot-lao" font-size="17" font-weight="700" fill="#2dd4bf" letter-spacing="1">
-    ຂອບໃຈທີ່ເຂົ້າມາຢ້ຽມຢາມ • Thank you for visiting my GitHub Profile
-  </text>
+  <text x="500" y="124" text-anchor="middle" class="foot-title" font-size="16" font-weight="700" fill="#2dd4bf" letter-spacing="1">Thank you for visiting my GitHub Profile • Let's build something exceptional!</text>
   <text x="500" y="152" text-anchor="middle" class="foot-code" font-size="13" fill="#94a3b8" letter-spacing="1">
     Age: 26 • Phone: 020 78849378 • Email: huevang933@gmail.com • Vientiane, Laos 🇱🇦
   </text>

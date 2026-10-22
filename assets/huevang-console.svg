@@ -77,7 +77,7 @@
       <rect x="24" y="163" width="195" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c4 16.5s linear infinite;"/>
     </g>
     <g style="animation: g5 16.5s linear infinite;">
-      <text x="26" y="206" class="lao" fill="#fde68a">ປະລິນຍາຕີ ສາຂາພັດທະນາເວັບໄຊ, ມະຫາວິທະຍາໄລແຫ່ງຊາດລາວ (NUOL 2019-2023)</text>
+      <text x="26" y="206" class="m" fill="#fde68a">Bachelor of Website Development — National University of Laos (NUOL 2019-2023)</text>
     </g>
 
     <!-- Command 4: ls ~/skills -->
