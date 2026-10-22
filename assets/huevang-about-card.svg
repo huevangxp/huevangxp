@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="Huevang XIONGPOR Developer Profile Card">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" width="1000" height="550" role="img" aria-label="Huevang XIONGPOR Developer Profile Card">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700;800;900&amp;family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@500;600;700&amp;display=swap');
       .lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; }
-      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; font-size: 13.5px; line-height: 1.55; white-space: pre; }
-      .head { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; }
+      .code { font-family: 'Fira Code', 'Courier New', Menlo, Consolas, monospace; font-size: 12.5px; }
+      .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
     </style>
 
     <linearGradient id="cardBgGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#04080d"/>
-      <stop offset="50%" stop-color="#08141d"/>
-      <stop offset="100%" stop-color="#020508"/>
+      <stop offset="45%" stop-color="#08141d"/>
+      <stop offset="100%" stop-color="#03060a"/>
     </linearGradient>
 
     <linearGradient id="cardBorder" x1="0" y1="0" x2="1" y2="0">
@@ -20,37 +20,37 @@
     </linearGradient>
 
     <radialGradient id="haloTeal">
-      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.35"/>
-      <stop offset="55%" stop-color="#ffd700" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#ffd700" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
     </radialGradient>
 
     <pattern id="cardGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.05"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.06"/>
       <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
     </pattern>
 
     <clipPath id="mainClip">
-      <rect width="1000" height="520" rx="18"/>
+      <rect width="1000" height="550" rx="18"/>
     </clipPath>
   </defs>
 
   <g clip-path="url(#mainClip)">
     <!-- Base Card Canvas -->
-    <rect width="1000" height="520" fill="url(#cardBgGrad)"/>
-    <rect width="1000" height="520" fill="url(#cardGrid)"/>
+    <rect width="1000" height="550" fill="url(#cardBgGrad)"/>
+    <rect width="1000" height="550" fill="url(#cardGrid)"/>
 
     <!-- Subtle Ambient Glows -->
-    <circle cx="230" cy="260" r="220" fill="url(#haloTeal)"/>
-    <circle cx="740" cy="240" r="240" fill="url(#haloTeal)" opacity="0.6"/>
+    <circle cx="235" cy="270" r="230" fill="url(#haloTeal)"/>
+    <circle cx="740" cy="270" r="240" fill="url(#haloTeal)" opacity="0.6"/>
 
-    <!-- ════════════════════ LEFT SIDE: INTERACTIVE ORBIT (X: 0 to 460) ════════════════════ -->
-    <g transform="translate(235, 255)">
+    <!-- ════════════════════ LEFT SIDE: INTERACTIVE ORBIT (X: 0 to 465) ════════════════════ -->
+    <g transform="translate(235, 260)">
       <!-- Concentric Orbit Rings -->
-      <circle r="85" fill="none" stroke="#2dd4bf" stroke-opacity="0.32" stroke-dasharray="3 6">
+      <circle r="85" fill="none" stroke="#2dd4bf" stroke-opacity="0.35" stroke-dasharray="3 6">
         <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="20s" repeatCount="indefinite"/>
       </circle>
-      <circle r="145" fill="none" stroke="#ffd700" stroke-opacity="0.32" stroke-dasharray="4 7">
+      <circle r="145" fill="none" stroke="#ffd700" stroke-opacity="0.35" stroke-dasharray="4 7">
         <animate attributeName="stroke-dashoffset" from="0" to="100" dur="28s" repeatCount="indefinite"/>
       </circle>
       <circle r="202" fill="none" stroke="#2dd4bf" stroke-opacity="0.32" stroke-dasharray="3 6">
@@ -58,9 +58,9 @@
       </circle>
 
       <!-- Center Developer Node -->
-      <circle r="42" fill="#060c12" stroke="url(#cardBorder)" stroke-width="2.5"/>
-      <text x="0" y="-5" text-anchor="middle" fill="#ffd700" class="head" font-size="13" font-weight="900" letter-spacing="1">HUEVANG</text>
-      <text x="0" y="14" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">26 y/o</text>
+      <circle r="44" fill="#060c12" stroke="url(#cardBorder)" stroke-width="2.5"/>
+      <text x="0" y="-6" text-anchor="middle" fill="#ffd700" class="head" font-size="13" font-weight="900" letter-spacing="1">HUEVANG</text>
+      <text x="0" y="14" text-anchor="middle" fill="#2dd4bf" class="head" font-size="11.5" font-weight="800">26 y/o</text>
 
       <!-- Orbit Ring 1 (Speed: 20s) -->
       <g>
@@ -159,21 +159,21 @@
     </g>
 
     <!-- Bottom Orbit Caption -->
-    <text x="235" y="488" text-anchor="middle" fill="#2dd4bf" class="head" font-size="12" font-weight="700" letter-spacing="2">
+    <text x="235" y="512" text-anchor="middle" fill="#2dd4bf" class="head" font-size="12" font-weight="700" letter-spacing="2">
       ⚡ FULL-STACK ECOSYSTEM • CORE ARCHITECTURE
     </text>
 
     <!-- Center Vertical Divider -->
-    <line x1="470" y1="30" x2="470" y2="490" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+    <line x1="472" y1="25" x2="472" y2="525" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 4"/>
 
-    <!-- ════════════════════ RIGHT SIDE: CODE & PROFILE CARD (X: 475 to 1000) ════════════════════ -->
-    <g transform="translate(485, 24)">
+    <!-- ════════════════════ RIGHT SIDE: CODE & PROFILE CARD (X: 485 to 985) ════════════════════ -->
+    <g transform="translate(485, 20)">
       <!-- macOS Glass Window -->
-      <rect width="490" height="470" rx="14" fill="#060c13" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.4"/>
+      <rect width="495" height="505" rx="14" fill="#060c13" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.45"/>
       <!-- Window Title Bar -->
-      <rect width="490" height="38" rx="14" fill="#0b1620"/>
-      <rect y="24" width="490" height="14" fill="#0b1620"/>
-      <line x1="0" y1="38" x2="490" y2="38" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
+      <rect width="495" height="38" rx="14" fill="#0b1620"/>
+      <rect y="24" width="495" height="14" fill="#0b1620"/>
+      <line x1="0" y1="38" x2="495" y2="38" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
 
       <!-- Window Control Dots -->
       <circle cx="20" cy="19" r="5.5" fill="#ff5f56"/>
@@ -181,58 +181,87 @@
       <circle cx="56" cy="19" r="5.5" fill="#27c93f"/>
 
       <!-- Window Title -->
-      <text x="245" y="24" text-anchor="middle" fill="#ffd700" class="code" font-size="12.5" font-weight="700">
-        huevang_developer.js
+      <text x="248" y="24" text-anchor="middle" fill="#ffd700" class="code" font-size="12" font-weight="700">
+        huevang_profile.js
       </text>
 
       <!-- Profile Header Inside Window -->
-      <g transform="translate(20, 62)">
+      <g transform="translate(20, 60)">
         <text x="0" y="0" fill="#2dd4bf" class="head" font-size="18" font-weight="900" letter-spacing="1">
           HUEVANG XIONGPOR
         </text>
-        <rect x="230" y="-14" width="80" height="20" rx="10" fill="#0f2420" stroke="#22c55e" stroke-width="1"/>
-        <text x="270" y="0" text-anchor="middle" fill="#22c55e" class="head" font-size="11" font-weight="800">
+        <rect x="228" y="-14" width="82" height="20" rx="10" fill="#0f2420" stroke="#22c55e" stroke-width="1"/>
+        <text x="269" y="0" text-anchor="middle" fill="#22c55e" class="head" font-size="11" font-weight="800">
           AGE: 26 YO
         </text>
 
         <!-- Quick Contacts Bar Inside Window -->
-        <text x="0" y="24" fill="#ffd700" class="code" font-size="12" font-weight="600">
+        <text x="0" y="22" fill="#ffd700" class="code" font-size="12" font-weight="600">
           📞 020 78849378  •  ✉️ huevang933@gmail.com
         </text>
-        <text x="0" y="44" fill="#94a3b8" class="head" font-size="12">
-          📍 Vientiane Capital, Laos 🇱🇦 • National University of Laos (NUOL)
+        <text x="0" y="42" fill="#94a3b8" class="head" font-size="12">
+          📍 Vientiane Capital, Laos 🇱🇦 • NUOL Graduate
         </text>
       </g>
 
       <!-- Lao Quote in authentic Noto Sans Lao -->
-      <g transform="translate(20, 138)">
-        <rect x="0" y="0" width="450" height="42" rx="6" fill="#08141d" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
-        <text x="14" y="26" fill="#ffffff" class="lao" font-size="12.5" font-weight="700">
+      <g transform="translate(20, 126)">
+        <rect x="0" y="0" width="455" height="38" rx="6" fill="#08141d" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+        <text x="14" y="24" fill="#ffffff" class="lao" font-size="12" font-weight="700">
           🇱🇦 ຂ້ອຍແມ່ນ Huevang XIONGPOR, ນັກພັດທະນາ Full-Stack &amp; ລະບົບທະນາຄານ
         </text>
       </g>
 
-      <!-- Syntax-Highlighted Code Block -->
-      <g transform="translate(20, 202)">
-        <text x="0" y="0" class="code">
-<tspan fill="#f472b6" font-weight="700">const</tspan> <tspan fill="#2dd4bf">huevang</tspan> = {
-  <tspan fill="#ffd700">name</tspan>: <tspan fill="#86efac">"Huevang XIONGPOR"</tspan>,
-  <tspan fill="#ffd700">age</tspan>: <tspan fill="#f59e0b">26</tspan>,
-  <tspan fill="#ffd700">tel</tspan>: <tspan fill="#86efac">"020 78849378"</tspan>,
-  <tspan fill="#ffd700">email</tspan>: <tspan fill="#86efac">"huevang933@gmail.com"</tspan>,
-  <tspan fill="#ffd700">location</tspan>: <tspan fill="#86efac">"Vientiane, Laos 🇱🇦"</tspan>,
-  <tspan fill="#ffd700">roles</tspan>: [<tspan fill="#86efac">"Full-Stack Dev"</tspan>, <tspan fill="#86efac">"Banking Specialist"</tspan>],
-  <tspan fill="#ffd700">stack</tspan>: {
-    <tspan fill="#38bdf8">front</tspan>: [<tspan fill="#86efac">"Vue 3"</tspan>, <tspan fill="#86efac">"Nuxt"</tspan>, <tspan fill="#86efac">"React"</tspan>, <tspan fill="#86efac">"Flutter"</tspan>],
-    <tspan fill="#38bdf8">back</tspan>: [<tspan fill="#86efac">"Node.js"</tspan>, <tspan fill="#86efac">"Python"</tspan>, <tspan fill="#86efac">"Nest"</tspan>, <tspan fill="#86efac">"Laravel"</tspan>],
-    <tspan fill="#38bdf8">data</tspan>: [<tspan fill="#86efac">"PostgreSQL"</tspan>, <tspan fill="#86efac">"MySQL"</tspan>, <tspan fill="#86efac">"MongoDB"</tspan>]
-  },
-  <tspan fill="#ffd700">motto</tspan>: <tspan fill="#ffd700">"Clean architecture &amp; precision."</tspan>
-};</text>
+      <!-- Syntax-Highlighted Code Block with explicit Y line positions -->
+      <g transform="translate(20, 190)" class="code">
+        <!-- Line 1 -->
+        <text x="0" y="0"><tspan fill="#f472b6" font-weight="700">const</tspan> <tspan fill="#2dd4bf">huevang</tspan> = {</text>
+
+        <!-- Line 2 -->
+        <text x="14" y="20"><tspan fill="#ffd700">name</tspan>: <tspan fill="#86efac">"Huevang XIONGPOR"</tspan>,</text>
+
+        <!-- Line 3 -->
+        <text x="14" y="40"><tspan fill="#ffd700">age</tspan>: <tspan fill="#f59e0b">26</tspan>,</text>
+
+        <!-- Line 4 -->
+        <text x="14" y="60"><tspan fill="#ffd700">phone</tspan>: <tspan fill="#86efac">"020 78849378"</tspan>,</text>
+
+        <!-- Line 5 -->
+        <text x="14" y="80"><tspan fill="#ffd700">email</tspan>: <tspan fill="#86efac">"huevang933@gmail.com"</tspan>,</text>
+
+        <!-- Line 6 -->
+        <text x="14" y="100"><tspan fill="#ffd700">location</tspan>: <tspan fill="#86efac">"Vientiane, Laos 🇱🇦"</tspan>,</text>
+
+        <!-- Line 7 -->
+        <text x="14" y="120"><tspan fill="#ffd700">roles</tspan>: [<tspan fill="#86efac">"Full-Stack Dev"</tspan>, <tspan fill="#86efac">"Banking Specialist"</tspan>],</text>
+
+        <!-- Line 8 -->
+        <text x="14" y="140"><tspan fill="#ffd700">stack</tspan>: {</text>
+
+        <!-- Line 9 -->
+        <text x="28" y="160"><tspan fill="#38bdf8">front</tspan>: [<tspan fill="#86efac">"Vue 3"</tspan>, <tspan fill="#86efac">"Nuxt"</tspan>, <tspan fill="#86efac">"React"</tspan>, <tspan fill="#86efac">"Tailwind"</tspan>],</text>
+
+        <!-- Line 10 -->
+        <text x="28" y="180"><tspan fill="#38bdf8">back</tspan>: [<tspan fill="#86efac">"Node.js"</tspan>, <tspan fill="#86efac">"Nest.js"</tspan>, <tspan fill="#86efac">"Python"</tspan>, <tspan fill="#86efac">"Laravel"</tspan>],</text>
+
+        <!-- Line 11 -->
+        <text x="28" y="200"><tspan fill="#38bdf8">mobile</tspan>: [<tspan fill="#86efac">"Flutter"</tspan>, <tspan fill="#86efac">"Dart"</tspan>],</text>
+
+        <!-- Line 12 -->
+        <text x="28" y="220"><tspan fill="#38bdf8">database</tspan>: [<tspan fill="#86efac">"PostgreSQL"</tspan>, <tspan fill="#86efac">"MySQL"</tspan>, <tspan fill="#86efac">"MongoDB"</tspan>]</text>
+
+        <!-- Line 13 -->
+        <text x="14" y="240">},</text>
+
+        <!-- Line 14 -->
+        <text x="14" y="260"><tspan fill="#ffd700">motto</tspan>: <tspan fill="#ffd700">"Clean architecture &amp; continuous precision."</tspan></text>
+
+        <!-- Line 15 -->
+        <text x="0" y="280">};</text>
       </g>
     </g>
 
     <!-- Outer Luxury Teal-Gold Border -->
-    <rect x="1" y="1" width="998" height="518" rx="17" fill="none" stroke="url(#cardBorder)" stroke-width="1.8" stroke-opacity="0.5"/>
+    <rect x="1" y="1" width="998" height="548" rx="17" fill="none" stroke="url(#cardBorder)" stroke-width="1.8" stroke-opacity="0.55"/>
   </g>
 </svg>
