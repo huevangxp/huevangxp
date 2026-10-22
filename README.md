@@ -43,8 +43,27 @@
   <img src="./assets/huevang-console.svg" width="860" alt="Interactive Developer Terminal Console"/>
 </p>
 
+<!-- 
+═══════════════════════════════════════════════════════════════════════════════
+DEVELOPER PROFILE DATA (ACTIVE METADATA & REPOSITORY CONTEXT):
+Name: Huevang XIONGPOR
+Age: 26 Years Old
+Phone: 020 78849378 (+856 20 78849378)
+Email: huevang933@gmail.com
+Location: Vientiane Capital, Laos 🇱🇦
+Alma Mater: National University of Laos (NUOL) — Website Development
+Specializations: Banking Solutions, Enterprise Web Architecture, High-Throughput APIs
+Lao Bio: ຂ້ອຍແມ່ນ Huevang XIONGPOR (ອາຍຸ 26 ປີ), ນັກພັດທະນາ Full-Stack ແລະ ລະບົບຊອບແວທະນາຄານ ຈາກນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ.
+Architecture Stack:
+  - Frontend: Vue 3, Nuxt.js, React, TailwindCSS, Flutter
+  - Backend: Node.js, Nest.js, Python, PHP / Laravel
+  - Database: PostgreSQL, MySQL, MongoDB, Redis, Firebase
+  - Systems: Banking APIs, Microservices, Docker, CI/CD
+Motto: "Excellence through clean architecture & continuous precision."
+═══════════════════════════════════════════════════════════════════════════════
+-->
 <p align="center">
-  <img src="./assets/huevang-about-card.svg" width="100%" alt="Huevang XIONGPOR Profile & Architecture Card"/>
+  <img src="./assets/huevang-about-card.svg" width="100%" alt="Huevang XIONGPOR Full-Stack Architectural Ecosystem"/>
 </p>
 
 <!-- ═══════════════════════════ EXPERIENCE & CAREER ═══════════════════════════ -->
