@@ -17,7 +17,7 @@
     <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
       <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="round"><rect width="1000" height="320" rx="22"/></clipPath>
+    <clipPath id="round"><rect width="1000" height="320"/></clipPath>
   </defs>
 
   <g clip-path="url(#round)">
@@ -92,7 +92,7 @@
         <path d="M-6 6 L-17 -2 L-22 8"/><path d="M-7 10 L-19 12 L-22 22"/>
         <path d="M6 6 L17 -2 L22 8"/><path d="M7 10 L19 12 L22 22"/>
       </g>
-      <ellipse cx="0" cy="10" rx="8" ry="10" fill="#ef4444"/>
+      <ellipse cx="0" cy="10" fill="#ef4444"/>
       <circle cx="0" cy="-1" r="6" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
       <circle cx="-2.3" cy="-2" r="1.4" fill="#fff"/><circle cx="2.3" cy="-2" r="1.4" fill="#fff"/>
     </g>
@@ -127,5 +127,5 @@
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-500 0" dur="6s" repeatCount="indefinite"/>
     </path>
   </g>
-  <rect x=".5" y=".5" width="999" height="319" rx="22" fill="none" stroke="#fff" stroke-opacity=".08"/>
+  <rect x=".5" y=".5" width="999" height="319" fill="none" stroke="#fff" stroke-opacity=".08"/>
 </svg>

@@ -25,7 +25,7 @@
       @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
     </style>
     <clipPath id="win">
-      <rect width="860" height="410" rx="14"/>
+      <rect width="860" height="410"/>
     </clipPath>
     <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
@@ -112,6 +112,6 @@
     <rect x="42" y="380" width="8.5" height="17" fill="#ffd700" style="animation: blink 1s steps(1) infinite;"/>
 
     <!-- Subtle Teal Border -->
-    <rect x="0.5" y="0.5" width="859" height="409" rx="13.5" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.35"/>
+    <rect x="0.5" y="0.5" width="859" height="409" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.35"/>
   </g>
 </svg>

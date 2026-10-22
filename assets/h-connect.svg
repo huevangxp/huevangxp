@@ -14,8 +14,8 @@
   <path d="M684.0 38H960" pathLength="1" stroke="url(#r)" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="1" stroke-dashoffset="1">
     <animate attributeName="stroke-dashoffset" from="1" to="0" dur="1.3s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
   </path>
-  <rect x="300.0" y="30" width="12" height="12" rx="2" fill="#22d3ee" transform="rotate(45 306.0 36)"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></rect>
-  <rect x="688.0" y="30" width="12" height="12" rx="2" fill="#f472b6" transform="rotate(45 694.0 36)"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></rect>
+  <rect x="300.0" y="30" width="12" height="12" fill="#22d3ee" transform="rotate(45 306.0 36)"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></rect>
+  <rect x="688.0" y="30" width="12" height="12" fill="#f472b6" transform="rotate(45 694.0 36)"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></rect>
   <text x="500" y="22" text-anchor="middle" font-family="'Courier New',Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12" letter-spacing="6" fill="#64748b">// 06</text>
   <g filter="url(#gl)">
     <text x="500" y="56" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="32" font-weight="800" letter-spacing="5" fill="#ffffff">LET'S CONNECT

@@ -10,76 +10,76 @@
 <circle r="232" fill="none" stroke="#94a3b8" stroke-opacity=".35" stroke-dasharray="3 7"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="44s" repeatCount="indefinite"/></circle>
 <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
   <g transform="translate(100.0 0.0)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-    <rect x="-40.5" y="-14" width="81" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#3776AB" stroke-width="1.5"/>
+    <rect x="-40.5" y="-14" width="81" height="28" fill="#0d1117" fill-opacity=".92" stroke="#3776AB" stroke-width="1.5"/>
     <circle cx="-27.5" cy="0" r="4" fill="#3776AB"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Python</text>
   </g></g>
   <g transform="translate(-50.0 86.6)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-    <rect x="-44.5" y="-14" width="89" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#5FA04E" stroke-width="1.5"/>
+    <rect x="-44.5" y="-14" width="89" height="28" fill="#0d1117" fill-opacity=".92" stroke="#5FA04E" stroke-width="1.5"/>
     <circle cx="-31.5" cy="0" r="4" fill="#5FA04E"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Node.js</text>
   </g></g>
   <g transform="translate(-50.0 -86.6)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-    <rect x="-28.5" y="-14" width="57" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#777BB4" stroke-width="1.5"/>
+    <rect x="-28.5" y="-14" width="57" height="28" fill="#0d1117" fill-opacity=".92" stroke="#777BB4" stroke-width="1.5"/>
     <circle cx="-15.5" cy="0" r="4" fill="#777BB4"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">PHP</text>
   </g></g>
 </g>
 <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="32s" repeatCount="indefinite"/>
   <g transform="translate(159.8 51.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-    <rect x="-28.5" y="-14" width="57" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#42B883" stroke-width="1.5"/>
+    <rect x="-28.5" y="-14" width="57" height="28" fill="#0d1117" fill-opacity=".92" stroke="#42B883" stroke-width="1.5"/>
     <circle cx="-15.5" cy="0" r="4" fill="#42B883"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Vue</text>
   </g></g>
   <g transform="translate(0.0 168.0)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-    <rect x="-32.5" y="-14" width="65" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#00DC82" stroke-width="1.5"/>
+    <rect x="-32.5" y="-14" width="65" height="28" fill="#0d1117" fill-opacity=".92" stroke="#00DC82" stroke-width="1.5"/>
     <circle cx="-19.5" cy="0" r="4" fill="#00DC82"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Nuxt</text>
   </g></g>
   <g transform="translate(-159.8 51.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-    <rect x="-36.5" y="-14" width="73" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#61DAFB" stroke-width="1.5"/>
+    <rect x="-36.5" y="-14" width="73" height="28" fill="#0d1117" fill-opacity=".92" stroke="#61DAFB" stroke-width="1.5"/>
     <circle cx="-23.5" cy="0" r="4" fill="#61DAFB"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">React</text>
   </g></g>
   <g transform="translate(-98.7 -135.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-    <rect x="-44.5" y="-14" width="89" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#FF2D20" stroke-width="1.5"/>
+    <rect x="-44.5" y="-14" width="89" height="28" fill="#0d1117" fill-opacity=".92" stroke="#FF2D20" stroke-width="1.5"/>
     <circle cx="-31.5" cy="0" r="4" fill="#FF2D20"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Laravel</text>
   </g></g>
   <g transform="translate(98.7 -135.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-    <rect x="-44.5" y="-14" width="89" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#02569B" stroke-width="1.5"/>
+    <rect x="-44.5" y="-14" width="89" height="28" fill="#0d1117" fill-opacity=".92" stroke="#02569B" stroke-width="1.5"/>
     <circle cx="-31.5" cy="0" r="4" fill="#02569B"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Flutter</text>
   </g></g>
 </g>
 <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="44s" repeatCount="indefinite"/>
   <g transform="translate(196.7 122.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-    <rect x="-48.0" y="-14" width="96" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#FFCA28" stroke-width="1.5"/>
+    <rect x="-48.0" y="-14" width="96" height="28" fill="#0d1117" fill-opacity=".92" stroke="#FFCA28" stroke-width="1.5"/>
     <circle cx="-35.0" cy="0" r="4" fill="#FFCA28"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Firebase</text>
   </g></g>
   <g transform="translate(-8.1 231.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-    <rect x="-36.5" y="-14" width="73" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#4479A1" stroke-width="1.5"/>
+    <rect x="-36.5" y="-14" width="73" height="28" fill="#0d1117" fill-opacity=".92" stroke="#4479A1" stroke-width="1.5"/>
     <circle cx="-23.5" cy="0" r="4" fill="#4479A1"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">MySQL</text>
   </g></g>
   <g transform="translate(-204.8 108.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-    <rect x="-36.5" y="-14" width="73" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#F24E1E" stroke-width="1.5"/>
+    <rect x="-36.5" y="-14" width="73" height="28" fill="#0d1117" fill-opacity=".92" stroke="#F24E1E" stroke-width="1.5"/>
     <circle cx="-23.5" cy="0" r="4" fill="#F24E1E"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Figma</text>
   </g></g>
   <g transform="translate(-196.7 -122.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-    <rect x="-52.0" y="-14" width="104" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#31A8FF" stroke-width="1.5"/>
+    <rect x="-52.0" y="-14" width="104" height="28" fill="#0d1117" fill-opacity=".92" stroke="#31A8FF" stroke-width="1.5"/>
     <circle cx="-39.0" cy="0" r="4" fill="#31A8FF"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Photoshop</text>
   </g></g>
   <g transform="translate(8.1 -231.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-    <rect x="-48.0" y="-14" width="96" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#9999FF" stroke-width="1.5"/>
+    <rect x="-48.0" y="-14" width="96" height="28" fill="#0d1117" fill-opacity=".92" stroke="#9999FF" stroke-width="1.5"/>
     <circle cx="-35.0" cy="0" r="4" fill="#9999FF"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Premiere</text>
   </g></g>
   <g transform="translate(204.8 -108.9)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-    <rect x="-28.5" y="-14" width="57" height="28" rx="14" fill="#0d1117" fill-opacity=".92" stroke="#F05032" stroke-width="1.5"/>
+    <rect x="-28.5" y="-14" width="57" height="28" fill="#0d1117" fill-opacity=".92" stroke="#F05032" stroke-width="1.5"/>
     <circle cx="-15.5" cy="0" r="4" fill="#F05032"/>
     <text x="7" y="4.8" text-anchor="middle" fill="#e2e8f0" font-family="'Segoe UI',Helvetica,Arial,'Leelawadee UI','Noto Sans Lao',sans-serif" font-size="13" font-weight="600">Git</text>
   </g></g>

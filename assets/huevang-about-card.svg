@@ -65,7 +65,7 @@
     </pattern>
 
     <clipPath id="cardClip">
-      <rect width="1000" height="600" rx="18"/>
+      <rect width="1000" height="600"/>
     </clipPath>
   </defs>
 
@@ -94,7 +94,7 @@
 
     <!-- Top Right Status Badge -->
     <g transform="translate(830, 13)">
-      <rect width="146" height="22" rx="11" fill="#081820" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
+      <rect width="146" height="22" fill="#081820" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4"/>
       <circle cx="14" cy="11" r="3.5" fill="#22c55e">
         <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
       </circle>
@@ -151,28 +151,28 @@
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
       <g transform="translate(100.0, 0.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-          <rect x="-41.0" y="-14.0" width="82" height="28" rx="14.0" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
+          <rect x="-41.0" y="-14.0" width="82" height="28" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
 <circle cx="-27.0" cy="0" r="3.8" fill="#ffd700"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Python</text>
         </g>
       </g>
       <g transform="translate(0.0, 100.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-          <rect x="-43.0" y="-14.0" width="86" height="28" rx="14.0" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
+          <rect x="-43.0" y="-14.0" width="86" height="28" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
 <circle cx="-29.0" cy="0" r="3.8" fill="#2dd4bf"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Node.js</text>
         </g>
       </g>
       <g transform="translate(-100.0, 0.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-          <rect x="-38.0" y="-14.0" width="76" height="28" rx="14.0" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
+          <rect x="-38.0" y="-14.0" width="76" height="28" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
 <circle cx="-24.0" cy="0" r="3.8" fill="#2dd4bf"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Vue 3</text>
         </g>
       </g>
       <g transform="translate(-0.0, -100.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="22s" repeatCount="indefinite"/>
-          <rect x="-49.0" y="-14.0" width="98" height="28" rx="14.0" fill="#07121b" stroke="#38bdf8" stroke-width="1.4"/>
+          <rect x="-49.0" y="-14.0" width="98" height="28" fill="#07121b" stroke="#38bdf8" stroke-width="1.4"/>
 <circle cx="-35.0" cy="0" r="3.8" fill="#38bdf8"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">TypeScript</text>
         </g>
@@ -184,35 +184,35 @@
       <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="32s" repeatCount="indefinite"/>
       <g transform="translate(175.0, 0.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-          <rect x="-40.0" y="-14.0" width="80" height="28" rx="14.0" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
+          <rect x="-40.0" y="-14.0" width="80" height="28" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
 <circle cx="-26.0" cy="0" r="3.8" fill="#2dd4bf"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">React</text>
         </g>
       </g>
       <g transform="translate(54.1, 166.4)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-          <rect x="-42.0" y="-14.0" width="84" height="28" rx="14.0" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
+          <rect x="-42.0" y="-14.0" width="84" height="28" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
 <circle cx="-28.0" cy="0" r="3.8" fill="#ffd700"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Nest.js</text>
         </g>
       </g>
       <g transform="translate(-141.6, 102.9)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-          <rect x="-41.0" y="-14.0" width="82" height="28" rx="14.0" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
+          <rect x="-41.0" y="-14.0" width="82" height="28" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
 <circle cx="-27.0" cy="0" r="3.8" fill="#2dd4bf"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Flutter</text>
         </g>
       </g>
       <g transform="translate(-141.6, -102.9)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-          <rect x="-41.0" y="-14.0" width="82" height="28" rx="14.0" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
+          <rect x="-41.0" y="-14.0" width="82" height="28" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
 <circle cx="-27.0" cy="0" r="3.8" fill="#ffd700"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Nuxt 3</text>
         </g>
       </g>
       <g transform="translate(54.1, -166.4)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
-          <rect x="-51.0" y="-14.0" width="102" height="28" rx="14.0" fill="#07121b" stroke="#38bdf8" stroke-width="1.4"/>
+          <rect x="-51.0" y="-14.0" width="102" height="28" fill="#07121b" stroke="#38bdf8" stroke-width="1.4"/>
 <circle cx="-37.0" cy="0" r="3.8" fill="#38bdf8"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">TailwindCSS</text>
         </g>
@@ -224,42 +224,42 @@
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="44s" repeatCount="indefinite"/>
       <g transform="translate(250.0, 0.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-          <rect x="-50.0" y="-14.0" width="100" height="28" rx="14.0" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
+          <rect x="-50.0" y="-14.0" width="100" height="28" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
 <circle cx="-36.0" cy="0" r="3.8" fill="#2dd4bf"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">PostgreSQL</text>
         </g>
       </g>
       <g transform="translate(125.0, 216.5)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-          <rect x="-56.0" y="-14.0" width="112" height="28" rx="14.0" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
+          <rect x="-56.0" y="-14.0" width="112" height="28" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
 <circle cx="-42.0" cy="0" r="3.8" fill="#ffd700"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Banking APIs</text>
         </g>
       </g>
       <g transform="translate(-125.0, 216.5)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-          <rect x="-41.0" y="-14.0" width="82" height="28" rx="14.0" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
+          <rect x="-41.0" y="-14.0" width="82" height="28" fill="#07121b" stroke="#2dd4bf" stroke-width="1.4"/>
 <circle cx="-27.0" cy="0" r="3.8" fill="#2dd4bf"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Docker</text>
         </g>
       </g>
       <g transform="translate(-250.0, 0.0)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-          <rect x="-53.0" y="-14.0" width="106" height="28" rx="14.0" fill="#07121b" stroke="#f43f5e" stroke-width="1.4"/>
+          <rect x="-53.0" y="-14.0" width="106" height="28" fill="#07121b" stroke="#f43f5e" stroke-width="1.4"/>
 <circle cx="-39.0" cy="0" r="3.8" fill="#f43f5e"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">PHP / Laravel</text>
         </g>
       </g>
       <g transform="translate(-125.0, -216.5)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-          <rect x="-46.0" y="-14.0" width="92" height="28" rx="14.0" fill="#07121b" stroke="#22c55e" stroke-width="1.4"/>
+          <rect x="-46.0" y="-14.0" width="92" height="28" fill="#07121b" stroke="#22c55e" stroke-width="1.4"/>
 <circle cx="-32.0" cy="0" r="3.8" fill="#22c55e"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">MongoDB</text>
         </g>
       </g>
       <g transform="translate(125.0, -216.5)">
         <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="44s" repeatCount="indefinite"/>
-          <rect x="-56.0" y="-14.0" width="112" height="28" rx="14.0" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
+          <rect x="-56.0" y="-14.0" width="112" height="28" fill="#07121b" stroke="#ffd700" stroke-width="1.4"/>
 <circle cx="-42.0" cy="0" r="3.8" fill="#ffd700"/>
 <text x="6" y="4.5" text-anchor="middle" fill="#ffffff" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700">Microservices</text>
         </g>
@@ -280,7 +280,7 @@
     </g>
 
     <!-- Outer Luxury Border -->
-    <rect x="1" y="1" width="998" height="598" rx="17" fill="none" stroke="url(#borderGrad)" stroke-width="1.8" stroke-opacity="0.55"/>
+    <rect x="1" y="1" width="998" height="598" fill="none" stroke="url(#borderGrad)" stroke-width="1.8" stroke-opacity="0.55"/>
   </g>
 
   <!-- ════════════════════ DATA ACCESSIBLE IN DOM/SVG BUT NOT VISUALLY DISPLAYED ════════════════════ -->

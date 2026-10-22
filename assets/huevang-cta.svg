@@ -13,17 +13,17 @@
       <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="ctaClip">
-      <rect x="8" y="8" width="604" height="80" rx="40"/>
+      <rect x="8" y="8" width="604" height="80"/>
     </clipPath>
     <filter id="ctaGlow" x="-10%" y="-40%" width="120%" height="180%">
       <feGaussianBlur stdDeviation="8"/>
     </filter>
   </defs>
 
-  <rect x="8" y="8" width="604" height="80" rx="40" fill="url(#ctaBorder)" filter="url(#ctaGlow)" opacity="0.6">
+  <rect x="8" y="8" width="604" height="80" fill="url(#ctaBorder)" filter="url(#ctaGlow)" opacity="0.6">
     <animate attributeName="opacity" values="0.4;0.75;0.4" dur="2.8s" repeatCount="indefinite"/>
   </rect>
-  <rect x="8" y="8" width="604" height="80" rx="40" fill="#060c12" stroke="url(#ctaBorder)" stroke-width="2.5"/>
+  <rect x="8" y="8" width="604" height="80" fill="#060c12" stroke="url(#ctaBorder)" stroke-width="2.5"/>
 
   <g clip-path="url(#ctaClip)">
     <rect y="0" width="130" height="110" fill="url(#shine)" transform="skewX(-20)">

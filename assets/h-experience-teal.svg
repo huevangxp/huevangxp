@@ -13,8 +13,8 @@
   </defs>
 
   <!-- Sleek Dark Container -->
-  <rect x="6" y="6" width="528" height="56" rx="28" fill="#050a0f" stroke="url(#hdrBorder_h-e)" stroke-width="1.4" stroke-opacity="0.55"/>
-  <rect x="10" y="10" width="520" height="48" rx="24" fill="#08141d"/>
+  <rect x="6" y="6" width="528" height="56" fill="#050a0f" stroke="url(#hdrBorder_h-e)" stroke-width="1.4" stroke-opacity="0.55"/>
+  <rect x="10" y="10" width="520" height="48" fill="#08141d"/>
 
   <!-- Left Accent Dot -->
   <circle cx="34" cy="34" r="5" fill="#ffd700"/>
