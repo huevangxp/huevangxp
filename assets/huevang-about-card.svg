@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="Huevang XIONGPOR Developer Profile Card">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700;800;900&amp;family=Outfit:wght@600;700;800;900&amp;family=Fira+Code:wght@500;600;700&amp;display=swap');
+      .lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; }
+      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; font-size: 13.5px; line-height: 1.55; white-space: pre; }
+      .head { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; }
+    </style>
+
+    <linearGradient id="cardBgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04080d"/>
+      <stop offset="50%" stop-color="#08141d"/>
+      <stop offset="100%" stop-color="#020508"/>
+    </linearGradient>
+
+    <linearGradient id="cardBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+
+    <radialGradient id="haloTeal">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#ffd700" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="cardGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2dd4bf" stroke-width="0.8" stroke-opacity="0.05"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ffd700" fill-opacity="0.12"/>
+    </pattern>
+
+    <clipPath id="mainClip">
+      <rect width="1000" height="520" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip)">
+    <!-- Base Card Canvas -->
+    <rect width="1000" height="520" fill="url(#cardBgGrad)"/>
+    <rect width="1000" height="520" fill="url(#cardGrid)"/>
+
+    <!-- Subtle Ambient Glows -->
+    <circle cx="230" cy="260" r="220" fill="url(#haloTeal)"/>
+    <circle cx="740" cy="240" r="240" fill="url(#haloTeal)" opacity="0.6"/>
+
+    <!-- ════════════════════ LEFT SIDE: INTERACTIVE ORBIT (X: 0 to 460) ════════════════════ -->
+    <g transform="translate(235, 255)">
+      <!-- Concentric Orbit Rings -->
+      <circle r="85" fill="none" stroke="#2dd4bf" stroke-opacity="0.32" stroke-dasharray="3 6">
+        <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="145" fill="none" stroke="#ffd700" stroke-opacity="0.32" stroke-dasharray="4 7">
+        <animate attributeName="stroke-dashoffset" from="0" to="100" dur="28s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="202" fill="none" stroke="#2dd4bf" stroke-opacity="0.32" stroke-dasharray="3 6">
+        <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="38s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Center Developer Node -->
+      <circle r="42" fill="#060c12" stroke="url(#cardBorder)" stroke-width="2.5"/>
+      <text x="0" y="-5" text-anchor="middle" fill="#ffd700" class="head" font-size="13" font-weight="900" letter-spacing="1">HUEVANG</text>
+      <text x="0" y="14" text-anchor="middle" fill="#2dd4bf" class="code" font-size="11" font-weight="700">26 y/o</text>
+
+      <!-- Orbit Ring 1 (Speed: 20s) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+        <!-- Python -->
+        <g transform="translate(85, 0)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
+            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#081018" stroke="#ffd700" stroke-width="1.2"/>
+            <circle cx="-25" cy="0" r="3.5" fill="#ffd700"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Python</text>
+          </g>
+        </g>
+        <!-- Node.js -->
+        <g transform="translate(-42.5, 73.6)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
+            <rect x="-40" y="-12" width="80" height="24" rx="12" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
+            <circle cx="-27" cy="0" r="3.5" fill="#2dd4bf"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Node.js</text>
+          </g>
+        </g>
+        <!-- Vue 3 -->
+        <g transform="translate(-42.5, -73.6)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="20s" repeatCount="indefinite"/>
+            <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
+            <circle cx="-22" cy="0" r="3.5" fill="#2dd4bf"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Vue 3</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Orbit Ring 2 (Speed: 28s counter-clockwise) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="28s" repeatCount="indefinite"/>
+        <!-- React -->
+        <g transform="translate(145, 0)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+            <rect x="-34" y="-12" width="68" height="24" rx="12" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
+            <circle cx="-21" cy="0" r="3.5" fill="#2dd4bf"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">React</text>
+          </g>
+        </g>
+        <!-- Nest.js -->
+        <g transform="translate(0, 145)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#081018" stroke="#ffd700" stroke-width="1.2"/>
+            <circle cx="-25" cy="0" r="3.5" fill="#ffd700"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Nest.js</text>
+          </g>
+        </g>
+        <!-- Flutter -->
+        <g transform="translate(-145, 0)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+            <rect x="-36" y="-12" width="72" height="24" rx="12" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
+            <circle cx="-23" cy="0" r="3.5" fill="#2dd4bf"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Flutter</text>
+          </g>
+        </g>
+        <!-- Nuxt 3 -->
+        <g transform="translate(0, -145)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+            <rect x="-36" y="-12" width="72" height="24" rx="12" fill="#081018" stroke="#ffd700" stroke-width="1.2"/>
+            <circle cx="-23" cy="0" r="3.5" fill="#ffd700"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Nuxt 3</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Orbit Ring 3 (Speed: 38s clockwise) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
+        <!-- PostgreSQL -->
+        <g transform="translate(202, 0)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="38s" repeatCount="indefinite"/>
+            <rect x="-50" y="-12" width="100" height="24" rx="12" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
+            <circle cx="-35" cy="0" r="3.5" fill="#2dd4bf"/>
+            <text x="8" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">PostgreSQL</text>
+          </g>
+        </g>
+        <!-- Banking APIs -->
+        <g transform="translate(-101, 175)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="38s" repeatCount="indefinite"/>
+            <rect x="-55" y="-12" width="110" height="24" rx="12" fill="#081018" stroke="#ffd700" stroke-width="1.2"/>
+            <circle cx="-40" cy="0" r="3.5" fill="#ffd700"/>
+            <text x="8" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Banking APIs</text>
+          </g>
+        </g>
+        <!-- Docker -->
+        <g transform="translate(-101, -175)">
+          <g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="38s" repeatCount="indefinite"/>
+            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#081018" stroke="#2dd4bf" stroke-width="1.2"/>
+            <circle cx="-25" cy="0" r="3.5" fill="#2dd4bf"/>
+            <text x="7" y="4" text-anchor="middle" fill="#ffffff" class="head" font-size="11.5" font-weight="700">Docker</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Orbit Caption -->
+    <text x="235" y="488" text-anchor="middle" fill="#2dd4bf" class="head" font-size="12" font-weight="700" letter-spacing="2">
+      ⚡ FULL-STACK ECOSYSTEM • CORE ARCHITECTURE
+    </text>
+
+    <!-- Center Vertical Divider -->
+    <line x1="470" y1="30" x2="470" y2="490" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+
+    <!-- ════════════════════ RIGHT SIDE: CODE & PROFILE CARD (X: 475 to 1000) ════════════════════ -->
+    <g transform="translate(485, 24)">
+      <!-- macOS Glass Window -->
+      <rect width="490" height="470" rx="14" fill="#060c13" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.4"/>
+      <!-- Window Title Bar -->
+      <rect width="490" height="38" rx="14" fill="#0b1620"/>
+      <rect y="24" width="490" height="14" fill="#0b1620"/>
+      <line x1="0" y1="38" x2="490" y2="38" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.25"/>
+
+      <!-- Window Control Dots -->
+      <circle cx="20" cy="19" r="5.5" fill="#ff5f56"/>
+      <circle cx="38" cy="19" r="5.5" fill="#ffbd2e"/>
+      <circle cx="56" cy="19" r="5.5" fill="#27c93f"/>
+
+      <!-- Window Title -->
+      <text x="245" y="24" text-anchor="middle" fill="#ffd700" class="code" font-size="12.5" font-weight="700">
+        huevang_developer.js
+      </text>
+
+      <!-- Profile Header Inside Window -->
+      <g transform="translate(20, 62)">
+        <text x="0" y="0" fill="#2dd4bf" class="head" font-size="18" font-weight="900" letter-spacing="1">
+          HUEVANG XIONGPOR
+        </text>
+        <rect x="230" y="-14" width="80" height="20" rx="10" fill="#0f2420" stroke="#22c55e" stroke-width="1"/>
+        <text x="270" y="0" text-anchor="middle" fill="#22c55e" class="head" font-size="11" font-weight="800">
+          AGE: 26 YO
+        </text>
+
+        <!-- Quick Contacts Bar Inside Window -->
+        <text x="0" y="24" fill="#ffd700" class="code" font-size="12" font-weight="600">
+          📞 020 78849378  •  ✉️ huevang933@gmail.com
+        </text>
+        <text x="0" y="44" fill="#94a3b8" class="head" font-size="12">
+          📍 Vientiane Capital, Laos 🇱🇦 • National University of Laos (NUOL)
+        </text>
+      </g>
+
+      <!-- Lao Quote in authentic Noto Sans Lao -->
+      <g transform="translate(20, 138)">
+        <rect x="0" y="0" width="450" height="42" rx="6" fill="#08141d" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.3"/>
+        <text x="14" y="26" fill="#ffffff" class="lao" font-size="12.5" font-weight="700">
+          🇱🇦 ຂ້ອຍແມ່ນ Huevang XIONGPOR, ນັກພັດທະນາ Full-Stack &amp; ລະບົບທະນາຄານ
+        </text>
+      </g>
+
+      <!-- Syntax-Highlighted Code Block -->
+      <g transform="translate(20, 202)">
+        <text x="0" y="0" class="code">
+<tspan fill="#f472b6" font-weight="700">const</tspan> <tspan fill="#2dd4bf">huevang</tspan> = {
+  <tspan fill="#ffd700">name</tspan>: <tspan fill="#86efac">"Huevang XIONGPOR"</tspan>,
+  <tspan fill="#ffd700">age</tspan>: <tspan fill="#f59e0b">26</tspan>,
+  <tspan fill="#ffd700">tel</tspan>: <tspan fill="#86efac">"020 78849378"</tspan>,
+  <tspan fill="#ffd700">email</tspan>: <tspan fill="#86efac">"huevang933@gmail.com"</tspan>,
+  <tspan fill="#ffd700">location</tspan>: <tspan fill="#86efac">"Vientiane, Laos 🇱🇦"</tspan>,
+  <tspan fill="#ffd700">roles</tspan>: [<tspan fill="#86efac">"Full-Stack Dev"</tspan>, <tspan fill="#86efac">"Banking Specialist"</tspan>],
+  <tspan fill="#ffd700">stack</tspan>: {
+    <tspan fill="#38bdf8">front</tspan>: [<tspan fill="#86efac">"Vue 3"</tspan>, <tspan fill="#86efac">"Nuxt"</tspan>, <tspan fill="#86efac">"React"</tspan>, <tspan fill="#86efac">"Flutter"</tspan>],
+    <tspan fill="#38bdf8">back</tspan>: [<tspan fill="#86efac">"Node.js"</tspan>, <tspan fill="#86efac">"Python"</tspan>, <tspan fill="#86efac">"Nest"</tspan>, <tspan fill="#86efac">"Laravel"</tspan>],
+    <tspan fill="#38bdf8">data</tspan>: [<tspan fill="#86efac">"PostgreSQL"</tspan>, <tspan fill="#86efac">"MySQL"</tspan>, <tspan fill="#86efac">"MongoDB"</tspan>]
+  },
+  <tspan fill="#ffd700">motto</tspan>: <tspan fill="#ffd700">"Clean architecture &amp; precision."</tspan>
+};</text>
+      </g>
+    </g>
+
+    <!-- Outer Luxury Teal-Gold Border -->
+    <rect x="1" y="1" width="998" height="518" rx="17" fill="none" stroke="url(#cardBorder)" stroke-width="1.8" stroke-opacity="0.5"/>
+  </g>
+</svg>
