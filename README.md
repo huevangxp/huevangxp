@@ -88,24 +88,9 @@ Motto: "Excellence through clean architecture & continuous precision."
   <img src="./assets/stack-marquee.svg" width="100%" alt="Tech stack marquee"/>
 </p>
 
-<table align="center" width="100%">
-<tr>
-<td align="center" width="25%"><b>🎨 Frontend & Mobile</b></td>
-<td><img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,nuxt,react,flutter,tailwind,bootstrap&theme=dark" alt="Frontend & Mobile"/></td>
-</tr>
-<tr>
-<td align="center" width="25%"><b>⚙️ Backend & Frameworks</b></td>
-<td><img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,php,laravel,django&theme=dark" alt="Backend & APIs"/></td>
-</tr>
-<tr>
-<td align="center" width="25%"><b>🗄️ Database & Cloud</b></td>
-<td><img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,firebase,redis&theme=dark" alt="Database & Cloud"/></td>
-</tr>
-<tr>
-<td align="center" width="25%"><b>🛠️ DevOps & Design</b></td>
-<td><img src="https://skillicons.dev/icons?i=figma,git,github,gitlab,vscode,postman,docker&theme=dark" alt="DevOps & Design Tools"/></td>
-</tr>
-</table>
+<p align="center">
+  <img src="./assets/huevang-skills-matrix.svg" width="100%" alt="Technical Arsenal &amp; Enterprise Competencies"/>
+</p>
 
 <!-- ═══════════════════════════ GITHUB METRICS & ACTIVITY ═══════════════════════════ -->
 <p align="center">
