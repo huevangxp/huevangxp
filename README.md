@@ -6,7 +6,7 @@
 <!-- Typing Headline -->
 <p align="center">
   <a href="https://github.com/huevangxp">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;weight=700&amp;size=20&amp;duration=3200&amp;pause=900&amp;color=00FF66&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=48&amp;lines=%3E_+INITIALIZING_SYS_MAINFRAME+%E2%80%A2+HUEVANG+XIONGPOR;%3E_+SYS_STATUS%3A+ONLINE+%E2%80%A2+AGE%3A+26+%E2%80%A2+VIENTIANE%2C+LAOS+%F0%9F%87%B1%F0%9F%87%A6;%3E_+FULL-STACK+ENGINEER+%26+BANKING+SYSTEMS+SPECIALIST;%3E_+TELEMETRY%3A+020+78849378+%E2%80%A2+HUEVANG933%40GMAIL.COM;%3E_+MISSION%3A+CLEAN+ARCHITECTURE+%E2%80%A2+PRECISION+%E2%80%A2+HIGH+PERFORMANCE" alt="Huevang XIONGPOR Typing Animation"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;weight=700&amp;size=20&amp;duration=3200&amp;pause=900&amp;color=2DD4BF&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=48&amp;lines=%3E_+INITIALIZING_SYS_MAINFRAME+%E2%80%A2+HUEVANG+XIONGPOR;%3E_+SYS_STATUS%3A+ONLINE+%E2%80%A2+AGE%3A+26+%E2%80%A2+VIENTIANE%2C+LAOS+%F0%9F%87%B1%F0%9F%87%A6;%3E_+FULL-STACK+ENGINEER+%26+BANKING+SYSTEMS+SPECIALIST;%3E_+TELEMETRY%3A+020+78849378+%E2%80%A2+HUEVANG933%40GMAIL.COM;%3E_+MISSION%3A+CLEAN+ARCHITECTURE+%E2%80%A2+PRECISION+%E2%80%A2+HIGH+PERFORMANCE" alt="Huevang XIONGPOR Typing Animation"/>
   </a>
 </p>
 
@@ -17,13 +17,13 @@
 
 <!-- Quick Action Direct Contact Chips -->
 <p align="center">
-  <a href="mailto:huevang933@gmail.com"><img src="https://img.shields.io/badge/%5BMAIL%5D-huevang933%40gmail.com-00ff66?style=flat-square&amp;labelColor=020408" alt="Email Huevang"/></a>
+  <a href="mailto:huevang933@gmail.com"><img src="https://img.shields.io/badge/%5BMAIL%5D-huevang933%40gmail.com-0d9488?style=flat-square&amp;labelColor=020408" alt="Email Huevang"/></a>
   &nbsp;
-  <a href="tel:+8562078849378"><img src="https://img.shields.io/badge/%5BCALL%5D-020_78849378-00f0ff?style=flat-square&amp;labelColor=020408" alt="Phone Huevang"/></a>
+  <a href="tel:+8562078849378"><img src="https://img.shields.io/badge/%5BCALL%5D-020_78849378-ffd700?style=flat-square&amp;labelColor=020408&amp;color=ffd700" alt="Phone Huevang"/></a>
   &nbsp;
-  <a href="https://github.com/huevangxp"><img src="https://img.shields.io/badge/GITHUB-huevangxp-00f0ff?style=flat-square&amp;logo=github&amp;logoColor=00f0ff&amp;labelColor=020408" alt="GitHub Profile"/></a>
+  <a href="https://github.com/huevangxp"><img src="https://img.shields.io/badge/GITHUB-huevangxp-0d9488?style=flat-square&amp;logo=github&amp;logoColor=2dd4bf&amp;labelColor=020408" alt="GitHub Profile"/></a>
   &nbsp;
-  <a href="https://github.com/huevangxp?tab=repositories"><img src="https://img.shields.io/badge/REPOS-170%2B_ACTIVE-00ff66?style=flat-square&amp;labelColor=020408" alt="Repositories"/></a>
+  <a href="https://github.com/huevangxp?tab=repositories"><img src="https://img.shields.io/badge/REPOS-170%2B_ACTIVE-ffd700?style=flat-square&amp;labelColor=020408&amp;color=ffd700" alt="Repositories"/></a>
 </p>
 
 <!-- ═══════════════════════════ CALL TO ACTION ═══════════════════════════ -->
