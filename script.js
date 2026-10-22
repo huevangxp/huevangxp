@@ -1,149 +1,809 @@
-// State Management
+/**
+ * SengKueVang BLONGMAI (huevangxp) - Modern Portfolio Interactive Logic
+ * Features: Tokyo Night Theme, Bilingual Translations, Interactive CLI Terminal,
+ * Dynamic Particles Canvas, Web Audio Synthesizer, 3D Skyline Switcher & Live GitHub API
+ */
+
+// ==========================================
+// 1. STATE & DOM REFERENCES
+// ==========================================
 let currentLang = localStorage.getItem('huevang_lang') || 'en';
 let currentTheme = localStorage.getItem('huevang_theme') || 'dark';
+let soundEnabled = localStorage.getItem('huevang_sound') !== 'false';
 
-// DOM Elements
-const bodyEl = document.body;
 const htmlEl = document.documentElement;
+const bodyEl = document.body;
 const themeToggleBtn = document.getElementById('theme-toggle');
 const langToggleBtn = document.getElementById('lang-toggle');
-const mobileMenuToggle = document.getElementById('mobile-toggle');
+const soundToggleBtn = document.getElementById('sound-toggle');
+const mobileToggleBtn = document.getElementById('mobile-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-const headerEl = document.querySelector('header');
-const contactForm = document.getElementById('contact-form');
-const formFeedback = document.getElementById('form-feedback');
+const mainHeader = document.getElementById('main-header');
+const backToTopBtn = document.getElementById('back-to-top');
 
-// 1. Language Toggle & Bilingual Translation Handler
-function translateUI(lang) {
+// Terminal Elements
+const terminalOutput = document.getElementById('terminal-output');
+const terminalInput = document.getElementById('terminal-input');
+const terminalClearBtn = document.getElementById('terminal-clear-btn');
+const terminalDemoBtn = document.getElementById('terminal-demo-btn');
+const cmdPills = document.querySelectorAll('.cmd-pill');
+
+// Skills & Projects
+const skillFilterBtns = document.querySelectorAll('.skills-filter-tabs .filter-btn');
+const skillItems = document.querySelectorAll('.skill-item');
+const projectFilterBtns = document.querySelectorAll('.projects-filter-tabs .filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+// 3D Skyline Switcher
+const skylineTabs = document.querySelectorAll('.skyline-tab-btn');
+const skylineImg = document.getElementById('skyline-img');
+
+// Copy Code Button
+const copyCodeBtn = document.getElementById('copy-code-btn');
+
+// Contact Form
+const contactForm = document.getElementById('contact-form');
+const formToast = document.getElementById('form-toast');
+
+// ==========================================
+// 2. SYNTHESIZED SOUND EFFECTS (Web Audio API)
+// ==========================================
+let audioCtx = null;
+
+function getAudioContext() {
+  if (!audioCtx) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (AudioContext) {
+      audioCtx = new AudioContext();
+    }
+  }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  return audioCtx;
+}
+
+function playSound(type = 'click') {
+  if (!soundEnabled) return;
+  try {
+    const ctx = getAudioContext();
+    if (!ctx) return;
+
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    const now = ctx.currentTime;
+
+    if (type === 'click') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(600, now);
+      osc.frequency.exponentialRampToValueAtTime(300, now + 0.05);
+      gain.gain.setValueAtTime(0.08, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+      osc.start(now);
+      osc.stop(now + 0.05);
+    } else if (type === 'tab') {
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(420, now);
+      osc.frequency.exponentialRampToValueAtTime(560, now + 0.08);
+      gain.gain.setValueAtTime(0.06, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+      osc.start(now);
+      osc.stop(now + 0.08);
+    } else if (type === 'cmd') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(750, now);
+      osc.frequency.exponentialRampToValueAtTime(1100, now + 0.07);
+      gain.gain.setValueAtTime(0.06, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+      osc.start(now);
+      osc.stop(now + 0.07);
+    } else if (type === 'success') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523.25, now); // C5
+      osc.frequency.setValueAtTime(659.25, now + 0.08); // E5
+      osc.frequency.setValueAtTime(783.99, now + 0.16); // G5
+      gain.gain.setValueAtTime(0.07, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
+      osc.start(now);
+      osc.stop(now + 0.28);
+    }
+  } catch (err) {
+    // Ignore audio errors on non-supported environments
+  }
+}
+
+function updateSoundUI() {
+  if (soundToggleBtn) {
+    const icon = soundToggleBtn.querySelector('i');
+    if (soundEnabled) {
+      icon.className = 'fas fa-volume-up';
+      soundToggleBtn.setAttribute('title', 'Sound Effects: ON (Click to mute)');
+    } else {
+      icon.className = 'fas fa-volume-mute';
+      soundToggleBtn.setAttribute('title', 'Sound Effects: MUTED (Click to enable)');
+    }
+  }
+}
+
+if (soundToggleBtn) {
+  soundToggleBtn.addEventListener('click', () => {
+    soundEnabled = !soundEnabled;
+    localStorage.setItem('huevang_sound', soundEnabled);
+    updateSoundUI();
+    if (soundEnabled) playSound('click');
+  });
+}
+
+// ==========================================
+// 3. THEME TOGGLING (Dark / Light)
+// ==========================================
+function applyTheme(theme) {
+  currentTheme = theme;
+  localStorage.setItem('huevang_theme', theme);
+  htmlEl.setAttribute('data-theme', theme);
+
+  if (themeToggleBtn) {
+    const icon = themeToggleBtn.querySelector('i');
+    if (theme === 'light') {
+      icon.className = 'fas fa-moon';
+      themeToggleBtn.setAttribute('title', 'Switch to Tokyo Night Dark Mode');
+    } else {
+      icon.className = 'fas fa-sun';
+      themeToggleBtn.setAttribute('title', 'Switch to Clean Light Mode');
+    }
+  }
+}
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    playSound('click');
+    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+  });
+}
+
+// ==========================================
+// 4. BILINGUAL TRANSLATION (English & Lao)
+// ==========================================
+function applyLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('huevang_lang', lang);
-  
-  // Set body class for font switching
+
   if (lang === 'la') {
     bodyEl.classList.add('lang-la');
   } else {
     bodyEl.classList.remove('lang-la');
   }
 
-  // Update text values
-  document.querySelectorAll('[data-translate]').forEach(el => {
+  // Update text elements
+  document.querySelectorAll('[data-translate]').forEach((el) => {
     const key = el.getAttribute('data-translate');
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
   });
 
-  // Update input placeholders
-  document.querySelectorAll('[data-translate-placeholder]').forEach(el => {
+  // Update inputs & placeholders
+  document.querySelectorAll('[data-translate-placeholder]').forEach((el) => {
     const key = el.getAttribute('data-translate-placeholder');
     if (translations[lang] && translations[lang][key]) {
       el.setAttribute('placeholder', translations[lang][key]);
     }
   });
 
-  // Update language button text to show the other option
-  langToggleBtn.textContent = lang === 'en' ? 'ລາວ' : 'EN';
-  langToggleBtn.setAttribute('title', lang === 'en' ? 'ສະຫຼັບເປັນພາສາລາວ' : 'Switch to English');
+  // Update language toggle pill button
+  if (langToggleBtn) {
+    const flagSpan = langToggleBtn.querySelector('.lang-flag');
+    const textSpan = langToggleBtn.querySelector('.lang-text');
+    if (lang === 'en') {
+      flagSpan.textContent = '🇱🇦';
+      textSpan.textContent = 'LA';
+      langToggleBtn.setAttribute('title', 'ປ່ຽນເປັນພາສາລາວ (Switch to Lao)');
+    } else {
+      flagSpan.textContent = '🇬🇧';
+      textSpan.textContent = 'EN';
+      langToggleBtn.setAttribute('title', 'Switch to English');
+    }
+  }
 
-  // Restart typing animation with updated language texts
-  initTypingAnimation();
+  // Restart hero typing animation in newly selected language
+  resetTypingLoop();
 }
 
-langToggleBtn.addEventListener('click', () => {
-  const nextLang = currentLang === 'en' ? 'la' : 'en';
-  translateUI(nextLang);
-});
+if (langToggleBtn) {
+  langToggleBtn.addEventListener('click', () => {
+    playSound('click');
+    const nextLang = currentLang === 'en' ? 'la' : 'en';
+    applyLanguage(nextLang);
+  });
+}
 
-// 2. Typing Animation in Hero Section
-let typingTimeout;
-let typingIndex = 0;
-let charIndex = 0;
+// ==========================================
+// 5. HERO ROTATING TYPING ANIMATION
+// ==========================================
+let typingTimeout = null;
+let phraseIndex = 0;
+let letterIndex = 0;
 let isDeleting = false;
 
-function initTypingAnimation() {
-  // Clear any existing typing timeout to avoid overlapping
+function getPhrases() {
+  if (currentLang === 'la') {
+    return [
+      translations.la.roleFullStack,
+      translations.la.roleUIUX,
+      translations.la.roleBanking,
+      translations.la.roleMobile,
+      translations.la.roleSpiderman,
+    ];
+  }
+  return [
+    translations.en.roleFullStack,
+    translations.en.roleUIUX,
+    translations.en.roleBanking,
+    translations.en.roleMobile,
+    translations.en.roleSpiderman,
+  ];
+}
+
+function runTypingAnimation() {
   clearTimeout(typingTimeout);
-  
   const target = document.getElementById('typing-text');
   if (!target) return;
-  
-  const roles = currentLang === 'en' 
-    ? [translations.en.roleFullStack, translations.en.roleWebDev, translations.en.roleFreelancer, translations.en.roleBanking]
-    : [translations.la.roleFullStack, translations.la.roleWebDev, translations.la.roleFreelancer, translations.la.roleBanking];
-  
-  // Make sure variables are in range
-  if (typingIndex >= roles.length) typingIndex = 0;
-  
-  const currentRole = roles[typingIndex];
-  
+
+  const phrases = getPhrases();
+  if (phraseIndex >= phrases.length) phraseIndex = 0;
+  const currentPhrase = phrases[phraseIndex];
+
   if (isDeleting) {
-    target.textContent = currentRole.substring(0, charIndex - 1);
-    charIndex--;
+    target.textContent = currentPhrase.substring(0, letterIndex - 1);
+    letterIndex--;
   } else {
-    target.textContent = currentRole.substring(0, charIndex + 1);
-    charIndex++;
+    target.textContent = currentPhrase.substring(0, letterIndex + 1);
+    letterIndex++;
   }
-  
-  let typingSpeed = isDeleting ? 40 : 80;
-  
-  if (!isDeleting && charIndex === currentRole.length) {
-    // Word fully typed, pause before deleting
-    typingSpeed = 1800;
+
+  let speed = isDeleting ? 35 : 75;
+
+  if (!isDeleting && letterIndex === currentPhrase.length) {
+    // Finished typing phrase, hold for 2s
+    speed = 2200;
     isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    // Word fully deleted, move to next
+  } else if (isDeleting && letterIndex === 0) {
+    // Finished deleting phrase, advance to next
     isDeleting = false;
-    typingIndex = (typingIndex + 1) % roles.length;
-    typingSpeed = 400;
+    phraseIndex = (phraseIndex + 1) % phrases.length;
+    speed = 400;
   }
-  
-  typingTimeout = setTimeout(initTypingAnimation, typingSpeed);
+
+  typingTimeout = setTimeout(runTypingAnimation, speed);
 }
 
-// 3. Theme Toggle & Persistent Settings
-function setTheme(theme) {
-  currentTheme = theme;
-  localStorage.setItem('huevang_theme', theme);
-  htmlEl.setAttribute('data-theme', theme);
-  
-  // Change icons
-  const icon = themeToggleBtn.querySelector('i');
-  if (theme === 'light') {
-    icon.className = 'fas fa-moon';
-    themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
+function resetTypingLoop() {
+  clearTimeout(typingTimeout);
+  phraseIndex = 0;
+  letterIndex = 0;
+  isDeleting = false;
+  runTypingAnimation();
+}
+
+// ==========================================
+// 6. INTERACTIVE CLI TERMINAL ENGINE
+// ==========================================
+const commandHistory = [];
+let historyCursor = -1;
+
+const terminalCommands = {
+  whoami: {
+    desc: 'Print author summary & developer identity',
+    run: () => {
+      return `<span class="t-cyan">SengKueVang BLONGMAI (Hue Vang)</span>\n<span class="t-indigo">Roles:</span> Full-Stack Developer &amp; UI/UX Designer\n<span class="t-pink">Specialty:</span> Modern Web Apps, Mobile Systems &amp; Banking Infrastructure\n<span class="t-green">Status:</span> Open for high-impact collaborations 🚀`;
+    },
+  },
+  'cat location.txt': {
+    desc: 'Display current operating base & timezone',
+    run: () => {
+      return `<span class="t-cyan">Vientiane Capital, Laos 🇱🇦</span>\nTimezone: Indochina Time (UTC+07:00)\nCoordinates: 17.9757° N, 102.6331° E\nAvailable: Remote, Hybrid &amp; Worldwide`;
+    },
+  },
+  'ls skills': {
+    desc: 'List core programming technologies',
+    run: () => {
+      return `<span class="t-pink">python  nodejs  php  laravel  vue  nuxt  react  flutter  firebase  tailwind  postgres  docker</span>`;
+    },
+  },
+  'ls ~/skills': {
+    desc: 'List core programming technologies',
+    run: () => {
+      return `<span class="t-pink">python  nodejs  php  laravel  vue  nuxt  react  flutter  firebase  tailwind  postgres  docker</span>`;
+    },
+  },
+  'git status': {
+    desc: 'Check git repository working tree',
+    run: () => {
+      return `<span class="t-green">On branch main | open to collaborations | ready to build</span>\nEverything up to date with origin/main (huevangxp/huevangxp)`;
+    },
+  },
+  'echo $MOTTO': {
+    desc: 'Echo the primary engineering motto',
+    run: () => {
+      return `<span class="t-amber">"Keep it simple, make it beautiful." ✨</span>`;
+    },
+  },
+  projects: {
+    desc: 'View curated portfolio projects',
+    run: () => {
+      return `<span class="t-cyan">★ Featured Portfolio Repositories:</span>\n1. <a href="https://github.com/huevangxp/MeUIPay" target="_blank" class="t-green">MeUIPay</a> - Modern banking &amp; payment UI integration\n2. <a href="https://github.com/huevangxp/booking-apartment" target="_blank" class="t-green">booking-apartment</a> - Apartment reservation &amp; rental portal\n3. <a href="https://github.com/huevangxp/ai_server" target="_blank" class="t-green">ai_server</a> - Intelligent Python asynchronous AI services\n4. <a href="https://github.com/Sengkue/FoodDeleveryApp-2CW1" target="_blank" class="t-green">FoodDeleveryApp</a> - Flutter mobile dispatch &amp; ordering app\n5. <a href="https://github.com/Sengkue/ibook_nuxt" target="_blank" class="t-green">ibook_nuxt</a> - Nuxt 3 digital bookstore catalog`;
+    },
+  },
+  exp: {
+    desc: 'View career history summary',
+    run: () => {
+      return `<span class="t-cyan">[2023 - Present]</span> Freelance &amp; Banking Sector Developer\n<span class="t-indigo">[2022 - 2023]</span> Front-End Developer at Laos IT Capital\n<span class="t-pink">[2021 - 2022]</span> Full-Stack Developer at LaiLaoLab ICT Solution\n<span class="t-amber">[2019 - 2023]</span> Bachelor of Website Development, National University of Laos`;
+    },
+  },
+  spiderman: {
+    desc: 'Spider-Man Easter Egg',
+    run: () => {
+      return `<span class="t-pink">
+  /\\___/\\
+ (  o o  )  🕸️ "With great code comes great responsibility!"
+ (  =^=  )
+  (---)
+</span>\n<span class="t-cyan">Swinging through syntax trees since 2019! 🕷️</span>`;
+    },
+  },
+  clear: {
+    desc: 'Clear the terminal output',
+    run: () => {
+      terminalOutput.innerHTML = '';
+      return null;
+    },
+  },
+  help: {
+    desc: 'List all commands',
+    run: () => {
+      let msg = `<span class="t-amber">Antigravity ZSH Terminal Shell v2.4</span>\nAvailable commands:\n`;
+      Object.keys(terminalCommands).forEach((cmd) => {
+        msg += `  <span class="t-cyan">${cmd.padEnd(18, ' ')}</span> <span class="t-muted">${terminalCommands[cmd].desc}</span>\n`;
+      });
+      return msg;
+    },
+  },
+};
+
+function appendTerminalLog(cmd, outputHtml) {
+  if (!terminalOutput) return;
+
+  const entry = document.createElement('div');
+  entry.className = 'terminal-line';
+
+  let html = `<div><span class="t-prompt">$</span> <span class="t-in">${escapeHtml(cmd)}</span></div>`;
+  if (outputHtml) {
+    html += `<div style="margin-top: 4px; padding-left: 12px; border-left: 2px solid rgba(129,140,248,0.3);">${outputHtml}</div>`;
+  }
+  entry.innerHTML = html;
+  terminalOutput.appendChild(entry);
+  terminalOutput.scrollTop = terminalOutput.scrollHeight;
+}
+
+function escapeHtml(str) {
+  return str.replace(/[&<>'"]/g, (tag) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    "'": '&#39;',
+    '"': '&quot;',
+  }[tag] || tag));
+}
+
+function executeTerminalCommand(rawInput) {
+  const cmd = rawInput.trim();
+  if (!cmd) return;
+
+  playSound('cmd');
+  commandHistory.push(cmd);
+  historyCursor = commandHistory.length;
+
+  const normalized = cmd.toLowerCase();
+
+  if (terminalCommands[normalized]) {
+    const res = terminalCommands[normalized].run();
+    if (res !== null) {
+      appendTerminalLog(cmd, res);
+    }
   } else {
-    icon.className = 'fas fa-sun';
-    themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+    appendTerminalLog(
+      cmd,
+      `<span class="t-error">zsh: command not found: ${escapeHtml(cmd)}</span>. Type <span class="t-cyan">'help'</span> for available commands.`
+    );
   }
 }
 
-themeToggleBtn.addEventListener('click', () => {
-  const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  setTheme(nextTheme);
+if (terminalInput) {
+  terminalInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const val = terminalInput.value;
+      terminalInput.value = '';
+      executeTerminalCommand(val);
+    } else if (e.key === 'ArrowUp') {
+      if (historyCursor > 0) {
+        historyCursor--;
+        terminalInput.value = commandHistory[historyCursor] || '';
+      }
+    } else if (e.key === 'ArrowDown') {
+      if (historyCursor < commandHistory.length - 1) {
+        historyCursor++;
+        terminalInput.value = commandHistory[historyCursor] || '';
+      } else {
+        historyCursor = commandHistory.length;
+        terminalInput.value = '';
+      }
+    }
+  });
+}
+
+// Click on quick command pills
+cmdPills.forEach((pill) => {
+  pill.addEventListener('click', () => {
+    const cmd = pill.getAttribute('data-cmd');
+    if (cmd) {
+      if (terminalInput) terminalInput.value = cmd;
+      executeTerminalCommand(cmd);
+    }
+  });
 });
 
-// 4. Navigation & Scroll Interactions
+if (terminalClearBtn) {
+  terminalClearBtn.addEventListener('click', () => {
+    playSound('click');
+    if (terminalOutput) terminalOutput.innerHTML = '';
+  });
+}
+
+// Auto-Play Demo script matching console.svg
+let demoRunning = false;
+if (terminalDemoBtn) {
+  terminalDemoBtn.addEventListener('click', () => {
+    if (demoRunning) return;
+    playSound('click');
+    demoRunning = true;
+    terminalDemoBtn.disabled = true;
+    if (terminalOutput) terminalOutput.innerHTML = '';
+
+    const scriptSteps = [
+      { cmd: 'whoami', delay: 700 },
+      { cmd: 'cat location.txt', delay: 1800 },
+      { cmd: 'ls ~/skills', delay: 3000 },
+      { cmd: 'git status', delay: 4200 },
+      { cmd: 'echo $MOTTO', delay: 5400 },
+    ];
+
+    scriptSteps.forEach((step, index) => {
+      setTimeout(() => {
+        executeTerminalCommand(step.cmd);
+        if (index === scriptSteps.length - 1) {
+          demoRunning = false;
+          terminalDemoBtn.disabled = false;
+        }
+      }, step.delay);
+    });
+  });
+}
+
+// Initialize terminal with initial welcome & whoami
+function initTerminalWelcome() {
+  if (!terminalOutput) return;
+  terminalOutput.innerHTML = `
+    <div class="terminal-line t-muted">Last login: ${new Date().toDateString()} on ttys001</div>
+    <div class="terminal-line"><span class="t-cyan">Antigravity Interactive ZSH Shell</span> • Type <span class="t-amber">'help'</span> for command listing.</div>
+  `;
+  setTimeout(() => {
+    executeTerminalCommand('whoami');
+  }, 400);
+}
+
+// ==========================================
+// 7. PARTICLES STARFIELD CANVAS
+// ==========================================
+const canvas = document.getElementById('bg-canvas');
+let ctx = canvas ? canvas.getContext('2d') : null;
+let particles = [];
+let animFrameId = null;
+
+const mousePos = { x: -1000, y: -1000, radius: 140 };
+
+window.addEventListener('mousemove', (e) => {
+  mousePos.x = e.clientX;
+  mousePos.y = e.clientY;
+});
+
+window.addEventListener('mouseout', () => {
+  mousePos.x = -1000;
+  mousePos.y = -1000;
+});
+
+function resizeCanvas() {
+  if (!canvas) return;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  initParticles();
+}
+
+function initParticles() {
+  if (!canvas) return;
+  particles = [];
+  const count = Math.min(Math.floor((canvas.width * canvas.height) / 14000), 100);
+
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.45,
+      vy: (Math.random() - 0.5) * 0.45,
+      size: Math.random() * 2 + 0.8,
+      baseColor: Math.random() > 0.5 ? 'rgba(34, 211, 238,' : 'rgba(129, 140, 248,',
+      alpha: Math.random() * 0.6 + 0.2,
+    });
+  }
+}
+
+function drawParticles() {
+  if (!ctx || !canvas) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const isLight = currentTheme === 'light';
+
+  for (let i = 0; i < particles.length; i++) {
+    const p = particles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+
+    if (p.x < 0) p.x = canvas.width;
+    if (p.x > canvas.width) p.x = 0;
+    if (p.y < 0) p.y = canvas.height;
+    if (p.y > canvas.height) p.y = 0;
+
+    // Mouse gentle push
+    const dx = mousePos.x - p.x;
+    const dy = mousePos.y - p.y;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < mousePos.radius) {
+      const force = (mousePos.radius - dist) / mousePos.radius;
+      p.x -= (dx / dist) * force * 2;
+      p.y -= (dy / dist) * force * 2;
+    }
+
+    // Draw particle
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fillStyle = isLight ? `rgba(8, 145, 178, ${p.alpha * 0.7})` : `${p.baseColor} ${p.alpha})`;
+    ctx.fill();
+
+    // Connect near particles
+    for (let j = i + 1; j < particles.length; j++) {
+      const p2 = particles[j];
+      const djx = p.x - p2.x;
+      const djy = p.y - p2.y;
+      const d = Math.sqrt(djx * djx + djy * djy);
+
+      if (d < 110) {
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p2.x, p2.y);
+        const lineAlpha = (1 - d / 110) * (isLight ? 0.15 : 0.22);
+        ctx.strokeStyle = isLight ? `rgba(8, 145, 178, ${lineAlpha})` : `rgba(129, 140, 248, ${lineAlpha})`;
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+      }
+    }
+  }
+
+  animFrameId = requestAnimationFrame(drawParticles);
+}
+
+// ==========================================
+// 8. SKILLS & PROJECTS FILTERING
+// ==========================================
+skillFilterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    playSound('tab');
+    skillFilterBtns.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    skillItems.forEach((item) => {
+      const cat = item.getAttribute('data-cat');
+      if (filter === 'all' || cat === filter) {
+        item.style.display = 'flex';
+        item.style.opacity = '0';
+        item.style.transform = 'scale(0.92)';
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'scale(1)';
+        }, 50);
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+
+projectFilterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    playSound('tab');
+    projectFilterBtns.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    projectCards.forEach((card) => {
+      const cat = card.getAttribute('data-cat');
+      if (filter === 'all' || cat === filter) {
+        card.style.display = 'flex';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(12px)';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 50);
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// ==========================================
+// 9. 3D SKYLINE GRAPH SWITCHER
+// ==========================================
+skylineTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    playSound('tab');
+    skylineTabs.forEach((t) => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    const newSrc = tab.getAttribute('data-src');
+    if (skylineImg && newSrc) {
+      skylineImg.style.opacity = '0';
+      skylineImg.style.transform = 'scale(0.97)';
+      setTimeout(() => {
+        skylineImg.src = newSrc;
+        skylineImg.style.opacity = '1';
+        skylineImg.style.transform = 'scale(1)';
+      }, 150);
+    }
+  });
+});
+
+// ==========================================
+// 10. COPY CODE SNIPPET
+// ==========================================
+if (copyCodeBtn) {
+  copyCodeBtn.addEventListener('click', () => {
+    playSound('click');
+    const codeEl = document.getElementById('dev-code-block');
+    if (codeEl) {
+      navigator.clipboard.writeText(codeEl.innerText).then(() => {
+        const textSpan = copyCodeBtn.querySelector('span');
+        const originalText = textSpan.textContent;
+        textSpan.textContent = translations[currentLang].aboutCopied || 'Copied!';
+        copyCodeBtn.style.borderColor = 'var(--emerald)';
+        copyCodeBtn.style.color = 'var(--emerald)';
+        setTimeout(() => {
+          textSpan.textContent = originalText;
+          copyCodeBtn.style.borderColor = '';
+          copyCodeBtn.style.color = '';
+        }, 2000);
+      });
+    }
+  });
+}
+
+// ==========================================
+// 11. FETCH LIVE GITHUB STATS (API)
+// ==========================================
+async function fetchGithubProfile() {
+  try {
+    const res = await fetch('https://api.github.com/users/huevangxp');
+    if (!res.ok) return;
+    const data = await res.json();
+
+    const avatarEl = document.getElementById('gh-avatar');
+    const nameEl = document.getElementById('gh-name');
+    const bioEl = document.getElementById('gh-bio');
+    const reposNum = document.getElementById('gh-repos-num');
+    const followersNum = document.getElementById('gh-followers-num');
+    const followingNum = document.getElementById('gh-following-num');
+
+    if (avatarEl && data.avatar_url) avatarEl.src = data.avatar_url;
+    if (nameEl && data.name) nameEl.textContent = `${data.name} (SengKueVang)`;
+    if (bioEl && data.bio) bioEl.textContent = data.bio;
+    if (reposNum && data.public_repos !== undefined) reposNum.textContent = `${data.public_repos}+`;
+    if (followersNum && data.followers !== undefined) followersNum.textContent = data.followers;
+    if (followingNum && data.following !== undefined) followingNum.textContent = data.following;
+  } catch (err) {
+    // Keep default fallbacks if offline or API rate limit reached
+  }
+}
+
+// ==========================================
+// 12. CONTACT FORM SUBMISSION
+// ==========================================
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    playSound('click');
+
+    const submitBtn = document.getElementById('form-submit-btn');
+    const originalContent = submitBtn.innerHTML;
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span>${translations[currentLang].formSending}</span>`;
+
+    // Simulate backend transmission
+    setTimeout(() => {
+      playSound('success');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalContent;
+      contactForm.reset();
+
+      if (formToast) {
+        formToast.className = 'form-toast success';
+        formToast.textContent = translations[currentLang].formSuccess;
+        formToast.style.display = 'block';
+
+        setTimeout(() => {
+          formToast.style.display = 'none';
+        }, 6000);
+      }
+    }, 1200);
+  });
+}
+
+// ==========================================
+// 13. NAVIGATION SCROLL & ACTIVE SPY
+// ==========================================
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    headerEl.classList.add('scrolled');
-  } else {
-    headerEl.classList.remove('scrolled');
+  const scrollY = window.scrollY;
+
+  // Header collapse on scroll
+  if (mainHeader) {
+    if (scrollY > 50) {
+      mainHeader.classList.add('scrolled');
+    } else {
+      mainHeader.classList.remove('scrolled');
+    }
   }
-  
-  highlightActiveNavLink();
+
+  // Floating Back to Top Button
+  if (backToTopBtn) {
+    if (scrollY > 400) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  }
+
+  // Active navigation spy
+  highlightNavigation();
 });
 
-function highlightActiveNavLink() {
-  let scrollPosition = window.scrollY + 200;
-  
-  document.querySelectorAll('section').forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
-    const id = section.getAttribute('id');
-    
-    if (scrollPosition >= top && scrollPosition < top + height) {
-      navLinks.forEach(link => {
+function highlightNavigation() {
+  const sections = document.querySelectorAll('section');
+  const scrollPos = window.scrollY + 180;
+
+  sections.forEach((sec) => {
+    const top = sec.offsetTop;
+    const height = sec.offsetHeight;
+    const id = sec.getAttribute('id');
+
+    if (scrollPos >= top && scrollPos < top + height) {
+      navLinks.forEach((link) => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${id}`) {
           link.classList.add('active');
@@ -153,495 +813,70 @@ function highlightActiveNavLink() {
   });
 }
 
-// Mobile navigation menu toggle
-mobileMenuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  bodyEl.classList.toggle('menu-open', navMenu.classList.contains('active'));
-  const icon = mobileMenuToggle.querySelector('i');
-  icon.classList.toggle('fa-bars');
-  icon.classList.toggle('fa-times');
-});
-
-// Close mobile menu when clicking nav links
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-    bodyEl.classList.remove('menu-open');
-    const icon = mobileMenuToggle.querySelector('i');
-    icon.classList.add('fa-bars');
-    icon.classList.remove('fa-times');
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', () => {
+    playSound('click');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-});
+}
 
-// 5. Scroll Reveal Animations (Intersection Observer)
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
+// Mobile Menu Toggle
+if (mobileToggleBtn && navMenu) {
+  mobileToggleBtn.addEventListener('click', () => {
+    playSound('click');
+    mobileToggleBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
   });
-}, {
-  threshold: 0.15,
-  rootMargin: "0px 0px -50px 0px"
-});
 
-document.querySelectorAll('.reveal').forEach(el => {
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileToggleBtn.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+}
+
+// ==========================================
+// 14. SCROLL REVEAL OBSERVER
+// ==========================================
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  },
+  {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px',
+  }
+);
+
+document.querySelectorAll('.reveal').forEach((el) => {
   revealObserver.observe(el);
 });
 
-// 6. Interactive Skills Tab Filtering
-const skillTabBtns = document.querySelectorAll('.tab-btn');
-const skillCards = document.querySelectorAll('.skill-card');
+// ==========================================
+// 15. INITIALIZATION
+// ==========================================
+window.addEventListener('DOMContentLoaded', () => {
+  applyTheme(currentTheme);
+  applyLanguage(currentLang);
+  updateSoundUI();
+  initTerminalWelcome();
 
-skillTabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Set active tab styling
-    skillTabBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    
-    const filter = btn.getAttribute('data-filter');
-    
-    skillCards.forEach(card => {
-      const category = card.getAttribute('data-category');
-      
-      if (filter === 'all' || category === filter) {
-        card.style.display = 'flex';
-        // Add subtle pop-in animation
-        card.style.opacity = '0';
-        card.style.transform = 'scale(0.8)';
-        setTimeout(() => {
-          card.style.opacity = '1';
-          card.style.transform = 'scale(1)';
-        }, 50);
-      } else {
-        card.style.display = 'none';
-      }
+  // Canvas Starfield
+  if (canvas) {
+    resizeCanvas();
+    drawParticles();
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(animFrameId);
+      resizeCanvas();
+      drawParticles();
     });
-  });
-});
-
-// 7. Contact Form Mock Handler
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    
-    // Disable inputs and show loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${translations[currentLang].formSending}`;
-    
-    // Simulate API Request
-    setTimeout(() => {
-      // Re-enable and reset
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-      contactForm.reset();
-      
-      // Display success feedback
-      formFeedback.className = "form-feedback success";
-      formFeedback.textContent = translations[currentLang].formSuccess;
-      
-      // Auto clear feedback after 5 seconds
-      setTimeout(() => {
-        formFeedback.style.display = 'none';
-      }, 5000);
-    }, 1500);
-  });
-}
-
-// 8. Particle Canvas Background Engine
-const canvas = document.getElementById('bg-canvas');
-if (canvas) {
-  const ctx = canvas.getContext('2d');
-  let particlesArray = [];
-  let particleCount = 65;
-  const mouse = {
-    x: null,
-    y: null,
-    radius: 120
-  };
-
-  window.addEventListener('mousemove', (e) => {
-    mouse.x = e.x;
-    mouse.y = e.y;
-  });
-
-  window.addEventListener('mouseout', () => {
-    mouse.x = null;
-    mouse.y = null;
-  });
-
-  class Particle {
-    constructor() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 2 + 1;
-      this.baseX = this.x;
-      this.baseY = this.y;
-      this.density = (Math.random() * 20) + 10;
-      
-      // Speeds
-      this.dx = (Math.random() - 0.5) * 0.7;
-      this.dy = (Math.random() - 0.5) * 0.7;
-    }
-
-    draw() {
-      ctx.fillStyle = currentTheme === 'dark' ? 'rgba(0, 210, 211, 0.4)' : 'rgba(0, 128, 128, 0.3)';
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.fill();
-    }
-
-    update() {
-      // Standard drifting motion
-      this.x += this.dx;
-      this.y += this.dy;
-
-      // Bounce on boundaries
-      if (this.x < 0 || this.x > canvas.width) this.dx = -this.dx;
-      if (this.y < 0 || this.y > canvas.height) this.dy = -this.dy;
-
-      // Interaction with mouse
-      if (mouse.x !== null && mouse.y !== null) {
-        let distanceX = mouse.x - this.x;
-        let distanceY = mouse.y - this.y;
-        let distance = Math.hypot(distanceX, distanceY);
-        
-        if (distance < mouse.radius) {
-          const force = (mouse.radius - distance) / mouse.radius;
-          const directionX = distanceX / distance;
-          const directionY = distanceY / distance;
-          
-          // Repel force
-          this.x -= directionX * force * 3;
-          this.y -= directionY * force * 3;
-        }
-      }
-    }
   }
 
-  function initParticles() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    particlesArray = [];
-    
-    // Scale count by screen size
-    if (canvas.width < 768) {
-      particleCount = 25;
-    } else {
-      particleCount = 65;
-    }
-
-    for (let i = 0; i < particleCount; i++) {
-      particlesArray.push(new Particle());
-    }
-  }
-
-  function animateParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    for (let i = 0; i < particlesArray.length; i++) {
-      particlesArray[i].draw();
-      particlesArray[i].update();
-    }
-    connectParticles();
-    requestAnimationFrame(animateParticles);
-  }
-
-  function connectParticles() {
-    let opacityVal = 1;
-    for (let a = 0; a < particlesArray.length; a++) {
-      for (let b = a; b < particlesArray.length; b++) {
-        let distance = Math.hypot(
-          particlesArray[a].x - particlesArray[b].x,
-          particlesArray[a].y - particlesArray[b].y
-        );
-
-        if (distance < 110) {
-          opacityVal = (1 - (distance / 110)) * 0.15;
-          ctx.strokeStyle = currentTheme === 'dark' 
-            ? `rgba(0, 210, 211, ${opacityVal})` 
-            : `rgba(0, 128, 128, ${opacityVal})`;
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-          ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-          ctx.stroke();
-        }
-      }
-    }
-  }
-
-  window.addEventListener('resize', () => {
-    initParticles();
-  });
-
-  initParticles();
-  animateParticles();
-}
-
-// 9. GitHub Dashboard Logic (API Fetch, count-up, tab panel)
-function initGitHubDashboard() {
-  const username = "huevangxp";
-  
-  // Set up chart tabs
-  const tabBtns = document.querySelectorAll('.github-chart-tab-btn');
-  const tabContents = document.querySelectorAll('.github-tab-content');
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const targetId = btn.getAttribute('data-tab');
-      tabContents.forEach(content => {
-        if (content.id === targetId) {
-          content.classList.remove('hidden');
-        } else {
-          content.classList.add('hidden');
-        }
-      });
-    });
-  });
-
-  // Fetch Stats from GitHub API
-  fetch(`https://api.github.com/users/${username}`)
-    .then(res => {
-      if (!res.ok) throw new Error("API Limit or Request Error");
-      return res.json();
-    })
-    .then(data => {
-      try {
-        // Update info
-        const avatarImg = document.getElementById('github-profile-pic');
-        const profileName = document.getElementById('github-profile-name');
-        const profileBio = document.getElementById('github-profile-bio');
-        const profileCompany = document.getElementById('github-profile-company');
-        const profileLocation = document.getElementById('github-profile-location');
-        const profileUrl = document.getElementById('github-profile-url');
-
-        if (avatarImg && data.avatar_url) avatarImg.src = data.avatar_url;
-        if (profileName) profileName.textContent = data.name || data.login;
-        if (profileBio) profileBio.textContent = data.bio || "Full-Stack Developer | Banking Sector";
-        
-        if (profileCompany) {
-          profileCompany.innerHTML = `<i class="fas fa-building"></i> ${data.company || 'Freelance'}`;
-        }
-        if (profileLocation) {
-          profileLocation.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${data.location || 'Vientiane, Laos'}`;
-        }
-        if (profileUrl) {
-          profileUrl.href = data.html_url;
-        }
-
-        // Animate Stats Counts
-        animateCount('github-repos-count', data.public_repos || 0);
-        animateCount('github-followers-count', data.followers || 0);
-        animateCount('github-following-count', data.following || 0);
-        animateCount('github-gists-count', data.public_gists || 0);
-      } catch (err) {
-        console.error("Error populating GitHub stats:", err);
-      } finally {
-        // Always remove skeletons for these elements
-        removeSkeleton('github-profile-pic');
-        removeSkeleton('github-profile-name');
-        removeSkeleton('github-profile-bio');
-        removeSkeleton('github-repos-count');
-        removeSkeleton('github-followers-count');
-        removeSkeleton('github-following-count');
-        removeSkeleton('github-gists-count');
-      }
-    })
-    .catch(err => {
-      console.warn("GitHub API error, using static fallback:", err);
-      try {
-        // Mock stats fallback if rate-limited
-        const avatarImg = document.getElementById('github-profile-pic');
-        if (avatarImg) avatarImg.src = "https://avatars.githubusercontent.com/u/84102927?v=4";
-
-        const profileName = document.getElementById('github-profile-name');
-        if (profileName) profileName.textContent = "huevangxp";
-
-        const profileBio = document.getElementById('github-profile-bio');
-        if (profileBio) profileBio.textContent = "Full-Stack Developer | Banking Systems Specialist";
-        
-        animateCount('github-repos-count', 45);
-        animateCount('github-followers-count', 12);
-        animateCount('github-following-count', 15);
-        animateCount('github-gists-count', 0);
-      } catch (fallbackErr) {
-        console.error("Error setting fallback stats:", fallbackErr);
-      } finally {
-        // Always remove skeletons
-        removeSkeleton('github-profile-pic');
-        removeSkeleton('github-profile-name');
-        removeSkeleton('github-profile-bio');
-        removeSkeleton('github-repos-count');
-        removeSkeleton('github-followers-count');
-        removeSkeleton('github-following-count');
-        removeSkeleton('github-gists-count');
-      }
-    });
-
-  // Helper function to remove skeleton class from element and parent wrapper
-  function removeSkeleton(id) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.classList.remove('skeleton');
-    el.classList.remove('skeleton-text');
-    el.classList.remove('short');
-    if (el.parentElement && el.parentElement.classList.contains('skeleton')) {
-      el.parentElement.classList.remove('skeleton');
-      el.parentElement.classList.remove('skeleton-text');
-    }
-  }
-
-  // Fetch Repositories
-  fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`)
-    .then(res => {
-      if (!res.ok) throw new Error("API Limit or Request Error");
-      return res.json();
-    })
-    .then(repos => {
-      const reposList = document.getElementById('github-repos-list');
-      if (!reposList) return;
-      reposList.innerHTML = '';
-
-      repos.forEach(repo => {
-        const card = document.createElement('div');
-        card.className = 'repo-card glass-card reveal active';
-        
-        // Colors mapping for languages
-        const langColors = {
-          JavaScript: '#f7df1e',
-          TypeScript: '#3178c6',
-          HTML: '#e34c26',
-          CSS: '#563d7c',
-          Python: '#3572A5',
-          Vue: '#41b883',
-          Dart: '#00B4AB',
-          Swift: '#F05138',
-          PHP: '#4F5D95'
-        };
-        const langColor = langColors[repo.language] || '#64748b';
-
-        card.innerHTML = `
-          <div class="repo-top">
-            <div class="repo-name-row">
-              <a href="${repo.html_url}" target="_blank" class="repo-name-link">${repo.name}</a>
-              <i class="fab fa-git-alt repo-icon-git"></i>
-            </div>
-            <p class="repo-desc">${repo.description || 'No description provided.'}</p>
-          </div>
-          <div class="repo-bottom">
-            <span class="repo-lang">
-              <span class="lang-dot" style="background-color: ${langColor}"></span>
-              ${repo.language || 'Markdown'}
-            </span>
-            <div class="repo-stats">
-              <span class="repo-stat-item"><i class="far fa-star"></i> ${repo.stargazers_count}</span>
-              <span class="repo-stat-item"><i class="fas fa-code-branch"></i> ${repo.forks_count}</span>
-            </div>
-          </div>
-        `;
-        reposList.appendChild(card);
-      });
-    })
-    .catch(err => {
-      console.warn("GitHub Repos API error, using static fallback:", err);
-      const reposList = document.getElementById('github-repos-list');
-      if (reposList) {
-        reposList.innerHTML = `
-          <div class="repo-card glass-card reveal active">
-            <div class="repo-top">
-              <div class="repo-name-row">
-                <a href="https://github.com/huevangxp/banking-internal-solutions" target="_blank" class="repo-name-link">banking-internal-solutions</a>
-                <i class="fab fa-git-alt repo-icon-git"></i>
-              </div>
-              <p class="repo-desc">Core internal banking software integrations, handling transaction validation mechanisms.</p>
-            </div>
-            <div class="repo-bottom">
-              <span class="repo-lang"><span class="lang-dot" style="background-color: #3178c6"></span>TypeScript</span>
-              <div class="repo-stats">
-                <span class="repo-stat-item"><i class="far fa-star"></i> 5</span>
-                <span class="repo-stat-item"><i class="fas fa-code-branch"></i> 2</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-card glass-card reveal active">
-            <div class="repo-top">
-              <div class="repo-name-row">
-                <a href="https://github.com/huevangxp/huevangxp" target="_blank" class="repo-name-link">huevangxp</a>
-                <i class="fab fa-git-alt repo-icon-git"></i>
-              </div>
-              <p class="repo-desc">My professional developer bio readme and interactive web portfolio resources.</p>
-            </div>
-            <div class="repo-bottom">
-              <span class="repo-lang"><span class="lang-dot" style="background-color: #f7df1e"></span>JavaScript</span>
-              <div class="repo-stats">
-                <span class="repo-stat-item"><i class="far fa-star"></i> 3</span>
-                <span class="repo-stat-item"><i class="fas fa-code-branch"></i> 1</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-card glass-card reveal active">
-            <div class="repo-top">
-              <div class="repo-name-row">
-                <a href="https://github.com/huevangxp/government-portal-api" target="_blank" class="repo-name-link">government-portal-api</a>
-                <i class="fab fa-git-alt repo-icon-git"></i>
-              </div>
-              <p class="repo-desc">API back-end portal built for citizen identity and documentation processing registries.</p>
-            </div>
-            <div class="repo-bottom">
-              <span class="repo-lang"><span class="lang-dot" style="background-color: #e0234e"></span>Nest.js</span>
-              <div class="repo-stats">
-                <span class="repo-stat-item"><i class="far fa-star"></i> 4</span>
-                <span class="repo-stat-item"><i class="fas fa-code-branch"></i> 0</span>
-              </div>
-            </div>
-          </div>
-        `;
-      }
-    });
-}
-
-// Helper: Animate count
-function animateCount(id, targetValue) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  
-  if (targetValue === 0) {
-    el.textContent = '0';
-    return;
-  }
-  
-  let current = 0;
-  const duration = 1200; // ms
-  const stepTime = Math.max(Math.floor(duration / targetValue), 15);
-  
-  const timer = setInterval(() => {
-    current += Math.ceil(targetValue / 40);
-    if (current >= targetValue) {
-      el.textContent = targetValue;
-      clearInterval(timer);
-    } else {
-      el.textContent = current;
-    }
-  }, stepTime);
-}
-
-// Initializer
-document.addEventListener('DOMContentLoaded', () => {
-  // Sync systems with persisted configurations
-  setTheme(currentTheme);
-  translateUI(currentLang);
-  initGitHubDashboard();
-  
-  // Make page visible and animate reveal items
-  setTimeout(() => {
-    highlightActiveNavLink();
-  }, 100);
+  // Live GitHub Profile
+  fetchGithubProfile();
 });
