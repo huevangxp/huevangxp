@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 46" width="1000" height="46" role="img" aria-label="Technical Arsenal and Enterprise Stack Header Bar">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&amp;family=Fira+Code:wght@700&amp;display=swap');
+      .head { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif; }
+      .code { font-family: 'Fira Code', Menlo, Consolas, monospace; }
+    </style>
+    <linearGradient id="barBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Bar with Sharp 90-degree Corners -->
+  <rect x="0" y="0" width="1000" height="46" fill="#07121b" stroke="url(#barBorder)" stroke-width="1.5"/>
+
+  <!-- Left Window Control Dots -->
+  <circle cx="26" cy="23" r="5.5" fill="#ff5f56"/>
+  <circle cx="44" cy="23" r="5.5" fill="#ffbd2e"/>
+  <circle cx="62" cy="23" r="5.5" fill="#27c93f"/>
+
+  <!-- Center Title (Solid Pure White, High Contrast) -->
+  <text x="500" y="28" text-anchor="middle" fill="#ffffff" class="head" font-size="13" font-weight="800" letter-spacing="1.8">
+    ⚡ TECHNICAL ARSENAL &amp; ENTERPRISE STACK • 50+ TECHNOLOGIES
+  </text>
+
+  <!-- Right Status Indicator -->
+  <circle cx="862" cy="23" r="3.5" fill="#22c55e">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="873" y="27" fill="#22c55e" class="code" font-size="11" font-weight="700" letter-spacing="0.5">
+    ONLINE • VERIFIED
+  </text>
+</svg>
