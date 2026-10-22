@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" width="860" height="410" role="img" aria-label="Huevang XIONGPOR Terminal">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 410" width="1000" height="410" role="img" aria-label="Interactive Developer Terminal Console">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700&amp;family=Fira+Code:wght@500;600;700&amp;display=swap');
-      .m { font-family: 'Fira Code', 'Courier New', Menlo, Consolas, monospace; font-size: 14.5px; white-space: pre; }
-      .lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; font-size: 14px; font-weight: 600; }
-      @keyframes g0 { 0%, 3.5% { opacity: 0; } 3.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-      @keyframes c0 { 0%, 3.6% { transform: scaleX(1); animation-timing-function: steps(8, end); } 6.5%, 100% { transform: scaleX(0); } }
-      @keyframes g1 { 0%, 8.5% { opacity: 0; } 8.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-      @keyframes g2 { 0%, 13.0% { opacity: 0; } 13.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-      @keyframes c2 { 0%, 13.1% { transform: scaleX(1); animation-timing-function: steps(18, end); } 18.5%, 100% { transform: scaleX(0); } }
-      @keyframes g3 { 0%, 20.5% { opacity: 0; } 20.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600;700&amp;display=swap');
+      .m { font-family: 'Fira Code', Menlo, Consolas, monospace; font-size: 13px; }
+      @keyframes g0 { 0%, 4.5% { opacity: 1; } 5.0%, 100% { opacity: 1; } }
+      @keyframes c0 { 0%, 4.5% { transform: scaleX(1); animation-timing-function: steps(9, end); } 8.0%, 100% { transform: scaleX(0); } }
+      @keyframes g1 { 0%, 9.5% { opacity: 0; } 9.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes g2 { 0%, 13.5% { opacity: 0; } 13.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c2 { 0%, 13.6% { transform: scaleX(1); animation-timing-function: steps(18, end); } 18.0%, 100% { transform: scaleX(0); } }
+      @keyframes g3 { 0%, 19.5% { opacity: 0; } 19.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
       @keyframes g4 { 0%, 25.5% { opacity: 0; } 25.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
       @keyframes c4 { 0%, 25.6% { transform: scaleX(1); animation-timing-function: steps(19, end); } 30.5%, 100% { transform: scaleX(0); } }
       @keyframes g5 { 0%, 32.5% { opacity: 0; } 32.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
@@ -24,8 +23,8 @@
       @keyframes g11 { 0%, 67.0% { opacity: 0; } 67.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
       @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
     </style>
-    <clipPath id="win">
-      <rect width="860" height="410"/>
+    <clipPath id="winClip">
+      <rect width="1000" height="410"/>
     </clipPath>
     <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
@@ -34,84 +33,84 @@
     </linearGradient>
   </defs>
 
-  <g clip-path="url(#win)">
+  <g clip-path="url(#winClip)">
     <!-- Terminal Background -->
-    <rect width="860" height="410" fill="#060a0f"/>
-    <rect width="860" height="40" fill="#0f1722"/>
+    <rect width="1000" height="410" fill="#060a0f"/>
+    <rect width="1000" height="40" fill="#0f1722"/>
 
     <!-- Accent Header Line -->
-    <rect width="860" height="2" fill="url(#headerGrad)"/>
+    <rect width="1000" height="2" fill="url(#headerGrad)"/>
 
     <!-- Window Controls -->
-    <circle cx="22" cy="20" r="6" fill="#ff5f56"/>
-    <circle cx="42" cy="20" r="6" fill="#ffbd2e"/>
-    <circle cx="62" cy="20" r="6" fill="#27c93f"/>
+    <circle cx="24" cy="20" r="5.5" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="5.5" fill="#ffbd2e"/>
+    <circle cx="64" cy="20" r="5.5" fill="#27c93f"/>
 
     <!-- Window Title -->
-    <text x="430" y="25" text-anchor="middle" fill="#94a3b8" class="m" font-size="13">
-      hue@vientiane: ~ (zsh) — 26 Years • 020 78849378
+    <text x="500" y="25" text-anchor="middle" fill="#94a3b8" class="m" font-size="13">
+      hue@vientiane: ~ (zsh) — 26 Years • 020 78849378 • Full-Stack Architect
     </text>
 
     <!-- Lines -->
     <!-- Command 1: whoami -->
     <g style="animation: g0 16.5s linear infinite;">
-      <text x="26" y="72" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> whoami</tspan></text>
-      <rect x="24" y="55" width="95" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c0 16.5s linear infinite;"/>
+      <text x="30" y="72" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> whoami</tspan></text>
+      <rect x="28" y="55" width="95" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c0 16.5s linear infinite;"/>
     </g>
     <g style="animation: g1 16.5s linear infinite;">
-      <text x="26" y="98" class="m" fill="#ffffff">Huevang XIONGPOR (26 y/o) — Full-Stack Developer &amp; Banking Specialist</text>
+      <text x="30" y="98" class="m" fill="#ffffff">Huevang XIONGPOR (26 y/o) — Full-Stack Developer &amp; Banking Specialist</text>
     </g>
 
     <!-- Command 2: cat contact.info -->
     <g style="animation: g2 16.5s linear infinite;">
-      <text x="26" y="126" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> cat contact.info</tspan></text>
-      <rect x="24" y="109" width="180" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c2 16.5s linear infinite;"/>
+      <text x="30" y="126" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> cat contact.info</tspan></text>
+      <rect x="28" y="109" width="180" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c2 16.5s linear infinite;"/>
     </g>
     <g style="animation: g3 16.5s linear infinite;">
-      <text x="26" y="152" class="m" fill="#2dd4bf">Phone: 020 78849378 • Email: huevang933@gmail.com • Loc: Vientiane, Laos 🇱🇦</text>
+      <text x="30" y="152" class="m" fill="#2dd4bf">Phone: 020 78849378 • Email: huevang933@gmail.com • Location: Vientiane, Laos 🇱🇦</text>
     </g>
 
-    <!-- Command 3: cat education.txt (with Noto Sans Lao) -->
+    <!-- Command 3: cat education.txt -->
     <g style="animation: g4 16.5s linear infinite;">
-      <text x="26" y="180" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> cat education.txt</tspan></text>
-      <rect x="24" y="163" width="195" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c4 16.5s linear infinite;"/>
+      <text x="30" y="180" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> cat education.txt</tspan></text>
+      <rect x="28" y="163" width="195" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c4 16.5s linear infinite;"/>
     </g>
     <g style="animation: g5 16.5s linear infinite;">
-      <text x="26" y="206" class="m" fill="#fde68a">Bachelor of Website Development — National University of Laos (NUOL 2019-2023)</text>
+      <text x="30" y="206" class="m" fill="#fde68a">Bachelor of Website Development — National University of Laos (NUOL 2019-2023)</text>
     </g>
 
     <!-- Command 4: ls ~/skills -->
     <g style="animation: g6 16.5s linear infinite;">
-      <text x="26" y="234" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> ls ~/skills</tspan></text>
-      <rect x="24" y="217" width="135" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c6 16.5s linear infinite;"/>
+      <text x="30" y="234" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> ls ~/skills</tspan></text>
+      <rect x="28" y="217" width="135" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c6 16.5s linear infinite;"/>
     </g>
     <g style="animation: g7 16.5s linear infinite;">
-      <text x="26" y="260" class="m" fill="#5eead4">Vue.js  Nuxt  React  Node.js  Python  Nest.js  PHP  Laravel  Flutter  Postgres  Docker</text>
+      <text x="30" y="260" class="m" fill="#5eead4">Vue.js  Nuxt  React  Node.js  Python  Nest.js  PHP  Laravel  Flutter  PostgreSQL  Docker</text>
     </g>
 
     <!-- Command 5: git status -->
     <g style="animation: g8 16.5s linear infinite;">
-      <text x="26" y="288" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> git status</tspan></text>
-      <rect x="24" y="271" width="125" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c8 16.5s linear infinite;"/>
+      <text x="30" y="288" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> git status</tspan></text>
+      <rect x="28" y="271" width="125" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c8 16.5s linear infinite;"/>
     </g>
     <g style="animation: g9 16.5s linear infinite;">
-      <text x="26" y="314" class="m" fill="#86efac">On branch main | 170+ repositories | open to enterprise contracts &amp; freelance</text>
+      <text x="30" y="314" class="m" fill="#86efac">On branch main | 170+ repositories | Available for enterprise contracts &amp; freelance</text>
     </g>
 
     <!-- Command 6: echo $MOTTO -->
     <g style="animation: g10 16.5s linear infinite;">
-      <text x="26" y="342" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> echo $MOTTO</tspan></text>
-      <rect x="24" y="325" width="135" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c10 16.5s linear infinite;"/>
+      <text x="30" y="342" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> echo $MOTTO</tspan></text>
+      <rect x="28" y="325" width="135" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c10 16.5s linear infinite;"/>
     </g>
     <g style="animation: g11 16.5s linear infinite;">
-      <text x="26" y="368" class="lao" fill="#ffd700">"Excellence through clean architecture, continuous innovation &amp; precision." ✨</text>
+      <text x="30" y="368" class="m" fill="#ffd700">"Excellence through clean architecture, continuous innovation &amp; precision." ✨</text>
     </g>
 
     <!-- Active Blinking Prompt Line -->
-    <text x="26" y="394" class="m"><tspan fill="#2dd4bf">❯</tspan></text>
-    <rect x="42" y="380" width="8.5" height="17" fill="#ffd700" style="animation: blink 1s steps(1) infinite;"/>
+    <text x="30" y="394" class="m"><tspan fill="#2dd4bf">❯</tspan></text>
+    <rect x="46" y="380" width="8.5" height="17" fill="#ffd700" style="animation: blink 1s steps(1) infinite;"/>
 
-    <!-- Subtle Teal Border -->
-    <rect x="0.5" y="0.5" width="859" height="409" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.35"/>
+    <!-- Subtle Outer Border (Sharp 90-degree corners) -->
+    <rect x="0.5" y="0.5" width="999" height="409" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.35"/>
   </g>
 </svg>
