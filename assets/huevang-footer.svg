@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" width="1000" height="220" role="img" aria-label="Huevang XIONGPOR Footer">
   <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700;800;900&amp;family=Outfit:wght@700;900&amp;family=Fira+Code:wght@600&amp;display=swap');
+      .foot-lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; }
+      .foot-title { font-family: 'Outfit', 'Segoe UI', Helvetica, sans-serif; }
+      .foot-code { font-family: 'Fira Code', monospace; }
+    </style>
     <linearGradient id="footSky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#030609"/>
       <stop offset="60%" stop-color="#08141c"/>
@@ -25,7 +31,7 @@
   <circle cx="680" cy="40" r="1.2" fill="#ffd700" opacity="0.5"/>
   <circle cx="850" cy="20" r="1.5" fill="#2dd4bf" opacity="0.7"/>
 
-  <!-- Distant City Skyline Silhouettes -->
+  <!-- City Skyline Silhouettes -->
   <path d="M0 160 L40 160 L40 130 L70 130 L70 160 L120 160 L120 110 L145 110 L145 90 L160 90 L160 160 L220 160 L220 125 L250 125 L250 160 L320 160 L320 105 L350 105 L350 75 L365 75 L365 160 L430 160 L430 135 L470 135 L470 160 L540 160 L540 95 L565 95 L565 160 L630 160 L630 120 L670 120 L670 160 L740 160 L740 100 L770 100 L770 80 L785 80 L785 160 L850 160 L850 130 L890 130 L890 160 L940 160 L940 115 L970 115 L970 160 L1000 160 L1000 220 L0 220 Z" fill="#04080c" opacity="0.95"/>
   <path d="M50 180 L90 180 L90 145 L130 145 L130 180 L200 180 L200 130 L235 130 L235 180 L300 180 L300 140 L340 140 L340 180 L420 180 L420 125 L455 125 L455 180 L520 180 L520 150 L560 150 L560 180 L640 180 L640 135 L675 135 L675 180 L760 180 L760 140 L800 140 L800 180 L880 180 L880 125 L915 125 L915 180 L1000 180 L1000 220 L0 220 Z" fill="#020406"/>
 
@@ -39,17 +45,16 @@
 
   <!-- Center Signboard -->
   <g filter="url(#footGl)">
-    <text x="500" y="90" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="34" font-weight="900" letter-spacing="4" fill="url(#footGold)">
+    <text x="500" y="90" text-anchor="middle" class="foot-title" font-size="34" font-weight="900" letter-spacing="4" fill="url(#footGold)">
       HUEVANG XIONGPOR
     </text>
   </g>
-  <text x="500" y="125" text-anchor="middle" font-family="'Noto Sans Lao','Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="600" fill="#2dd4bf" letter-spacing="2">
+  <text x="500" y="126" text-anchor="middle" class="foot-lao" font-size="18" font-weight="700" fill="#2dd4bf" letter-spacing="1">
     ຂອບໃຈທີ່ເຂົ້າມາຢ້ຽມຢາມ • Thank you for visiting my GitHub Profile
   </text>
-  <text x="500" y="152" text-anchor="middle" font-family="'Fira Code',Menlo,Consolas,monospace" font-size="14" fill="#94a3b8" letter-spacing="1">
+  <text x="500" y="154" text-anchor="middle" class="foot-code" font-size="13.5" fill="#94a3b8" letter-spacing="1">
     Age: 26 • Phone: 020 78849378 • Email: huevang933@gmail.com • Vientiane, Laos 🇱🇦
   </text>
 
-  <!-- Golden Base Line -->
   <line x1="0" y1="219" x2="1000" y2="219" stroke="#ffd700" stroke-width="2" stroke-opacity="0.5"/>
 </svg>

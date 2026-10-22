@@ -1,5 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" width="860" height="410" role="img" aria-label="Huevang XIONGPOR Terminal">
   <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500;700&amp;family=Fira+Code:wght@500;600;700&amp;display=swap');
+      .m { font-family: 'Fira Code', 'Courier New', Menlo, Consolas, monospace; font-size: 14.5px; white-space: pre; }
+      .lao { font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Leelawadee UI', sans-serif; font-size: 14px; font-weight: 600; }
+      @keyframes g0 { 0%, 3.5% { opacity: 0; } 3.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c0 { 0%, 3.6% { transform: scaleX(1); animation-timing-function: steps(8, end); } 6.5%, 100% { transform: scaleX(0); } }
+      @keyframes g1 { 0%, 8.5% { opacity: 0; } 8.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes g2 { 0%, 13.0% { opacity: 0; } 13.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c2 { 0%, 13.1% { transform: scaleX(1); animation-timing-function: steps(18, end); } 18.5%, 100% { transform: scaleX(0); } }
+      @keyframes g3 { 0%, 20.5% { opacity: 0; } 20.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes g4 { 0%, 25.5% { opacity: 0; } 25.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c4 { 0%, 25.6% { transform: scaleX(1); animation-timing-function: steps(19, end); } 30.5%, 100% { transform: scaleX(0); } }
+      @keyframes g5 { 0%, 32.5% { opacity: 0; } 32.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes g6 { 0%, 37.5% { opacity: 0; } 37.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c6 { 0%, 37.6% { transform: scaleX(1); animation-timing-function: steps(13, end); } 42.0%, 100% { transform: scaleX(0); } }
+      @keyframes g7 { 0%, 44.0% { opacity: 0; } 44.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes g8 { 0%, 49.0% { opacity: 0; } 49.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c8 { 0%, 49.1% { transform: scaleX(1); animation-timing-function: steps(12, end); } 53.5%, 100% { transform: scaleX(0); } }
+      @keyframes g9 { 0%, 55.5% { opacity: 0; } 55.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes g10 { 0%, 60.5% { opacity: 0; } 60.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes c10 { 0%, 60.6% { transform: scaleX(1); animation-timing-function: steps(13, end); } 65.0%, 100% { transform: scaleX(0); } }
+      @keyframes g11 { 0%, 67.0% { opacity: 0; } 67.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    </style>
     <clipPath id="win">
       <rect width="860" height="410" rx="14"/>
     </clipPath>
@@ -9,28 +33,6 @@
       <stop offset="100%" stop-color="#2dd4bf"/>
     </linearGradient>
   </defs>
-  <style>
-    .m { font-family: 'Fira Code', 'Courier New', Menlo, Consolas, monospace; font-size: 14.5px; white-space: pre; }
-    @keyframes g0 { 0%, 3.5% { opacity: 0; } 3.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes c0 { 0%, 3.6% { transform: scaleX(1); animation-timing-function: steps(8, end); } 6.5%, 100% { transform: scaleX(0); } }
-    @keyframes g1 { 0%, 8.5% { opacity: 0; } 8.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes g2 { 0%, 13.0% { opacity: 0; } 13.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes c2 { 0%, 13.1% { transform: scaleX(1); animation-timing-function: steps(18, end); } 18.5%, 100% { transform: scaleX(0); } }
-    @keyframes g3 { 0%, 20.5% { opacity: 0; } 20.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes g4 { 0%, 25.5% { opacity: 0; } 25.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes c4 { 0%, 25.6% { transform: scaleX(1); animation-timing-function: steps(19, end); } 30.5%, 100% { transform: scaleX(0); } }
-    @keyframes g5 { 0%, 32.5% { opacity: 0; } 32.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes g6 { 0%, 37.5% { opacity: 0; } 37.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes c6 { 0%, 37.6% { transform: scaleX(1); animation-timing-function: steps(13, end); } 42.0%, 100% { transform: scaleX(0); } }
-    @keyframes g7 { 0%, 44.0% { opacity: 0; } 44.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes g8 { 0%, 49.0% { opacity: 0; } 49.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes c8 { 0%, 49.1% { transform: scaleX(1); animation-timing-function: steps(12, end); } 53.5%, 100% { transform: scaleX(0); } }
-    @keyframes g9 { 0%, 55.5% { opacity: 0; } 55.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes g10 { 0%, 60.5% { opacity: 0; } 60.6%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes c10 { 0%, 60.6% { transform: scaleX(1); animation-timing-function: steps(13, end); } 65.0%, 100% { transform: scaleX(0); } }
-    @keyframes g11 { 0%, 67.0% { opacity: 0; } 67.1%, 97% { opacity: 1; } 98%, 100% { opacity: 0; } }
-    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-  </style>
 
   <g clip-path="url(#win)">
     <!-- Terminal Background -->
@@ -46,11 +48,11 @@
     <circle cx="62" cy="20" r="6" fill="#27c93f"/>
 
     <!-- Window Title -->
-    <text x="430" y="25" text-anchor="middle" fill="#94a3b8" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="600">
+    <text x="430" y="25" text-anchor="middle" fill="#94a3b8" class="m" font-size="13">
       hue@vientiane: ~ (zsh) — 26 Years • 020 78849378
     </text>
 
-    <!-- Terminal Lines -->
+    <!-- Lines -->
     <!-- Command 1: whoami -->
     <g style="animation: g0 16.5s linear infinite;">
       <text x="26" y="72" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> whoami</tspan></text>
@@ -69,13 +71,13 @@
       <text x="26" y="152" class="m" fill="#2dd4bf">Phone: 020 78849378 • Email: huevang933@gmail.com • Loc: Vientiane, Laos 🇱🇦</text>
     </g>
 
-    <!-- Command 3: cat education.txt -->
+    <!-- Command 3: cat education.txt (with Noto Sans Lao) -->
     <g style="animation: g4 16.5s linear infinite;">
       <text x="26" y="180" class="m"><tspan fill="#2dd4bf">❯</tspan><tspan fill="#ffd700"> cat education.txt</tspan></text>
       <rect x="24" y="163" width="195" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c4 16.5s linear infinite;"/>
     </g>
     <g style="animation: g5 16.5s linear infinite;">
-      <text x="26" y="206" class="m" fill="#fde68a">Bachelor of Website Development, National University of Laos (NUOL 2019-2023)</text>
+      <text x="26" y="206" class="lao" fill="#fde68a">ປະລິນຍາຕີ ສາຂາພັດທະນາເວັບໄຊ, ມະຫາວິທະຍາໄລແຫ່ງຊາດລາວ (NUOL 2019-2023)</text>
     </g>
 
     <!-- Command 4: ls ~/skills -->
@@ -102,7 +104,7 @@
       <rect x="24" y="325" width="135" height="24" fill="#060a0f" style="transform-box: fill-box; transform-origin: right center; animation: c10 16.5s linear infinite;"/>
     </g>
     <g style="animation: g11 16.5s linear infinite;">
-      <text x="26" y="368" class="m" fill="#ffd700">"Excellence through clean architecture, continuous innovation &amp; precision." ✨</text>
+      <text x="26" y="368" class="lao" fill="#ffd700">"Excellence through clean architecture, continuous innovation &amp; precision." ✨</text>
     </g>
 
     <!-- Active Blinking Prompt Line -->

@@ -1,11 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 72" width="520" height="72" role="img" aria-label="TECHNICAL ARSENAL • ທັກສະ">
   <defs>
-    <linearGradient id="grad_1" x1="0" y1="0" x2="1" y2="0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@700;800;900&amp;family=Outfit:wght@800;900&amp;display=swap');
+      .head-text {
+        font-family: 'Noto Sans Lao', 'Segoe UI Lao', 'Outfit', 'Leelawadee UI', sans-serif;
+        font-size: 21px;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+    </style>
+    <linearGradient id="grad_2" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#ffd700"/>
       <stop offset="100%" stop-color="#2dd4bf"/>
     </linearGradient>
-    <filter id="glow_1">
+    <filter id="glow_2">
       <feGaussianBlur stdDeviation="3.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
@@ -14,7 +23,7 @@
   <rect x="14" y="10" width="492" height="52" rx="10" fill="#081018"/>
   <circle cx="36" cy="36" r="6" fill="#ffd700"/>
   <circle cx="36" cy="36" r="10" fill="none" stroke="#ffd700" stroke-width="1.2" stroke-opacity="0.5"/>
-  <text x="260" y="44" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,'Noto Sans Lao',sans-serif" font-size="22" font-weight="900" letter-spacing="2.5" fill="url(#grad_1)" filter="url(#glow_1)">
+  <text x="260" y="44" text-anchor="middle" fill="url(#grad_2)" filter="url(#glow_2)" class="head-text">
     TECHNICAL ARSENAL • ທັກສະ
   </text>
   <circle cx="484" cy="36" r="6" fill="#2dd4bf"/>
